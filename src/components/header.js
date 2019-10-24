@@ -1,15 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Header = () => (
   <HeaderContainer>
     <div>
-      <HeaderLink href="/">Jeff Stolz</HeaderLink>
+      <Link href="/">Jeff Stolz</Link>
     </div>
     <HeaderLinkGroup>
-      <HeaderLink href="/">Work</HeaderLink>
-      <HeaderLink href="/">About</HeaderLink>
-      <HeaderLink href="/">Contact</HeaderLink>
+      <Link to="/">Work</Link>
+      <Link to="/">About</Link>
+      <Link to="/">Contact</Link>
     </HeaderLinkGroup>
   </HeaderContainer>
 )
@@ -23,11 +24,6 @@ const HeaderLinkGroup = styled.div`
   display: flex;
   justify-content: space-between;
   width: 150pt;
-`
-
-const HeaderLink = styled.a`
-  text-decoration: none;
-  color: black;
 `
 
 export default Header
