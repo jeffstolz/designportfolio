@@ -13,7 +13,7 @@ const Header = () => (
           <Link to="/">Work</Link>
         </ActiveLinkContainer>
         <LinkContainer>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </LinkContainer>
         <LinkContainer>
           <Link to="/">Contact</Link>

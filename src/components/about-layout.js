@@ -15,14 +15,12 @@ import Footer from "./footer"
 
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const AboutLayout = ({ children }) => {
   return (
     <>
-      <Gradient>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </Gradient>
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }
@@ -46,4 +44,4 @@ const Gradient = styled.div`
   }
 `
 
-export default Layout
+export default AboutLayout
