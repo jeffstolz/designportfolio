@@ -14,6 +14,7 @@ const Footer = () => (
 const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
+  padding-bottom: 20pt;
 `
 
 const FooterLinkGroup = styled.div`
