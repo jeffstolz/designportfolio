@@ -26,7 +26,7 @@ const Header = () => (
 const HeaderOuterContainer = styled.header`
   display: flex;
   justify-content: center;
-  margin-top: 15pt;
+  padding-top: 15pt;
 `
 
 const HeaderContainer = styled.header`

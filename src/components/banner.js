@@ -32,7 +32,6 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #6e55c1, #80cbe6);
   height: 400pt;
 `
 const Intro = styled.div`
