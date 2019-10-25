@@ -45,7 +45,7 @@ const Thumbnails = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-top: 130pt;
+  margin-top: 70pt;
   margin-bottom: 130pt;
 `
 const Container = styled.div`

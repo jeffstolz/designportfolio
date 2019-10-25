@@ -2,13 +2,13 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Banner from "../components/banner"
+import WorkBanner from "../components/work-banner"
 import Thumbnails from "../components/thumbnails"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Banner />
+    <SEO title="Work" />
+    <WorkBanner />
     <Thumbnails />
   </Layout>
 )

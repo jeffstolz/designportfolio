@@ -31,7 +31,7 @@ const HeaderOuterContainer = styled.header`
 
 const HeaderContainer = styled.header`
   display: flex;
-  width: 90%;
+  width: 90.5%;
   justify-content: space-between;
 `
 

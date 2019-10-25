@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const Banner = () => (
+const WorkBanner = () => (
   <Container>
     <Intro>
       <Divider />
@@ -19,10 +19,10 @@ const Banner = () => (
     </Intro>
     <div>
       <LargeText>
-        PRODUCT <br />
-        DESIGNER, <br />
-        FRONTEND <br />
-        DEVELOPER
+        Product <br />
+        Designer, <br />
+        Frontend <br />
+        Developer
       </LargeText>
     </div>
   </Container>
@@ -32,7 +32,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400pt;
+  height: 450pt;
 `
 const Intro = styled.div`
   display: flex;
@@ -56,10 +56,11 @@ const LargeText = styled.h1`
   font-size: 80pt;
   line-height: 75pt;
   margin-bottom: 0;
+  text-transform: uppercase;
 `
 
 const Divider = styled.div`
   border-bottom: 1pt solid black;
 `
 
-export default Banner
+export default WorkBanner
