@@ -3,54 +3,42 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const Header = () => (
-  <HeaderOuterContainer>
-    <HeaderContainer>
+  <OuterContainer>
+    <Container>
       <div>
         <Link href="/">Jeff Stolz</Link>
       </div>
-      <HeaderLinkGroup>
-        <ActiveLinkContainer>
-          <Link to="/">Work</Link>
-        </ActiveLinkContainer>
-        <LinkContainer>
-          <Link to="/about">About</Link>
-        </LinkContainer>
-        <LinkContainer>
-          <Link to="/">Contact</Link>
-        </LinkContainer>
-      </HeaderLinkGroup>
-    </HeaderContainer>
-  </HeaderOuterContainer>
+      <LinkGroup>
+        <Link to="/" activeClassName="activelink">
+          Work
+        </Link>
+        <Link to="/about" activeClassName="activelink">
+          About
+        </Link>
+        <Link to="/contact" activeClassName="activelink">
+          Contact
+        </Link>
+      </LinkGroup>
+    </Container>
+  </OuterContainer>
 )
 
-const HeaderOuterContainer = styled.header`
+const OuterContainer = styled.header`
   display: flex;
   justify-content: center;
   padding-top: 15pt;
 `
 
-const HeaderContainer = styled.header`
+const Container = styled.header`
   display: flex;
   width: 90.5%;
   justify-content: space-between;
 `
 
-const HeaderLinkGroup = styled.div`
+const LinkGroup = styled.div`
   display: flex;
-  width: 200pt;
-`
-
-const ActiveLinkContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  border-bottom: 1pt solid black;
-`
-
-const LinkContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  width: 170pt;
 `
 
 export default Header

@@ -15,8 +15,8 @@ const AboutBanner = () => (
         I value strong opinions, loosely held. I thrive in small, collaborative,
         multi-disciplinary teams that foster transparency and continuous
         improvement. I believe in self-management and trusting environments.
-        While I have experience with a variety of projects, I especially enjoy
-        the challenge of complex enterprise applications.
+        While I have experience with a variety of roles, I especially enjoy the
+        energy and unique challenges of startups.
       </IntroText>
       <Callouts>
         Figma <br />
@@ -26,11 +26,11 @@ const AboutBanner = () => (
         <br />
         GV Design Sprints
         <br />
-        Styled Components
+        React / React Native
         <br />
         A11Y Project
         <br />
-        React / React Native
+        Styled Components
       </Callouts>
     </MiddleRow>
     <BottomRow>

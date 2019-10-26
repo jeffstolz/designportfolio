@@ -80,6 +80,20 @@ const Timeline = () => (
         <Dates>May 05 - Nov 11</Dates>
         <Description>Created graphics and architectural designs. </Description>
       </Job>
+      <Divider />
+      <Job>
+        <Education>Education</Education>
+        <Company>Virginia Tech</Company>
+        <Dates>
+          Bachelor of Architecture <br />
+          2010
+        </Dates>
+        <Company>Firehose Coding Bootcamp</Company>
+        <Dates>
+          Certificate <br />
+          2015
+        </Dates>
+      </Job>
     </Container>
   </OuterContainer>
 )
@@ -87,6 +101,7 @@ const Timeline = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
+  margin-bottom: 100pt;
 `
 
 const Container = styled.div`
@@ -112,8 +127,23 @@ const Company = styled.h3`
   font-size: 14pt;
 `
 
-const Dates = styled.p``
+const Dates = styled.p`
+  line-height: 15pt;
+`
 
 const Description = styled.p``
+
+const Divider = styled.div`
+  border-bottom: 1pt solid black;
+  width: 100%;
+  margin-bottom: 40pt;
+`
+
+const Education = styled.h2`
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4707a9;
+  font-size: 20pt;
+`
 
 export default Timeline
