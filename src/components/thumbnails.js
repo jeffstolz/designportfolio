@@ -101,7 +101,7 @@ const Thumbnails = () => (
             <Slide>
               <PreviewHeading>HMH Marketplace</PreviewHeading>
               <PreviewText>
-                Online marketplace for students & teachers
+                Online marketplace for teachers & developers
               </PreviewText>
             </Slide>
             <LargeCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
