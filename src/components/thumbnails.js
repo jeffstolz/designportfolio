@@ -43,6 +43,7 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/cipherbio">
             <OverlayContainer>
+              <ProductDesign>Product Design</ProductDesign>
               <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
