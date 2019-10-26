@@ -81,6 +81,9 @@ const LargeImage = styled.img`
   margin-top: 50pt;
   margin-bottom: 50pt;
   border: 1pt solid lightgray;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 `
 
 export default ViralgainsPage
