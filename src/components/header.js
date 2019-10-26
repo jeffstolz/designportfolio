@@ -6,7 +6,7 @@ const Header = () => (
   <OuterContainer>
     <Container>
       <div>
-        <Link href="/">Jeff Stolz</Link>
+        <Link to="/">Jeff Stolz</Link>
       </div>
       <LinkGroup>
         <Link to="/" activeClassName="activelink">
