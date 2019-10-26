@@ -22,8 +22,8 @@ const CipherbioPage = () => (
           <VisualDesign>Visual Design</VisualDesign>
         </PillContainer>
         <WelcomeText>
-          As a thoughtbot consultant, I led a design sprint for CipherBio to
-          determine how could they provide value to their users with a mobile
+          This past February at thoughtbot, I led a design sprint for CipherBio
+          to determine how could they provide value to their users with a mobile
           application. CipherBio is an information and networking platform for
           investors in the life sciences industry. During our discovery research
           and interviews, we learned that users needed a place to consume
@@ -37,15 +37,15 @@ const CipherbioPage = () => (
         </WelcomeText>
         <ImageRow>
           <LargeImage src={Blog} alt="CipherBio Blog" />
-          <LargeImage src={BlogArticle} alt="CipherBio Blog" />
+          <LargeImage src={BlogArticle} alt="CipherBio Blog Article" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Article} alt="CipherBio Blog" />
-          <LargeImage src={Archives} alt="CipherBio Blog" />
+          <LargeImage src={Article} alt="CipherBio Article" />
+          <LargeImage src={Archives} alt="CipherBio Archives" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Community} alt="CipherBio Blog" />
-          <LargeImage src={Company} alt="CipherBio Blog" />
+          <LargeImage src={Community} alt="CipherBio Community" />
+          <LargeImage src={Company} alt="CipherBio Company" />
         </ImageRow>
       </Container>
     </OuterContainer>
@@ -101,12 +101,15 @@ const VisualDesign = styled.div`
 `
 
 const WelcomeText = styled.p`
-  margin-bottom: 60pt;
+  margin-bottom: 100pt;
 `
 
 const LargeImage = styled.img`
   border: 1pt solid lightgray;
   height: 100%;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 `
 
 const ImageRow = styled.div`

@@ -1,6 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 
+import Airspace from "../images/ge-airspace.png"
+import Search from "../images/ge-search.png"
+import Layers from "../images/ge-layers.png"
+import Tooltip from "../images/ge-tooltip.png"
+import Weather from "../images/ge-weather.png"
+import Auth from "../images/ge-auth.png"
+import Collapsed from "../images/ge-collapsed.png"
+import Requests from "../images/ge-requests.png"
+import Compliance from "../images/ge-compliance.png"
+import Draw from "../images/ge-draw.png"
+
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
 
@@ -15,9 +26,39 @@ const AirxosPage = () => (
           <UxDesign>UX Design</UxDesign>
         </PillContainer>
         <WelcomeText>
-          Enabling clinicians to improve patient care through accelerated
-          communication and collaboration in the hospital.
+          My most recent project at thoughtbot has been an engagement with
+          AiRXOS, a GE Venture. AiRXOS is focused on developing software
+          associated with safe and efficient drone operations for first
+          responder pilots and their support teams. I was brought on to lead the
+          design of an application that helps pilots view and submit
+          authorizations to fly in restricted airspaces. In an industry heavily
+          regulated by the FAA, I was tasked with making the interface as
+          intuitive as possible while still adhearing to their strict
+          requirements. Extra care was taken to the increased cognitive load of
+          the users, as they will often be doing so in distracting & stressful
+          physical environments. We built the mobile application in React Native
+          as the experience would need to be delivered on both iOS and Android.
         </WelcomeText>
+        <ImageRow>
+          <LargeImage src={Airspace} alt="AiRXOS Airspace" />
+          <LargeImage src={Search} alt="AiRXOS Search" />
+        </ImageRow>
+        <ImageRow>
+          <LargeImage src={Layers} alt="AiRXOS Layers" />
+          <LargeImage src={Tooltip} alt="AiRXOS Tooltip" />
+        </ImageRow>
+        <ImageRow>
+          <LargeImage src={Weather} alt="AiRXOS Weather" />
+          <LargeImage src={Auth} alt="AiRXOS Authorization" />
+        </ImageRow>
+        <ImageRow>
+          <LargeImage src={Collapsed} alt="AiRXOS Collapsed Airspace" />
+          <LargeImage src={Requests} alt="AiRXOS Requests" />
+        </ImageRow>
+        <ImageRow>
+          <LargeImage src={Compliance} alt="AiRXOS Compliance" />
+          <LargeImage src={Draw} alt="AiRXOS Draw Airspace" />
+        </ImageRow>
       </Container>
     </OuterContainer>
   </AboutLayout>
@@ -72,8 +113,22 @@ const UxDesign = styled.div`
 `
 
 const WelcomeText = styled.p`
-  font-size: 20pt;
-  line-height: 25pt;
+  margin-bottom: 100pt;
+`
+
+const LargeImage = styled.img`
+  border: 1pt solid lightgray;
+  height: 100%;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+`
+
+const ImageRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 550pt;
+  margin-bottom: 80pt;
 `
 
 export default AirxosPage
