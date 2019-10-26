@@ -20,7 +20,7 @@ const Thumbnails = () => (
               <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
-              <PreviewHeading>GE // AiRXOS</PreviewHeading>
+              <PreviewHeading>GE - AiRXOS</PreviewHeading>
               <PreviewText>Drone flight planning and coordination</PreviewText>
             </Slide>
             <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
