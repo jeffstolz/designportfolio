@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import MhThumbnail from "../images/mh-thumbnail.png"
@@ -13,78 +14,98 @@ const Thumbnails = () => (
     <Container>
       <Row>
         <LargeCard>
-          <OverlayContainer>
-            <CaseStudy>Case Study</CaseStudy>
-            <UxDesign>UX Design</UxDesign>
-          </OverlayContainer>
-          <Slide>
-            <PreviewHeading>Mobile Heartbeat</PreviewHeading>
-            <PreviewText>
-              Clinical communication and coordination tool
-            </PreviewText>
-          </Slide>
-          <LargeCardImage src={MhThumbnail} alt="Mobile Heartbeat thumbnail" />
+          <Link to="/airxos">
+            <OverlayContainer>
+              <UxDesign>UX Design</UxDesign>
+              <VisualDesign>Visual Design</VisualDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>GE // AiRXOS</PreviewHeading>
+              <PreviewText>Drone flight planning and coordination</PreviewText>
+            </Slide>
+            <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
+          </Link>
         </LargeCard>
         <SmallCard>
-          <OverlayContainer>
-            <VisualDesign>Visual Design</VisualDesign>
-          </OverlayContainer>
-          <Slide>
-            <PreviewHeading>ViralGains</PreviewHeading>
-            <PreviewText>Advertising journey orchestration</PreviewText>
-          </Slide>
-          <SmallCardImage src={VgThumbnail} alt="Viralgains thumbnail" />
+          <Link to="/viralgains">
+            <OverlayContainer>
+              <VisualDesign>Visual Design</VisualDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>ViralGains</PreviewHeading>
+              <PreviewText>Advertising journey orchestration</PreviewText>
+            </Slide>
+            <SmallCardImage src={VgThumbnail} alt="Viralgains thumbnail" />
+          </Link>
         </SmallCard>
       </Row>
       <Row>
         <SmallCard>
-          <OverlayContainer>
-            <VisualDesign>Visual Design</VisualDesign>
-          </OverlayContainer>
-          <Slide>
-            <PreviewHeading>CipherBio</PreviewHeading>
-            <PreviewText>Lifescience investor networking tool</PreviewText>
-          </Slide>
-          <SmallCardImage src={CipherbioThumbnail} alt="Cipherbio thumbnail" />
+          <Link to="/cipherbio">
+            <OverlayContainer>
+              <VisualDesign>Visual Design</VisualDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>CipherBio</PreviewHeading>
+              <PreviewText>Lifescience investor networking tool</PreviewText>
+            </Slide>
+            <SmallCardImage
+              src={CipherbioThumbnail}
+              alt="Cipherbio thumbnail"
+            />
+          </Link>
         </SmallCard>
         <LargeCard>
-          <OverlayContainer>
-            <UxDesign>UX Design</UxDesign>
-            <VisualDesign>Visual Design</VisualDesign>
-          </OverlayContainer>
-          <Slide>
-            <PreviewHeading>GE // AiRXOS</PreviewHeading>
-            <PreviewText>Drone flight planning and coordination</PreviewText>
-          </Slide>
-          <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
+          <Link to="/mobile-heartbeat">
+            <OverlayContainer>
+              <CaseStudy>Case Study</CaseStudy>
+              <ProductDesign>Product Design</ProductDesign>
+              <UxDesign>UX Design</UxDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>Mobile Heartbeat</PreviewHeading>
+              <PreviewText>
+                Clinical communication and coordination tool
+              </PreviewText>
+            </Slide>
+            <LargeCardImage
+              src={MhThumbnail}
+              alt="Mobile Heartbeat thumbnail"
+            />
+          </Link>
         </LargeCard>
       </Row>
       <Row>
         <SmallCard>
-          <OverlayContainer>
-            <DesignSprint>DesignSprint</DesignSprint>
-          </OverlayContainer>
-          <Slide>
-            <PreviewHeading>Dragon Innovation</PreviewHeading>
-            <PreviewText>Manufacturing product planning</PreviewText>
-          </Slide>
-          <SmallCardImage
-            src={DragonThumbnail}
-            alt="Dragon Innovation thumbnail"
-          />
+          <Link to="/arcadechess">
+            <OverlayContainer>
+              <ProductDesign>Product Design</ProductDesign>
+              <VisualDesign>Visual Design</VisualDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>ArcadeChess</PreviewHeading>
+              <PreviewText>Real-time chess with an arcade vibe</PreviewText>
+            </Slide>
+            <SmallCardImage
+              src={DragonThumbnail}
+              alt="Dragon Innovation thumbnail"
+            />
+          </Link>
         </SmallCard>
         <LargeCard>
-          <OverlayContainer>
-            <CaseStudy>Case Study</CaseStudy>
-            <DesignSprint>DesignSprint</DesignSprint>
-          </OverlayContainer>
-          <Slide>
-            <PreviewHeading>HMH Marketplace</PreviewHeading>
-            <PreviewText>
-              Online marketplace for students & teachers
-            </PreviewText>
-          </Slide>
-          <LargeCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
+          <Link to="/hmh">
+            <OverlayContainer>
+              <CaseStudy>Case Study</CaseStudy>
+              <ProductDesign>Product Design</ProductDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>HMH Marketplace</PreviewHeading>
+              <PreviewText>
+                Online marketplace for students & teachers
+              </PreviewText>
+            </Slide>
+            <LargeCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
+          </Link>
         </LargeCard>
       </Row>
     </Container>
@@ -122,7 +143,7 @@ const OverlayContainer = styled.div`
   opacity: 0;
   transition: 0.5s ease;
 `
-const CaseStudy = styled.div`
+const ProductDesign = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +151,7 @@ const CaseStudy = styled.div`
   border-radius: 13pt;
   border: 1pt solid #00b8ff;
   height: 26pt;
-  width: 92pt;
+  width: 108pt;
   font-size: 12pt;
   margin-right: 5pt;
 `
@@ -161,7 +182,7 @@ const VisualDesign = styled.div`
   margin-right: 5pt;
 `
 
-const DesignSprint = styled.div`
+const CaseStudy = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +207,7 @@ const Slide = styled.div`
   background-color: black;
   opacity: 0;
   transition: 0.5s ease;
-  padding-left: 10pt;
+  padding-left: 20pt;
 `
 
 const PreviewHeading = styled.div`
