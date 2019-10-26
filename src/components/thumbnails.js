@@ -13,29 +13,78 @@ const Thumbnails = () => (
     <Container>
       <Row>
         <LargeCard>
+          <OverlayContainer>
+            <CaseStudy>Case Study</CaseStudy>
+            <UxDesign>UX Design</UxDesign>
+          </OverlayContainer>
+          <Slide>
+            <PreviewHeading>Mobile Heartbeat</PreviewHeading>
+            <PreviewText>
+              Clinical communication and coordination tool
+            </PreviewText>
+          </Slide>
           <LargeCardImage src={MhThumbnail} alt="Mobile Heartbeat thumbnail" />
         </LargeCard>
         <SmallCard>
+          <OverlayContainer>
+            <VisualDesign>Visual Design</VisualDesign>
+          </OverlayContainer>
+          <Slide>
+            <PreviewHeading>ViralGains</PreviewHeading>
+            <PreviewText>Advertising journey orchestration</PreviewText>
+          </Slide>
           <SmallCardImage src={VgThumbnail} alt="Viralgains thumbnail" />
         </SmallCard>
       </Row>
       <Row>
         <SmallCard>
+          <OverlayContainer>
+            <VisualDesign>Visual Design</VisualDesign>
+          </OverlayContainer>
+          <Slide>
+            <PreviewHeading>CipherBio</PreviewHeading>
+            <PreviewText>Lifescience investor networking tool</PreviewText>
+          </Slide>
           <SmallCardImage src={CipherbioThumbnail} alt="Cipherbio thumbnail" />
         </SmallCard>
         <LargeCard>
-          <SmallCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
+          <OverlayContainer>
+            <UxDesign>UX Design</UxDesign>
+            <VisualDesign>Visual Design</VisualDesign>
+          </OverlayContainer>
+          <Slide>
+            <PreviewHeading>GE // AiRXOS</PreviewHeading>
+            <PreviewText>Drone flight planning and coordination</PreviewText>
+          </Slide>
+          <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
         </LargeCard>
       </Row>
       <Row>
         <SmallCard>
+          <OverlayContainer>
+            <DesignSprint>DesignSprint</DesignSprint>
+          </OverlayContainer>
+          <Slide>
+            <PreviewHeading>Dragon Innovation</PreviewHeading>
+            <PreviewText>Manufacturing product planning</PreviewText>
+          </Slide>
           <SmallCardImage
             src={DragonThumbnail}
             alt="Dragon Innovation thumbnail"
           />
         </SmallCard>
         <LargeCard>
-          <SmallCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
+          <OverlayContainer>
+            <CaseStudy>Case Study</CaseStudy>
+            <DesignSprint>DesignSprint</DesignSprint>
+          </OverlayContainer>
+          <Slide>
+            <PreviewHeading>HMH Marketplace</PreviewHeading>
+            <PreviewText>
+              Online marketplace for students & teachers
+            </PreviewText>
+          </Slide>
+          <LargeCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
         </LargeCard>
       </Row>
     </Container>
@@ -61,22 +110,151 @@ const Row = styled.div`
   margin-bottom: 25pt;
 `
 
+const OverlayContainer = styled.div`
+  display: flex;
+  position: absolute;
+  padding: 10pt;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #00000080;
+  opacity: 0;
+  transition: 0.5s ease;
+`
+const CaseStudy = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 13pt;
+  border: 1pt solid #00b8ff;
+  height: 26pt;
+  width: 92pt;
+  font-size: 12pt;
+  margin-right: 5pt;
+`
+
+const UxDesign = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 13pt;
+  border: 1pt solid #ff6f00;
+  height: 26pt;
+  width: 85pt;
+  font-size: 12pt;
+  margin-right: 5pt;
+`
+
+const VisualDesign = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 13pt;
+  border: 1pt solid #e35fff;
+  height: 26pt;
+  width: 100pt;
+  font-size: 12pt;
+  margin-right: 5pt;
+`
+
+const DesignSprint = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 13pt;
+  border: 1pt solid #00d332;
+  height: 26pt;
+  width: 100pt;
+  font-size: 12pt;
+  margin-right: 5pt;
+`
+
+const Slide = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  background-color: black;
+  opacity: 0;
+  transition: 0.5s ease;
+  padding-left: 10pt;
+`
+
+const PreviewHeading = styled.div`
+  color: white;
+  font-weight: 600;
+  line-height: 18pt;
+  font-size: 12pt;
+`
+
+const PreviewText = styled.div`
+  color: white;
+  font-size: 12pt;
+  line-height: 12pt;
+  opacity: 0.7;
+`
+
 const LargeCard = styled.div`
+  position: relative;
   background-color: white;
   width: 59%;
   height: 200pt;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  }
+
+  &:hover ${OverlayContainer} {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+
+  &:hover ${Slide} {
+    opacity: 1;
+    transition: 0.3s ease;
+    height: 60pt;
+  }
 `
 
 const SmallCard = styled.div`
+  position: relative;
   background-color: white;
   width: 37.5%;
   height: 200pt;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  &:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  }
+
+  &:hover ${OverlayContainer} {
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+
+  &:hover ${Slide} {
+    opacity: 1;
+    transition: 0.3s ease;
+    height: 60pt;
+  }
 `
 
 const LargeCardImage = styled.img`
