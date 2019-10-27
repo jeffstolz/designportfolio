@@ -45,6 +45,10 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   height: 500pt;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `
 
 const HeadshotImage = styled.img`
@@ -95,6 +99,10 @@ const Callouts = styled.div`
   line-height: 20pt;
   font-size: 20pt;
   color: #898989;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `
 
 const FancyText = styled.div`

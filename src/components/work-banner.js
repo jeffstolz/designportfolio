@@ -41,6 +41,14 @@ const Intro = styled.div`
   width: 210pt;
   height: 280pt;
   margin-right: 20pt;
+
+  @media (max-width: 950px) {
+    margin-right: 0;
+    width: 400pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    margin-top: 40pt;
+  }
 `
 
 const IntroText = styled.div`
@@ -57,6 +65,10 @@ const LargeText = styled.h1`
   line-height: 75pt;
   margin-bottom: 0;
   text-transform: uppercase;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `
 
 const Divider = styled.div`

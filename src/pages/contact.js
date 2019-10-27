@@ -27,6 +27,11 @@ const Container = styled.section`
   align-items: center;
   height: 520pt;
   margin-bottom: 40pt;
+
+  @media (max-width: 950px) {
+    padding-left: 20pt;
+    padding-right: 20pt;
+  }
 `
 
 const LargeText = styled.h1`
@@ -34,10 +39,19 @@ const LargeText = styled.h1`
   line-height: 75pt;
   text-transform: uppercase;
   margin-bottom: 30pt;
+
+  @media (max-width: 950px) {
+    display: none;
+  }
 `
 
 const TextContainer = styled.div`
   width: 450pt;
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-top: -200pt;
+  }
 `
 
 const FancyText = styled.div`
