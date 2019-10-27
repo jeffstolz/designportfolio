@@ -6,7 +6,7 @@ import MhThumbnail from "../images/mh-thumbnail.png"
 import VgThumbnail from "../images/vg-thumbnail.png"
 import CipherbioThumbnail from "../images/cipherbio-thumbnail.png"
 import GeThumbnail from "../images/ge-thumbnail.png"
-import DragonThumbnail from "../images/dragon-thumbnail.png"
+import AirwatchThumbnail from "../images/airwatch-thumbnail.png"
 import HmhThumbnail from "../images/hmh-thumbnail.png"
 
 const Thumbnails = () => (
@@ -21,7 +21,9 @@ const Thumbnails = () => (
             </OverlayContainer>
             <Slide>
               <PreviewHeading>GE - AiRXOS</PreviewHeading>
-              <PreviewText>Drone flight planning and coordination</PreviewText>
+              <PreviewText>
+                Drone flight planning and authorization tool
+              </PreviewText>
             </Slide>
             <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
           </Link>
@@ -48,7 +50,9 @@ const Thumbnails = () => (
             </OverlayContainer>
             <Slide>
               <PreviewHeading>CipherBio</PreviewHeading>
-              <PreviewText>Lifescience investor networking tool</PreviewText>
+              <PreviewText>
+                Lifescience investor networking platform
+              </PreviewText>
             </Slide>
             <SmallCardImage
               src={CipherbioThumbnail}
@@ -65,9 +69,7 @@ const Thumbnails = () => (
             </OverlayContainer>
             <Slide>
               <PreviewHeading>Mobile Heartbeat</PreviewHeading>
-              <PreviewText>
-                Clinical communication and coordination tool
-              </PreviewText>
+              <PreviewText>Clinical communication and coordination</PreviewText>
             </Slide>
             <LargeCardImage
               src={MhThumbnail}
@@ -78,19 +80,15 @@ const Thumbnails = () => (
       </Row>
       <Row>
         <SmallCard>
-          <Link to="/arcadechess">
+          <Link to="/airwatch">
             <OverlayContainer>
               <ProductDesign>Product Design</ProductDesign>
-              <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
-              <PreviewHeading>ArcadeChess</PreviewHeading>
-              <PreviewText>Real-time chess with an arcade vibe</PreviewText>
+              <PreviewHeading>AirWatch</PreviewHeading>
+              <PreviewText>Drone video and telemetry POC</PreviewText>
             </Slide>
-            <SmallCardImage
-              src={DragonThumbnail}
-              alt="Dragon Innovation thumbnail"
-            />
+            <SmallCardImage src={AirwatchThumbnail} alt="AirWatch thumbnail" />
           </Link>
         </SmallCard>
         <LargeCard>
