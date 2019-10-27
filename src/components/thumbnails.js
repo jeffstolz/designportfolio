@@ -20,7 +20,7 @@ const Thumbnails = () => (
               <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
-              <PreviewHeading>GE - AiRXOS</PreviewHeading>
+              <PreviewHeading>AiRXOS</PreviewHeading>
               <PreviewText>
                 Drone flight planning and authorization tool
               </PreviewText>
@@ -116,6 +116,11 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-top: 70pt;
   margin-bottom: 130pt;
+
+  @media (max-width: 950px) {
+    padding-left: 20pt;
+    padding-right: 20pt;
+  }
 `
 const Container = styled.div`
   display: flex;
@@ -128,6 +133,11 @@ const Row = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-bottom: 25pt;
+
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
 `
 
 const OverlayContainer = styled.div`
@@ -225,6 +235,7 @@ const PreviewText = styled.div`
 
 const LargeCard = styled.div`
   position: relative;
+  display: flex;
   background-color: white;
   width: 59%;
   height: 200pt;
@@ -248,10 +259,17 @@ const LargeCard = styled.div`
     transition: 0.3s ease;
     height: 60pt;
   }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-bottom: 30pt;
+    justify-content: flex-end;
+  }
 `
 
 const SmallCard = styled.div`
   position: relative;
+  display: flex;
   background-color: white;
   width: 37.5%;
   height: 200pt;
@@ -275,12 +293,22 @@ const SmallCard = styled.div`
     transition: 0.3s ease;
     height: 60pt;
   }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-bottom: 30pt;
+    justify-content: flex-end;
+  }
 `
 
 const LargeCardImage = styled.img`
   height: 100%;
   width: auto;
   object-fit: contain;
+
+  @media (max-width: 950px) {
+    object-fit: cover;
+  }
 `
 
 const SmallCardImage = styled.img`

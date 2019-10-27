@@ -45,6 +45,11 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   margin-bottom: 100pt;
+
+  @media (max-width: 950px) {
+    padding-left: 20pt;
+    padding-right: 20pt;
+  }
 `
 
 const Container = styled.div`

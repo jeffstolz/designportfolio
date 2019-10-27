@@ -20,7 +20,7 @@ const AirxosPage = () => (
     <SEO title="AiRXOS" />
     <OuterContainer>
       <Container>
-        <LargeText>GE - AiRXOS</LargeText>
+        <LargeText>AiRXOS</LargeText>
         <PillContainer>
           <ProductDesign>Product Design</ProductDesign>
           <UxDesign>UX Design</UxDesign>
@@ -68,6 +68,11 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   margin-bottom: 100pt;
+
+  @media (max-width: 950px) {
+    padding-left: 20pt;
+    padding-right: 20pt;
+  }
 `
 
 const Container = styled.div`
@@ -122,6 +127,10 @@ const LargeImage = styled.img`
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  @media (max-width: 950px) {
+    margin-bottom: 50pt;
+  }
 `
 
 const ImageRow = styled.div`
@@ -129,6 +138,12 @@ const ImageRow = styled.div`
   justify-content: space-between;
   height: 550pt;
   margin-bottom: 80pt;
+
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 600pt;
+  }
 `
 
 export default AirxosPage

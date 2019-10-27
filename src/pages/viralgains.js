@@ -41,6 +41,11 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   margin-bottom: 100pt;
+
+  @media (max-width: 950px) {
+    padding-left: 20pt;
+    padding-right: 20pt;
+  }
 `
 
 const Container = styled.div`
@@ -84,6 +89,10 @@ const LargeImage = styled.img`
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  @media (max-width: 950px) {
+    margin-top: 0;
+  }
 `
 
 export default ViralgainsPage

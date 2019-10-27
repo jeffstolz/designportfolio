@@ -179,6 +179,11 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   margin-bottom: 100pt;
+
+  @media (max-width: 950px) {
+    padding-right: 20pt;
+    padding-left: 20pt;
+  }
 `
 
 const Container = styled.div`
@@ -186,6 +191,10 @@ const Container = styled.div`
   flex-direction: column;
   width: 700pt;
   padding-top: 80pt;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
 `
 
 const LargeText = styled.h1`
@@ -245,6 +254,10 @@ const SolutionImage = styled.img`
 
 const Row = styled.div`
   display: flex;
+
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+  }
 `
 
 const Divider = styled.div`
@@ -258,6 +271,10 @@ const LeftHeader = styled.h2`
   font-size: 40pt;
   display: flex;
   width: 100%;
+
+  @media (max-width: 950px) {
+    margin-bottom: 20pt;
+  }
 `
 
 const RightContent = styled.p`
@@ -269,10 +286,21 @@ const SolutionRow = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25pt;
+
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
 `
 
 const SolutionColumn = styled.div`
   width: 48%;
+
+  @media (max-width: 950px) {
+    width: 500pt;
+    margin-bottom: 20pt;
+  }
 `
 
 const SolutionContainer = styled.div`
