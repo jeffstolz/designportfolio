@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 import JeffStolz from "../images/jeff-stolz.png"
 
+import { Colors, Spacing, Typography } from "../styles/variables"
+
 const AboutBanner = () => (
   <Container>
     <TopRow>
@@ -45,7 +47,7 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500pt;
+  height: 37em;
 
   @media (max-width: 950px) {
     display: none;
@@ -54,52 +56,51 @@ const Container = styled.section`
 
 const HeadshotImage = styled.img`
   position: absolute;
-  z-index: -1;
   object-fit: contain;
-  height: 415pt;
-  top: -157pt;
-  left: -197pt;
+  height: 30.8em;
+  top: -11.7em;
+  left: -14.65em;
+  z-index: -1;
 `
 
 const TopRow = styled.div`
   display: flex;
-  width: 700pt;
-  margin-bottom: 20pt;
   position: relative;
+  width: 50.3em;
+  margin-bottom: 1.55em;
 `
 
 const MiddleRow = styled.div`
   display: flex;
   justify-content: flex-end;
-  width: 700pt;
+  width: 52em;
 `
 
 const BottomRow = styled.div`
   display: flex;
-  width: 700pt;
   justify-content: flex-end;
+  width: 52.8em;
 `
 
 const IntroText = styled.div`
   font-family: "georgia", serif;
-  width: 320pt;
-  padding-right: 25pt;
+  width: 23.7em;
+  padding-right: ${Spacing.base};
 `
 
 const LargeText = styled.h1`
-  font-size: 80pt;
-  line-height: 75pt;
+  font-size: ${Typography.largeFontSize};
+  line-height: ${Typography.smallLineHeight};
   margin-bottom: 0;
-  margin-right: 38pt;
+  margin-right: 0.35em;
   text-transform: uppercase;
 `
 
 const Callouts = styled.div`
   text-transform: uppercase;
-  font-weight: 800;
-  line-height: 20pt;
-  font-size: 20pt;
-  color: #898989;
+  font-weight: ${Typography.heavyFontWeight};
+  font-size: ${Typography.mediumFontSize};
+  color: ${Colors.gray};
 
   @media (max-width: 950px) {
     display: none;
@@ -109,15 +110,15 @@ const Callouts = styled.div`
 const FancyText = styled.div`
   display: flex;
   align-items: flex-end;
-  color: #898989;
+  color: ${Colors.gray};
   font-style: italic;
-  font-family: "georgia", serif;
+  font-family: ${Typography.georgiaFont};
 `
 
 const Divider = styled.div`
-  border-bottom: 1pt solid black;
-  width: 582pt;
-  margin-top: 25pt;
+  width: 43em;
+  margin-top: 1.75em;
+  border-bottom: 1pt solid ${Colors.black};
 `
 
 export default AboutBanner
