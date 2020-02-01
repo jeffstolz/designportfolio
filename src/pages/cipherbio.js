@@ -91,18 +91,11 @@ const ProductDesign = styled.div`
   width: 108pt;
   font-size: 12pt;
   margin-right: 5pt;
-`
 
-const VisualDesign = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 13pt;
-  border: 1pt solid #e35fff;
-  height: 26pt;
-  width: 100pt;
-  font-size: 12pt;
-  margin-right: 5pt;
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const WelcomeText = styled.p`
