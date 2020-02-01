@@ -65,7 +65,7 @@ const Greeting = styled.span`
 `
 
 const LargeText = styled.h1`
-  font-size: ${Typography.largeHeading};
+  font-size: ${Typography.largeFontSize};
   line-height: ${Typography.smallLineHeight};
   margin-bottom: 0;
   text-transform: uppercase;
