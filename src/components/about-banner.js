@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
 import JeffStolz from "../images/jeff-stolz.png"
-
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const AboutBanner = () => (
@@ -49,7 +47,7 @@ const Container = styled.section`
   align-items: center;
   height: 37em;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     display: none;
   }
 `
@@ -102,7 +100,7 @@ const Callouts = styled.div`
   font-size: ${Typography.mediumFontSize};
   color: ${Colors.gray};
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     display: none;
   }
 `

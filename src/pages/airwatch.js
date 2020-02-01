@@ -1,15 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-
 import Splash from "../images/airwatch-splash.png"
 import Welcome from "../images/airwatch-welcome.png"
 import Preflight from "../images/airwatch-preflight.png"
 import Disconnected from "../images/airwatch-disconnected.png"
 import AirMap from "../images/airwatch-map.png"
 import AirVideo from "../images/airwatch-video.png"
+import { Spacing } from "../styles/variables"
 
 const AirwatchPage = () => (
   <AboutLayout>
@@ -46,7 +45,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-left: 20pt;
     padding-right: 20pt;
   }
@@ -81,7 +80,7 @@ const ProductDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }

@@ -4,6 +4,8 @@ export const medium = "3em"
 export const large = "4em"
 export const huge = "5em"
 
+export const breakPoint = "950px"
+
 export const pillHeight = "2.3em"
 export const pillRadius = "1.15em"
 export const pillWidth = "8.5em"
