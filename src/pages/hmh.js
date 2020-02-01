@@ -25,7 +25,7 @@ const HmhPage = () => (
           <ProductDesign>Product Design</ProductDesign>
         </PillContainer>
         <WelcomeText>
-          An online destination that offers teachers & developers the
+          An online destination that offers teachers & content creators the
           opportunity to share digital resources for the classroom.
         </WelcomeText>
         <LargeImage src={Overview} alt="HMH Overview" />
@@ -36,8 +36,8 @@ const HmhPage = () => (
             technology to transform the learning experience for students,
             teachers, and parents. One project we worked on was the HMH
             Marketplace, an online marketplace for educators. The following case
-            study outlines the 5-day Design Sprint that we conducted to test &
-            validate this concept.
+            study outlines the 5-day Design Sprint that we conducted, in
+            partnership with thoughtbot, to test & validate this concept.
           </RightContent>
         </Row>
         <Divider />
@@ -45,11 +45,11 @@ const HmhPage = () => (
           <LeftHeader>Understand</LeftHeader>
           <RightContent>
             We began by defining our challenge, which was to create an online
-            marketplace for educators and developers to buy and sell digital
-            resources. We created an affinity map to catalog and organize our
-            ideas, defined our personas, and created a basic journey map to
-            visualize the customer experience. At the end of the day we
-            determined our success metrics by following the Google HEART
+            marketplace for educators and content creators to buy and sell
+            digital resources. We created an affinity map to catalog and
+            organize our ideas, defined our personas, and created a basic
+            journey map to visualize the customer experience. At the end of the
+            day we determined our success metrics by following the Google HEART
             Framework.
           </RightContent>
         </Row>

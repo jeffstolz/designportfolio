@@ -26,8 +26,8 @@ const AirxosPage = () => (
           <UxDesign>UX Design</UxDesign>
         </PillContainer>
         <WelcomeText>
-          My most recent project at thoughtbot has been an engagement with
-          AiRXOS, a GE Venture. AiRXOS is focused on developing software
+          For a six month engagement, I and two thoughtbot developers consulted
+          for AiRXOS, a GE Venture. AiRXOS is focused on developing software
           associated with safe and efficient drone operations for first
           responder pilots and their support teams. I was brought on to lead the
           design of an application that helps pilots view and submit
@@ -36,8 +36,9 @@ const AirxosPage = () => (
           intuitive as possible while still adhearing to their strict
           requirements. Extra care was taken to the increased cognitive load of
           the users, as they will often be doing so in distracting & stressful
-          physical environments. We built the mobile application in React Native
-          as the experience would need to be delivered on both iOS and Android.
+          physical environments. After extensive interviews with flight
+          operation teams, we worked with GE to build an MVP mobile application
+          in React Native.
         </WelcomeText>
         <ImageRow>
           <LargeImage src={Airspace} alt="AiRXOS Airspace" />

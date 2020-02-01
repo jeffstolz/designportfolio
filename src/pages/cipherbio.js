@@ -19,21 +19,21 @@ const CipherbioPage = () => (
         <LargeText>CipherBio</LargeText>
         <PillContainer>
           <ProductDesign>Product Design</ProductDesign>
-          <VisualDesign>Visual Design</VisualDesign>
         </PillContainer>
         <WelcomeText>
-          This past February at thoughtbot, I led a design sprint for CipherBio
-          to determine how could they provide value to their users with a mobile
-          application. CipherBio is an information and networking platform for
-          investors in the life sciences industry. During our discovery research
-          and interviews, we learned that users needed a place to consume
-          information about acquisitions and breakthroughs specific to the
-          industry. We prototyped a mobile tool where investors could consume
-          this information in a clean & concise mobile format. Ultimately, we
-          ended up disproving the concept during more extensive user testing,
-          and decided to move in a different direction with the customer. This
-          is a great example of the value of design sprints, as only two weeks
-          of effort was dedicated to this project.
+          In February 2019, I and another thoughtbot designer led a design
+          sprint for CipherBio to determine how they could provide value to
+          their users with a native mobile application. CipherBio is an
+          information and networking platform for investors in the life sciences
+          industry. During our discovery research and interviews, we learned
+          that users needed a place to consume information about acquisitions
+          and breakthroughs specific to the industry. We prototyped a mobile
+          tool where investors could consume this information in a clean &
+          concise mobile format. Ultimately, we ended up disproving the concept
+          after user testing our prototype, and decided to move in a different
+          direction with the customer. This is a great example of the value of
+          design sprints, as only two weeks of effort was dedicated to this
+          project before learning this key insight.
         </WelcomeText>
         <ImageRow>
           <LargeImage src={Blog} alt="CipherBio Blog" />
