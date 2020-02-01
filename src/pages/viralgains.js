@@ -76,6 +76,11 @@ const VisualDesign = styled.div`
   width: 100pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const WelcomeText = styled.p`

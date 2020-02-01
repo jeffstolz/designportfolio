@@ -149,6 +149,10 @@ const OverlayContainer = styled.div`
   background-color: #00000080;
   opacity: 0;
   transition: 0.5s ease;
+
+  @media (max-width: 950px) {
+    opacity: 1;
+  }
 `
 const ProductDesign = styled.div`
   display: flex;
@@ -161,6 +165,11 @@ const ProductDesign = styled.div`
   width: 108pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const UxDesign = styled.div`
@@ -174,6 +183,11 @@ const UxDesign = styled.div`
   width: 85pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const VisualDesign = styled.div`
@@ -187,6 +201,11 @@ const VisualDesign = styled.div`
   width: 100pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const CaseStudy = styled.div`
@@ -200,6 +219,11 @@ const CaseStudy = styled.div`
   width: 100pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const Slide = styled.div`
@@ -215,6 +239,11 @@ const Slide = styled.div`
   opacity: 0;
   transition: 0.5s ease;
   padding-left: 20pt;
+
+  @media (max-width: 950px) {
+    opacity: 1;
+    height: 60pt;
+  }
 `
 
 const PreviewHeading = styled.div`
@@ -259,6 +288,7 @@ const LargeCard = styled.div`
   }
 
   @media (max-width: 950px) {
+    height: 300pt;
     width: 100%;
     margin-bottom: 30pt;
     justify-content: flex-end;
@@ -293,6 +323,7 @@ const SmallCard = styled.div`
   }
 
   @media (max-width: 950px) {
+    height: 300pt;
     width: 100%;
     margin-bottom: 30pt;
     justify-content: flex-end;

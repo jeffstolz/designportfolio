@@ -218,6 +218,11 @@ const CaseStudy = styled.div`
   width: 100pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const ProductDesign = styled.div`
@@ -230,6 +235,11 @@ const ProductDesign = styled.div`
   width: 108pt;
   font-size: 12pt;
   margin-right: 5pt;
+
+  @media (max-width: 950px) {
+    width: 85pt;
+    font-size: 9pt;
+  }
 `
 
 const WelcomeText = styled.p`
