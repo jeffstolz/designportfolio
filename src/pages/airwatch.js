@@ -13,7 +13,7 @@ import AirVideo from "../images/airwatch-video.png"
 
 const AirwatchPage = () => (
   <AboutLayout>
-    <SEO title="ArcadChess" />
+    <SEO title="Airwatch" />
     <OuterContainer>
       <Container>
         <LargeText>AirWatch</LargeText>
@@ -30,12 +30,12 @@ const AirwatchPage = () => (
           persona. It took us about a month to design and build the tool in
           React Native.
         </WelcomeText>
-        <LargeImage src={Splash} alt="CipherBio Blog" />
-        <LargeImage src={Welcome} alt="CipherBio Blog Article" />
-        <LargeImage src={Preflight} alt="CipherBio Article" />
-        <LargeImage src={Disconnected} alt="CipherBio Archives" />
-        <LargeImage src={AirMap} alt="CipherBio Community" />
-        <LargeImage src={AirVideo} alt="CipherBio Company" />
+        <LargeImage src={Splash} alt="Airwatch Splash" />
+        <LargeImage src={Welcome} alt="Airwatch Welcome" />
+        <LargeImage src={Preflight} alt="Airwatch Preflight" />
+        <LargeImage src={Disconnected} alt="Airwatch Disconnected" />
+        <LargeImage src={AirMap} alt="Airwatch Map" />
+        <LargeImage src={AirVideo} alt="Airwatch Video" />
       </Container>
     </OuterContainer>
   </AboutLayout>

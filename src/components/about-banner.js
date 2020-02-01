@@ -12,25 +12,26 @@ const AboutBanner = () => (
     </TopRow>
     <MiddleRow>
       <IntroText>
-        I value strong opinions, loosely held. I thrive in small, collaborative,
-        multi-disciplinary teams that foster transparency and continuous
-        improvement. I believe in self-management and trusting environments.
-        While I have experience with a variety of roles, I especially enjoy the
-        energy and unique challenges of startups.
+        I thrive in small, collaborative, multi-disciplinary teams that foster
+        transparency and continuous improvement. I value strong opinions,
+        loosely held. I believe in the value of designers writing frontend code
+        alongside developers. While I have experience with a variety of roles, I
+        especially enjoy the unique challenges of product design.
       </IntroText>
       <Callouts>
-        Figma <br />
+        Figma
+        <br />
         Jobs to be Done
         <br />
         Atomic Design Systems
         <br />
         GV Design Sprints
         <br />
-        React / React Native
+        Ruby on Rails
         <br />
         A11Y Project
         <br />
-        Styled Components
+        BEM Methodology
       </Callouts>
     </MiddleRow>
     <BottomRow>

@@ -14,20 +14,37 @@ const Thumbnails = () => (
     <Container>
       <Row>
         <LargeCard>
-          <Link to="/airxos">
+          <Link to="/mobile-heartbeat">
             <OverlayContainer>
+              <CaseStudy>Case Study</CaseStudy>
+              <ProductDesign>Product Design</ProductDesign>
               <UxDesign>UX Design</UxDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>Mobile Heartbeat</PreviewHeading>
+              <PreviewText>Clinical communication and coordination</PreviewText>
+            </Slide>
+            <LargeCardImage
+              src={MhThumbnail}
+              alt="Mobile Heartbeat thumbnail"
+            />
+          </Link>
+        </LargeCard>
+        <SmallCard>
+          <Link to="/viralgains">
+            <OverlayContainer>
+              <CaseStudy>Case Study</CaseStudy>
               <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
-              <PreviewHeading>AiRXOS</PreviewHeading>
-              <PreviewText>
-                Drone flight planning and authorization tool
-              </PreviewText>
+              <PreviewHeading>The Skills</PreviewHeading>
+              <PreviewText>Online education platform for atheletes</PreviewText>
             </Slide>
-            <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
+            <SmallCardImage src={VgThumbnail} alt="Viralgains thumbnail" />
           </Link>
-        </LargeCard>
+        </SmallCard>
+      </Row>
+      <Row>
         <SmallCard>
           <Link to="/viralgains">
             <OverlayContainer>
@@ -40,6 +57,21 @@ const Thumbnails = () => (
             <SmallCardImage src={VgThumbnail} alt="Viralgains thumbnail" />
           </Link>
         </SmallCard>
+        <LargeCard>
+          <Link to="/airxos">
+            <OverlayContainer>
+              <ProductDesign>Product Design</ProductDesign>
+              <UxDesign>UX Design</UxDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>AiRXOS // GE</PreviewHeading>
+              <PreviewText>
+                Drone flight planning and authorization tool
+              </PreviewText>
+            </Slide>
+            <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
+          </Link>
+        </LargeCard>
       </Row>
       <Row>
         <SmallCard>
@@ -58,37 +90,6 @@ const Thumbnails = () => (
               src={CipherbioThumbnail}
               alt="Cipherbio thumbnail"
             />
-          </Link>
-        </SmallCard>
-        <LargeCard>
-          <Link to="/mobile-heartbeat">
-            <OverlayContainer>
-              <CaseStudy>Case Study</CaseStudy>
-              <ProductDesign>Product Design</ProductDesign>
-              <UxDesign>UX Design</UxDesign>
-            </OverlayContainer>
-            <Slide>
-              <PreviewHeading>Mobile Heartbeat</PreviewHeading>
-              <PreviewText>Clinical communication and coordination</PreviewText>
-            </Slide>
-            <LargeCardImage
-              src={MhThumbnail}
-              alt="Mobile Heartbeat thumbnail"
-            />
-          </Link>
-        </LargeCard>
-      </Row>
-      <Row>
-        <SmallCard>
-          <Link to="/airwatch">
-            <OverlayContainer>
-              <ProductDesign>Product Design</ProductDesign>
-            </OverlayContainer>
-            <Slide>
-              <PreviewHeading>AirWatch</PreviewHeading>
-              <PreviewText>Drone video and telemetry POC</PreviewText>
-            </Slide>
-            <SmallCardImage src={AirwatchThumbnail} alt="AirWatch thumbnail" />
           </Link>
         </SmallCard>
         <LargeCard>

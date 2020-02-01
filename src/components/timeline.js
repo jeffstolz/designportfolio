@@ -11,11 +11,11 @@ const Timeline = () => (
         <Description>
           Led customer engagements from initial concept to full implementation
           of web and mobile applications. Facilitated design sprints with
-          clients. Counselled customers on process improvement techniques
+          clients. Counseled customers on process improvement techniques
           centered around lightweight, Agile methodologies. Mentored designers
           within thoughtbot and on client teams. Collaborated with customers
-          such as GE, Dragon Innovation, CypherBio, ViralGains, and SplitFit.
-          Worked primarily in React, React Native, Rails, and ELm.
+          such as GE, Alyce, CypherBio, ViralGains, and SplitFit. Worked
+          primarily in Rails, React, React Native, and Elm.
         </Description>
       </Job>
       <Job>
