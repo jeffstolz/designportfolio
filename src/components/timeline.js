@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import { Colors, Spacing, Typography } from "../styles/variables"
+
 const Timeline = () => (
   <OuterContainer>
     <Container>
@@ -89,55 +91,56 @@ const Timeline = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-bottom: 100pt;
+  margin-bottom: ${Spacing.pageBottom};
 
   @media (max-width: 950px) {
-    padding-left: 20pt;
-    padding-right: 20pt;
-    margin-top: 80pt;
+    padding-left: ${Spacing.base};
+    padding-right: ${Spacing.base};
+    margin-top: ${Spacing.huge};
   }
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 700pt;
+  width: ${Spacing.containerWidth};
 `
 const Job = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 30pt;
+  margin-bottom: ${Spacing.medium};
 `
 
-const Title = styled.h2`
+const AboutHeading = styled.h2`
   text-transform: uppercase;
-  font-weight: 400;
-  color: #076ca9;
-  font-size: 20pt;
+  font-weight: ${Typography.lightFontWeight};
+  font-size: ${Typography.mediumFontSize};
+`
+
+const Title = styled(AboutHeading)`
+  color: ${Colors.navy};
+`
+
+const Education = styled(AboutHeading)`
+  color: ${Colors.purple};
 `
 
 const Company = styled.h3`
-  font-size: 14pt;
+  font-size: ${Typography.baseFontSize};
+  line-height: ${Typography.largeLineHeight};
 `
 
 const Dates = styled.p`
-  line-height: 15pt;
+  line-height: ${Typography.largeLineHeight};
 `
 
 const Description = styled.p``
 
 const Divider = styled.div`
-  border-bottom: 1pt solid black;
   width: 100%;
-  margin-bottom: 40pt;
-`
-
-const Education = styled.h2`
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #4707a9;
-  font-size: 20pt;
+  margin-bottom: ${Spacing.large};
+  border-bottom: 1pt solid ${Colors.black};
 `
 
 export default Timeline
