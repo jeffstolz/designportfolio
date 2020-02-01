@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import { Colors, Spacing, Typography } from "../styles/variables"
+
 const WorkBanner = () => (
   <Container>
     <Intro>
@@ -34,37 +36,37 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 450pt;
+  height: 34em;
 `
 const Intro = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 210pt;
-  height: 280pt;
-  margin-right: 20pt;
+  width: 14.5em;
+  height: 20.75em;
+  margin-right: ${Spacing.base};
 
   @media (max-width: 950px) {
+    width: 25em;
+    padding-left: ${Spacing.base};
+    padding-right: ${Spacing.base};
+    margin-top: ${Spacing.base};
     margin-right: 0;
-    width: 400pt;
-    padding-left: 20pt;
-    padding-right: 20pt;
-    margin-top: 40pt;
   }
 `
 
 const IntroText = styled.div`
-  font-family: "georgia", serif;
+  font-family: ${Typography.georgiaFont};
 `
 
 const Greeting = styled.span`
-  font-weight: 800;
+  font-weight: ${Typography.heavyFontWeight};
   font-style: italic;
 `
 
 const LargeText = styled.h1`
-  font-size: 80pt;
-  line-height: 75pt;
+  font-size: ${Typography.largeHeading};
+  line-height: ${Typography.smallLineHeight};
   margin-bottom: 0;
   text-transform: uppercase;
 
@@ -74,7 +76,7 @@ const LargeText = styled.h1`
 `
 
 const Divider = styled.div`
-  border-bottom: 1pt solid black;
+  border-bottom: 1px solid ${Colors.black};
 `
 
 export default WorkBanner
