@@ -78,7 +78,6 @@ const Thumbnails = () => (
           <Link to="/cipherbio">
             <OverlayContainer>
               <ProductDesign>Product Design</ProductDesign>
-              <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
               <PreviewHeading>CipherBio</PreviewHeading>
@@ -100,9 +99,7 @@ const Thumbnails = () => (
             </OverlayContainer>
             <Slide>
               <PreviewHeading>HMH Marketplace</PreviewHeading>
-              <PreviewText>
-                Online marketplace for teachers & developers
-              </PreviewText>
+              <PreviewText>Online marketplace for educators</PreviewText>
             </Slide>
             <LargeCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
           </Link>
