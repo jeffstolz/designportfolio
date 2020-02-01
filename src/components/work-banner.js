@@ -7,9 +7,9 @@ const WorkBanner = () => (
       <Divider />
       <IntroText>
         <Greeting>Hi, I’m Jeff.</Greeting> I work with teams from the ground up
-        to ideate, design, and implement software. My favorite tools are React
-        and Figma. I’m a big fan of design sprints, design systems, and end user
-        testing.
+        to ideate, design, and implement software. My favorite tools are Ruby on
+        Rails and Figma. I’m a big fan of design sprints, design systems, and
+        end user testing.
       </IntroText>
       <IntroText>
         I’m always interested in geeking out about travel, science fiction, and
@@ -19,10 +19,12 @@ const WorkBanner = () => (
     </Intro>
     <div>
       <LargeText>
-        Product <br />
-        Designer, <br />
-        Frontend <br />
-        Developer
+        Product, <br />
+        Experience,
+        <br />
+        Visual,
+        <br />
+        Designer
       </LargeText>
     </div>
   </Container>
