@@ -219,15 +219,20 @@ const WelcomeText = styled.p`
 const LargeImage = styled.img`
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${Spacing.xxHuge};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.huge};
+    margin-bottom: ${Spacing.huge};
+  }
 `
 
 const LargeImageTight = styled.img`
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${Spacing.base};
-`
 
-const SolutionImage = styled.img`
-  margin-bottom: ${Spacing.base};
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.base};
+  }
 `
 
 const Row = styled.div`
@@ -238,35 +243,13 @@ const Row = styled.div`
   }
 `
 
-const SolutionRow = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin-top: ${Spacing.xxHuge};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    flex-wrap: wrap;
-    margin-top: 0;
-  }
-`
-
-const SolutionColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 21em;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    margin-top: ${Spacing.large};
-  }
-`
-
 const LeftHeader = styled.h2`
   display: flex;
   width: 100%;
   font-size: ${Typography.headingFontSize};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-bottom: ${Spacing.base};
+    margin-bottom: ${Spacing.small};
   }
 `
 
@@ -280,11 +263,11 @@ const Divider = styled.div`
   border-bottom: 1pt solid ${Colors.black};
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${Spacing.xxHuge};
-`
 
-const SmallText = styled.p`
-  font-size: ${Typography.xSmallFontSize};
-  line-height: ${Typography.hugeLineHeight};
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.large};
+    margin-bottom: ${Spacing.large};
+  }
 `
 
 export default MobileHeartbeatPage
