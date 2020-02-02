@@ -102,7 +102,11 @@ const ProductDesign = styled(Pill)`
   border-color: ${Colors.blue};
 `
 
-const WelcomeText = styled.p``
+const WelcomeText = styled.p`
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-bottom: ${Spacing.large};
+  }
+`
 
 const LargeImage = styled.img`
   width: 24em;
@@ -124,6 +128,7 @@ const ImageRow = styled.div`
   @media (max-width: ${Spacing.breakPoint}) {
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
   }
 `
 

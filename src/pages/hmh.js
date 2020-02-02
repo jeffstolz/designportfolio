@@ -229,10 +229,6 @@ const ProductDesign = styled(Pill)`
   border-color: ${Colors.blue};
 `
 
-const UxDesign = styled(Pill)`
-  border-color: ${Colors.orange};
-`
-
 const CaseStudy = styled(Pill)`
   border-color: ${Colors.green};
 `
@@ -245,11 +241,22 @@ const WelcomeText = styled.p`
 const LargeImage = styled.img`
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${Spacing.xxHuge};
+  object-fit: contain;
+  width: 100%;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.huge};
+    margin-bottom: ${Spacing.huge};
+  }
 `
 
 const LargeImageTight = styled.img`
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${Spacing.base};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.huge};
+  }
 `
 
 const SolutionImage = styled.img`
@@ -269,6 +276,11 @@ const Divider = styled.div`
   border-bottom: 1pt solid ${Colors.black};
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${Spacing.xxHuge};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.large};
+    margin-bottom: ${Spacing.large};
+  }
 `
 
 const LeftHeader = styled.h2`
@@ -277,7 +289,7 @@ const LeftHeader = styled.h2`
   font-size: ${Typography.headingFontSize};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-bottom: ${Spacing.base};
+    margin-bottom: ${Spacing.small};
   }
 `
 

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Colors } from "../styles/variables"
+import { Colors, Spacing } from "../styles/variables"
 
 const Gradient = styled.div`
   background: linear-gradient(
@@ -12,6 +12,10 @@ const Gradient = styled.div`
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   height: 22.3em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    height: 23.2em;
+  }
 
   @keyframes gradientBG {
     0% {

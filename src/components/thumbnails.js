@@ -112,6 +112,7 @@ const OuterContainer = styled.section`
   margin-bottom: ${Spacing.pageBottom};
 
   @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.small};
     padding-left: ${Spacing.base};
     padding-right: ${Spacing.base};
   }
