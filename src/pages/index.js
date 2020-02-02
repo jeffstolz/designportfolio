@@ -6,7 +6,7 @@ import Thumbnails from "../components/thumbnails"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Work" />
+    <SEO title="Design Portfolio" />
     <WorkBanner />
     <Thumbnails />
   </Layout>

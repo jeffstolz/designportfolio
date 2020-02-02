@@ -69,7 +69,7 @@ const LargeText = styled.h1`
   margin-bottom: 0;
   text-transform: uppercase;
 
-  @media (max-width: ${Spacing.breakPoint}) {
+  @media (max-width: 1025px) {
     display: none;
   }
 `
