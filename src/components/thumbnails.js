@@ -63,7 +63,7 @@ const Thumbnails = () => (
               <UxDesign>UX Design</UxDesign>
             </OverlayContainer>
             <Slide>
-              <PreviewHeading>AiRXOS // GE</PreviewHeading>
+              <PreviewHeading>AiRXOS by GE</PreviewHeading>
               <PreviewText>
                 Drone flight planning and authorization tool
               </PreviewText>
@@ -160,8 +160,8 @@ const Pill = styled.div`
   color: ${Colors.white};
   border-radius: ${Spacing.pillRadius};
   border: 1pt solid;
-  margin-right: 5pt;
-  font-size: 12pt;
+  margin-right: 0.5em;
+  font-size: ${Typography.smallFontSize};
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: ${Spacing.pillMobileWidth};
