@@ -5,6 +5,7 @@ import MhThumbnail from "../images/mh-thumbnail.png"
 import VgThumbnail from "../images/vg-thumbnail.png"
 import CipherbioThumbnail from "../images/cipherbio-thumbnail.png"
 import GeThumbnail from "../images/ge-thumbnail.png"
+import SkillsThumbnail from "../images/skills-thumbnail.png"
 import HmhThumbnail from "../images/hmh-thumbnail.png"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -32,21 +33,6 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/viralgains">
             <OverlayContainer>
-              <CaseStudy>Case Study</CaseStudy>
-              <VisualDesign>Visual Design</VisualDesign>
-            </OverlayContainer>
-            <Slide>
-              <PreviewHeading>The Skills</PreviewHeading>
-              <PreviewText>Online education platform for atheletes</PreviewText>
-            </Slide>
-            <CardImage src={VgThumbnail} alt="Viralgains thumbnail" />
-          </Link>
-        </SmallCard>
-      </Row>
-      <Row>
-        <SmallCard>
-          <Link to="/viralgains">
-            <OverlayContainer>
               <VisualDesign>Visual Design</VisualDesign>
             </OverlayContainer>
             <Slide>
@@ -56,7 +42,9 @@ const Thumbnails = () => (
             <CardImage src={VgThumbnail} alt="Viralgains thumbnail" />
           </Link>
         </SmallCard>
-        <LargeCard>
+      </Row>
+      <Row>
+        <SmallCard>
           <Link to="/airxos">
             <OverlayContainer>
               <ProductDesign>Product Design</ProductDesign>
@@ -64,11 +52,23 @@ const Thumbnails = () => (
             </OverlayContainer>
             <Slide>
               <PreviewHeading>GE AiRXOS</PreviewHeading>
-              <PreviewText>
-                Drone flight planning and authorization tool
-              </PreviewText>
+              <PreviewText>Drone flight planning and approval tool</PreviewText>
             </Slide>
-            <LargeCardImage src={GeThumbnail} alt="GE AiRXOS thumbnail" />
+            <CardImage src={GeThumbnail} alt="GE Airxos thumbnail" />
+          </Link>
+        </SmallCard>
+        <LargeCard>
+          <Link to="/theskills">
+            <OverlayContainer>
+              <CaseStudy>Case Study</CaseStudy>
+              <ProductDesign>Product Design</ProductDesign>
+              <VisualDesign>Visual Design</VisualDesign>
+            </OverlayContainer>
+            <Slide>
+              <PreviewHeading>The Skills</PreviewHeading>
+              <PreviewText>Online education platform for athletes</PreviewText>
+            </Slide>
+            <LargeCardImage src={SkillsThumbnail} alt="The Skills thumbnail" />
           </Link>
         </LargeCard>
       </Row>
@@ -165,7 +165,7 @@ const Pill = styled.div`
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: ${Spacing.pillMobileWidth};
-    font-size: ${Typography.smallFontSize};
+    font-size: ${Typography.xSmallFontSize};
   }
 `
 
@@ -197,7 +197,7 @@ const Slide = styled.div`
   background-color: ${Colors.black};
   opacity: 0;
   transition: 0.5s ease;
-  padding-left: ${Spacing.base};
+  padding-left: ${Spacing.small};
 
   @media (max-width: ${Spacing.breakPoint}) {
     opacity: 1;
@@ -214,7 +214,6 @@ const PreviewHeading = styled.h2`
 const PreviewText = styled.h3`
   color: ${Colors.white};
   font-size: ${Typography.smallFontSize};
-  line-height: ${Typography.smallLineHeight};
   opacity: 0.7;
 `
 
