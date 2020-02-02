@@ -16,10 +16,10 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 
 const AirxosPage = () => (
   <AboutLayout>
-    <SEO title="AiRXOS by GE" />
+    <SEO title="GE AiRXOS" />
     <OuterContainer>
       <Container>
-        <LargeText>AiRXOS by GE</LargeText>
+        <LargeText>GE AiRXOS</LargeText>
         <PillContainer>
           <ProductDesign>Product Design</ProductDesign>
           <UxDesign>UX Design</UxDesign>

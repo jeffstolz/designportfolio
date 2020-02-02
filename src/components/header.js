@@ -30,7 +30,7 @@ const OuterContainer = styled.header`
   padding-top: ${Spacing.small};
 `
 
-const Container = styled.header`
+const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 90.5%;

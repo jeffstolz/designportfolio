@@ -63,7 +63,7 @@ const Thumbnails = () => (
               <UxDesign>UX Design</UxDesign>
             </OverlayContainer>
             <Slide>
-              <PreviewHeading>AiRXOS by GE</PreviewHeading>
+              <PreviewHeading>GE AiRXOS</PreviewHeading>
               <PreviewText>
                 Drone flight planning and authorization tool
               </PreviewText>
@@ -205,13 +205,13 @@ const Slide = styled.div`
   }
 `
 
-const PreviewHeading = styled.div`
+const PreviewHeading = styled.h2`
   color: ${Colors.white};
   font-weight: ${Typography.mediumFontWeight};
   font-size: ${Typography.baseFontSize};
 `
 
-const PreviewText = styled.div`
+const PreviewText = styled.h3`
   color: ${Colors.white};
   font-size: ${Typography.smallFontSize};
   line-height: ${Typography.smallLineHeight};
