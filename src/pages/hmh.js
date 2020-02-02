@@ -24,8 +24,8 @@ const HmhPage = () => (
           <ProductDesign>Product Design</ProductDesign>
         </PillContainer>
         <WelcomeText>
-          An online destination that offers teachers & content creators the
-          opportunity to share digital resources for the classroom.
+          A PDS to build an online destination that offers teachers & content
+          creators the opportunity to share digital resources for the classroom.
         </WelcomeText>
         <LargeImage src={Overview} alt="HMH Overview" />
         <Row>
@@ -218,6 +218,11 @@ const Pill = styled.div`
   border: 1pt solid;
   margin-right: 0.5em;
   font-size: ${Typography.smallFontSize};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    width: ${Spacing.pillMobileWidth};
+    font-size: ${Typography.xSmallFontSize};
+  }
 `
 
 const ProductDesign = styled(Pill)`

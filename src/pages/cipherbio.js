@@ -91,6 +91,11 @@ const Pill = styled.div`
   border: 1pt solid;
   margin-right: 0.5em;
   font-size: ${Typography.smallFontSize};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    width: ${Spacing.pillMobileWidth};
+    font-size: ${Typography.xSmallFontSize};
+  }
 `
 
 const ProductDesign = styled(Pill)`

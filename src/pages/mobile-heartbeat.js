@@ -27,8 +27,9 @@ const MobileHeartbeatPage = () => (
           <UxDesign>UX Design</UxDesign>
         </PillContainer>
         <WelcomeText>
-          Enabling clinicians to improve patient care through accelerated
-          communication and collaboration in the hospital.
+          Product redesign of a tool that enables clinicians to improve patient
+          care through accelerated communication and collaboration in the
+          hospital.
         </WelcomeText>
         <LargeImage src={Overview} alt="Mobile Heartbeat Overview" />
         <Row>
@@ -272,6 +273,11 @@ const Pill = styled.div`
   border: 1pt solid;
   margin-right: 0.5em;
   font-size: ${Typography.smallFontSize};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    width: ${Spacing.pillMobileWidth};
+    font-size: ${Typography.xSmallFontSize};
+  }
 `
 
 const ProductDesign = styled(Pill)`
