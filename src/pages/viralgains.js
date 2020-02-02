@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-
 import CreativeBuilder from "../images/viralgains-1.png"
 import CampaignManager from "../images/viralgains-2.png"
 import DashboardOne from "../images/viralgains-3.png"
 import DashboardTwo from "../images/viralgains-4.png"
+import { Spacing } from "../styles/variables"
 
 const ViralgainsPage = () => (
   <AboutLayout>
@@ -42,7 +41,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-left: 20pt;
     padding-right: 20pt;
   }
@@ -77,7 +76,7 @@ const VisualDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -95,7 +94,7 @@ const LargeImage = styled.img`
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-top: 0;
   }
 `

@@ -1,15 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-
 import Blog from "../images/cipherbio-blog.png"
 import BlogArticle from "../images/cipherbio-blog-article.png"
 import Article from "../images/cipherbio-article.png"
 import Archives from "../images/cipherbio-archives.png"
 import Community from "../images/cipherbio-community.png"
 import Company from "../images/cipherbio-company.jpg"
+import { Spacing } from "../styles/variables"
 
 const CipherbioPage = () => (
   <AboutLayout>
@@ -57,7 +56,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-left: 20pt;
     padding-right: 20pt;
   }
@@ -92,7 +91,7 @@ const ProductDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -109,7 +108,7 @@ const LargeImage = styled.img`
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-bottom: 50pt;
     height: 600pt;
   }
@@ -121,7 +120,7 @@ const ImageRow = styled.div`
   height: 550pt;
   margin-bottom: 80pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;

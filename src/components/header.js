@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { Spacing } from "../styles/variables"
 
 const Header = () => (
   <OuterContainer>
@@ -26,19 +27,19 @@ const Header = () => (
 const OuterContainer = styled.header`
   display: flex;
   justify-content: center;
-  padding-top: 15pt;
+  padding-top: ${Spacing.small};
 `
 
 const Container = styled.header`
   display: flex;
-  width: 90.5%;
   justify-content: space-between;
+  width: 90.5%;
 `
 
 const LinkGroup = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 170pt;
+  width: 13em;
 `
 
 export default Header

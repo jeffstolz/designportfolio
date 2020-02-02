@@ -1,9 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-
 import Overview from "../images/hmh-overview.jpg"
 import Hmw from "../images/hmh-uxcanvas.jpg"
 import MapSketch from "../images/hmh-map.jpg"
@@ -13,6 +11,7 @@ import SolutionTwo from "../images/hmh-solution-2.jpg"
 import SolutionThree from "../images/hmh-solution-3.jpg"
 import SolutionFour from "../images/hmh-solution-4.jpg"
 import SolutionFive from "../images/hmh-solution-5.jpg"
+import { Spacing } from "../styles/variables"
 
 const HmhPage = () => (
   <AboutLayout>
@@ -180,7 +179,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-right: 20pt;
     padding-left: 20pt;
   }
@@ -192,7 +191,7 @@ const Container = styled.div`
   width: 700pt;
   padding-top: 80pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
   }
 `
@@ -219,7 +218,7 @@ const CaseStudy = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -236,7 +235,7 @@ const ProductDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -265,7 +264,7 @@ const SolutionImage = styled.img`
 const Row = styled.div`
   display: flex;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
   }
 `
@@ -282,7 +281,7 @@ const LeftHeader = styled.h2`
   display: flex;
   width: 100%;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-bottom: 20pt;
   }
 `
@@ -297,7 +296,7 @@ const SolutionRow = styled.div`
   justify-content: space-between;
   margin-bottom: 25pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 0;
@@ -307,7 +306,7 @@ const SolutionRow = styled.div`
 const SolutionColumn = styled.div`
   width: 48%;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 500pt;
     margin-bottom: 20pt;
   }

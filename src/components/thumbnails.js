@@ -1,13 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
 import MhThumbnail from "../images/mh-thumbnail.png"
 import VgThumbnail from "../images/vg-thumbnail.png"
 import CipherbioThumbnail from "../images/cipherbio-thumbnail.png"
 import GeThumbnail from "../images/ge-thumbnail.png"
 import HmhThumbnail from "../images/hmh-thumbnail.png"
-
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Thumbnails = () => (
@@ -113,7 +111,7 @@ const OuterContainer = styled.section`
   margin-top: ${Spacing.huge};
   margin-bottom: ${Spacing.pageBottom};
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-left: ${Spacing.base};
     padding-right: ${Spacing.base};
   }
@@ -130,7 +128,7 @@ const Row = styled.div`
   width: 100%;
   margin-bottom: ${Spacing.base};
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
     margin-bottom: 0;
   }
@@ -148,7 +146,7 @@ const OverlayContainer = styled.div`
   opacity: 0;
   transition: 0.5s ease;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     opacity: 1;
   }
 `
@@ -165,7 +163,7 @@ const Pill = styled.div`
   margin-right: 5pt;
   font-size: 12pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: ${Spacing.pillMobileWidth};
     font-size: ${Typography.smallFontSize};
   }
@@ -201,7 +199,7 @@ const Slide = styled.div`
   transition: 0.5s ease;
   padding-left: ${Spacing.base};
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     opacity: 1;
     height: ${Spacing.huge};
   }
@@ -246,7 +244,7 @@ const Card = styled.div`
     transition: 0.3s ease;
   }
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     justify-content: flex-end;
     height: ${Spacing.cardMobileHeight};
     width: 100%;
@@ -269,7 +267,7 @@ const CardImage = styled.img`
 `
 
 const LargeCardImage = styled(CardImage)`
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     object-fit: cover;
   }
 `

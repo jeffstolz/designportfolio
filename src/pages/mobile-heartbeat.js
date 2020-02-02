@@ -1,9 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-
 import Overview from "../images/mh-overview.jpg"
 import Discovery from "../images/mh-discovery.jpg"
 import Persona from "../images/mh-persona.jpg"
@@ -15,6 +13,7 @@ import SolutionThree from "../images/mh-solution-3.jpg"
 import SolutionFour from "../images/mh-solution-4.jpg"
 import SolutionFive from "../images/mh-solution-5.jpg"
 import SolutionSix from "../images/mh-solution-6.jpg"
+import { Spacing } from "../styles/variables"
 
 const MobileHeartbeatPage = () => (
   <AboutLayout>
@@ -234,7 +233,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-right: 20pt;
     padding-left: 20pt;
   }
@@ -246,7 +245,7 @@ const Container = styled.div`
   width: 700pt;
   padding-top: 80pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
   }
 `
@@ -273,7 +272,7 @@ const CaseStudy = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -290,7 +289,7 @@ const ProductDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -307,7 +306,7 @@ const UxDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -335,7 +334,7 @@ const SolutionImage = styled.img`
 const Row = styled.div`
   display: flex;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
   }
 `
@@ -345,7 +344,7 @@ const SolutionRow = styled.div`
   justify-content: space-around;
   margin-top: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
     margin-top: 0;
   }
@@ -357,7 +356,7 @@ const SolutionColumn = styled.div`
   align-items: center;
   width: 280pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-top: 50pt;
   }
 `
@@ -367,7 +366,7 @@ const LeftHeader = styled.h2`
   display: flex;
   width: 100%;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-bottom: 20pt;
   }
 `

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const WorkBanner = () => (
@@ -46,7 +45,7 @@ const Intro = styled.div`
   height: 20.75em;
   margin-right: ${Spacing.base};
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 25em;
     padding-left: ${Spacing.base};
     padding-right: ${Spacing.base};
@@ -70,7 +69,7 @@ const LargeText = styled.h1`
   margin-bottom: 0;
   text-transform: uppercase;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     display: none;
   }
 `

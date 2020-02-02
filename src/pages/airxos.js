@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import Airspace from "../images/ge-airspace.png"
 import Search from "../images/ge-search.png"
 import Layers from "../images/ge-layers.png"
@@ -11,9 +10,9 @@ import Collapsed from "../images/ge-collapsed.png"
 import Requests from "../images/ge-requests.png"
 import Compliance from "../images/ge-compliance.png"
 import Draw from "../images/ge-draw.png"
-
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
+import { Spacing } from "../styles/variables"
 
 const AirxosPage = () => (
   <AboutLayout>
@@ -70,7 +69,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: 100pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-left: 20pt;
     padding-right: 20pt;
   }
@@ -105,7 +104,7 @@ const ProductDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -122,7 +121,7 @@ const UxDesign = styled.div`
   font-size: 12pt;
   margin-right: 5pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 85pt;
     font-size: 9pt;
   }
@@ -139,7 +138,7 @@ const LargeImage = styled.img`
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-bottom: 50pt;
   }
 `
@@ -150,7 +149,7 @@ const ImageRow = styled.div`
   height: 550pt;
   margin-bottom: 80pt;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
     justify-content: center;
     height: 600pt;

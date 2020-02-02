@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Timeline = () => (
@@ -93,7 +92,7 @@ const OuterContainer = styled.section`
   justify-content: center;
   margin-bottom: ${Spacing.pageBottom};
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding-left: ${Spacing.base};
     padding-right: ${Spacing.base};
     margin-top: ${Spacing.huge};

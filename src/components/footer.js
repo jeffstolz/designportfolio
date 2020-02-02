@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Spacing } from "../styles/variables"
 
 const Footer = () => (
   <FooterContainer>
@@ -14,13 +15,13 @@ const Footer = () => (
 const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
-  padding-bottom: 20pt;
+  padding-bottom: ${Spacing.base};
 `
 
 const FooterLinkGroup = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 165pt;
+  width: 13em;
 `
 
 export default Footer

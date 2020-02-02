@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
-
 import Resume from "../images/jeff_stolz_resume.pdf"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ContactPage = () => (
   <Layout>
@@ -33,71 +31,70 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 550pt;
-  margin-top: 25pt;
+  height: 40.5em;
+  margin-top: ${Spacing.base};
 
-  @media (max-width: 950px) {
-    height: 450pt;
-    margin-top: 128pt;
-    padding-left: 20pt;
-    padding-right: 20pt;
+  @media (max-width: ${Spacing.breakPoint}) {
+    height: 34em;
+    margin-top: 9.5em;
+    padding-left: ${Spacing.base};
+    padding-right: ${Spacing.base};
   }
 `
 
 const LargeText = styled.h1`
-  font-size: 80pt;
-  line-height: 75pt;
+  font-size: ${Typography.largeFontSize};
   text-transform: uppercase;
-  margin-bottom: 30pt;
+  margin-bottom: 0.5em;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     display: none;
   }
 `
 
 const TextContainer = styled.div`
-  width: 450pt;
+  width: 33.5em;
 
-  @media (max-width: 950px) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
-    margin-top: -200pt;
+    margin-top: -15em;
   }
 `
 
 const FancyText = styled.div`
-  font-family: "georgia", serif;
+  font-family: ${Typography.georgiaFont};
 `
 
 const DownloadContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 30pt;
+  margin-top: 2.5em;
 `
 
 const DownloadButton = styled.a`
   display: flex;
-  width: 200pt;
-  height: 50pt;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 25pt;
+  width: 15em;
+  height: ${Spacing.large};
+  border: 1px solid ${Colors.black};
+  border-radius: ${Spacing.base};
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
   &:hover {
-    background-color: black;
+    background-color: ${Colors.black};
     text-decoration: none;
-    color: white;
+    color: ${Colors.white};
     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
   }
 
-  @media (max-width: 950px) {
-    margin-top: 50pt;
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-top: ${Spacing.large};
   }
 `
 
