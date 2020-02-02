@@ -6,7 +6,7 @@ import CreativeBuilder from "../images/viralgains-1.png"
 import CampaignManager from "../images/viralgains-2.png"
 import DashboardOne from "../images/viralgains-3.png"
 import DashboardTwo from "../images/viralgains-4.png"
-import { Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ViralgainsPage = () => (
   <AboutLayout>
@@ -39,63 +39,59 @@ const ViralgainsPage = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-bottom: 100pt;
+  margin-bottom: ${Spacing.pageBottom};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding-left: 20pt;
-    padding-right: 20pt;
+    padding-right: ${Spacing.base};
+    padding-left: ${Spacing.base};
   }
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 700pt;
-  padding-top: 80pt;
+  width: ${Spacing.containerWidth};
+  padding-top: ${Spacing.xHuge};
 `
 
 const LargeText = styled.h1`
-  font-size: 40pt;
-  margin-bottom: 10pt;
+  font-size: ${Typography.headingFontSize};
+  margin-bottom: ${Spacing.xSmall};
 `
 
 const PillContainer = styled.div`
   display: flex;
-  margin-top: 10pt;
-  margin-bottom: 40pt;
+  margin-top: ${Spacing.small};
+  margin-bottom: ${Spacing.medium};
 `
 
-const VisualDesign = styled.div`
+const Pill = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 13pt;
-  border: 1pt solid #e35fff;
-  height: 26pt;
-  width: 100pt;
-  font-size: 12pt;
-  margin-right: 5pt;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: 85pt;
-    font-size: 9pt;
-  }
+  height: ${Spacing.pillHeight};
+  width: ${Spacing.pillWidth};
+  color: ${Colors.black};
+  border-radius: ${Spacing.pillRadius};
+  border: 1pt solid;
+  margin-right: 0.5em;
+  font-size: ${Typography.smallFontSize};
 `
 
-const WelcomeText = styled.p`
-  margin-bottom: 60pt;
+const VisualDesign = styled(Pill)`
+  border-color: ${Colors.violet};
 `
+
+const WelcomeText = styled.p``
 
 const LargeImage = styled.img`
-  margin-top: 50pt;
-  margin-bottom: 50pt;
-  border: 1pt solid lightgray;
+  margin-top: ${Spacing.xHuge};
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-top: 0;
+    margin-top: ${Spacing.medium};
   }
 `
 

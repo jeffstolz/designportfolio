@@ -13,7 +13,7 @@ import SolutionThree from "../images/mh-solution-3.jpg"
 import SolutionFour from "../images/mh-solution-4.jpg"
 import SolutionFive from "../images/mh-solution-5.jpg"
 import SolutionSix from "../images/mh-solution-6.jpg"
-import { Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const MobileHeartbeatPage = () => (
   <AboutLayout>
@@ -231,19 +231,19 @@ const MobileHeartbeatPage = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-bottom: 100pt;
+  margin-bottom: ${Spacing.pageBottom};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding-right: 20pt;
-    padding-left: 20pt;
+    padding-right: ${Spacing.base};
+    padding-left: ${Spacing.base};
   }
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 700pt;
-  padding-top: 80pt;
+  width: ${Spacing.containerWidth};
+  padding-top: ${Spacing.xHuge};
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
@@ -251,84 +251,58 @@ const Container = styled.div`
 `
 
 const LargeText = styled.h1`
-  font-size: 40pt;
-  margin-bottom: 10pt;
+  font-size: ${Typography.headingFontSize};
+  margin-bottom: ${Spacing.xSmall};
 `
 
 const PillContainer = styled.div`
   display: flex;
-  margin-top: 10pt;
-  margin-bottom: 40pt;
+  margin-top: ${Spacing.small};
+  margin-bottom: ${Spacing.medium};
 `
 
-const CaseStudy = styled.div`
+const Pill = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 13pt;
-  border: 1pt solid #00d332;
-  height: 26pt;
-  width: 100pt;
-  font-size: 12pt;
-  margin-right: 5pt;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: 85pt;
-    font-size: 9pt;
-  }
+  height: ${Spacing.pillHeight};
+  width: ${Spacing.pillWidth};
+  color: ${Colors.black};
+  border-radius: ${Spacing.pillRadius};
+  border: 1pt solid;
+  margin-right: 0.5em;
+  font-size: ${Typography.smallFontSize};
 `
 
-const ProductDesign = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 13pt;
-  border: 1pt solid #00b8ff;
-  height: 26pt;
-  width: 108pt;
-  font-size: 12pt;
-  margin-right: 5pt;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: 85pt;
-    font-size: 9pt;
-  }
+const ProductDesign = styled(Pill)`
+  border-color: ${Colors.blue};
 `
 
-const UxDesign = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 13pt;
-  border: 1pt solid #ff6f00;
-  height: 26pt;
-  width: 85pt;
-  font-size: 12pt;
-  margin-right: 5pt;
+const UxDesign = styled(Pill)`
+  border-color: ${Colors.orange};
+`
 
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: 85pt;
-    font-size: 9pt;
-  }
+const CaseStudy = styled(Pill)`
+  border-color: ${Colors.green};
 `
 
 const WelcomeText = styled.p`
-  font-size: 20pt;
-  line-height: 25pt;
+  font-size: ${Typography.mediumFontSize};
+  line-height: ${Typography.largeLineHeight};
 `
 
 const LargeImage = styled.img`
-  margin-top: 100pt;
-  margin-bottom: 100pt;
+  margin-top: ${Spacing.xxHuge};
+  margin-bottom: ${Spacing.xxHuge};
 `
 
 const LargeImageTight = styled.img`
-  margin-top: 100pt;
-  margin-bottom: 20pt;
+  margin-top: ${Spacing.xxHuge};
+  margin-bottom: ${Spacing.base};
 `
 
 const SolutionImage = styled.img`
-  margin-bottom: 20pt;
+  margin-bottom: ${Spacing.base};
 `
 
 const Row = styled.div`
@@ -342,7 +316,7 @@ const Row = styled.div`
 const SolutionRow = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 100pt;
+  margin-top: ${Spacing.xxHuge};
 
   @media (max-width: ${Spacing.breakPoint}) {
     flex-wrap: wrap;
@@ -354,20 +328,20 @@ const SolutionColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280pt;
+  width: 21em;
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-top: 50pt;
+    margin-top: ${Spacing.large};
   }
 `
 
 const LeftHeader = styled.h2`
-  font-size: 40pt;
   display: flex;
   width: 100%;
+  font-size: ${Typography.headingFontSize};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-bottom: 20pt;
+    margin-bottom: ${Spacing.base};
   }
 `
 
@@ -377,15 +351,15 @@ const RightContent = styled.p`
 `
 
 const Divider = styled.div`
-  border-bottom: 1pt solid black;
-  margin-top: 100pt;
-  margin-bottom: 100pt;
   width: 100%;
+  border-bottom: 1pt solid ${Colors.black};
+  margin-top: ${Spacing.xxHuge};
+  margin-bottom: ${Spacing.xxHuge};
 `
 
 const SmallText = styled.p`
-  font-size: 10pt;
-  line-height: 14pt;
+  font-size: ${Typography.xSmallFontSize};
+  line-height: ${Typography.hugeLineHeight};
 `
 
 export default MobileHeartbeatPage

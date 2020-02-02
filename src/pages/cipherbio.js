@@ -8,7 +8,7 @@ import Article from "../images/cipherbio-article.png"
 import Archives from "../images/cipherbio-archives.png"
 import Community from "../images/cipherbio-community.png"
 import Company from "../images/cipherbio-company.jpg"
-import { Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const CipherbioPage = () => (
   <AboutLayout>
@@ -54,77 +54,71 @@ const CipherbioPage = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-bottom: 100pt;
+  margin-bottom: ${Spacing.pageBottom};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding-left: 20pt;
-    padding-right: 20pt;
+    padding-right: ${Spacing.base};
+    padding-left: ${Spacing.base};
   }
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 700pt;
-  padding-top: 80pt;
+  width: ${Spacing.containerWidth};
+  padding-top: ${Spacing.xHuge};
 `
 
 const LargeText = styled.h1`
-  font-size: 40pt;
-  margin-bottom: 10pt;
+  font-size: ${Typography.headingFontSize};
+  margin-bottom: ${Spacing.xSmall};
 `
 
 const PillContainer = styled.div`
   display: flex;
-  margin-top: 10pt;
-  margin-bottom: 40pt;
+  margin-top: ${Spacing.small};
+  margin-bottom: ${Spacing.medium};
 `
 
-const ProductDesign = styled.div`
+const Pill = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 13pt;
-  border: 1pt solid #00b8ff;
-  height: 26pt;
-  width: 108pt;
-  font-size: 12pt;
-  margin-right: 5pt;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: 85pt;
-    font-size: 9pt;
-  }
+  height: ${Spacing.pillHeight};
+  width: ${Spacing.pillWidth};
+  color: ${Colors.black};
+  border-radius: ${Spacing.pillRadius};
+  border: 1pt solid;
+  margin-right: 0.5em;
+  font-size: ${Typography.smallFontSize};
 `
 
-const WelcomeText = styled.p`
-  margin-bottom: 100pt;
+const ProductDesign = styled(Pill)`
+  border-color: ${Colors.blue};
 `
+
+const WelcomeText = styled.p``
 
 const LargeImage = styled.img`
-  border: 1pt solid lightgray;
-  height: 100%;
+  width: 24em;
+  object-fit: contain;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-bottom: 50pt;
-    height: 600pt;
+    margin-bottom: ${Spacing.large};
   }
 `
 
 const ImageRow = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 550pt;
-  margin-bottom: 80pt;
+  margin-top: ${Spacing.large};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
-    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
   }
 `
 
