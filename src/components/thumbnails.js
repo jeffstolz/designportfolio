@@ -81,7 +81,7 @@ const Thumbnails = () => (
             <Slide>
               <PreviewHeading>CipherBio</PreviewHeading>
               <PreviewText>
-                Lifescience investor networking platform
+                Life science investor networking platform
               </PreviewText>
             </Slide>
             <CardImage src={CipherbioThumbnail} alt="Cipherbio thumbnail" />
@@ -208,13 +208,14 @@ const Slide = styled.div`
 
 const PreviewHeading = styled.h2`
   color: ${Colors.white};
-  font-weight: ${Typography.mediumFontWeight};
   font-size: ${Typography.baseFontSize};
+  line-height: ${Typography.hugeLineHeight};
 `
 
 const PreviewText = styled.h3`
   color: ${Colors.white};
   font-size: ${Typography.smallFontSize};
+  font-weight: ${Typography.lightFontWeight};
   opacity: 0.7;
 `
 

@@ -57,14 +57,14 @@ const HeadshotImage = styled.img`
   object-fit: contain;
   height: 30.8em;
   top: -11.7em;
-  left: -14.65em;
+  left: -14.2em;
   z-index: -1;
 `
 
 const TopRow = styled.div`
   display: flex;
   position: relative;
-  width: 50.3em;
+  width: 54em;
   margin-bottom: 1.55em;
 `
 
