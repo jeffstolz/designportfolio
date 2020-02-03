@@ -7,9 +7,9 @@ const WorkBanner = () => (
     <Intro>
       <Divider />
       <IntroText>
-        <Greeting>Hi, I’m Jeff.</Greeting> I work with teams from the ground up
-        to ideate, design, and implement software. My favorite tools are Ruby on
-        Rails and Figma. I’m a big fan of design sprints, design systems, and
+        <Greeting>Hello, I’m Jeff.</Greeting> I work with teams from the ground
+        up to ideate, design, and implement software. My favorite tools are Ruby
+        on Rails and Figma. I’m a big fan of design sprints, design systems, and
         end user testing.
       </IntroText>
       <IntroText>
