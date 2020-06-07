@@ -2,21 +2,22 @@ import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
-const Label = ({ label, borderColor }) => {
+const Label = ({ label, borderColor, textColor }) => {
   return (
-    <Container borderColor={borderColor}>{label}</Container>
+    <Container borderColor={borderColor} textColor={textColor}>{label}</Container>
   )
 }
 
 const Container = styled.div.attrs(props => ({
   borderColor: props.borderColor || Colors.blue,
+  textColor: props.textColor || Colors.black,
 }))`
   display: flex;
   justify-content: center;
   align-items: center;
   height: ${Spacing.pillHeight};
   width: ${Spacing.pillWidth};
-  color: ${Colors.white};
+  color: ${props => props.textColor};
   border-radius: ${Spacing.pillRadius};
   border: 1pt solid;
   margin-right: 0.5em;
