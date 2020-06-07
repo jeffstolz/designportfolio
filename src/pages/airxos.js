@@ -1,17 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Airspace from "../images/ge-airspace.png"
-import Search from "../images/ge-search.png"
-import Layers from "../images/ge-layers.png"
-import Tooltip from "../images/ge-tooltip.png"
-import Weather from "../images/ge-weather.png"
-import Auth from "../images/ge-auth.png"
-import Collapsed from "../images/ge-collapsed.png"
-import Requests from "../images/ge-requests.png"
-import Compliance from "../images/ge-compliance.png"
-import Draw from "../images/ge-draw.png"
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const AirxosPage = () => (
@@ -40,24 +31,24 @@ const AirxosPage = () => (
           in React Native.
         </WelcomeText>
         <ImageRow>
-          <LargeImage src={Airspace} alt="AiRXOS Airspace" />
-          <LargeImage src={Search} alt="AiRXOS Search" />
+          <LargeImage src={Images.GeAirspace} alt="AiRXOS Airspace" />
+          <LargeImage src={Images.GeSearch} alt="AiRXOS Search" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Layers} alt="AiRXOS Layers" />
-          <LargeImage src={Tooltip} alt="AiRXOS Tooltip" />
+          <LargeImage src={Images.GeLayers} alt="AiRXOS Layers" />
+          <LargeImage src={Images.GeTooltip} alt="AiRXOS Tooltip" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Weather} alt="AiRXOS Weather" />
-          <LargeImage src={Auth} alt="AiRXOS Authorization" />
+          <LargeImage src={Images.GeWeather} alt="AiRXOS Weather" />
+          <LargeImage src={Images.GeAuth} alt="AiRXOS Authorization" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Collapsed} alt="AiRXOS Collapsed Airspace" />
-          <LargeImage src={Requests} alt="AiRXOS Requests" />
+          <LargeImage src={Images.GeCollapsed} alt="AiRXOS Collapsed Airspace" />
+          <LargeImage src={Images.GeRequests} alt="AiRXOS Requests" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Compliance} alt="AiRXOS Compliance" />
-          <LargeImage src={Draw} alt="AiRXOS Draw Airspace" />
+          <LargeImage src={Images.GeCompliance} alt="AiRXOS Compliance" />
+          <LargeImage src={Images.GeDraw} alt="AiRXOS Draw Airspace" />
         </ImageRow>
       </Container>
     </OuterContainer>

@@ -2,10 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-import CreativeBuilder from "../images/viralgains-1.png"
-import CampaignManager from "../images/viralgains-2.png"
-import DashboardOne from "../images/viralgains-3.png"
-import DashboardTwo from "../images/viralgains-4.png"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ViralgainsPage = () => (
@@ -27,10 +24,10 @@ const ViralgainsPage = () => (
           brand. We then implemented the designs in React, working in
           collaboration with their in-house development team.
         </WelcomeText>
-        <LargeImage src={CreativeBuilder} alt="Viralgains Creative Builder" />
-        <LargeImage src={CampaignManager} alt="Viralgains Campaign Manager" />
-        <LargeImage src={DashboardOne} alt="Viralgains Dashboard" />
-        <LargeImage src={DashboardTwo} alt="Viralgains Dashboard" />
+        <LargeImage src={Images.ViralgainsOne} alt="Viralgains Creative Builder" />
+        <LargeImage src={Images.ViralgainsTwo} alt="Viralgains Campaign Manager" />
+        <LargeImage src={Images.ViralgainsThree} alt="Viralgains Dashboard" />
+        <LargeImage src={Images.ViralgainsFour} alt="Viralgains Dashboard" />
       </Container>
     </OuterContainer>
   </AboutLayout>

@@ -2,12 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-import Blog from "../images/cipherbio-blog.png"
-import BlogArticle from "../images/cipherbio-blog-article.png"
-import Article from "../images/cipherbio-article.png"
-import Archives from "../images/cipherbio-archives.png"
-import Community from "../images/cipherbio-community.png"
-import Company from "../images/cipherbio-company.jpg"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const CipherbioPage = () => (
@@ -35,16 +30,16 @@ const CipherbioPage = () => (
           project before learning this key insight.
         </WelcomeText>
         <ImageRow>
-          <LargeImage src={Blog} alt="CipherBio Blog" />
-          <LargeImage src={BlogArticle} alt="CipherBio Blog Article" />
+          <LargeImage src={Images.CipherbioBlog} alt="CipherBio Blog" />
+          <LargeImage src={Images.CipherbioBlogArticle} alt="CipherBio Blog Article" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Article} alt="CipherBio Article" />
-          <LargeImage src={Archives} alt="CipherBio Archives" />
+          <LargeImage src={Images.CipherbioArticle} alt="CipherBio Article" />
+          <LargeImage src={Images.CipherbioArchives} alt="CipherBio Archives" />
         </ImageRow>
         <ImageRow>
-          <LargeImage src={Community} alt="CipherBio Community" />
-          <LargeImage src={Company} alt="CipherBio Company" />
+          <LargeImage src={Images.CipherbioCommunity} alt="CipherBio Community" />
+          <LargeImage src={Images.CipherbioCompany} alt="CipherBio Company" />
         </ImageRow>
       </Container>
     </OuterContainer>

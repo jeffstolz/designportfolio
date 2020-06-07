@@ -2,16 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-import Home from "../images/skills-home.jpg"
-import Notes from "../images/skills-notes.png"
-import FlowDiagram from "../images/skills-flow-diagram.png"
-import Wireframes from "../images/skills-wireframes.jpg"
-import MoodBoardOne from "../images/skills-moodboard-1.jpg"
-import MoodBoardTwo from "../images/skills-moodboard-2.jpg"
-import Athletes from "../images/skills-athletes.jpg"
-import AthleteLanding from "../images/skills-athlete-landing.jpg"
-import Athlete from "../images/skills-athlete.jpg"
-import Video from "../images/skills-video.jpg"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const MobileHeartbeatPage = () => (
@@ -29,7 +20,7 @@ const MobileHeartbeatPage = () => (
           Six weeks to build an online education platform to share how
           world-class athletes train and compete.
         </WelcomeText>
-        <LargeImage src={Home} alt="The Skills Home Page" />
+        <LargeImage src={Images.SkillsHome} alt="The Skills Home Page" />
         <Row>
           <LeftHeader>Background</LeftHeader>
           <RightContent>
@@ -58,7 +49,7 @@ const MobileHeartbeatPage = () => (
           </RightContent>
         </Row>
         <LargeImageTight
-          src={Notes}
+          src={Images.SkillsNotes}
           alt="The Skills Feature Prioritization Exercise"
         />
         <p>
@@ -82,8 +73,8 @@ const MobileHeartbeatPage = () => (
             client on the general user journey and layouts.
           </RightContent>
         </Row>
-        <LargeImageTight src={FlowDiagram} alt="The Skills User Flow Diagram" />
-        <LargeImageTight src={Wireframes} alt="The Skills Wireframes" />
+        <LargeImageTight src={Images.SkillsFlowDiagram} alt="The Skills User Flow Diagram" />
+        <LargeImageTight src={Images.SkillsWireframes} alt="The Skills Wireframes" />
         <Divider />
         <Row>
           <LeftHeader>Mood Boards</LeftHeader>
@@ -98,8 +89,8 @@ const MobileHeartbeatPage = () => (
             felt confident I could implement in the timeline given.
           </RightContent>
         </Row>
-        <LargeImageTight src={MoodBoardOne} alt="The Skills Mood Board" />
-        <LargeImageTight src={MoodBoardTwo} alt="The Skills Mood Board" />
+        <LargeImageTight src={Images.SkillsMoodBoardOne} alt="The Skills Mood Board" />
+        <LargeImageTight src={Images.SkillsMoodBoardTwo} alt="The Skills Mood Board" />
         <p>
           One of the competitors we drew inspiration from for our UI patterns
           was Masterclass, a leader in a similar space. Because Masterclass was
@@ -122,14 +113,14 @@ const MobileHeartbeatPage = () => (
             to be determined.
           </RightContent>
         </Row>
-        <LargeImageTight src={Home} alt="The Skills Homepage" />
-        <LargeImageTight src={Athletes} alt="The Skills Athletes Page" />
+        <LargeImageTight src={Images.SkillsHome} alt="The Skills Homepage" />
+        <LargeImageTight src={Images.SkillsAthletes} alt="The Skills Athletes Page" />
         <LargeImageTight
           src={AthleteLanding}
           alt="The Skills Athlete Landing Page"
         />
-        <LargeImageTight src={Athlete} alt="The Skills Athlete Page" />
-        <LargeImageTight src={Video} alt="The Skills Athlete Video Page" />
+        <LargeImageTight src={Images.SkillsAthlete} alt="The Skills Athlete Page" />
+        <LargeImageTight src={Images.SkillsVideo} alt="The Skills Athlete Video Page" />
         <Divider />
         <Row>
           <LeftHeader>Outcome</LeftHeader>

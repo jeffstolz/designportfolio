@@ -2,17 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-import Overview from "../images/mh-overview.jpg"
-import Discovery from "../images/mh-discovery.jpg"
-import Persona from "../images/mh-persona.jpg"
-import Sketch from "../images/mh-design-process-sketch.jpg"
-import Wireframe from "../images/mh-wireframe.jpg"
-import SolutionOne from "../images/mh-solution-1.jpg"
-import SolutionTwo from "../images/mh-solution-2.jpg"
-import SolutionThree from "../images/mh-solution-3.jpg"
-import SolutionFour from "../images/mh-solution-4.jpg"
-import SolutionFive from "../images/mh-solution-5.jpg"
-import SolutionSix from "../images/mh-solution-6.jpg"
+import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const MobileHeartbeatPage = () => (
@@ -31,7 +21,7 @@ const MobileHeartbeatPage = () => (
           care through accelerated communication and collaboration in the
           hospital.
         </WelcomeText>
-        <LargeImage src={Overview} alt="Mobile Heartbeat Overview" />
+        <LargeImage src={Images.MhOverview} alt="Mobile Heartbeat Overview" />
         <Row>
           <LeftHeader>The Problem</LeftHeader>
           <RightContent>
@@ -60,7 +50,7 @@ const MobileHeartbeatPage = () => (
             the goals & frustrations of our customers.
           </RightContent>
         </Row>
-        <LargeImageTight src={Discovery} alt="Mobile Heartbeat Discovery" />
+        <LargeImageTight src={Images.MhDiscovery} alt="Mobile Heartbeat Discovery" />
         <p>
           We chose to follow the Lean UX Canvas for initial problem definition
           to help us maintain focus and establish measurable outcomes. Through
@@ -69,7 +59,7 @@ const MobileHeartbeatPage = () => (
           solving the core problems around our information architecture,
           physician workflow, and speed of urgent communications.
         </p>
-        <LargeImageTight src={Persona} alt="Mobile Heartbeat Persona" />
+        <LargeImageTight src={Images.MhPersona} alt="Mobile Heartbeat Persona" />
         <p>
           We created personas of our core users and gave them personalities,
           goals, and priorities. This helped us journey map ideal workflows
@@ -98,7 +88,7 @@ const MobileHeartbeatPage = () => (
           able to simplify the navigation and organize related functionality
           into intuitive groupings on the bottom tab bar.
         </p>
-        <LargeImageTight src={Wireframe} alt="Mobile Heartbeat Wireframe" />
+        <LargeImageTight src={Images.MhWireframe} alt="Mobile Heartbeat Wireframe" />
         <p>
           By starting with wireframes we were able to ideate rapidly with
           minimal commitment. We met with stakeholders, SMEs, and users early
@@ -122,7 +112,7 @@ const MobileHeartbeatPage = () => (
         <SolutionRow>
           <SolutionColumn>
             <SolutionImage
-              src={SolutionOne}
+              src={Images.MhSolutionOne}
               alt="Mobile Heartbeat Solution One"
             />
             <SmallText>
@@ -134,7 +124,7 @@ const MobileHeartbeatPage = () => (
           </SolutionColumn>
           <SolutionColumn>
             <SolutionImage
-              src={SolutionTwo}
+              src={Images.MhSolutionTwo}
               alt="Mobile Heartbeat Solution Two"
             />
             <SmallText>
@@ -148,7 +138,7 @@ const MobileHeartbeatPage = () => (
         <SolutionRow>
           <SolutionColumn>
             <SolutionImage
-              src={SolutionThree}
+              src={Images.MhSolutionThree}
               alt="Mobile Heartbeat Solution Three"
             />
             <SmallText>
@@ -160,7 +150,7 @@ const MobileHeartbeatPage = () => (
           </SolutionColumn>
           <SolutionColumn>
             <SolutionImage
-              src={SolutionFour}
+              src={Images.MhSolutionFour}
               alt="Mobile Heartbeat Solution Four"
             />
             <SmallText>
@@ -175,7 +165,7 @@ const MobileHeartbeatPage = () => (
         <SolutionRow>
           <SolutionColumn>
             <SolutionImage
-              src={SolutionFive}
+              src={Images.MhSolutionFive}
               alt="Mobile Heartbeat Solution Five"
             />
             <SmallText>
@@ -189,7 +179,7 @@ const MobileHeartbeatPage = () => (
           </SolutionColumn>
           <SolutionColumn>
             <SolutionImage
-              src={SolutionSix}
+              src={Images.MhSolutionSix}
               alt="Mobile Heartbeat Solution Six"
             />
             <SmallText>
