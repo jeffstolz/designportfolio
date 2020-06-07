@@ -1,8 +1,7 @@
 import React from "react"
-import Header from "./header"
-import Footer from "./footer"
-import Gradient from "./gradient"
-
+import Header from "../components/header"
+import Footer from "../components/footer"
+import Gradient from "../components/gradient"
 import "../styles/global-styles.css"
 
 const Layout = ({ children }) => {
@@ -10,7 +9,9 @@ const Layout = ({ children }) => {
     <>
       <Gradient>
         <Header />
-        <main>{children}</main>
+        <main>
+          {children}
+        </main>
         <Footer />
       </Gradient>
     </>

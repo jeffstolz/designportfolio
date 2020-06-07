@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
+import HomeLayout from "../layouts/home-layout"
 import SEO from "../components/seo"
 import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ContactPage = () => (
-  <Layout>
+  <HomeLayout>
     <Container>
       <LargeText>Thank you</LargeText>
       <TextContainer>
@@ -23,7 +23,7 @@ const ContactPage = () => (
       </TextContainer>
     </Container>
     <SEO title="Contact" />
-  </Layout>
+  </HomeLayout>
 )
 
 const Container = styled.section`
