@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import HomeLayout from "../layouts/home-layout"
 import SEO from "../components/seo"
-import { Images } from "../images";
+import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ContactPage = () => (
