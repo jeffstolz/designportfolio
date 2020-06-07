@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { Images } from "../images";
+import Label from "./label"
+import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Thumbnails = () => (
@@ -11,9 +12,9 @@ const Thumbnails = () => (
         <LargeCard>
           <Link to="/mobile-heartbeat">
             <OverlayContainer>
-              <CaseStudy>Case Study</CaseStudy>
-              <ProductDesign>Product Design</ProductDesign>
-              <UxDesign>UX Design</UxDesign>
+              <Label borderColor={Colors.green} label={"Case Study"} />
+              <Label borderColor={Colors.blue} label={"Product Design"} />
+              <Label borderColor={Colors.orange} label={"UX Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>Mobile Heartbeat</PreviewHeading>
@@ -28,7 +29,7 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/viralgains">
             <OverlayContainer>
-              <VisualDesign>Visual Design</VisualDesign>
+              <Label borderColor={Colors.violet} label={"Visual Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>ViralGains</PreviewHeading>
@@ -42,8 +43,8 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/airxos">
             <OverlayContainer>
-              <ProductDesign>Product Design</ProductDesign>
-              <UxDesign>UX Design</UxDesign>
+              <Label borderColor={Colors.blue} label={"Product Design"} />
+              <Label borderColor={Colors.orange} label={"UX Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>GE AiRXOS</PreviewHeading>
@@ -55,9 +56,9 @@ const Thumbnails = () => (
         <LargeCard>
           <Link to="/theskills">
             <OverlayContainer>
-              <CaseStudy>Case Study</CaseStudy>
-              <ProductDesign>Product Design</ProductDesign>
-              <VisualDesign>Visual Design</VisualDesign>
+              <Label borderColor={Colors.green} label={"Case Study"} />
+              <Label borderColor={Colors.blue} label={"Product Design"} />
+              <Label borderColor={Colors.violet} label={"Visual Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>The Skills</PreviewHeading>
@@ -71,7 +72,7 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/cipherbio">
             <OverlayContainer>
-              <ProductDesign>Product Design</ProductDesign>
+              <Label borderColor={Colors.blue} label={"Product Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>CipherBio</PreviewHeading>
@@ -85,8 +86,8 @@ const Thumbnails = () => (
         <LargeCard>
           <Link to="/hmh">
             <OverlayContainer>
-              <CaseStudy>Case Study</CaseStudy>
-              <ProductDesign>Product Design</ProductDesign>
+              <Label borderColor={Colors.green} label={"Case Study"} />
+              <Label borderColor={Colors.blue} label={"Product Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>HMH Marketplace</PreviewHeading>
@@ -146,40 +147,6 @@ const OverlayContainer = styled.div`
   @media (max-width: ${Spacing.breakPoint}) {
     opacity: 1;
   }
-`
-
-const Pill = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: ${Spacing.pillHeight};
-  width: ${Spacing.pillWidth};
-  color: ${Colors.white};
-  border-radius: ${Spacing.pillRadius};
-  border: 1pt solid;
-  margin-right: 0.5em;
-  font-size: ${Typography.smallFontSize};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: ${Spacing.pillMobileWidth};
-    font-size: ${Typography.xSmallFontSize};
-  }
-`
-
-const ProductDesign = styled(Pill)`
-  border-color: ${Colors.blue};
-`
-
-const UxDesign = styled(Pill)`
-  border-color: ${Colors.orange};
-`
-
-const VisualDesign = styled(Pill)`
-  border-color: ${Colors.violet};
-`
-
-const CaseStudy = styled(Pill)`
-  border-color: ${Colors.green};
 `
 
 const Slide = styled.div`

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import DefaultLayout from "../layouts/default-layout"
 import SEO from "../components/seo"
+import Label from "../components/label"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -10,9 +11,9 @@ const MobileHeartbeatPage = () => (
     <SEO title="Mobile Heartbeat" />
       <LargeText>Mobile Heartbeat</LargeText>
       <PillContainer>
-        <CaseStudy>Case Study</CaseStudy>
-        <ProductDesign>Product Design</ProductDesign>
-        <UxDesign>UX Design</UxDesign>
+        <Label borderColor={Colors.green} label={"Case Study"} />
+        <Label borderColor={Colors.blue} label={"Product Design"} />
+        <Label borderColor={Colors.orange} label={"UX Design"} />
       </PillContainer>
       <WelcomeText>
         Product redesign of a tool that enables clinicians to improve patient
@@ -225,36 +226,6 @@ const PillContainer = styled.div`
   display: flex;
   margin-top: ${Spacing.small};
   margin-bottom: ${Spacing.medium};
-`
-
-const Pill = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: ${Spacing.pillHeight};
-  width: ${Spacing.pillWidth};
-  color: ${Colors.black};
-  border-radius: ${Spacing.pillRadius};
-  border: 1pt solid;
-  margin-right: 0.5em;
-  font-size: ${Typography.smallFontSize};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: ${Spacing.pillMobileWidth};
-    font-size: ${Typography.xSmallFontSize};
-  }
-`
-
-const ProductDesign = styled(Pill)`
-  border-color: ${Colors.blue};
-`
-
-const UxDesign = styled(Pill)`
-  border-color: ${Colors.orange};
-`
-
-const CaseStudy = styled(Pill)`
-  border-color: ${Colors.green};
 `
 
 const WelcomeText = styled.p`

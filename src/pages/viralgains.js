@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import DefaultLayout from "../layouts/default-layout"
 import SEO from "../components/seo"
-import { Images } from "../images";
+import Label from "../components/label"
+import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ViralgainsPage = () => (
@@ -10,7 +11,7 @@ const ViralgainsPage = () => (
     <SEO title="ViralGains" />
       <LargeText>ViralGains</LargeText>
       <PillContainer>
-        <VisualDesign>Visual Design</VisualDesign>
+        <Label borderColor={Colors.violet} label={"Visual Design"} />
       </PillContainer>
       <WelcomeText>
         As a consultant for thoughtbot, I worked with another designer to lead
@@ -39,28 +40,6 @@ const PillContainer = styled.div`
   display: flex;
   margin-top: ${Spacing.small};
   margin-bottom: ${Spacing.medium};
-`
-
-const Pill = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: ${Spacing.pillHeight};
-  width: ${Spacing.pillWidth};
-  color: ${Colors.black};
-  border-radius: ${Spacing.pillRadius};
-  border: 1pt solid;
-  margin-right: 0.5em;
-  font-size: ${Typography.smallFontSize};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: ${Spacing.pillMobileWidth};
-    font-size: ${Typography.xSmallFontSize};
-  }
-`
-
-const VisualDesign = styled(Pill)`
-  border-color: ${Colors.violet};
 `
 
 const WelcomeText = styled.p``
