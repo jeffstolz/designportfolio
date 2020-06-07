@@ -1,12 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import MhThumbnail from "../images/mh-thumbnail.png"
-import VgThumbnail from "../images/vg-thumbnail.png"
-import CipherbioThumbnail from "../images/cipherbio-thumbnail.png"
-import GeThumbnail from "../images/ge-thumbnail.png"
-import SkillsThumbnail from "../images/skills-thumbnail.png"
-import HmhThumbnail from "../images/hmh-thumbnail.png"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Thumbnails = () => (
@@ -25,7 +20,7 @@ const Thumbnails = () => (
               <PreviewText>Clinical communication and coordination</PreviewText>
             </Slide>
             <LargeCardImage
-              src={MhThumbnail}
+              src={Images.MhThumbnail}
               alt="Mobile Heartbeat thumbnail"
             />
           </Link>
@@ -39,7 +34,7 @@ const Thumbnails = () => (
               <PreviewHeading>ViralGains</PreviewHeading>
               <PreviewText>Advertising journey orchestration</PreviewText>
             </Slide>
-            <CardImage src={VgThumbnail} alt="Viralgains thumbnail" />
+            <CardImage src={Images.ViralgainsThumbnail} alt="Viralgains thumbnail" />
           </Link>
         </SmallCard>
       </Row>
@@ -54,7 +49,7 @@ const Thumbnails = () => (
               <PreviewHeading>GE AiRXOS</PreviewHeading>
               <PreviewText>Drone flight planning and approval tool</PreviewText>
             </Slide>
-            <CardImage src={GeThumbnail} alt="GE Airxos thumbnail" />
+            <CardImage src={Images.GeThumbnail} alt="GE Airxos thumbnail" />
           </Link>
         </SmallCard>
         <LargeCard>
@@ -68,7 +63,7 @@ const Thumbnails = () => (
               <PreviewHeading>The Skills</PreviewHeading>
               <PreviewText>Online education platform for athletes</PreviewText>
             </Slide>
-            <LargeCardImage src={SkillsThumbnail} alt="The Skills thumbnail" />
+            <LargeCardImage src={Images.SkillsThumbnail} alt="The Skills thumbnail" />
           </Link>
         </LargeCard>
       </Row>
@@ -84,7 +79,7 @@ const Thumbnails = () => (
                 Life science investor networking platform
               </PreviewText>
             </Slide>
-            <CardImage src={CipherbioThumbnail} alt="Cipherbio thumbnail" />
+            <CardImage src={Images.CipherbioThumbnail} alt="Cipherbio thumbnail" />
           </Link>
         </SmallCard>
         <LargeCard>
@@ -97,7 +92,7 @@ const Thumbnails = () => (
               <PreviewHeading>HMH Marketplace</PreviewHeading>
               <PreviewText>Online marketplace for educators</PreviewText>
             </Slide>
-            <LargeCardImage src={HmhThumbnail} alt="HMH Labs thumbnail" />
+            <LargeCardImage src={Images.HmhThumbnail} alt="HMH Labs thumbnail" />
           </Link>
         </LargeCard>
       </Row>
