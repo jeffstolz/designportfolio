@@ -12,9 +12,9 @@ const Thumbnails = () => (
         <LargeCard>
           <Link to="/mobile-heartbeat">
             <OverlayContainer>
-              <Label borderColor={Colors.green} label={"Case Study"} />
-              <Label borderColor={Colors.blue} label={"Product Design"} />
-              <Label borderColor={Colors.orange} label={"UX Design"} />
+              <Label borderColor={Colors.green} textColor={Colors.white} label={"Case Study"} />
+              <Label borderColor={Colors.blue} textColor={Colors.white} label={"Product Design"} />
+              <Label borderColor={Colors.orange} textColor={Colors.white} label={"UX Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>Mobile Heartbeat</PreviewHeading>
@@ -29,7 +29,7 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/viralgains">
             <OverlayContainer>
-              <Label borderColor={Colors.violet} label={"Visual Design"} />
+              <Label borderColor={Colors.violet} textColor={Colors.white} label={"Visual Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>ViralGains</PreviewHeading>
@@ -43,8 +43,8 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/airxos">
             <OverlayContainer>
-              <Label borderColor={Colors.blue} label={"Product Design"} />
-              <Label borderColor={Colors.orange} label={"UX Design"} />
+              <Label borderColor={Colors.blue} textColor={Colors.white} label={"Product Design"} />
+              <Label borderColor={Colors.orange} textColor={Colors.white} label={"UX Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>GE AiRXOS</PreviewHeading>
@@ -56,9 +56,9 @@ const Thumbnails = () => (
         <LargeCard>
           <Link to="/theskills">
             <OverlayContainer>
-              <Label borderColor={Colors.green} label={"Case Study"} />
-              <Label borderColor={Colors.blue} label={"Product Design"} />
-              <Label borderColor={Colors.violet} label={"Visual Design"} />
+              <Label borderColor={Colors.green} textColor={Colors.white} label={"Case Study"} />
+              <Label borderColor={Colors.blue} textColor={Colors.white} label={"Product Design"} />
+              <Label borderColor={Colors.violet} textColor={Colors.white} label={"Visual Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>The Skills</PreviewHeading>
@@ -72,7 +72,7 @@ const Thumbnails = () => (
         <SmallCard>
           <Link to="/cipherbio">
             <OverlayContainer>
-              <Label borderColor={Colors.blue} label={"Product Design"} />
+              <Label borderColor={Colors.blue} textColor={Colors.white} label={"Product Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>CipherBio</PreviewHeading>
@@ -86,8 +86,8 @@ const Thumbnails = () => (
         <LargeCard>
           <Link to="/hmh">
             <OverlayContainer>
-              <Label borderColor={Colors.green} label={"Case Study"} />
-              <Label borderColor={Colors.blue} label={"Product Design"} />
+              <Label borderColor={Colors.green} textColor={Colors.white} label={"Case Study"} />
+              <Label borderColor={Colors.blue} textColor={Colors.white} label={"Product Design"} />
             </OverlayContainer>
             <Slide>
               <PreviewHeading>HMH Marketplace</PreviewHeading>
