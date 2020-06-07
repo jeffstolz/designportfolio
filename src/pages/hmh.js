@@ -2,15 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AboutLayout from "../components/about-layout"
 import SEO from "../components/seo"
-import Overview from "../images/hmh-overview.jpg"
-import Hmw from "../images/hmh-uxcanvas.jpg"
-import MapSketch from "../images/hmh-map.jpg"
-import SolutionSketches from "../images/hmh-sketches.jpg"
-import SolutionOne from "../images/hmh-solution-1.jpg"
-import SolutionTwo from "../images/hmh-solution-2.jpg"
-import SolutionThree from "../images/hmh-solution-3.jpg"
-import SolutionFour from "../images/hmh-solution-4.jpg"
-import SolutionFive from "../images/hmh-solution-5.jpg"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const HmhPage = () => (
@@ -27,7 +19,7 @@ const HmhPage = () => (
           A PDS to build an online destination that offers teachers & content
           creators the opportunity to share digital resources for the classroom.
         </WelcomeText>
-        <LargeImage src={Overview} alt="HMH Overview" />
+        <LargeImage src={Images.HmhOverview} alt="HMH Overview" />
         <Row>
           <LeftHeader>Background</LeftHeader>
           <RightContent>
@@ -52,7 +44,7 @@ const HmhPage = () => (
             Framework.
           </RightContent>
         </Row>
-        <LargeImageTight src={Hmw} alt="HMH How Might We Statements" />
+        <LargeImageTight src={Images.HmhUxcanvas} alt="HMH How Might We Statements" />
         <p>
           We used the ’How Might We” method to catalog our ideas and assumptions
           in the morning. Once we had a large sample set of ideas on the board,
@@ -60,7 +52,7 @@ const HmhPage = () => (
           categories. We then voted as a group on the ideas that we wanted to be
           mindful of moving forward.
         </p>
-        <LargeImageTight src={MapSketch} alt="HMH Journey Map" />
+        <LargeImageTight src={Images.HmhMap} alt="HMH Journey Map" />
         <p>
           Additionally, we created a rough journey map to determine how our
           customer would experience the product. This helped us established a
@@ -79,7 +71,7 @@ const HmhPage = () => (
             grab a pen and participate in the process.
           </RightContent>
         </Row>
-        <LargeImageTight src={SolutionSketches} alt="HMH Solution Sketches" />
+        <LargeImageTight src={Images.HmhSketches} alt="HMH Solution Sketches" />
         <p>
           The morning was spent conducting various ’Crazy 8” sketching exercises
           to rapidly ideate on rough concepts. After each round, the team
@@ -116,18 +108,18 @@ const HmhPage = () => (
         <SolutionContainer>
           <SolutionRow>
             <SolutionColumn>
-              <SolutionImage src={SolutionOne} alt="HMH Solution One" />
+              <SolutionImage src={Images.HmhSolutionOne} alt="HMH Solution One" />
             </SolutionColumn>
             <SolutionColumn>
-              <SolutionImage src={SolutionTwo} alt="HMH Solution Two" />
+              <SolutionImage src={Images.HmhSolutionTwo} alt="HMH Solution Two" />
             </SolutionColumn>
           </SolutionRow>
           <SolutionRow>
             <SolutionColumn>
-              <SolutionImage src={SolutionThree} alt="HMH Solution Three" />
+              <SolutionImage src={Images.HmhSolutionThree} alt="HMH Solution Three" />
             </SolutionColumn>
             <SolutionColumn>
-              <SolutionImage src={SolutionFour} alt="HMH Solution Four" />
+              <SolutionImage src={Images.HmhSolutionFour} alt="HMH Solution Four" />
             </SolutionColumn>
           </SolutionRow>
         </SolutionContainer>
@@ -158,7 +150,7 @@ const HmhPage = () => (
             of our team.
           </RightContent>
         </Row>
-        <LargeImage src={SolutionFive} alt="HMH Solution Five" />
+        <LargeImage src={Images.HmhSolutionFive} alt="HMH Solution Five" />
         <Row>
           <LeftHeader>Reflection</LeftHeader>
           <RightContent>

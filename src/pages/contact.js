@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import Resume from "../images/jeff_stolz_resume.pdf"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ContactPage = () => (
@@ -16,7 +16,7 @@ const ContactPage = () => (
           designer. I look forward to hearing from you.
         </FancyText>
         <DownloadContainer>
-          <DownloadButton href={Resume} download>
+          <DownloadButton href={Images.JeffStolzResume} download>
             Download Resume
           </DownloadButton>
         </DownloadContainer>
