@@ -1,10 +1,3 @@
-import AirwatchDisconnect from './airwatch-disconnect.png';
-import AirwatchMap from './airwatch-map.png';
-import AirwatchPreflight from './airwatch-preflight.png';
-import AirwatchSplash from './airwatch-splash.png';
-import AirwatchThumbnail from './airwatch-thumbnail.png';
-import AirwatchVideo from './airwatch-video.png';
-import AirwatchWelcome from './airwatch-welcome.png';
 import CipherbioArchives from './cipherbio-archives.png';
 import CipherbioArticle from './cipherbio-article.png';
 import CipherbioBlogArticle from './cipherbio-blog-article.png';
@@ -24,18 +17,18 @@ import GeSearch from './ge-search.png';
 import GeThumbnail from './ge-thumbnail.png';
 import GeTooltip from './ge-tooltip.png';
 import GeWeather from './ge-weather.png';
-import HmhMap from './hmh-map.png';
-import HmhOverview from './hmh-overview.png';
-import HmhSketches from './hmh-sketches.png';
-import HmhSolutionOne from './hmh-solution-1.png';
-import HmhSolutionTwo from './hmh-solution-2.png';
-import HmhSolutionThree from './hmh-solution-3.png';
-import HmhSolutionFour from './hmh-solution-4.png';
-import HmhSolutionFive from './hmh-solution-5.png';
+import HmhMap from './hmh-map.jpg';
+import HmhOverview from './hmh-overview.jpg';
+import HmhSketches from './hmh-sketches.jpg';
+import HmhSolutionOne from './hmh-solution-1.jpg';
+import HmhSolutionTwo from './hmh-solution-2.jpg';
+import HmhSolutionThree from './hmh-solution-3.jpg';
+import HmhSolutionFour from './hmh-solution-4.jpg';
+import HmhSolutionFive from './hmh-solution-5.jpg';
 import HmhThumbnail from './hmh-thumbnail.png';
-import HmhUxcanvas from './hmh-uxcanvas.png';
+import HmhUxcanvas from './hmh-uxcanvas.jpg';
 import JeffStolzResume from './jeff_stolz_resume.pdf';
-import JeffStolz from './jeff_stolz.png';
+import JeffStolz from './jeff-stolz.png';
 import MhDesignProcessSketch from './mh-design-process-sketch.jpg';
 import MhDiscovery from './mh-discovery.jpg';
 import MhOverview from './mh-overview.jpg';
@@ -66,13 +59,6 @@ import ViralgainsThree from './viralgains-3.png';
 import ViralgainsFour from './viralgains-4.png';
 
 export const Images = {
-  AirwatchDisconnect,
-  AirwatchMap,
-  AirwatchPreflight,
-  AirwatchSplash,
-  AirwatchThumbnail,
-  AirwatchVideo,
-  AirwatchWelcome,
   CipherbioArchives,
   CipherbioArticle,
   CipherbioBlogArticle,

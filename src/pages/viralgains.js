@@ -1,58 +1,37 @@
 import React from "react"
 import styled from "styled-components"
-import AboutLayout from "../components/about-layout"
+import DefaultLayout from "../layouts/default-layout"
 import SEO from "../components/seo"
 import { Images } from "../images";
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const ViralgainsPage = () => (
-  <AboutLayout>
+  <DefaultLayout>
     <SEO title="ViralGains" />
-    <OuterContainer>
-      <Container>
-        <LargeText>ViralGains</LargeText>
-        <PillContainer>
-          <VisualDesign>Visual Design</VisualDesign>
-        </PillContainer>
-        <WelcomeText>
-          As a consultant for thoughtbot, I worked with another designer to lead
-          the UI redesign and implementation for Viralgains, an advertising
-          journey management platform. We began with initial design research
-          such as mood boards and competitor analysis until we agreed upon a
-          specific aesthetic. We created a sleek, dark tone theme that appealed
-          to the advertising manager persona and matched the company's current
-          brand. We then implemented the designs in React, working in
-          collaboration with their in-house development team.
-        </WelcomeText>
-        <LargeImage src={Images.ViralgainsOne} alt="Viralgains Creative Builder" />
-        <LargeImage src={Images.ViralgainsTwo} alt="Viralgains Campaign Manager" />
-        <LargeImage src={Images.ViralgainsThree} alt="Viralgains Dashboard" />
-        <LargeImage src={Images.ViralgainsFour} alt="Viralgains Dashboard" />
-      </Container>
-    </OuterContainer>
-  </AboutLayout>
+      <LargeText>ViralGains</LargeText>
+      <PillContainer>
+        <VisualDesign>Visual Design</VisualDesign>
+      </PillContainer>
+      <WelcomeText>
+        As a consultant for thoughtbot, I worked with another designer to lead
+        the UI redesign and implementation for Viralgains, an advertising
+        journey management platform. We began with initial design research
+        such as mood boards and competitor analysis until we agreed upon a
+        specific aesthetic. We created a sleek, dark tone theme that appealed
+        to the advertising manager persona and matched the company's current
+        brand. We then implemented the designs in React, working in
+        collaboration with their in-house development team.
+      </WelcomeText>
+      <LargeImage src={Images.ViralgainsOne} alt="Viralgains Creative Builder" />
+      <LargeImage src={Images.ViralgainsTwo} alt="Viralgains Campaign Manager" />
+      <LargeImage src={Images.ViralgainsThree} alt="Viralgains Dashboard" />
+      <LargeImage src={Images.ViralgainsFour} alt="Viralgains Dashboard" />
+  </DefaultLayout>
 )
-
-const OuterContainer = styled.section`
-  display: flex;
-  justify-content: center;
-  margin-bottom: ${Spacing.pageBottom};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    padding-right: ${Spacing.base};
-    padding-left: ${Spacing.base};
-  }
-`
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: ${Spacing.containerWidth};
-  padding-top: ${Spacing.xHuge};
-`
 
 const LargeText = styled.h1`
   font-size: ${Typography.headingFontSize};
+  margin-top: ${Spacing.base};
   margin-bottom: ${Spacing.xSmall};
 `
 
