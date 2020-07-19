@@ -17,9 +17,18 @@ const MobileHeartbeatPage = () => (
       title={"Mobile Heartbeat"}
       welcomeText={"Product redesign of a tool that enables clinicians to improve patient care through accelerated communication and collaboration in the hospital."}
     >
-      <Label borderColor={Colors.green} label={"Case Study"} />
-      <Label borderColor={Colors.blue} label={"Product Design"} />
-      <Label borderColor={Colors.orange} label={"UX Design"} />
+      <Label
+        borderColor={Colors.green}
+        label={"Case Study"}
+      />
+      <Label
+        borderColor={Colors.blue}
+        label={"Product Design"}
+      />
+      <Label
+        borderColor={Colors.orange}
+        label={"UX Design"}
+      />
     </CaseStudyHeader>
     <CaseStudyImage
       marginBottom={Spacing.xxHuge}
@@ -36,7 +45,10 @@ const MobileHeartbeatPage = () => (
       heading={"Discovery Phase"}
       description={"Our users had highly specific and complex workflows, and we needed to make sure to thoroughly research and understand them before beginning. Our research included shadowing, interviewing, focus groups & surveys. This ranged from observing a chaotic night shift in a Manhattan ER, to scrubbing into the OR to see how surgical teams communicate. As a result, we built a stronger understanding of the goals & frustrations of our customers."}
     />
-    <CaseStudyImage imageSrc={Images.MhDiscovery} imageAlt={"Mobile Heartbeat Discovery"} />
+    <CaseStudyImage
+      imageSrc={Images.MhDiscovery}
+      imageAlt={"Mobile Heartbeat Discovery"}
+    />
     <p>
       We chose to follow the Lean UX Canvas for initial problem definition
       to help us maintain focus and establish measurable outcomes. Through
@@ -45,7 +57,10 @@ const MobileHeartbeatPage = () => (
       solving the core problems around our information architecture,
       physician workflow, and speed of urgent communications.
     </p>
-    <CaseStudyImage imageSrc={Images.MhPersona} imageAlt={"Mobile Heartbeat Persona"} />
+    <CaseStudyImage
+      imageSrc={Images.MhPersona}
+      imageAlt={"Mobile Heartbeat Persona"}
+    />
     <p>
       We created personas of our core users and gave them personalities,
       goals, and priorities. This helped us journey map ideal workflows
@@ -69,7 +84,10 @@ const MobileHeartbeatPage = () => (
       able to simplify the navigation and organize related functionality
       into intuitive groupings on the bottom tab bar.
     </p>
-    <CaseStudyImage imageSrc={Images.MhWireframe} imageAlt={"Mobile Heartbeat Wireframe"} />
+    <CaseStudyImage
+      imageSrc={Images.MhWireframe}
+      imageAlt={"Mobile Heartbeat Wireframe"}
+    />
     <p>
       By starting with wireframes we were able to ideate rapidly with
       minimal commitment. We met with stakeholders, SMEs, and users early
