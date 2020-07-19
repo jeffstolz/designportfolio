@@ -1,14 +1,14 @@
 import React from "react"
-import Header from "../components/header"
+import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import Gradient from "../components/gradient"
 import "../styles/global-styles.css"
 
-const Layout = ({ children }) => {
+const HomeLayout = ({ children }) => {
   return (
     <>
       <Gradient>
-        <Header />
+        <Navbar />
         <main>
           {children}
         </main>
@@ -18,4 +18,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default HomeLayout

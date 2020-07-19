@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { Spacing } from "../styles/variables"
 
-const Header = () => (
+const Navbar = () => (
   <OuterContainer>
     <Container>
       <div>
@@ -42,4 +42,4 @@ const LinkGroup = styled.div`
   width: 13em;
 `
 
-export default Header
+export default Navbar

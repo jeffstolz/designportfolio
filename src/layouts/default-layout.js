@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-import Header from "../components/header"
+import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import "../styles/global-styles.css"
 import { Spacing } from "../styles/variables"
 
-const AboutLayout = ({ children }) => {
+const DefaultLayout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>
         <OuterContainer>
           <Container>
@@ -38,4 +38,4 @@ const Container = styled.div`
   width: ${Spacing.containerWidth};
 `
 
-export default AboutLayout
+export default DefaultLayout
