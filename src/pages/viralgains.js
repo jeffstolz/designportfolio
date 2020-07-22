@@ -13,7 +13,10 @@ const ViralgainsPage = () => (
     <CaseStudyHeader
       title={"ViralGains"}
     >
-      <Label borderColor={Colors.violet} label={"Visual Design"} />
+      <Label
+        borderColor={Colors.violet}
+        label={"Visual Design"}
+      />
     </CaseStudyHeader>
     <p>
       As a consultant for thoughtbot, I worked with another designer to lead the UI redesign and implementation for Viralgains, an advertising journey management platform. We began with initial design research such as mood boards and competitor analysis until we agreed upon a specific aesthetic. We created a sleek, dark tone theme that appealed to the advertising manager persona and matched the company's current brand. We then implemented the designs in React, working in collaboration with their in-house development team.
