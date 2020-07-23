@@ -27,6 +27,7 @@ const HmhPage = () => (
       marginBottomMobile={Spacing.huge}
       imageSrc={Images.HmhOverview}
       imageAlt={"HMH Marketplace Overview"}
+      boxShadow={Colors.lightShadow}
     />
     <CaseStudyIntro
       heading={"Background"}
@@ -119,6 +120,7 @@ const HmhPage = () => (
       marginBottomMobile={Spacing.huge}
       imageSrc={Images.HmhSolutionFive}
       imageAlt={"HMH Solution Five"}
+      boxShadow={Colors.lightShadow}
     />
     <CaseStudyIntro
       heading={"Reflection"}

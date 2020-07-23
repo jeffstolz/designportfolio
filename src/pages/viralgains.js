@@ -27,21 +27,25 @@ const ViralgainsPage = () => (
       marginBottom={Spacing.xSmall}
       imageSrc={Images.ViralgainsOne}
       imageAlt="Viralgains Creative Builder"
+      boxShadow={Colors.lightShadow}
     />
     <CaseStudyImage
       marginBottom={Spacing.xSmall}
       imageSrc={Images.ViralgainsTwo}
       imageAlt="Viralgains Campaign Manager"
+      boxShadow={Colors.lightShadow}
     />
     <CaseStudyImage
       marginBottom={Spacing.xSmall}
       imageSrc={Images.ViralgainsThree}
       imageAlt="Viralgains Dashboard"
+      boxShadow={Colors.lightShadow}
     />
     <CaseStudyImage
       marginBottom={Spacing.xSmall}
       imageSrc={Images.ViralgainsFour}
       imageAlt="Viralgains Dashboard"
+      boxShadow={Colors.lightShadow}
     />
   </DefaultLayout>
 )

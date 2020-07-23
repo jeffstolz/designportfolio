@@ -7,6 +7,7 @@ const CaseStudyImage = ({
   marginBottomMobile,
   imageSrc,
   imageAlt,
+  boxShadow,
 }) => {
   return (
     <Image
@@ -14,6 +15,7 @@ const CaseStudyImage = ({
       marginBottomMobile={marginBottomMobile}
       src={imageSrc}
       alt={imageAlt}
+      boxShadow={boxShadow}
     />
   )
 }
@@ -21,11 +23,14 @@ const CaseStudyImage = ({
 const Image = styled.img.attrs(props => ({
   marginBottom: props.marginBottom || Spacing.base,
   marginBottomMobile: props.marginBottomMobile || Spacing.base,
-  }))`
+}))`
   margin-top: ${Spacing.xxHuge};
   margin-bottom: ${props => props.marginBottom};
   object-fit: contain;
   width: 100%;
+  -webkit-box-shadow: ${props => props.boxShadow};
+  -moz-box-shadow: ${props => props.boxShadow};
+  box-shadow: ${props => props.boxShadow};
 
   @media (max-width: ${Spacing.breakPoint}) {
     margin-top: ${Spacing.huge};
