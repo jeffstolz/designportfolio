@@ -12,3 +12,5 @@ export const green = "#00d332"
 export const aqua = "#23d5ab"
 
 export const transparentBlack = "#00000080"
+
+export const lightShadow = "0 3px 6px rgba(0, 0, 0, 0.16)"
