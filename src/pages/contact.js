@@ -78,6 +78,7 @@ const DownloadButton = styled.a`
   align-items: center;
   width: 15em;
   height: ${Spacing.large};
+  text-decoration: none;
   border: 1px solid ${Colors.black};
   border-radius: ${Spacing.base};
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);

@@ -18,21 +18,15 @@ const AboutBanner = () => (
         alongside developers. While I have experience with a variety of roles, I
         especially enjoy the unique challenges of product design.
       </IntroText>
-      <Callouts>
-        Figma
-        <br />
-        Jobs to be Done
-        <br />
-        Atomic Design Systems
-        <br />
-        GV Design Sprints
-        <br />
-        Ruby on Rails
-        <br />
-        A11Y Project
-        <br />
-        BEM Methodology
-      </Callouts>
+      <CalloutList>
+        <Callout>Figma</Callout>
+        <Callout>Jobs to be Done</Callout>
+        <Callout>Atomic Design Systems</Callout>
+        <Callout>GV Design Sprints</Callout>
+        <Callout>React</Callout>
+        <Callout>Ruby on Rails</Callout>
+        <Callout>A11Y Project</Callout>
+      </CalloutList>
     </MiddleRow>
     <BottomRow>
       <Divider />
@@ -94,11 +88,17 @@ const LargeText = styled.h1`
   text-transform: uppercase;
 `
 
-const Callouts = styled.div`
+const CalloutList = styled.ul`
+  list-style-type: none;
+  margin: 0;
+`
+
+const Callout = styled.li`
   text-transform: uppercase;
   font-weight: ${Typography.heavyFontWeight};
   font-size: ${Typography.mediumFontSize};
   color: ${Colors.gray};
+  margin: 0;
 
   @media (max-width: ${Spacing.breakPoint}) {
     display: none;
