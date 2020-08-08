@@ -4,125 +4,90 @@ import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Card = ({
-  cardWidth,
-  projectLink,
-  children,
-  previewHeading,
-  previewText,
   imageSrc,
   imageAlt,
-
+  previewLabels,
+  previewHeading,
+  previewText,
+  projectLink,
 }) => (
-  <Container cardWidth={cardWidth} >
-    <Link to={projectLink}>
-      <OverlayContainer>
-        {children}
-      </OverlayContainer>
-      <Slide>
-        <PreviewHeading>{previewHeading}</PreviewHeading>
-        <PreviewText>{previewText}</PreviewText>
-      </Slide>
-      <PreviewImage
-        src={imageSrc}
-        alt={imageAlt}
-      />
-    </Link>
-  </Container>
+  <OuterContainer>
+    <ImageContainer>
+      <PreviewImage src={imageSrc} alt={imageAlt} />
+    </ImageContainer>
+    <TextContainer>
+      <PreviewLabels>{previewLabels}</PreviewLabels>
+      <PreviewHeading>{previewHeading}</PreviewHeading>
+      <PreviewText>{previewText}</PreviewText>
+      <CardLink to={projectLink}>View Case Study</CardLink>
+    </TextContainer>
+  </OuterContainer>
 )
 
-const OverlayContainer = styled.div`
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  padding: ${Spacing.small};
-  background-color: ${Colors.transparentBlack};
-  opacity: 0;
-  transition: 0.5s ease;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    opacity: 1;
-  }
-`
-
-const Slide = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 0;
-  background-color: ${Colors.black};
-  opacity: 0;
-  transition: 0.5s ease;
-  padding-left: ${Spacing.small};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    opacity: 1;
-    height: ${Spacing.huge};
-  }
-`
-
-const Container = styled.div.attrs(props => ({
-  cardWidth: props.cardWidth || "59%",
-}))`
-  position: relative;
+const OuterContainer = styled.li`
   display: flex;
   background-color: ${Colors.white};
-  height: ${Spacing.cardHeight};
-  width: ${props => props.cardWidth};
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  min-height: ${Spacing.cardHeight};
+  box-shadow: ${Colors.darkShadow};
+  margin: 0 0 ${Spacing.medium} 0;
+  border-radius: ${Spacing.xxSmall};
 
-
-  &:hover {
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    flex-direction: column;
   }
+`
 
-  &:hover ${OverlayContainer} {
-    opacity: 1;
-    transition: 0.3s ease;
-  }
+const ImageContainer = styled.div`
+  width: 40%;
+  background-color: black;
+  border-radius: ${Spacing.xxSmall} 0 0 ${Spacing.xxSmall};
 
-  &:hover ${Slide} {
-    height: ${Spacing.huge};
-    opacity: 1;
-    transition: 0.3s ease;
-  }
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    justify-content: flex-end;
-    height: ${Spacing.cardMobileHeight};
+  @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;
-    margin-bottom: ${Spacing.base};
+    height: ${Spacing.cardMobileHeight};
   }
 `
 
-const PreviewHeading = styled.h2`
-  color: ${Colors.white};
-  font-size: ${Typography.baseFontSize};
-  line-height: ${Typography.hugeLineHeight};
-`
+const TextContainer = styled.div`
+  width: 60%;
+  padding: ${Spacing.base};
 
-const PreviewText = styled.h3`
-  color: ${Colors.white};
-  font-size: ${Typography.smallFontSize};
-  font-weight: ${Typography.lightFontWeight};
-  opacity: 0.7;
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    width: 100%;
+  }
 `
 
 const PreviewImage = styled.img`
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+  border: 1px solid green;
 `
 
+const PreviewLabels = styled.p`
+  color: ${Colors.gray};
+  font-size: ${Typography.xSmallFontSize};
+  margin-bottom: ${Spacing.small};
+  text-transform: uppercase;
+  letter-spacing: 2px;
+`
+
+const PreviewHeading = styled.h3`
+  margin-bottom: ${Spacing.xSmall};
+`
+
+const PreviewText = styled.p`
+  margin-bottom: ${Spacing.base};
+`
+
+const CardLink = styled(Link)`
+  background-color: ${Colors.black};
+  color: ${Colors.white};
+  text-decoration: none;
+  padding: ${Spacing.small} ${Spacing.base};
+  border-radius: ${Spacing.large};
+
+  &:hover {
+    background-color: ${Colors.purple};
+    box-shadow: ${Colors.lightShadow};
+  }
+`
 
 export default Card

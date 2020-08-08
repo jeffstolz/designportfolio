@@ -24,25 +24,25 @@ const ViralgainsPage = () => (
       in-house development team.
     </p>
     <CaseStudyImage
-      marginBottom={Spacing.xSmall}
+      marginBottom={Spacing.xxxSmall}
       imageSrc={Images.ViralgainsOne}
       imageAlt="Viralgains Creative Builder"
       boxShadow={Colors.lightShadow}
     />
     <CaseStudyImage
-      marginBottom={Spacing.xSmall}
+      marginBottom={Spacing.xxxSmall}
       imageSrc={Images.ViralgainsTwo}
       imageAlt="Viralgains Campaign Manager"
       boxShadow={Colors.lightShadow}
     />
     <CaseStudyImage
-      marginBottom={Spacing.xSmall}
+      marginBottom={Spacing.xxxSmall}
       imageSrc={Images.ViralgainsThree}
       imageAlt="Viralgains Dashboard"
       boxShadow={Colors.lightShadow}
     />
     <CaseStudyImage
-      marginBottom={Spacing.xSmall}
+      marginBottom={Spacing.xxxSmall}
       imageSrc={Images.ViralgainsFour}
       imageAlt="Viralgains Dashboard"
       boxShadow={Colors.lightShadow}

@@ -14,3 +14,5 @@ export const aqua = "#23d5ab"
 export const transparentBlack = "#00000080"
 
 export const lightShadow = "0 3px 6px rgba(0, 0, 0, 0.16)"
+export const darkShadow = "0 9px 15px rgba(0, 0, 0, 0.2)"
+export const darkerShadow = "0 12px 18px rgba(0, 0, 0, 0.25)"
