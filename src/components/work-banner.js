@@ -7,10 +7,10 @@ const WorkBanner = () => (
     <Intro>
       <Divider />
       <IntroText>
-        <Greeting>Hi, I’m Jeff.</Greeting> I work with teams from the ground up
-        to ideate, design, and implement software. My favorite tools are Ruby on
-        Rails and Figma. I’m a big fan of design sprints, design systems, and
-        end user testing.
+        <Greeting>Hi, I’m Jeff!</Greeting> I work with teams from the ground up
+        to ideate, design, and implement software. My favorite tools are React,
+        React Native, and Figma. I’m a big fan of design sprints, design
+        systems, and end user testing.
       </IntroText>
       <IntroText>
         I’m always interested in geeking out about travel, science fiction, and
@@ -20,12 +20,12 @@ const WorkBanner = () => (
     </Intro>
     <div>
       <LargeText>
-        Product, <br />
-        Experience,
+        Product <br />
+        Designer,
         <br />
-        Visual,
+        Front-end
         <br />
-        Designer
+        Developer
       </LargeText>
     </div>
   </Container>
@@ -42,7 +42,7 @@ const Intro = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 14.5em;
-  height: 20.75em;
+  height: 21em;
   margin-right: ${Spacing.base};
 
   @media (max-width: ${Spacing.breakPoint}) {

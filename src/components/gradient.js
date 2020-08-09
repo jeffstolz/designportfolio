@@ -2,13 +2,7 @@ import styled from "styled-components"
 import { Colors, Spacing } from "../styles/variables"
 
 const Gradient = styled.div`
-  background: linear-gradient(
-    -45deg,
-    ${Colors.orange},
-    ${Colors.pink},
-    ${Colors.cyan},
-    ${Colors.aqua}
-  );
+  background: linear-gradient(-45deg, ${Colors.cyan}, #39cded, #2b81bf);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   height: 22.3em;
