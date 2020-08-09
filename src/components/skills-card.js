@@ -9,7 +9,7 @@ const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
     </ImageContainer>
     <ContentContainer>
       <Heading>{heading}</Heading>
-      <p>{text}</p>
+      <Text>{text}</Text>
     </ContentContainer>
   </Card>
 )
@@ -17,24 +17,33 @@ const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
 const Card = styled.li`
   display: flex;
   padding: ${Spacing.base};
-  margin-bottom: ${Spacing.small};
-  border-radius: ${Spacing.xxSmall};
+  margin-bottom: ${Spacing.base};
+  border-radius: ${Spacing.borderRadius};
   box-shadow: ${Colors.lightShadow};
   background-color: ${Colors.white};
+  max-width: 42em;
+
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
 `
 
 const ImageContainer = styled.div`
   background-color: black;
-  width: 20%;
+  width: 15%;
   margin-right: ${Spacing.small};
 `
 
 const ContentContainer = styled.div`
-  width: 80%;
+  width: 85%;
 `
 
 const Heading = styled.h3`
   margin-bottom: ${Spacing.xSmall};
+`
+
+const Text = styled.p`
+  color: ${Colors.darkGray};
 `
 
 export default SkillsCard

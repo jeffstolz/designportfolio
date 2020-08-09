@@ -35,7 +35,8 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 34em;
+  height: 32em;
+  margin-bottom: 7em;
 `
 const Intro = styled.div`
   display: flex;

@@ -6,6 +6,7 @@ import { Spacing } from "../styles/variables"
 const FeaturedWork = () => (
   <OuterContainer>
     <Container>
+      <Header>Featured Work</Header>
       <Card
         previewLabels={"Product Design / Research / Mobile Design"}
         previewHeading={
@@ -53,14 +54,7 @@ const FeaturedWork = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  margin-top: ${Spacing.huge};
-  margin-bottom: ${Spacing.pageBottom};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    margin-top: ${Spacing.small};
-    padding-left: ${Spacing.base};
-    padding-right: ${Spacing.base};
-  }
+  padding: ${Spacing.huge} ${Spacing.base};
 `
 
 const Container = styled.ul`
@@ -69,6 +63,10 @@ const Container = styled.ul`
   list-style-type: none;
   margin: 0;
   width: ${Spacing.containerWidth};
+`
+
+const Header = styled.h2`
+  margin-bottom: ${Spacing.small};
 `
 
 export default FeaturedWork

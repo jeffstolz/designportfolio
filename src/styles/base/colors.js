@@ -1,6 +1,7 @@
 export const black = "#000"
-export const white = "#fff"
+export const darkGray = "#4D4D4D"
 export const gray = "#898989"
+export const white = "#fff"
 export const blue = "#00b8ff"
 export const cyan = "#23a6d5"
 export const navy = "#076ca9"

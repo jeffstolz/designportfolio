@@ -5,7 +5,7 @@ const Gradient = styled.div`
   background: linear-gradient(-45deg, ${Colors.cyan}, #39cded, #2b81bf);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
-  height: 22.3em;
+  height: 21.3em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     height: 23.2em;

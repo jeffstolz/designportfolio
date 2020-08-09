@@ -29,18 +29,23 @@ const OuterContainer = styled.li`
   background-color: ${Colors.white};
   min-height: ${Spacing.cardHeight};
   box-shadow: ${Colors.darkShadow};
-  margin: 0 0 ${Spacing.medium} 0;
-  border-radius: ${Spacing.xxSmall};
+  margin: 0 0 ${Spacing.medium} ${Spacing.base};
+  border-radius: ${Spacing.xSmall};
+
+  &:nth-child(5) {
+    margin: 0 0 0 ${Spacing.base};
+  }
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     flex-direction: column;
+    margin: 0 0 ${Spacing.medium} 0;
   }
 `
 
 const ImageContainer = styled.div`
   width: 40%;
   background-color: black;
-  border-radius: ${Spacing.xxSmall} 0 0 ${Spacing.xxSmall};
+  border-radius: ${Spacing.borderRadius} 0 0 ${Spacing.borderRadius};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;
@@ -75,6 +80,7 @@ const PreviewHeading = styled.h3`
 
 const PreviewText = styled.p`
   margin-bottom: ${Spacing.base};
+  color: ${Colors.darkGray};
 `
 
 const CardLink = styled(Link)`
