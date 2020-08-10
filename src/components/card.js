@@ -39,6 +39,10 @@ const OuterContainer = styled.li`
   @media (max-width: ${Spacing.smallBreakPoint}) {
     flex-direction: column;
     margin: 0 0 ${Spacing.medium} 0;
+
+    &:nth-child(5) {
+      margin: 0;
+    }
   }
 `
 

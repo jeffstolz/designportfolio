@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import WorkBanner from "../components/work-banner"
 import MySkills from "../components/my-skills"
 import FeaturedWork from "../components/featured-work"
+import Ethos from "../components/ethos"
 
 const IndexPage = () => (
   <HomeLayout>
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <WorkBanner />
     <MySkills />
     <FeaturedWork />
+    <Ethos />
   </HomeLayout>
 )
 
