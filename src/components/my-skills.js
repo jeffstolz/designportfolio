@@ -60,7 +60,7 @@ const MySkills = () => (
   </OuterContainer>
 )
 
-const OuterContainer = styled.div`
+const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   background-color: ${Colors.cyan};
