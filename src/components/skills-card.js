@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors, Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
   <Card>
@@ -16,15 +16,21 @@ const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
 
 const Card = styled.li`
   display: flex;
-  padding: ${Spacing.base};
-  margin-bottom: ${Spacing.base};
-  border-radius: ${Spacing.borderRadius};
+  padding: ${Spacing.small};
+  margin-bottom: ${Spacing.small};
+  border-radius: ${Spacing.xSmall};
   box-shadow: ${Colors.lightShadow};
   background-color: ${Colors.white};
-  max-width: 42em;
+  max-width: 25em;
 
-  &:nth-child(3) {
-    margin-bottom: 0;
+  &:nth-child(odd) {
+    margin-right: ${Spacing.small};
+  }
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
 `
 
@@ -39,11 +45,14 @@ const ContentContainer = styled.div`
 `
 
 const Heading = styled.h3`
+  font-size: ${Typography.baseFontSize};
   margin-bottom: ${Spacing.xSmall};
 `
 
 const Text = styled.p`
   color: ${Colors.darkGray};
+  font-size: ${Typography.smallFontSize};
+  line-height: ${Typography.largeLineHeight};
 `
 
 export default SkillsCard

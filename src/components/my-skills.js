@@ -13,19 +13,37 @@ const MySkills = () => (
             <SkillsCard
               heading={"Jobs-To-Be-Done"}
               text={
-                "Ensuring we're solving the right problem is my first step to every project, and this mental model is a great way to frame that."
+                "Ensuring we're solving the right problem is my first step to every project."
               }
             />
             <SkillsCard
-              heading={"Atomic Design Systems"}
+              heading={"Personas"}
               text={
-                "Always a fan of this methodology for larger projects - it works especially well with React components."
+                "They can be rough, but ensuring we always maintain user context is crucial to success."
               }
             />
             <SkillsCard
               heading={"GV Design Sprints"}
               text={
-                "An excellent guideline, although I've found that no two sprints turn out the same - each customer and problem requires a bit of tweaking to the structure."
+                "An excellent guideline, although I've learned that no two sprints turn out exactly the same."
+              }
+            />
+            <SkillsCard
+              heading={"Atomic Design Systems"}
+              text={
+                "Always a fan of this methodology for larger projects - especially with React components."
+              }
+            />
+            <SkillsCard
+              heading={"Figma"}
+              text={
+                "I'll work with anything, but I prefer Figma for being cloud-based & platform agnostic."
+              }
+            />
+            <SkillsCard
+              heading={"Informal User Testing"}
+              text={
+                "Finding time & funds for user testing can be hard - I opt for frequency over formality."
               }
             />
           </CardList>
@@ -38,19 +56,37 @@ const MySkills = () => (
             <SkillsCard
               heading={"React"}
               text={
-                "While I have built web apps in Rails & Elm, I prefer React for it's component hierarchy that plays well with atomic design systems and React Native."
+                "While I've worked in Rails & Elm before, I prefer React for it's component hierarchy."
               }
             />
             <SkillsCard
               heading={"React Native"}
               text={
-                "On the mobile side, I prefer RN for cross-platform development - a single repo, and single team, makes for faster deliverables and a more in-sync dev team."
+                "For mobile, a single repo & team makes for faster deliverables."
               }
             />
             <SkillsCard
               heading={"Accessibility Always"}
               text={
-                "I see accessibile design & development as a responsibility, not an afterthought. I'm a big fan of the A11y Project."
+                "I see accessibile design & development as a responsibility, not an afterthought."
+              }
+            />
+            <SkillsCard
+              heading={"Ship Early & Often"}
+              text={
+                "Especially for MVPs, overbearing code review policies & CI can often hurt more than help."
+              }
+            />
+            <SkillsCard
+              heading={"Concise Pull Requests"}
+              text={
+                "I prefer to feature branch and keep my PRs focused & squashed into a single commit."
+              }
+            />
+            <SkillsCard
+              heading={"Prioritize Mobile"}
+              text={
+                "Many users only have a mobile device to access the internet - let's keep them in mind."
               }
             />
           </CardList>
@@ -85,9 +121,12 @@ const Header = styled.h2`
 `
 
 const CardList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding-left: ${Spacing.base};
+  max-width: 55em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding-left: 0;
