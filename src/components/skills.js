@@ -3,7 +3,7 @@ import styled from "styled-components"
 import SkillsCard from "./skills-card"
 import { Colors, Spacing } from "../styles/variables"
 
-const MySkills = () => (
+const Skills = () => (
   <OuterContainer>
     <Container>
       <DesignContainer>
@@ -25,13 +25,13 @@ const MySkills = () => (
             <SkillsCard
               heading={"GV Design Sprints"}
               text={
-                "An excellent guideline, although I've learned that no two sprints turn out exactly the same."
+                "An excellent guideline, although I've found that no two sprints are run exactly the same."
               }
             />
             <SkillsCard
               heading={"Atomic Design Systems"}
               text={
-                "Always a fan of this methodology for larger projects - especially with React components."
+                "Always a fan of this methodology for larger projects - especially when paired with React."
               }
             />
             <SkillsCard
@@ -43,7 +43,7 @@ const MySkills = () => (
             <SkillsCard
               heading={"Informal User Testing"}
               text={
-                "Finding time & funds for user testing can be hard - I opt for frequency over formality."
+                "Getting buy-in can be hard but validation is crucial - I opt for frequency over formality."
               }
             />
           </CardList>
@@ -62,7 +62,7 @@ const MySkills = () => (
             <SkillsCard
               heading={"React Native"}
               text={
-                "For mobile, a single repo & team makes for faster deliverables."
+                "For cross-platform apps, I find a single repo & team makes for smoother deliverables."
               }
             />
             <SkillsCard
@@ -80,7 +80,7 @@ const MySkills = () => (
             <SkillsCard
               heading={"Concise Pull Requests"}
               text={
-                "I prefer to feature branch and keep my PRs focused & squashed into a single commit."
+                "I prefer to feature branch and keep my PRs focused & squashed into single commits."
               }
             />
             <SkillsCard
@@ -108,7 +108,7 @@ const Container = styled.div`
 `
 
 const DesignContainer = styled.div`
-  padding-bottom: ${Spacing.xHuge};
+  padding-bottom: ${Spacing.large};
 `
 
 const DevelopContainer = styled.div`
@@ -133,4 +133,4 @@ const CardList = styled.ul`
   }
 `
 
-export default MySkills
+export default Skills

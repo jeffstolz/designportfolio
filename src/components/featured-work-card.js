@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
-const Card = ({
+const FeaturedWorkCard = ({
   imageSrc,
   imageAlt,
   previewLabels,
@@ -100,4 +100,4 @@ const CardLink = styled(Link)`
   }
 `
 
-export default Card
+export default FeaturedWorkCard
