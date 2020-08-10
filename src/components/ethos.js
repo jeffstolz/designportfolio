@@ -27,7 +27,7 @@ const OuterContainer = styled.section`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: ${Spacing.mediumContainerWidth};
+  width: ${Spacing.containerWidth};
 `
 
 const Heading = styled.h2`
@@ -37,7 +37,7 @@ const Heading = styled.h2`
 const Text = styled.p`
   font-size: ${Typography.mediumFontSize};
   line-height: ${Typography.hugeLineHeight};
-  margin-left: ${Spacing.base};
+  margin-left: ${Spacing.small};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     margin-left: 0;

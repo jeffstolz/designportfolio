@@ -7,7 +7,7 @@ const WorkBanner = () => (
     <Intro>
       <Divider />
       <IntroText>
-        <Greeting>Hi, I’m Jeff!</Greeting> I work with teams from the ground up
+        <Greeting>Hi, I’m Jeff.</Greeting> I work with teams from the ground up
         to ideate, design, and implement software. My favorite tools are React,
         React Native, and Figma. I’m a big fan of design sprints, design
         systems, and end user testing.

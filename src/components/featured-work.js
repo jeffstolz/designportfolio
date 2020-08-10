@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import Card from "./card"
+import FeaturedWorkCard from "./featured-work-card"
 import { Spacing } from "../styles/variables"
 
 const FeaturedWork = () => (
   <OuterContainer>
     <Container>
       <Header>Featured Work</Header>
-      <Card
+      <FeaturedWorkCard
         previewLabels={"Product Design / Research / Mobile Design"}
         previewHeading={
           "Redesigning a Deeply Embedded Clinical Communication Tool"
@@ -17,7 +17,7 @@ const FeaturedWork = () => (
         }
         projectLink={"/mobile-heartbeat"}
       />
-      <Card
+      <FeaturedWorkCard
         previewLabels={"Facilitation / Product Design / Ruby on Rails"}
         previewHeading={
           "Designing and Building an Online Education MVP in Six Weeks"
@@ -27,7 +27,7 @@ const FeaturedWork = () => (
         }
         projectLink={"/theskills"}
       />
-      <Card
+      <FeaturedWorkCard
         previewLabels={"Design System / Mobile Design / React Native"}
         previewHeading={
           "Establishing a Design System for a Complex Enterprise Organization"
@@ -37,7 +37,7 @@ const FeaturedWork = () => (
         }
         projectLink={"/airxos"}
       />
-      <Card
+      <FeaturedWorkCard
         previewLabels={"Facilitation / Product Design"}
         previewHeading={
           "Breaking Down a PDS that Invalidated a Product and Provided a New Path Forward"
@@ -66,7 +66,7 @@ const Container = styled.ul`
 `
 
 const Header = styled.h2`
-  margin-bottom: ${Spacing.small};
+  margin-bottom: ${Spacing.base};
 `
 
 export default FeaturedWork
