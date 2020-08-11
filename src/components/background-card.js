@@ -2,37 +2,15 @@ import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
-const FeaturedWorkCard = ({ title, company, dates, description }) => (
+const BackgroundCard = ({ title, company, dates, description, children }) => (
   <OuterContainer>
-    <JobContainer>
+    <Container>
       <Dates>{dates}</Dates>
       <Title>{title}</Title>
       <Company>{company}</Company>
       <Description>{description}</Description>
-    </JobContainer>
-    <HighlightContainer>
-      <HighlightHeading>Highlights</HighlightHeading>
-      <HighlightList>
-        <Highlight>
-          <HighlightImg></HighlightImg>
-          <HighlightCopy>
-            Test but with a longer line that will carry to two and more copy.
-          </HighlightCopy>
-        </Highlight>
-        <Highlight>
-          <HighlightImg></HighlightImg>
-          <HighlightCopy>
-            Test but with a longer line that will carry to two and more copy.
-          </HighlightCopy>
-        </Highlight>
-        <Highlight>
-          <HighlightImg></HighlightImg>
-          <HighlightCopy>
-            Test but with a longer line that will carry to two and more copy.
-          </HighlightCopy>
-        </Highlight>
-      </HighlightList>
-    </HighlightContainer>
+    </Container>
+    {children}
   </OuterContainer>
 )
 
@@ -41,12 +19,12 @@ const OuterContainer = styled.li`
   margin-bottom: ${Spacing.huge};
 `
 
-const JobContainer = styled.div`
+const Container = styled.div`
   background-color: ${Colors.white};
   box-shadow: ${Colors.lightShadow};
   border-radius: ${Spacing.xSmall};
   padding: ${Spacing.base};
-  width: 50%;
+  width: 56%;
   min-height: 12em;
   position: relative;
 
@@ -86,44 +64,4 @@ const Description = styled.p`
   margin: 0;
 `
 
-const HighlightContainer = styled.div`
-  margin-left: ${Spacing.large};
-  padding-top: ${Spacing.base};
-  width: 43%;
-`
-
-const HighlightHeading = styled.h4`
-  margin-bottom: ${Spacing.small};
-`
-
-const HighlightList = styled.ul`
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-`
-
-const Highlight = styled.li`
-  display: flex;
-  width: 33.33%;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0 ${Spacing.xSmall};
-`
-
-const HighlightImg = styled.div`
-  background-color: black;
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-  margin-bottom: ${Spacing.xSmall};
-`
-
-const HighlightCopy = styled.p`
-  font-size: ${Typography.smallFontSize};
-  color: ${Colors.darkGray};
-  text-align: center;
-  line-height: ${Typography.largeLineHeight};
-`
-
-export default FeaturedWorkCard
+export default BackgroundCard

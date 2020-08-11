@@ -7,11 +7,10 @@ const Ethos = () => (
     <Container>
       <Heading>My Ethos</Heading>
       <Text>
-        Not every problem can be solved with software, but there is no denying
-        that it has a huge impact on our culture, both positive & negative. I
-        choose to work on projects that improve the health, education,
-        liberties, and overall quality of life for our global and local
-        communities.
+        Every day is an opportunity to carry myself with authenticity,
+        compassion, humor, and humility. I choose to work on projects that
+        improve the health, education, liberties, and overall quality of life
+        for our global and local communities.
       </Text>
     </Container>
   </OuterContainer>
