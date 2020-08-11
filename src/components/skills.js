@@ -56,7 +56,7 @@ const Skills = () => (
             <SkillsCard
               heading={"React"}
               text={
-                "I prefer React for it's component hierarchy. This repo is a good example of how I think."
+                "I prefer React for it's component hierarchy. This repo is a good example of how I code."
               }
             />
             <SkillsCard
@@ -99,7 +99,7 @@ const Skills = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  background-color: ${Colors.cyan};
+  background-color: ${Colors.lightGray};
   padding: ${Spacing.huge} ${Spacing.base};
 `
 
