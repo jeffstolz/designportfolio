@@ -5,7 +5,7 @@ import Highlights from "./highlights"
 import { Spacing } from "../styles/variables"
 
 const Background = () => (
-  <OuterContainer>
+  <OuterContainer id="background">
     <Container>
       <Header>My Background</Header>
       <ul>

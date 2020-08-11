@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
-const WorkBanner = () => (
-  <Container>
-    <Intro>
+const Intro = () => (
+  <OuterContainer id="intro">
+    <Container>
       <Divider />
       <IntroText>
         <Greeting>Hi, I’m Jeff.</Greeting> I work with teams from the ground up
@@ -17,7 +17,7 @@ const WorkBanner = () => (
         D&D.
       </IntroText>
       <Divider />
-    </Intro>
+    </Container>
     <div>
       <LargeText>
         Product <br />
@@ -28,17 +28,17 @@ const WorkBanner = () => (
         Developer
       </LargeText>
     </div>
-  </Container>
+  </OuterContainer>
 )
 
-const Container = styled.section`
+const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 32em;
   margin-bottom: 7em;
 `
-const Intro = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,4 +79,4 @@ const Divider = styled.div`
   border-bottom: 1px solid ${Colors.black};
 `
 
-export default WorkBanner
+export default Intro

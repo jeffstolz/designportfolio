@@ -4,7 +4,7 @@ import FeaturedWorkCard from "./featured-work-card"
 import { Spacing } from "../styles/variables"
 
 const FeaturedWork = () => (
-  <OuterContainer>
+  <OuterContainer id="work">
     <Container>
       <Header>Featured Work</Header>
       <FeaturedWorkCard

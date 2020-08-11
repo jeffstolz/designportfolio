@@ -616,9 +616,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
-/* Custom CSS */
-
-.activelink {
-  font-weight: 800;
-}

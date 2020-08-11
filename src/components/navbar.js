@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { Spacing } from "../styles/variables"
 
@@ -7,19 +6,25 @@ const Navbar = () => (
   <OuterContainer>
     <Container>
       <div>
-        <Link to="/">Jeff Stolz</Link>
+        <a href="/">Jeff Stolz</a>
       </div>
-      <LinkGroup>
-        <Link to="/" activeClassName="activelink">
-          Work
-        </Link>
-        <Link to="/about" activeClassName="activelink">
-          About
-        </Link>
-        <Link to="/contact" activeClassName="activelink">
-          Contact
-        </Link>
-      </LinkGroup>
+      <NavList>
+        <NavItem>
+          <a href="#skills">Skills</a>
+        </NavItem>
+        <NavItem>
+          <a href="#work">Work</a>
+        </NavItem>
+        <NavItem>
+          <a href="#ethos">Ethos</a>
+        </NavItem>
+        <NavItem>
+          <a href="#background">Background</a>
+        </NavItem>
+        <NavItem>
+          <a href="#contact">Contact</a>
+        </NavItem>
+      </NavList>
     </Container>
   </OuterContainer>
 )
@@ -36,10 +41,14 @@ const Container = styled.nav`
   width: 90.5%;
 `
 
-const LinkGroup = styled.div`
+const NavList = styled.ul`
   display: flex;
-  justify-content: space-between;
-  width: 13em;
+  list-style-type: none;
+  margin: 0;
+`
+
+const NavItem = styled.li`
+  margin-left: ${Spacing.base};
 `
 
 export default Navbar
