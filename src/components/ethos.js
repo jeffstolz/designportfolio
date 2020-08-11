@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Ethos = () => (
-  <OuterContainer>
+  <OuterContainer id="ethos">
     <Container>
       <Heading>My Ethos</Heading>
       <Text>

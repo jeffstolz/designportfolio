@@ -1,7 +1,7 @@
 import React from "react"
 import HomeLayout from "../layouts/home-layout"
 import SEO from "../components/seo"
-import WorkBanner from "../components/work-banner"
+import Intro from "../components/intro"
 import Skills from "../components/skills"
 import FeaturedWork from "../components/featured-work"
 import Ethos from "../components/ethos"
@@ -11,7 +11,7 @@ import Contact from "../components/contact"
 const IndexPage = () => (
   <HomeLayout>
     <SEO title="Design Portfolio" />
-    <WorkBanner />
+    <Intro />
     <Skills />
     <FeaturedWork />
     <Ethos />

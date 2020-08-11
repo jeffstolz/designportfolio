@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing, Typography } from "../styles/variables"
+import { Spacing } from "../styles/variables"
 
 const Footer = () => (
   <Container>

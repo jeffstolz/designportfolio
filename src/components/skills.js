@@ -4,7 +4,7 @@ import SkillsCard from "./skills-card"
 import { Colors, Spacing } from "../styles/variables"
 
 const Skills = () => (
-  <OuterContainer>
+  <OuterContainer id="skills">
     <Container>
       <DesignContainer>
         <div>
