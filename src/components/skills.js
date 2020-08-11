@@ -25,7 +25,7 @@ const Skills = () => (
             <SkillsCard
               heading={"GV Design Sprints"}
               text={
-                "An excellent guideline, although I've found that no two sprints are run exactly the same."
+                "An excellent guideline, although I've written about how sprints never quite go as planned."
               }
             />
             <SkillsCard
@@ -56,7 +56,7 @@ const Skills = () => (
             <SkillsCard
               heading={"React"}
               text={
-                "While I've worked in Rails & Elm before, I prefer React for it's component hierarchy."
+                "I prefer React for it's component hierarchy. This repo is a good example of how I think."
               }
             />
             <SkillsCard
@@ -68,7 +68,7 @@ const Skills = () => (
             <SkillsCard
               heading={"Accessibility Always"}
               text={
-                "I see accessibile design & development as a responsibility, not an afterthought."
+                "I see accessibile design & development as a responsibility. I'm a big fan of the A11y Project."
               }
             />
             <SkillsCard
