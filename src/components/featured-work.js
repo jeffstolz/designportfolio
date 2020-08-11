@@ -28,19 +28,19 @@ const FeaturedWork = () => (
         projectLink={"/theskills"}
       />
       <FeaturedWorkCard
-        previewLabels={"Design System / Mobile Design / React Native"}
+        previewLabels={"Design System"}
         previewHeading={
           "Establishing a Design System for a Complex Enterprise Organization"
         }
         previewText={
-          "An approach to providing structure for a fast-moving company with multiple products growing in different directions."
+          "An approach to providing structure to a 5,500 person organization with products growing in multiple directions."
         }
         projectLink={"/airxos"}
       />
       <FeaturedWorkCard
         previewLabels={"Facilitation / Product Design"}
         previewHeading={
-          "Breaking Down a PDS that Invalidated a Product and Provided a New Path Forward"
+          "Breaking Down a PDS that Invalidated a Concept and Provided a New Path Forward"
         }
         previewText={
           "A love letter to product design sprints and the value they bring to greenfield projects."

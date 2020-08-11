@@ -1,27 +1,24 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing } from "../styles/variables"
+import { Spacing, Typography } from "../styles/variables"
 
 const Footer = () => (
-  <FooterContainer>
-    <FooterLinkGroup>
-      <a href="mailto:j%73%74o%6Cz12%33@%67ma%69%6C.co%6D">Email</a>
-      <a href="https://github.com/jeffstolz">Github</a>
-      <a href="https://www.linkedin.com/in/jeff-stolz-17666725/">LinkedIn</a>
-    </FooterLinkGroup>
-  </FooterContainer>
+  <Container>
+    <Text>
+      Designed & developed by Jeff Stolz using{" "}
+      <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
+      <a href="https://github.com/jeffstolz/gatsby-portfolio">GitHub</a>, and a{" "}
+      <a href="https://www.youtube.com/watch?v=8ybW48rKBME">Secret Weapon</a>
+    </Text>
+  </Container>
 )
 
-const FooterContainer = styled.footer`
+const Container = styled.footer`
   display: flex;
   justify-content: center;
-  padding-bottom: ${Spacing.base};
+  padding: ${Spacing.base} 0;
 `
 
-const FooterLinkGroup = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 13em;
-`
+const Text = styled.p``
 
 export default Footer

@@ -6,6 +6,7 @@ import Skills from "../components/skills"
 import FeaturedWork from "../components/featured-work"
 import Ethos from "../components/ethos"
 import Background from "../components/background"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
   <HomeLayout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <FeaturedWork />
     <Ethos />
     <Background />
+    <Contact />
   </HomeLayout>
 )
 
