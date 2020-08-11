@@ -19,7 +19,7 @@ const Ethos = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  background-color: ${Colors.cyan};
+  background-color: ${Colors.lightGray};
   padding: ${Spacing.large} ${Spacing.base};
 `
 

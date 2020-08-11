@@ -39,7 +39,7 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   padding: ${Spacing.huge} ${Spacing.base};
-  background-color: ${Colors.cyan};
+  background-color: ${Colors.lightGray};
 `
 
 const Container = styled.div`
