@@ -1,28 +1,28 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing } from "../styles/variables"
+import { Colors, Spacing } from "../styles/variables"
 
 const Navbar = () => (
   <OuterContainer>
     <Container>
       <div>
-        <a href="/">Jeff Stolz</a>
+        <NavLink href="/">Jeff Stolz</NavLink>
       </div>
       <NavList>
         <NavItem>
-          <a href="#skills">Skills</a>
+          <NavLink href="#skills">Skills</NavLink>
         </NavItem>
         <NavItem>
-          <a href="#work">Work</a>
+          <NavLink href="#work">Work</NavLink>
         </NavItem>
         <NavItem>
-          <a href="#ethos">Ethos</a>
+          <NavLink href="#ethos">Ethos</NavLink>
         </NavItem>
         <NavItem>
-          <a href="#background">Background</a>
+          <NavLink href="#background">Background</NavLink>
         </NavItem>
         <NavItem>
-          <a href="#contact">Contact</a>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItem>
       </NavList>
     </Container>
@@ -32,13 +32,19 @@ const Navbar = () => (
 const OuterContainer = styled.header`
   display: flex;
   justify-content: center;
-  padding-top: ${Spacing.small};
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: ${Spacing.medium};
+  background-color: ${Colors.black};
+  z-index: 1;
 `
 
 const Container = styled.nav`
   display: flex;
   justify-content: space-between;
-  width: 90.5%;
+  width: 95%;
 `
 
 const NavList = styled.ul`
@@ -48,7 +54,11 @@ const NavList = styled.ul`
 `
 
 const NavItem = styled.li`
-  margin-left: ${Spacing.base};
+  margin: 0 0 0 ${Spacing.base};
+`
+
+const NavLink = styled.a`
+  color: ${Colors.white};
 `
 
 export default Navbar
