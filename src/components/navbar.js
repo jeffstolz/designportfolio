@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors, Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Navbar = () => (
   <OuterContainer>

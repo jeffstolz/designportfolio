@@ -208,11 +208,6 @@ h1, h2, h3, h4, h5, h6 {
 ul, ol {
   list-style-position: outside;
   list-style-image: none;
-}
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
 }`
 
 export default StylingResets

@@ -16,12 +16,12 @@ const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
 
 const Card = styled.li`
   display: flex;
+  max-width: 25em;
   padding: ${Spacing.small};
   margin-bottom: ${Spacing.small};
   border-radius: ${Spacing.xSmall};
   box-shadow: ${Colors.lightShadow};
   background-color: ${Colors.white};
-  max-width: 25em;
 
   &:nth-child(odd) {
     margin-right: ${Spacing.small};
@@ -35,13 +35,13 @@ const Card = styled.li`
 `
 
 const ImageContainer = styled.div`
+  width: 16%;
   background-color: black;
-  width: 15%;
   margin-right: ${Spacing.small};
 `
 
 const ContentContainer = styled.div`
-  width: 85%;
+  width: 84%;
 `
 
 const Heading = styled.h3`
@@ -50,8 +50,8 @@ const Heading = styled.h3`
 `
 
 const Text = styled.p`
-  color: ${Colors.darkGray};
   font-size: ${Typography.smallFontSize};
+  color: ${Colors.darkGray};
   line-height: ${Typography.largeLineHeight};
 `
 

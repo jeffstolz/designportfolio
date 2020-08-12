@@ -23,34 +23,33 @@ const Highlights = ({ descriptionOne, descriptionTwo, descriptionThree }) => (
 )
 
 const Container = styled.div`
+  width: 38%;
   margin-left: ${Spacing.large};
   padding-top: ${Spacing.small};
-  width: 38%;
 `
 
 const Heading = styled.h4`
+  font-family: ${Typography.headingFontFamily};
+  font-style: italic;
   margin-bottom: ${Spacing.base};
 `
 
 const HighlightList = styled.ul`
   display: flex;
-  list-style-type: none;
-  margin: 0;
 `
 
 const Highlight = styled.li`
   display: flex;
-  width: 33.33%;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0 ${Spacing.xSmall};
+  width: 33.33%;
+  padding: 0 0.8em;
 `
 
 const HighlightImg = styled.div`
+  width: ${Spacing.huge};
+  height: ${Spacing.huge};
   background-color: black;
-  width: 5em;
-  height: 5em;
   margin-bottom: ${Spacing.xSmall};
 `
 

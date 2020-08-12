@@ -66,13 +66,11 @@ const TextContainer = styled.div`
   }
 `
 
-const PreviewImage = styled.img`
-  border: 1px solid green;
-`
+const PreviewImage = styled.img``
 
 const PreviewLabels = styled.p`
-  color: ${Colors.gray};
   font-size: ${Typography.xSmallFontSize};
+  color: ${Colors.gray};
   margin-bottom: ${Spacing.small};
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -83,15 +81,16 @@ const PreviewHeading = styled.h3`
 `
 
 const PreviewText = styled.p`
-  margin-bottom: ${Spacing.base};
+  margin-bottom: ${Spacing.medium};
   color: ${Colors.darkGray};
 `
 
 const CardLink = styled(Link)`
-  background-color: ${Colors.black};
   color: ${Colors.white};
+  background-color: ${Colors.black};
   text-decoration: none;
   padding: ${Spacing.small} ${Spacing.base};
+  margin-top: ${Spacing.base};
   border-radius: ${Spacing.large};
 
   &:hover {

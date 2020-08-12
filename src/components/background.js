@@ -8,7 +8,7 @@ const Background = () => (
   <OuterContainer id="background">
     <Container>
       <Header>My Background</Header>
-      <ul>
+      <BackgroundList>
         <BackgroundCard
           title={"Product Design Consultant"}
           company={"thoughtbot"}
@@ -87,7 +87,7 @@ const Background = () => (
             descriptionTwo={"Got my start in software and haven't looked back!"}
           />
         </BackgroundCard>
-      </ul>
+      </BackgroundList>
     </Container>
   </OuterContainer>
 )
@@ -103,7 +103,11 @@ const Container = styled.div`
 `
 
 const Header = styled.h2`
-  margin-bottom: ${Spacing.base};
+  margin-bottom: ${Spacing.small};
+`
+
+const BackgroundList = styled.ul`
+  padding-left: ${Spacing.base};
 `
 
 export default Background
