@@ -1,19 +1,20 @@
 import React from "react"
 import styled from "styled-components"
+import StylingResets from "../styles/styling-resets"
+import GlobalStyles from "../styles/global-styles"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
-import "../styles/global-styles.css"
 import { Spacing } from "../styles/variables"
 
 const DefaultLayout = ({ children }) => {
   return (
     <>
+      <StylingResets />
+      <GlobalStyles />
       <Navbar />
       <main>
         <OuterContainer>
-          <Container>
-            {children}
-          </Container>
+          <Container>{children}</Container>
         </OuterContainer>
       </main>
       <Footer />
