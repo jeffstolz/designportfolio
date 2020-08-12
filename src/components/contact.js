@@ -38,8 +38,8 @@ const Contact = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  padding: ${Spacing.huge} ${Spacing.base};
   background-color: ${Colors.lightGray};
+  padding: ${Spacing.huge} ${Spacing.base};
 `
 
 const Container = styled.div`
@@ -56,6 +56,7 @@ const Text = styled.p`
   font-size: ${Typography.mediumFontSize};
   line-height: ${Typography.hugeLineHeight};
   margin-left: ${Spacing.small};
+  padding-bottom: ${Spacing.small};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     margin-left: 0;
@@ -64,8 +65,6 @@ const Text = styled.p`
 
 const LinkList = styled.ul`
   display: flex;
-  list-style-type: none;
-  margin: 0;
   padding-top: ${Spacing.small};
 `
 

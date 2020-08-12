@@ -31,7 +31,7 @@ const Skills = () => (
             <SkillsCard
               heading={"Atomic Design Systems"}
               text={
-                "Always a fan of this methodology for larger projects - especially when paired with React."
+                "Always a fan of this methodology for larger projects, especially when paired with React."
               }
             />
             <SkillsCard
@@ -43,7 +43,7 @@ const Skills = () => (
             <SkillsCard
               heading={"Informal User Testing"}
               text={
-                "Getting buy-in can be hard but validation is crucial - I opt for frequency over formality."
+                "Getting buy-in can be hard but validation is crucial. I opt for frequency over formality."
               }
             />
           </CardList>
@@ -123,10 +123,8 @@ const Header = styled.h2`
 const CardList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding-left: ${Spacing.base};
   max-width: 55em;
+  padding-left: ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding-left: 0;

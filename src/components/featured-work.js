@@ -40,7 +40,7 @@ const FeaturedWork = () => (
       <FeaturedWorkCard
         previewLabels={"Facilitation / Product Design"}
         previewHeading={
-          "Breaking Down a PDS that Invalidated a Concept and Provided a New Path Forward"
+          "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
         }
         previewText={
           "A love letter to product design sprints and the value they bring to greenfield projects."
@@ -60,13 +60,11 @@ const OuterContainer = styled.section`
 const Container = styled.ul`
   display: flex;
   flex-direction: column;
-  list-style-type: none;
-  margin: 0;
   width: ${Spacing.containerWidth};
 `
 
 const Header = styled.h2`
-  margin-bottom: ${Spacing.base};
+  margin-bottom: ${Spacing.small};
 `
 
 export default FeaturedWork

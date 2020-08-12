@@ -20,22 +20,21 @@ const OuterContainer = styled.li`
 `
 
 const Container = styled.div`
+  position: relative;
   background-color: ${Colors.white};
   box-shadow: ${Colors.lightShadow};
   border-radius: ${Spacing.xSmall};
   padding: ${Spacing.base};
   width: 56%;
-  min-height: 12em;
-  position: relative;
 
   &::after {
     position: absolute;
-    right: -35px;
-    top: 50%;
-    transform: translateY(-50%);
     content: "";
+    top: 50%;
+    right: -35px;
     width: 0;
     height: 0;
+    transform: translateY(-50%);
     border-top: 30px solid transparent;
     border-left: 35px solid ${Colors.white};
     border-bottom: 30px solid transparent;
@@ -61,7 +60,6 @@ const Company = styled.h4`
 
 const Description = styled.p`
   color: ${Colors.darkGray};
-  margin: 0;
 `
 
 export default BackgroundCard
