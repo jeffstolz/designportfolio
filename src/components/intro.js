@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Images } from "../images"
 import { Spacing, Typography } from "../styles/variables"
 
 const Intro = () => (
@@ -18,12 +19,16 @@ const OuterContainer = styled.section`
   height: 28em;
   margin-top: ${Spacing.medium};
   padding: ${Spacing.large} ${Spacing.base};
+  background-image: url(${Images.DevelopIntro}), url(${Images.DesignIntro});
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 35%, 50%;
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 62em;
+  width: 58em;
 `
 
 const Heading = styled.h1`

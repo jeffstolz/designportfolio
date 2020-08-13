@@ -1,26 +1,36 @@
 import React from "react"
 import styled from "styled-components"
+import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Ethos = () => (
   <OuterContainer id="ethos">
-    <Container>
-      <Heading>My Ethos</Heading>
-      <Text>
-        Every day is an opportunity to carry myself with authenticity,
-        compassion, humor, and humility. I choose to work on projects that
-        improve the health, education, liberties, and overall quality of life
-        for our global and local communities.
-      </Text>
-    </Container>
+    <BackgroundOverlay>
+      <Container>
+        <Heading>My Ethos</Heading>
+        <Text>
+          Every day is an opportunity to carry myself with authenticity,
+          compassion, humor, and humility. I choose to work on projects that
+          improve the health, education, liberties, and overall quality of life
+          for our global and local communities.
+        </Text>
+      </Container>
+    </BackgroundOverlay>
   </OuterContainer>
 )
 
 const OuterContainer = styled.section`
+  background-image: linear-gradient(-25deg, ${Colors.teal}, ${Colors.lime});
+`
+
+const BackgroundOverlay = styled.div`
   display: flex;
   justify-content: center;
-  background-color: ${Colors.lightGray};
   padding: ${Spacing.large} ${Spacing.base};
+  background-image: url(${Images.HospitalEthos}), url(${Images.SchoolEthos});
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 20%, 30%;
 `
 
 const Container = styled.div`
