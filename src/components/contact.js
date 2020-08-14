@@ -38,7 +38,7 @@ const Contact = () => (
 )
 
 const OuterContainer = styled.section`
-  background-image: linear-gradient(-25deg, ${Colors.violet}, ${Colors.pink});
+  background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
 `
 
 const BackgroundOverlay = styled.div`
