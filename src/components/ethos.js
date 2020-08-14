@@ -12,7 +12,7 @@ const Ethos = () => (
           Every day is an opportunity to carry myself with authenticity,
           compassion, humor, and humility. I choose to work on projects that
           improve the health, education, liberties, and overall quality of life
-          for our global and local communities.
+          for our local & global communities.
         </Text>
       </Container>
     </BackgroundOverlay>
@@ -20,7 +20,7 @@ const Ethos = () => (
 )
 
 const OuterContainer = styled.section`
-  background-image: linear-gradient(-25deg, ${Colors.teal}, ${Colors.lime});
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 `
 
 const BackgroundOverlay = styled.div`

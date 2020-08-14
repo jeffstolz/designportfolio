@@ -136,7 +136,7 @@ const BackgroundOverlay = styled.div`
   background-image: url(${Images.DesignSkills}), url(${Images.DevelopSkills});
   background-position: top right, bottom left;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 50%, 45%;
 `
 
 const Container = styled.div`

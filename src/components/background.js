@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import BackgroundCard from "./background-card"
-import Highlights from "./highlights"
-import { Spacing } from "../styles/variables"
+import Highlight from "./highlight"
+import { Images } from "../images"
+import { Spacing, Typography } from "../styles/variables"
 
 const Background = () => (
   <OuterContainer id="background">
@@ -17,11 +18,30 @@ const Background = () => (
             "My most diverse role yet - thoughtbot designers assume the role of PM, designer & front-end developer. Our clients range from early-stage startups to major corporations."
           }
         >
-          <Highlights
-            descriptionOne={"Ran a multi-day workshop on facilitating PDSs"}
-            descriptionTwo={"Learned how to code in React, RN, and Elm"}
-            descriptionThree={"Helped train and mentor new designers"}
-          />
+          <HighlightsContainer>
+            <HighlightsHeading>Highlights</HighlightsHeading>
+            <HighlightList>
+              <Highlight
+                imageSrc={Images.Workshop}
+                imageAlt={"Icon of person at a whiteboard"}
+                description={"Ran a multi-day workshop on facilitating PDSs"}
+              />
+              <Highlight
+                imageSrc={Images.Elm}
+                imageAlt={"Elm logo"}
+                description={
+                  "Learned how to code in React, React Native, and Elm"
+                }
+              />
+              <Highlight
+                imageSrc={Images.Mentor}
+                imageAlt={
+                  "Icon with two people with an arrow pointing to the right below them"
+                }
+                description={"Helped train and mentor new designers"}
+              />
+            </HighlightList>
+          </HighlightsContainer>
         </BackgroundCard>
         <BackgroundCard
           title={"Design Lead"}
@@ -31,15 +51,30 @@ const Background = () => (
             "As the first designer on, I built up a team of three, established a design culture, and led the redesign of a clinical product with over 79k users in over 92 hospitals."
           }
         >
-          <Highlights
-            descriptionOne={"Learned how to manage a team of designers"}
-            descriptionTwo={
-              "Got accepted by the Apple Certified Partner Program"
-            }
-            descriptionThree={
-              "Shadowed a surgeon during (successful) open-heart surgery!"
-            }
-          />
+          <HighlightsContainer>
+            <HighlightsHeading>Highlights</HighlightsHeading>
+            <HighlightList>
+              <Highlight
+                imageSrc={Images.Team}
+                imageAlt={"Icon of three people linked together"}
+                description={"Learned how to manage a team of designers"}
+              />
+              <Highlight
+                imageSrc={Images.Apple}
+                imageAlt={"Apple logo"}
+                description={
+                  "Got accepted by the Apple Certified Partner Program"
+                }
+              />
+              <Highlight
+                imageSrc={Images.Surgeon}
+                imageAlt={"Icon of a surgeon"}
+                description={
+                  "Shadowed a surgeon during (successful) open-heart surgery!"
+                }
+              />
+            </HighlightList>
+          </HighlightsContainer>
         </BackgroundCard>
         <BackgroundCard
           title={"Senior Design Consultant"}
@@ -49,14 +84,32 @@ const Background = () => (
             "My first experience with consulting where I embedded with teams across the country to lead their UX and front-end implementation efforts."
           }
         >
-          <Highlights
-            descriptionOne={
-              "Set up a design system used by over 100 developers"
-            }
-            descriptionTwo={
-              "Refined my consulting skills (and learned how to say no)"
-            }
-          />
+          <HighlightsContainer>
+            <HighlightsHeading>Highlights</HighlightsHeading>
+            <HighlightList>
+              <Highlight
+                imageSrc={Images.Grid}
+                imageAlt={"Icon of nine squares arranged in a grid"}
+                description={
+                  "Set up a design system used by over 50 developers"
+                }
+              />
+              <Highlight
+                imageSrc={Images.Nope}
+                imageAlt={
+                  "Icon of two people with a shared chat bubble above their heads and the word nope inside"
+                }
+                description={
+                  "Refined my consulting skills (and learned how to say no)"
+                }
+              />
+              <Highlight
+                imageSrc={Images.Airplane}
+                imageAlt={"Icon of an airplane"}
+                description={"Racked up a lot of hotel and airline points"}
+              />
+            </HighlightList>
+          </HighlightsContainer>
         </BackgroundCard>
         <BackgroundCard
           title={"UX Designer/Developer"}
@@ -66,13 +119,28 @@ const Background = () => (
             "A freelancing gig transitioned into a full-time opportunity with a startup, which led to us being acquired by an international publisher. We became their R&D team."
           }
         >
-          <Highlights
-            descriptionOne={"We got acquired!"}
-            descriptionTwo={
-              "Learned how to code in Rails & participated in my first PDS"
-            }
-            descriptionThree={"Completed the Firehose Coding Bootcamp"}
-          />
+          <HighlightsContainer>
+            <HighlightsHeading>Highlights</HighlightsHeading>
+            <HighlightList>
+              <Highlight
+                imageSrc={Images.Celebrate}
+                imageAlt={"Icon of two hands raised in a celebratory fashion"}
+                description={"We got acquired!"}
+              />
+              <Highlight
+                imageSrc={Images.Ruby}
+                imageAlt={"Ruby logo"}
+                description={
+                  "Learned how to code in Rails & participated in my first PDS"
+                }
+              />
+              <Highlight
+                imageSrc={Images.Certificate}
+                imageAlt={"Icon of a certificate"}
+                description={"Completed the Firehose Coding Bootcamp"}
+              />
+            </HighlightList>
+          </HighlightsContainer>
         </BackgroundCard>
         <BackgroundCard
           title={"Freelance Designer"}
@@ -82,10 +150,30 @@ const Background = () => (
             "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
           }
         >
-          <Highlights
-            descriptionOne={"Learned how to make Wordpress and HTML/CSS sites"}
-            descriptionTwo={"Got my start in software and haven't looked back!"}
-          />
+          <HighlightsContainer>
+            <HighlightsHeading>Highlights</HighlightsHeading>
+            <HighlightList>
+              <Highlight
+                imageSrc={Images.Wordpress}
+                imageAlt={"Wordpress logo"}
+                description={"Learned how to make Wordpress and HTML/CSS sites"}
+              />
+              <Highlight
+                imageSrc={Images.Native}
+                imageAlt={"Icon of a desktop, tablet, and mobile phone"}
+                description={"Designed my first native mobile apps"}
+              />
+              <Highlight
+                imageSrc={Images.Horns}
+                imageAlt={
+                  "Icon of a hand closed with the index and pinky fingers raised"
+                }
+                description={
+                  "Got my start in software and haven't looked back!"
+                }
+              />
+            </HighlightList>
+          </HighlightsContainer>
         </BackgroundCard>
       </BackgroundList>
     </Container>
@@ -108,6 +196,22 @@ const Header = styled.h2`
 
 const BackgroundList = styled.ul`
   padding-left: ${Spacing.base};
+`
+
+const HighlightsContainer = styled.div`
+  width: 35%;
+  margin-left: ${Spacing.large};
+  padding-top: ${Spacing.small};
+`
+
+const HighlightsHeading = styled.h4`
+  font-family: ${Typography.headingFontFamily};
+  font-style: italic;
+  margin-bottom: ${Spacing.base};
+`
+
+const HighlightList = styled.ul`
+  display: flex;
 `
 
 export default Background
