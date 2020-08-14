@@ -30,7 +30,7 @@ const BackgroundOverlay = styled.div`
   background-image: url(${Images.HospitalEthos}), url(${Images.SchoolEthos});
   background-position: bottom left, bottom right;
   background-repeat: no-repeat;
-  background-size: 20%, 30%;
+  background-size: 25%, 30%;
 `
 
 const Container = styled.div`
