@@ -1,3 +1,5 @@
+import A11y from "./a11y.svg"
+import Atomic from "./atomic.svg"
 import CipherbioArchives from "./cipherbio-archives.png"
 import CipherbioArticle from "./cipherbio-article.png"
 import CipherbioBlogArticle from "./cipherbio-blog-article.png"
@@ -11,6 +13,7 @@ import DesignSkills from "./design-skills.svg"
 import DevelopIntro from "./develop-intro.svg"
 import DevelopSkills from "./develop-skills.svg"
 import Favicon from "./favicon.png"
+import Figma from "./figma.svg"
 import GeAirspace from "./ge-airspace.png"
 import GeAuth from "./ge-auth.png"
 import GeCollapsed from "./ge-collapsed.png"
@@ -22,6 +25,7 @@ import GeSearch from "./ge-search.png"
 import GeThumbnail from "./ge-thumbnail.png"
 import GeTooltip from "./ge-tooltip.png"
 import GeWeather from "./ge-weather.png"
+import Github from "./github.svg"
 import HospitalEthos from "./hospital-ethos.svg"
 import HmhMap from "./hmh-map.jpg"
 import HmhOverview from "./hmh-overview.jpg"
@@ -33,8 +37,10 @@ import HmhSolutionFour from "./hmh-solution-4.jpg"
 import HmhSolutionFive from "./hmh-solution-5.jpg"
 import HmhThumbnail from "./hmh-thumbnail.png"
 import HmhUxcanvas from "./hmh-uxcanvas.jpg"
+import Interview from "./interview.svg"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
 import JeffStolz from "./jeff-stolz.png"
+import Jtbd from "./jtbd.svg"
 import MhDesignProcessSketch from "./mh-design-process-sketch.jpg"
 import MhDiscovery from "./mh-discovery.jpg"
 import MhOverview from "./mh-overview.jpg"
@@ -47,7 +53,12 @@ import MhSolutionFive from "./mh-solution-5.jpg"
 import MhSolutionSix from "./mh-solution-6.jpg"
 import MhThumbnail from "./mh-thumbnail.png"
 import MhWireframe from "./mh-wireframe.jpg"
+import Mobile from "./mobile.svg"
+import Pds from "./pds.svg"
+import Persona from "./persona.svg"
+import React from "./react.svg"
 import SchoolEthos from "./school-ethos.svg"
+import Ship from "./ship.svg"
 import SkillsAthleteLanding from "./skills-athlete-landing.jpg"
 import SkillsAthlete from "./skills-athlete.jpg"
 import SkillsAthletes from "./skills-athletes.jpg"
@@ -66,6 +77,8 @@ import ViralgainsThree from "./viralgains-3.png"
 import ViralgainsFour from "./viralgains-4.png"
 
 export const Images = {
+  A11y,
+  Atomic,
   CipherbioArchives,
   CipherbioArticle,
   CipherbioBlogArticle,
@@ -79,6 +92,7 @@ export const Images = {
   DevelopIntro,
   DevelopSkills,
   Favicon,
+  Figma,
   GeAirspace,
   GeAuth,
   GeCollapsed,
@@ -90,6 +104,7 @@ export const Images = {
   GeThumbnail,
   GeTooltip,
   GeWeather,
+  Github,
   HmhMap,
   HmhOverview,
   HmhSketches,
@@ -101,8 +116,10 @@ export const Images = {
   HmhThumbnail,
   HmhUxcanvas,
   HospitalEthos,
+  Interview,
   JeffStolzResume,
   JeffStolz,
+  Jtbd,
   MhDesignProcessSketch,
   MhDiscovery,
   MhOverview,
@@ -115,7 +132,12 @@ export const Images = {
   MhSolutionSix,
   MhThumbnail,
   MhWireframe,
+  Mobile,
+  Pds,
+  Persona,
+  React,
   SchoolEthos,
+  Ship,
   SkillsAthleteLanding,
   SkillsAthlete,
   SkillsAthletes,

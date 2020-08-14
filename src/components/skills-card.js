@@ -35,8 +35,11 @@ const Card = styled.li`
 `
 
 const ImageContainer = styled.div`
-  width: 16%;
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: ${Spacing.large};
+  height: ${Spacing.large};
   margin-right: ${Spacing.small};
 `
 
