@@ -1,5 +1,9 @@
 import A11y from "./a11y.svg"
+import Airplane from "./airplane.svg"
+import Apple from "./apple.svg"
 import Atomic from "./atomic.svg"
+import Celebrate from "./celebrate.svg"
+import Certificate from "./certificate.svg"
 import CipherbioArchives from "./cipherbio-archives.png"
 import CipherbioArticle from "./cipherbio-article.png"
 import CipherbioBlogArticle from "./cipherbio-blog-article.png"
@@ -12,6 +16,7 @@ import DesignIntro from "./design-intro.svg"
 import DesignSkills from "./design-skills.svg"
 import DevelopIntro from "./develop-intro.svg"
 import DevelopSkills from "./develop-skills.svg"
+import Elm from "./elm.svg"
 import Favicon from "./favicon.png"
 import Figma from "./figma.svg"
 import GeAirspace from "./ge-airspace.png"
@@ -26,7 +31,7 @@ import GeThumbnail from "./ge-thumbnail.png"
 import GeTooltip from "./ge-tooltip.png"
 import GeWeather from "./ge-weather.png"
 import Github from "./github.svg"
-import HospitalEthos from "./hospital-ethos.svg"
+import Grid from "./grid.svg"
 import HmhMap from "./hmh-map.jpg"
 import HmhOverview from "./hmh-overview.jpg"
 import HmhSketches from "./hmh-sketches.jpg"
@@ -37,10 +42,13 @@ import HmhSolutionFour from "./hmh-solution-4.jpg"
 import HmhSolutionFive from "./hmh-solution-5.jpg"
 import HmhThumbnail from "./hmh-thumbnail.png"
 import HmhUxcanvas from "./hmh-uxcanvas.jpg"
+import Horns from "./horns.svg"
+import HospitalEthos from "./hospital-ethos.svg"
 import Interview from "./interview.svg"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
 import JeffStolz from "./jeff-stolz.png"
 import Jtbd from "./jtbd.svg"
+import Mentor from "./mentor.svg"
 import MhDesignProcessSketch from "./mh-design-process-sketch.jpg"
 import MhDiscovery from "./mh-discovery.jpg"
 import MhOverview from "./mh-overview.jpg"
@@ -54,9 +62,12 @@ import MhSolutionSix from "./mh-solution-6.jpg"
 import MhThumbnail from "./mh-thumbnail.png"
 import MhWireframe from "./mh-wireframe.jpg"
 import Mobile from "./mobile.svg"
+import Native from "./native.svg"
+import Nope from "./nope.svg"
 import Pds from "./pds.svg"
 import Persona from "./persona.svg"
 import React from "./react.svg"
+import Ruby from "./ruby.svg"
 import SchoolEthos from "./school-ethos.svg"
 import Ship from "./ship.svg"
 import SkillsAthleteLanding from "./skills-athlete-landing.jpg"
@@ -70,15 +81,23 @@ import SkillsNotes from "./skills-notes.png"
 import SkillsThumbnail from "./skills-thumbnail.png"
 import SkillsVideo from "./skills-video.jpg"
 import SkillsWireframes from "./skills-wireframes.jpg"
+import Surgeon from "./surgeon.svg"
+import Team from "./team.svg"
 import ViralgainsThumbnail from "./vg-thumbnail.png"
 import ViralgainsOne from "./viralgains-1.png"
 import ViralgainsTwo from "./viralgains-2.png"
 import ViralgainsThree from "./viralgains-3.png"
 import ViralgainsFour from "./viralgains-4.png"
+import Wordpress from "./wordpress.svg"
+import Workshop from "./workshop.svg"
 
 export const Images = {
   A11y,
+  Airplane,
+  Apple,
   Atomic,
+  Celebrate,
+  Certificate,
   CipherbioArchives,
   CipherbioArticle,
   CipherbioBlogArticle,
@@ -91,6 +110,7 @@ export const Images = {
   DesignSkills,
   DevelopIntro,
   DevelopSkills,
+  Elm,
   Favicon,
   Figma,
   GeAirspace,
@@ -105,6 +125,7 @@ export const Images = {
   GeTooltip,
   GeWeather,
   Github,
+  Grid,
   HmhMap,
   HmhOverview,
   HmhSketches,
@@ -115,11 +136,13 @@ export const Images = {
   HmhSolutionFive,
   HmhThumbnail,
   HmhUxcanvas,
+  Horns,
   HospitalEthos,
   Interview,
   JeffStolzResume,
   JeffStolz,
   Jtbd,
+  Mentor,
   MhDesignProcessSketch,
   MhDiscovery,
   MhOverview,
@@ -133,9 +156,12 @@ export const Images = {
   MhThumbnail,
   MhWireframe,
   Mobile,
+  Native,
+  Nope,
   Pds,
   Persona,
   React,
+  Ruby,
   SchoolEthos,
   Ship,
   SkillsAthleteLanding,
@@ -149,9 +175,13 @@ export const Images = {
   SkillsThumbnail,
   SkillsVideo,
   SkillsWireframes,
+  Surgeon,
+  Team,
   ViralgainsThumbnail,
   ViralgainsOne,
   ViralgainsTwo,
   ViralgainsThree,
   ViralgainsFour,
+  Wordpress,
+  Workshop,
 }

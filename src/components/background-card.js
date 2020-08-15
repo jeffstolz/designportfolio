@@ -25,7 +25,7 @@ const Container = styled.div`
   box-shadow: ${Colors.lightShadow};
   border-radius: ${Spacing.xSmall};
   padding: ${Spacing.base};
-  width: 56%;
+  width: 65%;
 
   &::after {
     position: absolute;
