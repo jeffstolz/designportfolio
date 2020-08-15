@@ -136,7 +136,11 @@ const BackgroundOverlay = styled.div`
   background-image: url(${Images.DesignSkills}), url(${Images.DevelopSkills});
   background-position: top right, bottom left;
   background-repeat: no-repeat;
-  background-size: 50%, 45%;
+  background-size: 44.5em, 42em;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    background-size: 28em, 28em;
+  }
 `
 
 const Container = styled.div`
@@ -144,6 +148,7 @@ const Container = styled.div`
 `
 
 const DesignContainer = styled.div`
+  display: flex;
   padding-bottom: ${Spacing.large};
 `
 
@@ -161,6 +166,10 @@ const CardList = styled.ul`
   flex-wrap: wrap;
   max-width: 55em;
   padding-left: ${Spacing.base};
+
+  @media (max-width: 1080px) {
+    flex-direction: column;
+  }
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding-left: 0;

@@ -94,7 +94,8 @@ const CardLink = styled(Link)`
   border-radius: ${Spacing.large};
 
   &:hover {
-    background-color: ${Colors.darkGray};
+    background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
+    color: ${Colors.black};
     box-shadow: ${Colors.lightShadow};
   }
 `

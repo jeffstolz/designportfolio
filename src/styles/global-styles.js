@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import { Colors, Typography } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const GlobalStyles = createGlobalStyle`
 html {
@@ -27,10 +27,14 @@ h2 {
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.smallHeadingFontSize};
   font-style: italic;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.mediumFontSize};
+  }
 }
 h3 {
   font-family: ${Typography.primaryFontFamily};
-  font-size: ${Typography.mediumFontSize};
+  font-size: ${Typography.baseFontSize};
 }
 ul {
   margin: 0;

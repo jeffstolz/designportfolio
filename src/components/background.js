@@ -196,12 +196,20 @@ const Header = styled.h2`
 
 const BackgroundList = styled.ul`
   padding-left: ${Spacing.base};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding-left: 0;
+  }
 `
 
 const HighlightsContainer = styled.div`
-  width: 35%;
   margin-left: ${Spacing.large};
   padding-top: ${Spacing.small};
+
+  @media (max-width: 1280px) {
+    margin-left: 0;
+    padding-top: ${Spacing.base};
+  }
 `
 
 const HighlightsHeading = styled.h4`
@@ -212,6 +220,12 @@ const HighlightsHeading = styled.h4`
 
 const HighlightList = styled.ul`
   display: flex;
+  justify-content: space-between;
+  width: 25.6em;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    width: 100%;
+  }
 `
 
 export default Background
