@@ -49,6 +49,10 @@ const BackgroundOverlay = styled.div`
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 31em;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding: ${Spacing.large} ${Spacing.small};
+  }
 `
 
 const Container = styled.div`
@@ -68,6 +72,7 @@ const Text = styled.p`
   padding-bottom: ${Spacing.small};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.baseFontSize};
     margin-left: 0;
   }
 `
@@ -75,11 +80,21 @@ const Text = styled.p`
 const LinkList = styled.ul`
   display: flex;
   padding-top: ${Spacing.small};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    flex-direction: column;
+  }
 `
 
 const LinkItem = styled.li`
   font-size: ${Typography.mediumFontSize};
   margin-left: ${Spacing.small};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.baseFontSize};
+    margin-left: 0;
+    margin-bottom: ${Spacing.small};
+  }
 `
 
 export default Contact

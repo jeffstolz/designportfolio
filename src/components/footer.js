@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing } from "../styles/variables"
+import { Spacing, Typography } from "../styles/variables"
 
 const Footer = () => (
   <Container>
@@ -17,6 +17,10 @@ const Container = styled.footer`
   display: flex;
   justify-content: center;
   padding: ${Spacing.base};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 export default Footer

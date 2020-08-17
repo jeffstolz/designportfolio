@@ -53,7 +53,7 @@ const ImageContainer = styled.div`
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;
-    height: ${Spacing.cardMobileHeight};
+    height: 15em;
   }
 `
 
@@ -97,6 +97,10 @@ const CardLink = styled(Link)`
     background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
     color: ${Colors.black};
     box-shadow: ${Colors.lightShadow};
+  }
+
+  @media (max-width: 320px) {
+    font-size: ${Typography.smallFontSize};
   }
 `
 

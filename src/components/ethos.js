@@ -35,6 +35,11 @@ const BackgroundOverlay = styled.div`
   @media (max-width: ${Spacing.breakPoint}) {
     background-size: 10em, 15em;
   }
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding: ${Spacing.large} ${Spacing.small};
+    background-size: 7em, 12em;
+  }
 `
 
 const Container = styled.div`
@@ -53,6 +58,7 @@ const Text = styled.p`
   margin-left: ${Spacing.small};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.baseFontSize};
     margin-left: 0;
   }
 `

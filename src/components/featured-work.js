@@ -55,6 +55,10 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   padding: ${Spacing.huge} ${Spacing.base};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding: ${Spacing.large} ${Spacing.small};
+  }
 `
 
 const Container = styled.ul`

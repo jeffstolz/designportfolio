@@ -42,6 +42,7 @@ const Heading = styled.h1`
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     font-size: 3em;
+    line-height: 150%;
   }
 `
 
@@ -52,7 +53,7 @@ const Subheading = styled.h2`
   font-weight: 300;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 `
 
