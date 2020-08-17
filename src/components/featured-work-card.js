@@ -63,6 +63,7 @@ const TextContainer = styled.div`
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;
+    padding: ${Spacing.base} ${Spacing.small};
   }
 `
 

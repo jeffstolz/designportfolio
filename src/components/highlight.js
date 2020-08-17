@@ -16,6 +16,12 @@ const Container = styled.li`
   flex-direction: column;
   align-items: center;
   width: 30%;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: ${Spacing.xSmall};
+  }
 `
 
 const ImageContainer = styled.div`
@@ -27,6 +33,12 @@ const ImageContainer = styled.div`
   margin-bottom: ${Spacing.xSmall};
   border: 1px solid ${Colors.lightGray};
   border-radius: ${Spacing.xxSmall};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    width: ${Spacing.large};
+    height: ${Spacing.large};
+    margin-right: ${Spacing.small};
+  }
 `
 
 const HighlightImage = styled.img`
@@ -34,10 +46,16 @@ const HighlightImage = styled.img`
 `
 
 const Description = styled.p`
+  width: 100%;
   font-size: 0.78em;
   color: ${Colors.darkGray};
   text-align: center;
   line-height: ${Typography.largeLineHeight};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.smallFontSize};
+    text-align: left;
+  }
 `
 
 export default Highlight

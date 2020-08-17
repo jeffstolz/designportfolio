@@ -227,6 +227,10 @@ const HighlightList = styled.ul`
   justify-content: space-between;
   width: 25.6em;
 
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    flex-direction: column;
+  }
+
   @media (max-width: 414px) {
     width: 100%;
   }

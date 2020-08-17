@@ -33,6 +33,10 @@ const Container = styled.div`
   border-radius: ${Spacing.xSmall};
   padding: ${Spacing.base};
 
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding: ${Spacing.base} ${Spacing.small};
+  }
+
   &::after {
     @media (min-width: 1280px) {
       position: absolute;
