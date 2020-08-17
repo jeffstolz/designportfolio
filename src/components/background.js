@@ -184,6 +184,10 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   padding: ${Spacing.huge} ${Spacing.base};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding: ${Spacing.large} ${Spacing.small};
+  }
 `
 
 const Container = styled.div`
@@ -223,7 +227,7 @@ const HighlightList = styled.ul`
   justify-content: space-between;
   width: 25.6em;
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: 414px) {
     width: 100%;
   }
 `

@@ -34,7 +34,11 @@ h2 {
 }
 h3 {
   font-family: ${Typography.primaryFontFamily};
-  font-size: ${Typography.baseFontSize};
+  font-size: ${Typography.mediumFontSize};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: 1.2em;
+  }
 }
 ul {
   margin: 0;

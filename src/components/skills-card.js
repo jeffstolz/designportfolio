@@ -5,7 +5,7 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
   <Card>
     <ImageContainer>
-      <img src={imageSrc} alt={imageAlt} />
+      <SkillsImage src={imageSrc} alt={imageAlt} />
     </ImageContainer>
     <ContentContainer>
       <Heading>{heading}</Heading>
@@ -38,13 +38,26 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: ${Spacing.large};
-  height: ${Spacing.large};
   margin-right: ${Spacing.small};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    align-items: flex-start;
+  }
+`
+
+const SkillsImage = styled.img`
+  object-fit: contain;
+  width: 2.5;
+  height: 2.5;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    width: ${Spacing.base};
+    height: ${Spacing.base};
+  }
 `
 
 const ContentContainer = styled.div`
-  width: 84%;
+  width: 100%;
 `
 
 const Heading = styled.h3`

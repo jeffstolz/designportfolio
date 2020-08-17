@@ -139,6 +139,7 @@ const BackgroundOverlay = styled.div`
   background-size: 44.5em, 42em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
+    padding: ${Spacing.large} ${Spacing.small};
     background-size: 28em, 28em;
   }
 `
