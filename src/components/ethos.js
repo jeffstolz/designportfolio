@@ -20,7 +20,7 @@ const Ethos = () => (
 )
 
 const OuterContainer = styled.section`
-  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
 `
 
 const BackgroundOverlay = styled.div`
@@ -30,7 +30,11 @@ const BackgroundOverlay = styled.div`
   background-image: url(${Images.HospitalEthos}), url(${Images.SchoolEthos});
   background-position: bottom left, bottom right;
   background-repeat: no-repeat;
-  background-size: 25%, 30%;
+  background-size: 21em, 29em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    background-size: 10em, 15em;
+  }
 `
 
 const Container = styled.div`

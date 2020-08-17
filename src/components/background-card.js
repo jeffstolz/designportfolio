@@ -17,28 +17,36 @@ const BackgroundCard = ({ title, company, dates, description, children }) => (
 const OuterContainer = styled.li`
   display: flex;
   margin-bottom: ${Spacing.huge};
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    margin-bottom: ${Spacing.xHuge};
+  }
 `
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: ${Colors.white};
   box-shadow: ${Colors.lightShadow};
   border-radius: ${Spacing.xSmall};
   padding: ${Spacing.base};
-  width: 65%;
 
   &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: -35px;
-    width: 0;
-    height: 0;
-    transform: translateY(-50%);
-    border-top: 30px solid transparent;
-    border-left: 35px solid ${Colors.white};
-    border-bottom: 30px solid transparent;
-    filter: drop-shadow(4px 1px 1px rgba(0, 0, 0, 0.07));
+    @media (min-width: 1280px) {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: -35px;
+      width: 0;
+      height: 0;
+      transform: translateY(-50%);
+      border-top: 30px solid transparent;
+      border-left: 35px solid ${Colors.white};
+      border-bottom: 30px solid transparent;
+      filter: drop-shadow(4px 1px 1px rgba(0, 0, 0, 0.07));
+    }
   }
 `
 

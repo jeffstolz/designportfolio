@@ -48,7 +48,7 @@ const BackgroundOverlay = styled.div`
   background-image: url(${Images.CoffeeContact});
   background-position: center right;
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 31em;
 `
 
 const Container = styled.div`

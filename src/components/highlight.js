@@ -15,8 +15,7 @@ const Container = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 33.33%;
-  padding: 0 0.5em;
+  width: 30%;
 `
 
 const ImageContainer = styled.div`

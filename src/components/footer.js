@@ -16,7 +16,7 @@ const Footer = () => (
 const Container = styled.footer`
   display: flex;
   justify-content: center;
-  padding: ${Spacing.base} 0;
+  padding: ${Spacing.base};
 `
 
 export default Footer
