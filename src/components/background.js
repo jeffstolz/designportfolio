@@ -112,7 +112,7 @@ const Background = () => (
           </HighlightsContainer>
         </BackgroundCard>
         <BackgroundCard
-          title={"UX Designer/Developer"}
+          title={"UX Designer"}
           company={"HMH Labs"}
           dates={"Jul 13 - Sep 16"}
           description={

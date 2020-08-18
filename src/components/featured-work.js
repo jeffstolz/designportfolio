@@ -28,7 +28,7 @@ const FeaturedWork = () => (
         projectLink={"/theskills"}
       />
       <FeaturedWorkCard
-        previewLabels={"Design System"}
+        previewLabels={"Design Systems / Consulting / React Native"}
         previewHeading={
           "Establishing a Design System for a Complex Enterprise Organization"
         }
@@ -38,7 +38,7 @@ const FeaturedWork = () => (
         projectLink={"/airxos"}
       />
       <FeaturedWorkCard
-        previewLabels={"Facilitation / Product Design"}
+        previewLabels={"Facilitation / Product Management / Interviewing"}
         previewHeading={
           "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
         }
