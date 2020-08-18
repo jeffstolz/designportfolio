@@ -4,7 +4,7 @@ import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Ethos = () => (
-  <OuterContainer id="ethos">
+  <OuterContainer>
     <BackgroundOverlay>
       <Container>
         <Heading>My Ethos</Heading>

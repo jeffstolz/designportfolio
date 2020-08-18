@@ -46,13 +46,14 @@ const HighlightImage = styled.img`
 `
 
 const Description = styled.p`
-  width: 100%;
+  display: flex;
   font-size: 0.78em;
   color: ${Colors.darkGray};
   text-align: center;
   line-height: ${Typography.largeLineHeight};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
+    width: 60%;
     font-size: ${Typography.smallFontSize};
     text-align: left;
   }
