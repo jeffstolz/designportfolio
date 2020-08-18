@@ -1,5 +1,5 @@
 import React from "react"
-import HomeLayout from "../layouts/home-layout"
+import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
 import Skills from "../components/skills"
@@ -9,7 +9,7 @@ import Background from "../components/background"
 import Contact from "../components/contact"
 
 const IndexPage = () => (
-  <HomeLayout>
+  <Layout>
     <SEO title="Design Portfolio" />
     <Intro />
     <Skills />
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Ethos />
     <Background />
     <Contact />
-  </HomeLayout>
+  </Layout>
 )
 
 export default IndexPage

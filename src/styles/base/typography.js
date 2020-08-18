@@ -1,8 +1,6 @@
 export const headingFontFamily = '"Vollkorn", Serif;'
 export const primaryFontFamily = '"Open Sans", Sans-Serif;'
 
-export const lightFontWeight = "400"
-export const normalFontWeight = "600"
 export const mediumFontWeight = "600"
 export const heavyFontWeight = "800"
 
@@ -12,8 +10,6 @@ export const baseFontSize = "1em"
 export const mediumFontSize = "1.3em"
 export const smallHeadingFontSize = "2em"
 export const headingFontSize = "3em"
-export const largeFontSize = "4em"
 
-export const smallLineHeight = "0.95em"
 export const largeLineHeight = "1.2em"
 export const hugeLineHeight = "1.4em"

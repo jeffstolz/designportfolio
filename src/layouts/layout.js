@@ -3,7 +3,7 @@ import StylingResets from "../styles/styling-resets"
 import GlobalStyles from "../styles/global-styles"
 import Footer from "../components/footer"
 
-const HomeLayout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <StylingResets />
@@ -14,4 +14,4 @@ const HomeLayout = ({ children }) => {
   )
 }
 
-export default HomeLayout
+export default Layout
