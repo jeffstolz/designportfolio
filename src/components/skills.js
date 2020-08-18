@@ -63,7 +63,7 @@ const Skills = () => (
                 }
                 heading={"Informal User Testing"}
                 text={
-                  "Stakeholder buy-in can be hard but validation is crucial. I opt for frequency over formality."
+                  "Stakeholder buy-in can be hard but getting validation is crucial. I opt for frequency over formality."
                 }
               />
             </CardList>

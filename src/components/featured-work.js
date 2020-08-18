@@ -8,7 +8,7 @@ const FeaturedWork = () => (
     <Container>
       <Header>Featured Work</Header>
       <FeaturedWorkCard
-        previewLabels={"Product Design / Research / Mobile Design"}
+        previewLabels={"Design Leadership / Research / Mobile Design"}
         previewHeading={
           "Redesigning a Deeply Embedded Clinical Communication Tool"
         }
@@ -18,7 +18,7 @@ const FeaturedWork = () => (
         projectLink={"/mobile-heartbeat"}
       />
       <FeaturedWorkCard
-        previewLabels={"Facilitation / Product Design / Ruby on Rails"}
+        previewLabels={"Product Management / SaaS Design / Ruby on Rails"}
         previewHeading={
           "Designing and Building an Online Education MVP in Six Weeks"
         }
@@ -28,17 +28,17 @@ const FeaturedWork = () => (
         projectLink={"/theskills"}
       />
       <FeaturedWorkCard
-        previewLabels={"Design Systems / Consulting / React Native"}
+        previewLabels={"Design Systems / Enterprise Design / React Native"}
         previewHeading={
           "Establishing a Design System for a Complex Enterprise Organization"
         }
         previewText={
-          "An approach to providing structure to a 5,500 person organization with products growing in multiple directions."
+          "An approach to providing structure to a rapidbly growing organization with products moving in multiple directions."
         }
         projectLink={"/airxos"}
       />
       <FeaturedWorkCard
-        previewLabels={"Facilitation / Product Management / Interviewing"}
+        previewLabels={"Facilitation / Consulting / Interviewing"}
         previewHeading={
           "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
         }
