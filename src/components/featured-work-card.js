@@ -95,7 +95,7 @@ const CardLink = styled(Link)`
   border-radius: ${Spacing.large};
 
   &:hover {
-    background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
+    background-image: linear-gradient(to left, ${Colors.blue}, ${Colors.cyan});
     color: ${Colors.black};
     box-shadow: ${Colors.lightShadow};
   }
