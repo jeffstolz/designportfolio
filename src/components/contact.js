@@ -4,7 +4,7 @@ import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Contact = () => (
-  <OuterContainer id="contact">
+  <OuterContainer>
     <BackgroundOverlay>
       <Container>
         <Heading>Let's Chat!</Heading>

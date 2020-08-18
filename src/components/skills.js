@@ -5,7 +5,7 @@ import { Images } from "../images"
 import { Colors, Spacing } from "../styles/variables"
 
 const Skills = () => (
-  <OuterContainer id="skills">
+  <OuterContainer>
     <BackgroundOverlay>
       <Container>
         <DesignContainer>

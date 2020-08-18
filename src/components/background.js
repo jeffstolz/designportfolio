@@ -6,7 +6,7 @@ import { Images } from "../images"
 import { Spacing, Typography } from "../styles/variables"
 
 const Background = () => (
-  <OuterContainer id="background">
+  <OuterContainer>
     <Container>
       <Header>My Background</Header>
       <BackgroundList>
@@ -192,6 +192,10 @@ const OuterContainer = styled.section`
 
 const Container = styled.div`
   width: ${Spacing.largeContainerWidth};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    width: 100%;
+  }
 `
 
 const Header = styled.h2`
