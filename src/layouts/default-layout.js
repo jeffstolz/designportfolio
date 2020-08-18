@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import StylingResets from "../styles/styling-resets"
 import GlobalStyles from "../styles/global-styles"
-import Navbar from "../components/navbar"
 import Footer from "../components/footer"
 import { Spacing } from "../styles/variables"
 
@@ -11,7 +10,6 @@ const DefaultLayout = ({ children }) => {
     <>
       <StylingResets />
       <GlobalStyles />
-      <Navbar />
       <main>
         <OuterContainer>
           <Container>{children}</Container>

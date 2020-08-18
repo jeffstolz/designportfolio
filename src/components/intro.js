@@ -17,7 +17,6 @@ const OuterContainer = styled.section`
   justify-content: center;
   align-items: center;
   height: 28em;
-  margin-top: ${Spacing.medium};
   padding: ${Spacing.large} ${Spacing.base};
   background-image: url(${Images.DevelopIntro}), url(${Images.DesignIntro});
   background-position: top left, bottom right;
