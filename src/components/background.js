@@ -191,7 +191,7 @@ const OuterContainer = styled.section`
 `
 
 const Container = styled.div`
-  width: ${Spacing.largeContainerWidth};
+  width: 74em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;

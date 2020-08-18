@@ -20,6 +20,7 @@ const OuterContainer = styled.li`
 
   @media (max-width: 1280px) {
     flex-direction: column;
+    max-width: 43em;
     margin-bottom: ${Spacing.xHuge};
   }
 `
