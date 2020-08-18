@@ -2,14 +2,25 @@ import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
-const SkillsCard = ({ imageSrc, imageAlt, heading, text }) => (
+const SkillsCard = ({
+  imageSrc,
+  imageAlt,
+  heading,
+  text,
+  textLink,
+  textLast,
+}) => (
   <Card>
     <ImageContainer>
       <SkillsImage src={imageSrc} alt={imageAlt} />
     </ImageContainer>
     <ContentContainer>
       <Heading>{heading}</Heading>
-      <Text>{text}</Text>
+      <Text>
+        {text}
+        {textLink}
+        {textLast}
+      </Text>
     </ContentContainer>
   </Card>
 )

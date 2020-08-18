@@ -25,23 +25,27 @@ const Skills = () => (
                 imageAlt={"Icon of a user persona"}
                 heading={"Personas"}
                 text={
-                  "I tend to blend these with JTBD to ensure we maintain user empathy throughout the project."
+                  "I tend to blend these with JTBD to ensure we maintain user empathy throughout the journey."
                 }
               />
               <SkillsCard
                 imageSrc={Images.Pds}
                 imageAlt={"Icon of a user journey diagram"}
                 heading={"GV Design Sprints"}
-                text={
-                  "An excellent guideline, although I've written about how sprints never quite go as planned."
+                text={"An excellent guideline, although "}
+                textLink={
+                  <a href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
+                    I've written about
+                  </a>
                 }
+                textLast={" how no two sprints follow the same exact path."}
               />
               <SkillsCard
                 imageSrc={Images.Atomic}
                 imageAlt={"Icon of three atoms linked together"}
                 heading={"Atomic Design Systems"}
                 text={
-                  "Always a fan of this methodology for larger projects, especially when paired with React."
+                  "Always a fan of this methodology for larger projects, especially when paired with React components."
                 }
               />
               <SkillsCard
@@ -73,16 +77,20 @@ const Skills = () => (
                 imageSrc={Images.React}
                 imageAlt={"React Logo"}
                 heading={"React"}
-                text={
-                  "I prefer React for it's component hierarchy. This repo is a good example of how I code."
+                text={"I prefer React for it's component hierarchy.   "}
+                textLink={
+                  <a href="https://github.com/jeffstolz/gatsby-portfolio">
+                    This repo
+                  </a>
                 }
+                textLast={" is a good example of how I typically like to code."}
               />
               <SkillsCard
                 imageSrc={Images.React}
                 imageAlt={"React Native Logo"}
                 heading={"React Native"}
                 text={
-                  "For cross-platform apps, I find a single repo & team makes for smoother deliverables."
+                  "For cross-platform native mobile apps, I find a single repo & team makes for smoother deliverables."
                 }
               />
               <SkillsCard
@@ -90,7 +98,10 @@ const Skills = () => (
                 imageAlt={"The A11y Project Logo"}
                 heading={"Accessibility Always"}
                 text={
-                  "I see accessibile design & development as a responsibility. I'm a big fan of the A11y Project."
+                  "I see accessibile design & development as a chief responsibility. I'm a big fan of the "
+                }
+                textLink={
+                  <a href="https://www.a11yproject.com/">A11y Project.</a>
                 }
               />
               <SkillsCard
