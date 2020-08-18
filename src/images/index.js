@@ -2,6 +2,7 @@ import A11y from "./a11y.svg"
 import Airplane from "./airplane.svg"
 import Apple from "./apple.svg"
 import Atomic from "./atomic.svg"
+import Back from "./back.svg"
 import Celebrate from "./celebrate.svg"
 import Certificate from "./certificate.svg"
 import CipherbioArchives from "./cipherbio-archives.png"
@@ -96,6 +97,7 @@ export const Images = {
   Airplane,
   Apple,
   Atomic,
+  Back,
   Celebrate,
   Certificate,
   CipherbioArchives,

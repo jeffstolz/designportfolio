@@ -1,6 +1,7 @@
 export const headingFontFamily = '"Vollkorn", Serif;'
 export const primaryFontFamily = '"Open Sans", Sans-Serif;'
 
+export const lightFontWeight = "400"
 export const mediumFontWeight = "600"
 export const heavyFontWeight = "800"
 
