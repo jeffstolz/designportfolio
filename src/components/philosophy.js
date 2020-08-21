@@ -3,16 +3,16 @@ import styled from "styled-components"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
-const Ethos = () => (
+const Philosophy = () => (
   <OuterContainer>
     <BackgroundOverlay>
       <Container>
-        <Heading>My Ethos</Heading>
+        <Heading>My Philosophy</Heading>
         <Text>
-          Every day is an opportunity to carry myself with authenticity,
-          compassion, humor, and humility. I choose to work on projects that
-          improve the health, education, liberties, and overall quality of life
-          for our local & global communities.
+          I thrive in small, collaborative, multi-disciplinary teams that foster
+          transparency and continuous improvement. I value strong opinions,
+          loosely held. I believe in the value of designers writing frontend
+          code alongside developers.
         </Text>
       </Container>
     </BackgroundOverlay>
@@ -27,18 +27,14 @@ const BackgroundOverlay = styled.div`
   display: flex;
   justify-content: center;
   padding: ${Spacing.large} ${Spacing.base};
-  background-image: url(${Images.HospitalEthos}), url(${Images.SchoolEthos});
-  background-position: bottom left, bottom right;
+  background-image: url(${Images.DesignSkills}), url(${Images.DevelopSkills});
+  background-position: top right, bottom left;
   background-repeat: no-repeat;
-  background-size: 21em, 29em;
+  background-size: 44.5em, 42em;
 
   @media (max-width: ${Spacing.breakPoint}) {
-    background-size: 10em, 15em;
-  }
-
-  @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.large} ${Spacing.small};
-    background-size: 7em, 12em;
+    background-size: 20em, 20em;
   }
 `
 
@@ -63,4 +59,4 @@ const Text = styled.p`
   }
 `
 
-export default Ethos
+export default Philosophy

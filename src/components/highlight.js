@@ -15,7 +15,7 @@ const Container = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 31.5%;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     flex-direction: row;

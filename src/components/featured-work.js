@@ -8,16 +8,6 @@ const FeaturedWork = () => (
     <Container>
       <Header>Featured Work</Header>
       <FeaturedWorkCard
-        previewLabels={"Design Leadership / Research / Mobile Design"}
-        previewHeading={
-          "Redesigning a Deeply Embedded Clinical Communication Tool"
-        }
-        previewText={
-          "Lessons learned from establishing a design culture and redesigning a product with over 92k existing users."
-        }
-        projectLink={"/mobile-heartbeat"}
-      />
-      <FeaturedWorkCard
         previewLabels={"Product Management / SaaS Design / Ruby on Rails"}
         previewHeading={
           "Designing and Building an Online Education MVP in Six Weeks"
@@ -26,6 +16,16 @@ const FeaturedWork = () => (
           "An example around prioritizing features, mitigating assumptions, and building scalable software."
         }
         projectLink={"/theskills"}
+      />
+      <FeaturedWorkCard
+        previewLabels={"Design Leadership / Research / Mobile Design"}
+        previewHeading={
+          "Redesigning a Deeply Embedded Clinical Communication Tool"
+        }
+        previewText={
+          "Lessons learned from establishing a design culture and redesigning a product with over 92k existing users."
+        }
+        projectLink={"/mobile-heartbeat"}
       />
       <FeaturedWorkCard
         previewLabels={"Design Systems / Enterprise Design / React Native"}

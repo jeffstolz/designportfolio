@@ -229,7 +229,7 @@ const HighlightsHeading = styled.h4`
 const HighlightList = styled.ul`
   display: flex;
   justify-content: space-between;
-  width: 25.6em;
+  width: 25em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     flex-direction: column;

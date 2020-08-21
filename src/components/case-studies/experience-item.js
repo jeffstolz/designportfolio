@@ -37,13 +37,15 @@ const InnerContainer = styled.div`
 `
 
 const Image = styled.img`
+  height: ${Spacing.base};
+  width: ${Spacing.base};
   @media (max-width: ${Spacing.breakPoint}) {
     margin-right: ${Spacing.small};
   }
 `
 
 const Heading = styled.h5`
-  font-size: 1.5em;
+  font-size: ${Typography.mediumFontSize};
   margin: ${Spacing.xSmall} 0;
 
   @media (max-width: ${Spacing.breakPoint}) {

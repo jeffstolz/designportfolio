@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Intro from "../components/intro"
 import Skills from "../components/skills"
 import FeaturedWork from "../components/featured-work"
-import Ethos from "../components/ethos"
+import Philosophy from "../components/philosophy"
 import Background from "../components/background"
 import Contact from "../components/contact"
 
@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Intro />
     <Skills />
     <FeaturedWork />
-    <Ethos />
+    <Philosophy />
     <Background />
     <Contact />
   </Layout>
