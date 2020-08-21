@@ -76,21 +76,22 @@ const Skills = () => (
               <SkillsCard
                 imageSrc={Images.React}
                 imageAlt={"React Logo"}
-                heading={"React"}
-                text={"I prefer React for it's component hierarchy.   "}
+                heading={"React & React Native"}
+                text={
+                  "I prefer React's component hierarchy & RN's cross-platform capabilities. "
+                }
                 textLink={
                   <a href="https://github.com/jeffstolz/gatsby-portfolio">
-                    This repo
+                    Check out how I like to code.
                   </a>
                 }
-                textLast={" is a good example of how I typically like to code."}
               />
               <SkillsCard
-                imageSrc={Images.React}
+                imageSrc={Images.StyledComponents}
                 imageAlt={"React Native Logo"}
-                heading={"React Native"}
+                heading={"Styled Components"}
                 text={
-                  "For cross-platform native mobile apps, I find a single repo & team makes for smoother deliverables."
+                  "I'm a fan of the scoped styles, no-class policy, native mobile support, & baggage free inline styling."
                 }
               />
               <SkillsCard
@@ -98,10 +99,7 @@ const Skills = () => (
                 imageAlt={"The A11y Project Logo"}
                 heading={"Accessibility Always"}
                 text={
-                  "I see accessibile design & development as a chief responsibility. I'm a big fan of the "
-                }
-                textLink={
-                  <a href="https://www.a11yproject.com/">A11y Project.</a>
+                  "I see accessibile design & development as a chief responsibility. I'm a big fan of the A11y Project"
                 }
               />
               <SkillsCard

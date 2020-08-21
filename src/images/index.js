@@ -82,6 +82,7 @@ import SkillsNotes from "./skills-notes.png"
 import SkillsThumbnail from "./skills-thumbnail.png"
 import SkillsVideo from "./skills-video.jpg"
 import SkillsWireframes from "./skills-wireframes.jpg"
+import StyledComponents from "./styled-components.svg"
 import Surgeon from "./surgeon.svg"
 import Team from "./team.svg"
 import ViralgainsThumbnail from "./vg-thumbnail.png"
@@ -177,6 +178,7 @@ export const Images = {
   SkillsThumbnail,
   SkillsVideo,
   SkillsWireframes,
+  StyledComponents,
   Surgeon,
   Team,
   ViralgainsThumbnail,
