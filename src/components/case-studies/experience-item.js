@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing, Typography } from "../../styles/variables"
+import { Colors, Spacing, Typography } from "../../styles/variables"
 
 const ExperienceItem = ({ imageSrc, imageAlt, heading, body }) => (
   <Container>
@@ -8,7 +8,7 @@ const ExperienceItem = ({ imageSrc, imageAlt, heading, body }) => (
       <Image src={imageSrc} alt={imageAlt} />
       <Heading>{heading}</Heading>
     </InnerContainer>
-    <p>{body}</p>
+    <Content>{body}</Content>
   </Container>
 )
 
@@ -16,6 +16,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 30%;
+  border: 1px solid ${Colors.lightGray};
+  border-radius: ${Spacing.xxSmall};
+  padding: ${Spacing.small};
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
@@ -37,6 +40,7 @@ const InnerContainer = styled.div`
 `
 
 const Image = styled.img`
+  opacity: 0.5;
   height: ${Spacing.base};
   width: ${Spacing.base};
   @media (max-width: ${Spacing.breakPoint}) {
@@ -47,11 +51,16 @@ const Image = styled.img`
 const Heading = styled.h5`
   font-size: ${Typography.mediumFontSize};
   margin: ${Spacing.xSmall} 0;
+  color: ${Colors.darkGray};
 
   @media (max-width: ${Spacing.breakPoint}) {
     font-size: ${Typography.mediumFontSize};
     margin: 0;
   }
+`
+
+const Content = styled.p`
+  color: ${Colors.darkGray};
 `
 
 export default ExperienceItem

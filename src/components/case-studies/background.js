@@ -58,7 +58,7 @@ const Heading = styled.h2`
 
 const SideContainer = styled.div`
   width: 30%;
-  margin-top: 0.9em;
+  margin-top: ${Spacing.small};
 
   @media (max-width: ${Spacing.breakPoint}) {
     margin-top: ${Spacing.base};

@@ -78,7 +78,7 @@ const Subheading = styled.p`
   font-size: 1.6em;
   font-weight: ${Typography.lightFontWeight};
   color: ${Colors.darkGray};
-  margin-bottom: ${Spacing.medium};
+  margin-bottom: ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     font-size: 1.2em;

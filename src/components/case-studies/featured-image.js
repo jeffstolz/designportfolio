@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing } from "../../styles/variables"
+import { Colors, Spacing } from "../../styles/variables"
 
 const FeaturedImage = ({ imageSrc }) => (
   <OuterContainer>
@@ -14,7 +14,7 @@ const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${Spacing.base};
+  padding: ${Spacing.large} ${Spacing.base} ${Spacing.small} ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.medium} ${Spacing.small};
@@ -24,6 +24,10 @@ const OuterContainer = styled.section`
 const Container = styled.div`
   width: 100%;
   max-width: ${Spacing.containerWidth};
+  background-color: ${Colors.white};
+  padding: ${Spacing.small};
+  border-radius: ${Spacing.xSmall};
+  box-shadow: ${Colors.lightShadow};
 `
 
 const Image = styled.img`
