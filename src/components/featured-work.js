@@ -13,7 +13,7 @@ const FeaturedWork = () => (
           "Designing and Building an Online Education MVP in Six Weeks"
         }
         previewText={
-          "An example around prioritizing features, mitigating assumptions, and building scalable software."
+          "An example around prioritizing features, mitigating assumptions, and building scalable software in a pinch."
         }
         projectLink={"/theskills"}
       />
@@ -23,7 +23,7 @@ const FeaturedWork = () => (
           "Redesigning a Deeply Embedded Clinical Communication Tool"
         }
         previewText={
-          "Lessons learned from establishing a design culture and redesigning a product with over 92k existing users."
+          "Lessons learned from establishing a design culture and redesigning a product with over 79k existing users."
         }
         projectLink={"/mobile-heartbeat"}
       />

@@ -15,7 +15,7 @@ const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${Spacing.medium} ${Spacing.base};
+  padding: ${Spacing.huge} ${Spacing.base};
   background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
 
   @media (max-width: ${Spacing.smallBreakPoint}) {

@@ -37,7 +37,7 @@ const Container = styled.div`
 const LinkContainer = styled.div`
   display: flex;
   margin-left: -1.2em;
-  margin-bottom: ${Spacing.large};
+  margin-bottom: ${Spacing.huge};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     margin-left: 0;
@@ -78,7 +78,7 @@ const Subheading = styled.p`
   font-size: 1.6em;
   font-weight: ${Typography.lightFontWeight};
   color: ${Colors.darkGray};
-  margin-bottom: ${Spacing.base};
+  margin-bottom: ${Spacing.medium};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     font-size: 1.2em;
