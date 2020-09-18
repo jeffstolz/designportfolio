@@ -19,10 +19,9 @@ const MobileHeartbeatPage = () => (
         "Lessons learned from establishing a design culture and redesigning a product with over 79k active users."
       }
     />
-    <FeaturedImage imageSrc={Images.MhOverview} />
     <Experience>
       <ExperienceItem
-        imageSrc={Images.Persona}
+        imageSrc={Images.Team}
         heading={"Design Leadership"}
         body={
           "Evangelizing the value of design in an organization & building a team."
@@ -36,11 +35,12 @@ const MobileHeartbeatPage = () => (
         }
       />
       <ExperienceItem
-        imageSrc={Images.Persona}
+        imageSrc={Images.Mobile}
         heading={"Mobile Design"}
         body={"Enterprise design solutions for Android and iOS."}
       />
     </Experience>
+    <FeaturedImage imageSrc={Images.MhOverview} />
     <Background
       overview={
         "When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating. Physicians were rejecting the application because it didn't support their specific workflow and urgent communications were a burden that slowed down urgent response times to patients."
@@ -50,7 +50,12 @@ const MobileHeartbeatPage = () => (
       }
       tools={"Sketch, Zeplin, Usertesting.com"}
     />
-    <Quote />
+    <Quote
+      quote={
+        "When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
+      }
+      source={"Someone Special"}
+    />
   </Layout>
 )
 

@@ -1,37 +1,56 @@
 import React from "react"
 import styled from "styled-components"
+import { Images } from "../../images"
 import { Colors, Spacing, Typography } from "../../styles/variables"
 
-const Quote = () => (
+const Quote = ({ quote, source }) => (
   <OuterContainer>
-    <Container>
-      <Heading>This study to explores my experiences with...</Heading>
-    </Container>
+    <BackgroundOverlay>
+      <Container>
+        <Text>"{quote}"</Text>
+        <Source>{source}</Source>
+      </Container>
+    </BackgroundOverlay>
   </OuterContainer>
 )
 
 const OuterContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: ${Spacing.medium} ${Spacing.base};
   background-image: linear-gradient(-25deg, ${Colors.blue}, ${Colors.cyan});
+`
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.medium} ${Spacing.small};
+const BackgroundOverlay = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: ${Spacing.large} ${Spacing.base};
+  background-image: url(${Images.DesignSkills}), url(${Images.DevelopSkills});
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  background-size: 44.5em, 42em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    padding: ${Spacing.large} ${Spacing.small};
+    background-size: 20em, 20em;
   }
 `
 
-const Container = styled.div`
-  width: 100%;
-  max-width: ${Spacing.containerWidth};
+const Container = styled.figure`
+  display: flex;
+  flex-direction: column;
+  width: ${Spacing.containerWidth};
 `
 
-const Heading = styled.h4`
-  font-family: ${Typography.headingFontFamily};
-  font-style: italic;
+const Text = styled.blockquote`
   font-size: ${Typography.mediumFontSize};
-  margin-bottom: ${Spacing.base};
+  line-height: ${Typography.hugeLineHeight};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.baseFontSize};
+  }
+`
+
+const Source = styled.figcaption`
+  margin-top: ${Spacing.small};
+  font-style: italic;
 `
 
 export default Quote
