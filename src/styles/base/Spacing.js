@@ -6,6 +6,7 @@ export const medium = "3em"
 export const large = "4em"
 export const huge = "5em"
 export const xHuge = "6em"
+export const xxHuge = "8em"
 
 export const borderRadius = "0.2em"
 export const breakPoint = "950px"

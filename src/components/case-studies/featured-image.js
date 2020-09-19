@@ -14,10 +14,10 @@ const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${Spacing.large} ${Spacing.base} ${Spacing.small} ${Spacing.base};
+  padding: ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.medium} ${Spacing.small};
+    padding: ${Spacing.small};
   }
 `
 
@@ -25,7 +25,7 @@ const Container = styled.div`
   width: 100%;
   max-width: ${Spacing.containerWidth};
   background-color: ${Colors.white};
-  padding: ${Spacing.small};
+  padding: ${Spacing.base};
   border-radius: ${Spacing.xSmall};
   box-shadow: ${Colors.lightShadow};
 `
