@@ -27,7 +27,7 @@ const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${Spacing.huge} ${Spacing.base};
+  padding: ${Spacing.xHuge} ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.medium} ${Spacing.small};

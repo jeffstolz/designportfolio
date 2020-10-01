@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Images } from "../../images"
 import { Colors, Spacing, Typography } from "../../styles/variables"
 
-const Intro = ({ company, heading, subheading, children }) => (
+const Intro = ({ company, heading, subheading }) => (
   <OuterContainer>
     <Container>
       <LinkContainer>
@@ -22,7 +22,7 @@ const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${Spacing.medium} ${Spacing.base};
+  padding: ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.small};

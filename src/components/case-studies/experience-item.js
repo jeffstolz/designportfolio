@@ -23,7 +23,7 @@ const Container = styled.div`
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
     max-width: 25em;
-    margin-bottom: ${Spacing.medium};
+    margin-bottom: ${Spacing.small};
   }
 `
 
@@ -43,8 +43,11 @@ const Image = styled.img`
   opacity: 0.5;
   height: ${Spacing.base};
   width: ${Spacing.base};
+
   @media (max-width: ${Spacing.breakPoint}) {
-    margin-right: ${Spacing.small};
+    height: ${Spacing.small};
+    width: ${Spacing.small};
+    margin-right: ${Spacing.xSmall};
   }
 `
 
@@ -54,7 +57,7 @@ const Heading = styled.h5`
   color: ${Colors.darkGray};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.mediumFontSize};
+    font-size: ${Typography.baseFontSize};
     margin: 0;
   }
 `

@@ -37,6 +37,10 @@ const Container = styled.figure`
   display: flex;
   flex-direction: column;
   width: ${Spacing.containerWidth};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    margin: 0;
+  }
 `
 
 const Text = styled.blockquote`
