@@ -2,12 +2,17 @@ import React from "react"
 import styled from "styled-components"
 import { Images } from "../images"
 import { Spacing, Typography } from "../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Intro = () => (
   <OuterContainer>
     <Container>
-      <Heading>Hi, I'm Jeff</Heading>
-      <Subheading>I design & develop software</Subheading>
+      <Fade>
+        <Heading>Hi, I'm Jeff</Heading>
+      </Fade>
+      <Fade delay={250}>
+        <Subheading>I design & develop software</Subheading>
+      </Fade>
     </Container>
   </OuterContainer>
 )

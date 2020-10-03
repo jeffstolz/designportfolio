@@ -1,13 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import { Spacing } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const SectionHeader = ({ heading, content }) => (
   <OuterContainer>
-    <Container>
-      <Heading>{heading}</Heading>
-      <p>{content}</p>
-    </Container>
+    <Fade>
+      <Container>
+        <Heading>{heading}</Heading>
+        <p>{content}</p>
+      </Container>
+    </Fade>
   </OuterContainer>
 )
 

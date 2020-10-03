@@ -2,14 +2,17 @@ import React from "react"
 import styled from "styled-components"
 import { Images } from "../../images"
 import { Colors, Spacing, Typography } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Quote = ({ quote, source }) => (
   <OuterContainer>
     <BackgroundOverlay>
-      <Container>
-        <Text>"{quote}"</Text>
-        <Source>{source}</Source>
-      </Container>
+      <Fade>
+        <Container>
+          <Text>"{quote}"</Text>
+          <Source>{source}</Source>
+        </Container>
+      </Fade>
     </BackgroundOverlay>
   </OuterContainer>
 )

@@ -1,15 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
+import Slide from "react-reveal/Slide"
 
 const BackgroundCard = ({ title, company, dates, description, children }) => (
   <OuterContainer>
-    <Container>
-      <Dates>{dates}</Dates>
-      <Title>{title}</Title>
-      <Company>{company}</Company>
-      <Description>{description}</Description>
-    </Container>
+    <Slide left duration={500}>
+      <Container>
+        <Dates>{dates}</Dates>
+        <Title>{title}</Title>
+        <Company>{company}</Company>
+        <Description>{description}</Description>
+      </Container>
+    </Slide>
     {children}
   </OuterContainer>
 )
