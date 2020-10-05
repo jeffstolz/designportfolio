@@ -1,12 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const FeaturedImage = ({ imageSrc }) => (
   <OuterContainer>
-    <Container>
-      <Image src={imageSrc} />
-    </Container>
+    <Fade>
+      <Container>
+        <Image src={imageSrc} />
+      </Container>
+    </Fade>
   </OuterContainer>
 )
 

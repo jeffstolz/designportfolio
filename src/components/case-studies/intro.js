@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { Images } from "../../images"
 import { Colors, Spacing, Typography } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Intro = ({ company, heading, subheading }) => (
   <OuterContainer>
@@ -11,9 +12,11 @@ const Intro = ({ company, heading, subheading }) => (
         <Icon src={Images.Back} alt=""></Icon>
         <Link to={"/"}>Back to Home</Link>
       </LinkContainer>
-      <Company>{company}</Company>
-      <Heading>{heading}</Heading>
-      <Subheading>{subheading}</Subheading>
+      <Fade>
+        <Company>{company}</Company>
+        <Heading>{heading}</Heading>
+        <Subheading>{subheading}</Subheading>
+      </Fade>
     </Container>
   </OuterContainer>
 )

@@ -2,11 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import FeaturedWorkCard from "./featured-work-card"
 import { Spacing } from "../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const FeaturedWork = () => (
   <OuterContainer>
     <Container>
-      <Header>Featured Work</Header>
+      <Fade>
+        <Header>Featured Work</Header>
+      </Fade>
       <FeaturedWorkCard
         previewLabels={"Product Management / SaaS Design / Ruby on Rails"}
         previewHeading={
@@ -33,9 +36,9 @@ const FeaturedWork = () => (
           "Establishing a Design System for a Complex Enterprise Organization"
         }
         previewText={
-          "An approach to providing structure to a rapidbly growing organization with products moving in multiple directions."
+          "An approach to providing structure to a rapidly growing organization with products moving in multiple directions."
         }
-        projectLink={"/airxos"}
+        projectLink={"/neocova"}
       />
       <FeaturedWorkCard
         previewLabels={"Facilitation / Consulting / Interviewing"}
@@ -45,7 +48,7 @@ const FeaturedWork = () => (
         previewText={
           "A love letter to product design sprints and the value they bring to greenfield projects."
         }
-        projectLink={"/cipherbio"}
+        projectLink={"/dragon"}
       />
     </Container>
   </OuterContainer>

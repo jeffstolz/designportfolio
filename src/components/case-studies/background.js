@@ -1,25 +1,28 @@
 import React from "react"
 import styled from "styled-components"
 import { Spacing, Typography } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Background = ({ overview, role, tools }) => (
   <OuterContainer>
-    <Container>
-      <OverviewContainer>
-        <Heading>Background</Heading>
-        <p>{overview}</p>
-      </OverviewContainer>
-      <SideContainer>
-        <RoleContainer>
-          <SubHeading>My Role</SubHeading>
-          <p>{role}</p>
-        </RoleContainer>
-        <ToolsContainer>
-          <SubHeading>Tools</SubHeading>
-          <p>{tools}</p>
-        </ToolsContainer>
-      </SideContainer>
-    </Container>
+    <Fade>
+      <Container>
+        <OverviewContainer>
+          <Heading>Background</Heading>
+          <p>{overview}</p>
+        </OverviewContainer>
+        <SideContainer>
+          <RoleContainer>
+            <SubHeading>My Role</SubHeading>
+            <p>{role}</p>
+          </RoleContainer>
+          <ToolsContainer>
+            <SubHeading>Tools</SubHeading>
+            <p>{tools}</p>
+          </ToolsContainer>
+        </SideContainer>
+      </Container>
+    </Fade>
   </OuterContainer>
 )
 

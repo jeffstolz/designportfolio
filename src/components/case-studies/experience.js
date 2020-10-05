@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import { Spacing } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Experience = ({ children }) => (
   <OuterContainer>
     <Container>
-      <InnerContainer>{children}</InnerContainer>
+      <Fade>
+        <InnerContainer>{children}</InnerContainer>
+      </Fade>
     </Container>
   </OuterContainer>
 )

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const FeaturedWorkCard = ({
   imageSrc,
@@ -11,17 +12,19 @@ const FeaturedWorkCard = ({
   previewText,
   projectLink,
 }) => (
-  <OuterContainer>
-    <ImageContainer>
-      <PreviewImage src={imageSrc} alt={imageAlt} />
-    </ImageContainer>
-    <TextContainer>
-      <PreviewLabels>{previewLabels}</PreviewLabels>
-      <PreviewHeading>{previewHeading}</PreviewHeading>
-      <PreviewText>{previewText}</PreviewText>
-      <CardLink to={projectLink}>View Case Study</CardLink>
-    </TextContainer>
-  </OuterContainer>
+  <Fade>
+    <OuterContainer>
+      <ImageContainer>
+        <PreviewImage src={imageSrc} alt={imageAlt} />
+      </ImageContainer>
+      <TextContainer>
+        <PreviewLabels>{previewLabels}</PreviewLabels>
+        <PreviewHeading>{previewHeading}</PreviewHeading>
+        <PreviewText>{previewText}</PreviewText>
+        <CardLink to={projectLink}>View Case Study</CardLink>
+      </TextContainer>
+    </OuterContainer>
+  </Fade>
 )
 
 const OuterContainer = styled.li`

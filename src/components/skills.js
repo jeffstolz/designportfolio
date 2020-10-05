@@ -3,6 +3,7 @@ import styled from "styled-components"
 import SkillsCard from "./skills-card"
 import { Images } from "../images"
 import { Colors, Spacing } from "../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Skills = () => (
   <OuterContainer>
@@ -10,123 +11,127 @@ const Skills = () => (
       <Container>
         <DesignContainer>
           <div>
-            <Header>How I Design</Header>
-            <CardList>
-              <SkillsCard
-                imageSrc={Images.Jtbd}
-                imageAlt={"Icon of a whiteboard with sections of writing"}
-                heading={"Jobs-To-Be-Done"}
-                text={
-                  "Ensuring we're solving the right problems, for the right people, is my first step to every project."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Persona}
-                imageAlt={"Icon of a user persona"}
-                heading={"Personas"}
-                text={
-                  "I tend to blend these with JTBD to ensure we maintain user empathy throughout the journey."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Pds}
-                imageAlt={"Icon of a user journey diagram"}
-                heading={"GV Design Sprints"}
-                text={"An excellent guideline, although "}
-                textLink={
-                  <a href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
-                    I've written about
-                  </a>
-                }
-                textLast={" how no two sprints follow the same exact path."}
-              />
-              <SkillsCard
-                imageSrc={Images.Atomic}
-                imageAlt={"Icon of three atoms linked together"}
-                heading={"Atomic Design Systems"}
-                text={
-                  "Always a fan of this methodology for larger projects, especially when paired with React components."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Figma}
-                imageAlt={"Figma logo"}
-                heading={"Figma"}
-                text={
-                  "I'll work with anything, but I prefer Figma for it's cloud-based & platform agnostic architecture."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Interview}
-                imageAlt={
-                  "Icon of two users with a shared chat bubble above them"
-                }
-                heading={"Informal User Testing"}
-                text={
-                  "Stakeholder buy-in can be hard but getting validation is crucial. I opt for frequency over formality."
-                }
-              />
-            </CardList>
+            <Fade delay={500}>
+              <Header>How I Design</Header>
+              <CardList>
+                <SkillsCard
+                  imageSrc={Images.Jtbd}
+                  imageAlt={"Icon of a whiteboard with sections of writing"}
+                  heading={"Jobs-To-Be-Done"}
+                  text={
+                    "Ensuring we're solving the right problems, for the right people, is my first step to every project."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Persona}
+                  imageAlt={"Icon of a user persona"}
+                  heading={"Personas"}
+                  text={
+                    "I tend to blend these with JTBD to ensure we maintain user empathy throughout the journey."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Pds}
+                  imageAlt={"Icon of a user journey diagram"}
+                  heading={"GV Design Sprints"}
+                  text={"An excellent guideline, although "}
+                  textLink={
+                    <a href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
+                      I've written about
+                    </a>
+                  }
+                  textLast={" how no two sprints follow the same exact path."}
+                />
+                <SkillsCard
+                  imageSrc={Images.Atomic}
+                  imageAlt={"Icon of three atoms linked together"}
+                  heading={"Atomic Design Systems"}
+                  text={
+                    "Always a fan of this methodology for larger projects, especially when paired with React components."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Figma}
+                  imageAlt={"Figma logo"}
+                  heading={"Figma"}
+                  text={
+                    "I'll work with anything, but I prefer Figma for it's cloud-based & platform agnostic architecture."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Interview}
+                  imageAlt={
+                    "Icon of two users with a shared chat bubble above them"
+                  }
+                  heading={"Informal User Testing"}
+                  text={
+                    "Stakeholder buy-in can be hard but getting validation is crucial. I opt for frequency over formality."
+                  }
+                />
+              </CardList>
+            </Fade>
           </div>
         </DesignContainer>
         <DevelopContainer>
           <div>
-            <Header>How I Develop</Header>
-            <CardList>
-              <SkillsCard
-                imageSrc={Images.React}
-                imageAlt={"React Logo"}
-                heading={"React & React Native"}
-                text={
-                  "I prefer React's component hierarchy & RN's cross-platform capabilities. "
-                }
-                textLink={
-                  <a href="https://github.com/jeffstolz/gatsby-portfolio">
-                    Check out how I like to code.
-                  </a>
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.StyledComponents}
-                imageAlt={"React Native Logo"}
-                heading={"Styled Components"}
-                text={
-                  "I'm a fan of the scoped styles, no-class policy, native mobile support, & baggage free inline styling."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.A11y}
-                imageAlt={"The A11y Project Logo"}
-                heading={"Accessibility Always"}
-                text={
-                  "I see accessibile design & development as a chief responsibility. I'm a big fan of the A11y Project"
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Ship}
-                imageAlt={"Icon of a rocket ship"}
-                heading={"Ship Early & Often"}
-                text={
-                  "Especially for MVPs, overbearing code review policies & CI can often hurt more than help."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Github}
-                imageAlt={"Github Logo"}
-                heading={"Concise Pull Requests"}
-                text={
-                  "I prefer to feature branch and keep my PRs focused & squashed into single commits."
-                }
-              />
-              <SkillsCard
-                imageSrc={Images.Mobile}
-                imageAlt={"Icon of a mobile phone"}
-                heading={"Prioritize Mobile"}
-                text={
-                  "Many users only have a mobile device to access the internet - let's keep them in mind."
-                }
-              />
-            </CardList>
+            <Fade>
+              <Header>How I Develop</Header>
+              <CardList>
+                <SkillsCard
+                  imageSrc={Images.React}
+                  imageAlt={"React Logo"}
+                  heading={"React & React Native"}
+                  text={
+                    "I prefer React's component hierarchy & RN's cross-platform capabilities. "
+                  }
+                  textLink={
+                    <a href="https://github.com/jeffstolz/gatsby-portfolio">
+                      Check out how I like to code.
+                    </a>
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.StyledComponents}
+                  imageAlt={"React Native Logo"}
+                  heading={"Styled Components"}
+                  text={
+                    "I'm a fan of the scoped styles, no-class policy, native mobile support, & baggage free inline styling."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.A11y}
+                  imageAlt={"The A11y Project Logo"}
+                  heading={"Accessibility Always"}
+                  text={
+                    "I see accessibile design & development as a chief responsibility. I'm a big fan of the A11y Project"
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Ship}
+                  imageAlt={"Icon of a rocket ship"}
+                  heading={"Ship Early & Often"}
+                  text={
+                    "Especially for MVPs, overbearing code review policies & CI can often hurt more than help."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Github}
+                  imageAlt={"Github Logo"}
+                  heading={"Concise Pull Requests"}
+                  text={
+                    "I prefer to feature branch and keep my PRs focused & squashed into single commits."
+                  }
+                />
+                <SkillsCard
+                  imageSrc={Images.Mobile}
+                  imageAlt={"Icon of a mobile phone"}
+                  heading={"Prioritize Mobile"}
+                  text={
+                    "Many users only have a mobile device to access the internet - let's keep them in mind."
+                  }
+                />
+              </CardList>
+            </Fade>
           </div>
         </DevelopContainer>
       </Container>

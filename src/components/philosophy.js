@@ -2,18 +2,21 @@ import React from "react"
 import styled from "styled-components"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const Philosophy = () => (
   <OuterContainer>
     <BackgroundOverlay>
       <Container>
-        <Heading>My Philosophy</Heading>
-        <Text>
-          I thrive in small, collaborative, multi-disciplinary teams that foster
-          transparency and continuous improvement. I value strong opinions,
-          loosely held. I believe in the value of designers writing frontend
-          code alongside developers.
-        </Text>
+        <Fade>
+          <Heading>My Philosophy</Heading>
+          <Text>
+            I thrive in small, collaborative, multi-disciplinary teams that
+            foster transparency and continuous improvement. I value strong
+            opinions, loosely held. I believe in the value of designers writing
+            frontend code alongside developers.
+          </Text>
+        </Fade>
       </Container>
     </BackgroundOverlay>
   </OuterContainer>
