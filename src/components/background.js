@@ -14,7 +14,7 @@ const Background = () => (
       </Fade>
       <BackgroundList>
         <BackgroundCard
-          title={"Product Design Consultant"}
+          title={"Senior Product Design Consultant"}
           company={"thoughtbot"}
           dates={"Oct 18 - Current"}
           description={
@@ -199,9 +199,14 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   padding: ${Spacing.huge} ${Spacing.base};
+  background-image: url(${Images.DevelopBackground});
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 25em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.large} ${Spacing.small};
+    background-size: 12.25em;
   }
 `
 

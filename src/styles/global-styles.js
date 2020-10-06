@@ -51,7 +51,7 @@ p {
   line-height: ${Typography.hugeLineHeight};
 }
 a {
-  color: ${Colors.black};
+  color: ${Colors.purple};
 }
 img {
   max-width: 100%;

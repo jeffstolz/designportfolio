@@ -2,39 +2,38 @@ import React from "react"
 import styled from "styled-components"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
-import Fade from "react-reveal/Fade"
 
 const Contact = () => (
   <OuterContainer>
     <BackgroundOverlay>
       <Container>
         <Heading>Let's Chat!</Heading>
-        <Fade>
-          <Text>
-            Thanks for taking the time to review my site. I am always looking
-            for new opportunities to create, share, and grow as a designer.
-            Please reach out if you'd like to chat over a (remote?) coffee. I
-            look forward to hearing from you!
-          </Text>
-          <LinkList>
-            <LinkItem>
-              <a href="mailto:j%73%74o%6Cz12%33@%67ma%69%6C.co%6D">Email</a>
-            </LinkItem>
-            <LinkItem>
-              <a href="https://github.com/jeffstolz">Github</a>
-            </LinkItem>
-            <LinkItem>
-              <a href="https://www.linkedin.com/in/jeff-stolz-17666725/">
-                LinkedIn
-              </a>
-            </LinkItem>
-            <LinkItem>
-              <a href={Images.JeffStolzResume} download>
-                Resume
-              </a>
-            </LinkItem>
-          </LinkList>
-        </Fade>
+        <Text>
+          Thanks for taking the time to review my site. I am always looking for
+          new opportunities to create, share, and grow as a designer. Please
+          reach out if you'd like to chat over a (remote?) coffee. I look
+          forward to hearing from you!
+        </Text>
+        <LinkList>
+          <LinkItem>
+            <LinkText href="mailto:j%73%74o%6Cz12%33@%67ma%69%6C.co%6D">
+              Email
+            </LinkText>
+          </LinkItem>
+          <LinkItem>
+            <LinkText href="https://github.com/jeffstolz">Github</LinkText>
+          </LinkItem>
+          <LinkItem>
+            <LinkText href="https://www.linkedin.com/in/jeff-stolz-17666725/">
+              LinkedIn
+            </LinkText>
+          </LinkItem>
+          <LinkItem>
+            <LinkText href={Images.JeffStolzResume} download>
+              Resume
+            </LinkText>
+          </LinkItem>
+        </LinkList>
       </Container>
     </BackgroundOverlay>
   </OuterContainer>
@@ -99,6 +98,10 @@ const LinkItem = styled.li`
     margin-left: 0;
     margin-bottom: ${Spacing.small};
   }
+`
+
+const LinkText = styled.a`
+  color: ${Colors.black};
 `
 
 export default Contact

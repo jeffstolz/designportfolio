@@ -30,14 +30,15 @@ const BackgroundOverlay = styled.div`
   display: flex;
   justify-content: center;
   padding: ${Spacing.large} ${Spacing.base};
-  background-image: url(${Images.DesignSkills}), url(${Images.DevelopSkills});
+  background-image: url(${Images.DesignPhilosophy}),
+    url(${Images.DevelopPhilosophy});
   background-position: top right, bottom left;
   background-repeat: no-repeat;
-  background-size: 44.5em, 42em;
+  background-size: 25em, 23em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     padding: ${Spacing.large} ${Spacing.small};
-    background-size: 20em, 20em;
+    background-size: 11.25em, 11em;
   }
 `
 
