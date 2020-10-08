@@ -103,7 +103,7 @@ const Skills = () => (
                   imageAlt={"The A11y Project Logo"}
                   heading={"Accessibility Always"}
                   text={
-                    "I see accessibile design & development as a chief responsibility. I'm a big fan of the A11y Project"
+                    "I see accessibile design & development as a chief responsibility. I'm a big fan of the A11y Project."
                   }
                 />
                 <SkillsCard

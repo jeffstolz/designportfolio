@@ -13,9 +13,14 @@ import CipherbioCommunity from "./cipherbio-blog.png"
 import CipherbioCompany from "./cipherbio-company.png"
 import CipherbioThumbnail from "./cipherbio-thumbnail.png"
 import CoffeeContact from "./coffee-contact.svg"
+import DesignFeatured from "./design-featured.svg"
 import DesignIntro from "./design-intro.svg"
+import DesignPhilosophy from "./design-philosophy.svg"
 import DesignSkills from "./design-skills.svg"
+import DevelopBackground from "./develop-background.svg"
+import DevelopFeatured from "./develop-featured.svg"
 import DevelopIntro from "./develop-intro.svg"
+import DevelopPhilosophy from "./develop-philosophy.svg"
 import DevelopSkills from "./develop-skills.svg"
 import Elm from "./elm.svg"
 import Favicon from "./favicon.png"
@@ -109,9 +114,14 @@ export const Images = {
   CipherbioCompany,
   CipherbioThumbnail,
   CoffeeContact,
+  DesignFeatured,
   DesignIntro,
+  DesignPhilosophy,
   DesignSkills,
+  DevelopBackground,
+  DevelopFeatured,
   DevelopIntro,
+  DevelopPhilosophy,
   DevelopSkills,
   Elm,
   Favicon,

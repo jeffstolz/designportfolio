@@ -26,7 +26,7 @@ const OuterContainer = styled.section`
   background-image: url(${Images.DevelopIntro}), url(${Images.DesignIntro});
   background-position: top left, bottom right;
   background-repeat: no-repeat;
-  background-size: 31em, 44.5em;
+  background-size: 28em, 44.5em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     height: 22em;

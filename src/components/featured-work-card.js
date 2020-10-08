@@ -74,6 +74,7 @@ const PreviewImage = styled.img``
 
 const PreviewLabels = styled.p`
   font-size: ${Typography.xSmallFontSize};
+  font-weight: ${Typography.lightFontWeight};
   color: ${Colors.gray};
   margin-bottom: ${Spacing.small};
   text-transform: uppercase;
@@ -91,15 +92,19 @@ const PreviewText = styled.p`
 
 const CardLink = styled(Link)`
   color: ${Colors.white};
-  background-color: ${Colors.black};
+  background-image: linear-gradient(
+    to left,
+    ${Colors.purple},
+    ${Colors.violet}
+  );
   text-decoration: none;
   padding: ${Spacing.small} ${Spacing.base};
   margin-top: ${Spacing.base};
   border-radius: ${Spacing.large};
 
   &:hover {
-    background-image: linear-gradient(to left, ${Colors.blue}, ${Colors.cyan});
-    color: ${Colors.black};
+    background-image: none;
+    background-color: ${Colors.black};
     box-shadow: ${Colors.lightShadow};
   }
 

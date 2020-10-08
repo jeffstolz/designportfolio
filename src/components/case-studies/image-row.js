@@ -1,13 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 import { Colors, Spacing } from "../../styles/variables"
+import Fade from "react-reveal/Fade"
 
 const ImageRow = ({ imageSrcOne, imageSrcTwo }) => (
   <OuterContainer>
-    <InnerContainer>
-      <Image src={imageSrcOne} />
-      <Image src={imageSrcTwo} />
-    </InnerContainer>
+    <Fade>
+      <InnerContainer>
+        <Image src={imageSrcOne} />
+        <Image src={imageSrcTwo} />
+      </InnerContainer>
+    </Fade>
   </OuterContainer>
 )
 
