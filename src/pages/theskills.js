@@ -16,6 +16,7 @@ const TheSkillsPage = () => (
   <Layout>
     <SEO title="The Skills Case Study" />
     <Intro
+      backgroundImage={Images.DesignCaseOne}
       company={"The Skills"}
       heading={"Designing and Building an Online Education MVP in Six Weeks"}
       subheading={
