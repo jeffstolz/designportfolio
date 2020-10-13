@@ -16,6 +16,7 @@ const DragonPage = () => (
   <Layout>
     <SEO title="Dragon Innovation Case Study" />
     <Intro
+      backgroundImage={Images.DesignCaseFour}
       company={"Dragon Innovation"}
       heading={
         "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"

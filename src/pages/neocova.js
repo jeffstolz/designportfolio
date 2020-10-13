@@ -16,6 +16,7 @@ const NeocovaPage = () => (
   <Layout>
     <SEO title="Neocova Case Study" />
     <Intro
+      backgroundImage={Images.DesignCaseThree}
       company={"Neocova"}
       heading={
         "Establishing a Design System for a Complex Enterprise Organization"

@@ -16,6 +16,7 @@ const MobileHeartbeatPage = () => (
   <Layout>
     <SEO title="Mobile Heartbeat Case Study" />
     <Intro
+      backgroundImage={Images.DesignCaseTwo}
       company={"Mobile Heartbeat"}
       heading={"Redesigning a Deeply Embedded Clinical Communication Tool"}
       subheading={

@@ -13,6 +13,10 @@ import CipherbioCommunity from "./cipherbio-blog.png"
 import CipherbioCompany from "./cipherbio-company.png"
 import CipherbioThumbnail from "./cipherbio-thumbnail.png"
 import CoffeeContact from "./coffee-contact.svg"
+import DesignCaseOne from "./design-case1.svg"
+import DesignCaseTwo from "./design-case2.svg"
+import DesignCaseThree from "./design-case3.svg"
+import DesignCaseFour from "./design-case4.svg"
 import DesignFeatured from "./design-featured.svg"
 import DesignIntro from "./design-intro.svg"
 import DesignPhilosophy from "./design-philosophy.svg"
@@ -114,6 +118,10 @@ export const Images = {
   CipherbioCompany,
   CipherbioThumbnail,
   CoffeeContact,
+  DesignCaseOne,
+  DesignCaseTwo,
+  DesignCaseThree,
+  DesignCaseFour,
   DesignFeatured,
   DesignIntro,
   DesignPhilosophy,

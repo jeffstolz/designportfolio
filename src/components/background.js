@@ -202,11 +202,11 @@ const OuterContainer = styled.section`
   background-image: url(${Images.DevelopBackground});
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 25em;
+  background-size: 18em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.large} ${Spacing.small};
-    background-size: 12.25em;
+    background-size: 8.5em;
   }
 `
 

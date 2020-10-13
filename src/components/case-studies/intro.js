@@ -5,8 +5,8 @@ import { Images } from "../../images"
 import { Colors, Spacing, Typography } from "../../styles/variables"
 import Fade from "react-reveal/Fade"
 
-const Intro = ({ company, heading, subheading }) => (
-  <OuterContainer>
+const Intro = ({ backgroundImage, company, heading, subheading }) => (
+  <OuterContainer backgroundImage={backgroundImage}>
     <Container>
       <LinkContainer>
         <Icon src={Images.Back} alt=""></Icon>
@@ -21,11 +21,17 @@ const Intro = ({ company, heading, subheading }) => (
   </OuterContainer>
 )
 
-const OuterContainer = styled.section`
+const OuterContainer = styled.section.attrs(props => ({
+  backgroundImage: props.backgroundImage || Images.DesignCaseOne,
+}))`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: ${Spacing.base};
+  background-image: url(${props => props.backgroundImage});
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 28em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.small};
