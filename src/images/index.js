@@ -26,6 +26,7 @@ import DevelopFeatured from "./develop-featured.svg"
 import DevelopIntro from "./develop-intro.svg"
 import DevelopPhilosophy from "./develop-philosophy.svg"
 import DevelopSkills from "./develop-skills.svg"
+import DragonThumbnail from "./dragon-thumbnail.jpg"
 import Elm from "./elm.svg"
 import Favicon from "./favicon.png"
 import Figma from "./figma.svg"
@@ -69,10 +70,11 @@ import MhSolutionThree from "./mh-solution-3.jpg"
 import MhSolutionFour from "./mh-solution-4.jpg"
 import MhSolutionFive from "./mh-solution-5.jpg"
 import MhSolutionSix from "./mh-solution-6.jpg"
-import MhThumbnail from "./mh-thumbnail.png"
+import MhThumbnail from "./mh-thumbnail.jpg"
 import MhWireframe from "./mh-wireframe.jpg"
 import Mobile from "./mobile.svg"
 import Native from "./native.svg"
+import NeocovaThumbnail from "./neocova-thumbnail.jpg"
 import Nope from "./nope.svg"
 import Pds from "./pds.svg"
 import Persona from "./persona.svg"
@@ -88,7 +90,7 @@ import SkillsHome from "./skills-home.jpg"
 import SkillsMoodboardOne from "./skills-moodboard-1.jpg"
 import SkillsMoodboardTwo from "./skills-moodboard-2.jpg"
 import SkillsNotes from "./skills-notes.png"
-import SkillsThumbnail from "./skills-thumbnail.png"
+import SkillsThumbnail from "./skills-thumbnail.jpg"
 import SkillsVideo from "./skills-video.jpg"
 import SkillsWireframes from "./skills-wireframes.jpg"
 import StyledComponents from "./styled-components.svg"
@@ -131,6 +133,7 @@ export const Images = {
   DevelopIntro,
   DevelopPhilosophy,
   DevelopSkills,
+  DragonThumbnail,
   Elm,
   Favicon,
   Figma,
@@ -178,6 +181,7 @@ export const Images = {
   MhWireframe,
   Mobile,
   Native,
+  NeocovaThumbnail,
   Nope,
   Pds,
   Persona,

@@ -103,7 +103,7 @@ const Skills = () => (
                   imageAlt={"The A11y Project Logo"}
                   heading={"Accessibility Always"}
                   text={
-                    "I see accessibile design & development as a chief responsibility. I'm a big fan of the A11y Project."
+                    "I see accessibile design & development as a core responsibility. I'm a big fan of the A11y Project."
                   }
                 />
                 <SkillsCard
@@ -111,7 +111,7 @@ const Skills = () => (
                   imageAlt={"Icon of a rocket ship"}
                   heading={"Ship Early & Often"}
                   text={
-                    "Especially for MVPs, overbearing code review policies & CI can often hurt more than help."
+                    "I prefer to get real software in the hands of users and regularly respond to feedback and change."
                   }
                 />
                 <SkillsCard
