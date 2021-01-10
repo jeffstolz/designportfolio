@@ -70,7 +70,12 @@ const TextContainer = styled.div`
   }
 `
 
-const PreviewImage = styled.img``
+const PreviewImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid ${Colors.lighterGray};
+`
 
 const PreviewLabels = styled.p`
   font-size: ${Typography.xSmallFontSize};
@@ -91,20 +96,15 @@ const PreviewText = styled.p`
 `
 
 const CardLink = styled(Link)`
-  color: ${Colors.white};
-  background-image: linear-gradient(
-    to left,
-    ${Colors.purple},
-    ${Colors.violet}
-  );
   text-decoration: none;
-  padding: ${Spacing.small} ${Spacing.base};
+  padding: 0.75em 1.25em;
   margin-top: ${Spacing.base};
+  border: 1px solid ${Colors.purple};
   border-radius: ${Spacing.large};
 
   &:hover {
-    background-image: none;
-    background-color: ${Colors.black};
+    color: ${Colors.darkPurple};
+    border: 1px solid ${Colors.darkPurple};
     box-shadow: ${Colors.lightShadow};
   }
 
