@@ -36,6 +36,7 @@ const Container = styled.div`
   box-shadow: ${Colors.lightShadow};
   border-radius: ${Spacing.xSmall};
   padding: ${Spacing.base};
+  border-left: ${Spacing.xSmall} solid ${Colors.teal};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.base} ${Spacing.small};

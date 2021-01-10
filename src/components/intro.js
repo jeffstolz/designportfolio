@@ -23,21 +23,16 @@ const OuterContainer = styled.section`
   align-items: center;
   height: 28em;
   padding: ${Spacing.large} ${Spacing.base};
-  background-image: url(${Images.DevelopIntro}), url(${Images.DesignIntro});
-  background-position: top left, bottom right;
-  background-repeat: no-repeat;
-  background-size: 28em, 44.5em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     height: 22em;
-    background-size: 20em, 28em;
   }
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 58em;
+  width: 65em;
 `
 
 const Heading = styled.h1`

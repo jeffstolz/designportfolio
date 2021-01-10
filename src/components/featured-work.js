@@ -67,15 +67,9 @@ const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
   padding: ${Spacing.huge} ${Spacing.base};
-  background-image: url(${Images.DevelopFeatured}),
-    url(${Images.DesignFeatured});
-  background-position: top left, bottom right;
-  background-repeat: no-repeat;
-  background-size: 18em, 25em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     padding: ${Spacing.large} ${Spacing.small};
-    background-size: 12em, 11.3em;
   }
 `
 
