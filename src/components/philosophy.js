@@ -9,12 +9,12 @@ const Philosophy = () => (
     <BackgroundOverlay>
       <Container>
         <Fade>
-          <Heading>My Philosophy</Heading>
+          <Heading>My Ethos</Heading>
           <Text>
             I thrive in small, collaborative, multi-disciplinary teams that
-            foster transparency and continuous improvement. I value strong
-            opinions, loosely held. I believe in the value of designers writing
-            frontend code alongside developers.
+            foster transparency and continuous improvement. I choose to work on
+            projects that improve the health, education, liberties, and overall
+            quality of life for our local & global communities.
           </Text>
         </Fade>
       </Container>
@@ -29,16 +29,15 @@ const OuterContainer = styled.section`
 const BackgroundOverlay = styled.div`
   display: flex;
   justify-content: center;
-  padding: ${Spacing.large} ${Spacing.base};
-  background-image: url(${Images.DesignPhilosophy}),
-    url(${Images.DevelopPhilosophy});
-  background-position: top right, bottom left;
+  padding: ${Spacing.huge} ${Spacing.base};
+  background-image: url(${Images.HospitalEthos}), url(${Images.SchoolEthos});
+  background-position: bottom left, bottom right;
   background-repeat: no-repeat;
-  background-size: 25em, 23em;
+  background-size: 21em, 29em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     padding: ${Spacing.large} ${Spacing.small};
-    background-size: 11.25em, 11em;
+    background-size: 10em, 15em;
   }
 `
 
