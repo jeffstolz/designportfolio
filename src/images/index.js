@@ -1,6 +1,7 @@
 import A11y from "./a11y.svg"
 import Airplane from "./airplane.svg"
 import Apple from "./apple.svg"
+import ArrowTopRight from "./arrow-top-right.svg"
 import Atomic from "./atomic.svg"
 import Back from "./back.svg"
 import Celebrate from "./celebrate.svg"
@@ -87,6 +88,7 @@ import SkillsAthlete from "./skills-athlete.jpg"
 import SkillsAthletes from "./skills-athletes.jpg"
 import SkillsFlowDiagram from "./skills-flow-diagram.png"
 import SkillsHome from "./skills-home.jpg"
+import SkillsIndex from "./skills-index.png"
 import SkillsMoodboardOne from "./skills-moodboard-1.jpg"
 import SkillsMoodboardTwo from "./skills-moodboard-2.jpg"
 import SkillsNotes from "./skills-notes.png"
@@ -101,6 +103,7 @@ import ViralgainsOne from "./viralgains-1.png"
 import ViralgainsTwo from "./viralgains-2.png"
 import ViralgainsThree from "./viralgains-3.png"
 import ViralgainsFour from "./viralgains-4.png"
+import Wave from "./wave.svg"
 import Wordpress from "./wordpress.svg"
 import Workshop from "./workshop.svg"
 
@@ -108,6 +111,7 @@ export const Images = {
   A11y,
   Airplane,
   Apple,
+  ArrowTopRight,
   Atomic,
   Back,
   Celebrate,
@@ -194,6 +198,7 @@ export const Images = {
   SkillsAthletes,
   SkillsFlowDiagram,
   SkillsHome,
+  SkillsIndex,
   SkillsMoodboardOne,
   SkillsMoodboardTwo,
   SkillsNotes,
@@ -208,6 +213,7 @@ export const Images = {
   ViralgainsTwo,
   ViralgainsThree,
   ViralgainsFour,
+  Wave,
   Wordpress,
   Workshop,
 }
