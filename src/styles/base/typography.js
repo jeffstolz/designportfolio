@@ -1,9 +1,9 @@
-export const headingFontFamily = '"Vollkorn", Serif;'
-export const primaryFontFamily = '"Open Sans", Sans-Serif;'
+export const headingFontFamily = '"Inter", Sans-Serif;'
+export const primaryFontFamily = '"Roboto", Sans-Serif;'
 
 export const lightFontWeight = "400"
-export const mediumFontWeight = "600"
-export const heavyFontWeight = "800"
+export const mediumFontWeight = "700"
+export const heavyFontWeight = "1000"
 
 export const xSmallFontSize = "0.7em"
 export const smallFontSize = "0.85em"

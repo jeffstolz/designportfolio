@@ -5,7 +5,6 @@ const GlobalStyles = createGlobalStyle`
 html {
   font-family: ${Typography.primaryFontFamily};
   color: ${Colors.black};
-  background-color: ${Colors.lightTan};
   font-size: 118%;
 
   @media only screen and (max-width: 480px) {
@@ -20,13 +19,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.headingFontSize};
-  font-weight: ${Typography.mediumFontWeight};
-  font-style: italic;
+  font-weight: ${Typography.heavyFontWeight};
 }
 h2 {
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.smallHeadingFontSize};
-  font-style: italic;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     font-size: ${Typography.mediumFontSize};

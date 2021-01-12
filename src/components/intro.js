@@ -1,59 +1,83 @@
 import React from "react"
 import styled from "styled-components"
 import { Images } from "../images"
-import { Spacing, Typography } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
+import ButtonLink from "./button-link"
 import Fade from "react-reveal/Fade"
 
 const Intro = () => (
-  <OuterContainer>
-    <Container>
-      <Fade>
+  <Container>
+    <Fade>
+      <HeadingContainer>
         <Heading>Hi, I'm Jeff</Heading>
-      </Fade>
-      <Fade delay={250}>
-        <Subheading>I design & develop software</Subheading>
-      </Fade>
-    </Container>
-  </OuterContainer>
+        <Wave src={Images.Wave} alt="Image of waving hand" />
+      </HeadingContainer>
+      <Subheading>
+        I'm a <DesignerText>product designer</DesignerText> and{" "}
+        <DeveloperText>front end developer</DeveloperText>.&nbsp;
+        <br />
+        Welcome!
+      </Subheading>
+    </Fade>
+    <Fade delay={500}>
+      <ButtonContainer>
+        <ButtonLink />
+      </ButtonContainer>
+    </Fade>
+  </Container>
 )
 
-const OuterContainer = styled.section`
+const Container = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 28em;
-  padding: ${Spacing.large} ${Spacing.base};
+  height: 100vh;
+  padding: 0 12%;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
-    height: 22em;
+    padding: 0 8%;
   }
 `
 
-const Container = styled.div`
+const HeadingContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 65em;
 `
 
 const Heading = styled.h1`
-  font-size: 4.5em;
-  line-height: 130%;
+  margin-bottom: 0.35em;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
-    font-size: 3em;
-    line-height: 150%;
+    font-size: ${Typography.smallHeadingFontSize};
+  }
+`
+
+const Wave = styled.img`
+  width: 3.5em;
+  margin-top: -1em;
+  margin-left: 1.5em;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    display: none;
   }
 `
 
 const Subheading = styled.h2`
   font-family: ${Typography.primaryFontFamily};
-  font-style: normal;
-  font-size: 2.7em;
-  font-weight: 300;
+  font-size: ${Typography.mediumFontSize};
+  font-weight: ${Typography.lightFontWeight};
+  line-height: ${Typography.hugeLineHeight};
+`
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    font-size: 1.75em;
-  }
+const DesignerText = styled.span`
+  color: ${Colors.red};
+`
+
+const DeveloperText = styled.span`
+  color: ${Colors.blue};
+`
+
+const ButtonContainer = styled.div`
+  margin-top: ${Spacing.medium};
 `
 
 export default Intro
