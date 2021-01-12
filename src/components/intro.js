@@ -1,30 +1,34 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
-import ButtonLink from "./button-link"
+import Button from "./button"
+import { darkTheme } from "./themes"
+import { FaArrowDown } from "react-icons/fa"
 import Fade from "react-reveal/Fade"
 
 const Intro = () => (
-  <Container>
-    <Fade>
-      <HeadingContainer>
-        <Heading>Hi, I'm Jeff</Heading>
-        <Wave src={Images.Wave} alt="Image of waving hand" />
-      </HeadingContainer>
-      <Subheading>
-        I'm a <DesignerText>product designer</DesignerText> and{" "}
-        <DeveloperText>front end developer</DeveloperText>.&nbsp;
-        <br />
-        Welcome!
-      </Subheading>
-    </Fade>
-    <Fade delay={500}>
-      <ButtonContainer>
-        <ButtonLink />
-      </ButtonContainer>
-    </Fade>
-  </Container>
+  <ThemeProvider theme={darkTheme}>
+    <Container>
+      <Fade>
+        <HeadingContainer>
+          <Heading>Hi, I'm Jeff</Heading>
+          <Wave src={Images.Wave} alt="Image of waving hand" />
+        </HeadingContainer>
+        <Subheading>
+          I'm a <DesignerText>product designer</DesignerText> and{" "}
+          <DeveloperText>front end developer</DeveloperText>.&nbsp;
+          <br />
+          Welcome!
+        </Subheading>
+      </Fade>
+      <Fade delay={500}>
+        <ButtonContainer>
+          <Button label={"Download Resume"} icon={<FaArrowDown />} />
+        </ButtonContainer>
+      </Fade>
+    </Container>
+  </ThemeProvider>
 )
 
 const Container = styled.section`
