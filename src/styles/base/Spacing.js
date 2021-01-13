@@ -9,9 +9,11 @@ export const xHuge = "6em"
 export const xxHuge = "8em"
 
 export const borderRadius = "0.2em"
-export const breakPoint = "950px"
-export const smallBreakPoint = "800px"
 
-export const containerWidth = "63em"
+export const smallBreakPoint = "800px"
+export const breakPoint = "950px"
+export const largeBreakPoint = "1100px"
+
+export const containerWidth = "60em"
 export const largeContainerWidth = "81em"
 export const cardHeight = "17em"

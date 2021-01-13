@@ -1,16 +1,16 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import { Images } from "../images"
 import FeaturedWorkCard from "./featured-work-card"
 import { Spacing } from "../styles/variables"
-import Fade from "react-reveal/Fade"
 
 const FeaturedWork = () => (
   <OuterContainer>
+    <Fade>
+      <Header>Case Studies</Header>
+    </Fade>
     <Container>
-      <Fade>
-        <Header>Featured Work</Header>
-      </Fade>
       <FeaturedWorkCard
         imageSrc={Images.SkillsThumbnail}
         imageAlt={"The Skills case study thumbnail image"}
@@ -65,22 +65,24 @@ const FeaturedWork = () => (
 
 const OuterContainer = styled.section`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: ${Spacing.xxHuge} 12%;
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: ${Spacing.breakPoint}) {
     padding: ${Spacing.large} 8%;
   }
 `
 
-const Container = styled.ul`
-  display: flex;
-  flex-direction: column;
-  width: ${Spacing.containerWidth};
-`
-
 const Header = styled.h2`
   margin-bottom: 1.5em;
+`
+
+const Container = styled.ul`
+  max-width: 62em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    max-width: 25em;
+  }
 `
 
 export default FeaturedWork

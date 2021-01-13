@@ -1,82 +1,87 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors, Spacing, Typography } from "../styles/variables"
-import Slide from "react-reveal/Slide"
+import { Colors, Spacing } from "../styles/variables"
+import Fade from "react-reveal/Fade"
 
-const BackgroundCard = ({ title, company, dates, description, children }) => (
+const BackgroundCard = ({
+  title,
+  details,
+  description,
+  highlightOne,
+  highlightTwo,
+  highlightThree,
+}) => (
   <OuterContainer>
-    <Slide left duration={500}>
+    <Fade>
       <Container>
-        <Dates>{dates}</Dates>
         <Title>{title}</Title>
-        <Company>{company}</Company>
+        <Details>{details}</Details>
         <Description>{description}</Description>
+        <HighlightsContainer>
+          <Highlights>Highlights</Highlights>
+        </HighlightsContainer>
+        <List>
+          <ListItem>{highlightOne}</ListItem>
+          <ListItem>{highlightTwo}</ListItem>
+          <ListItem>{highlightThree}</ListItem>
+        </List>
       </Container>
-    </Slide>
-    {children}
+    </Fade>
   </OuterContainer>
 )
 
 const OuterContainer = styled.li`
   display: flex;
-  margin-bottom: ${Spacing.huge};
+  flex-direction: column;
+  padding: ${Spacing.large} 12%;
 
-  @media (max-width: 1280px) {
-    flex-direction: column;
-    max-width: 43em;
-    margin-bottom: ${Spacing.xHuge};
+  &:nth-child(even) {
+    background-color: ${Colors.offWhite};
+  }
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    padding: ${Spacing.large} 8%;
   }
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
-  background-color: ${Colors.white};
-  box-shadow: ${Colors.lightShadow};
-  border-radius: ${Spacing.xSmall};
-  padding: ${Spacing.base};
-  border-left: ${Spacing.xSmall} solid ${Colors.teal};
-
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.base} ${Spacing.small};
-  }
-
-  &::after {
-    @media (min-width: 1280px) {
-      position: absolute;
-      content: "";
-      top: 50%;
-      right: -35px;
-      width: 0;
-      height: 0;
-      transform: translateY(-50%);
-      border-top: 30px solid transparent;
-      border-left: 35px solid ${Colors.white};
-      border-bottom: 30px solid transparent;
-      filter: drop-shadow(4px 1px 1px rgba(0, 0, 0, 0.07));
-    }
-  }
+  max-width: 47em;
 `
 
-const Dates = styled.p`
-  color: ${Colors.gray};
-  font-size: ${Typography.xSmallFontSize};
-  margin-bottom: ${Spacing.xxSmall};
+const Title = styled.h3``
+
+const Details = styled.h4`
+  color: ${Colors.gray4};
+  margin: ${Spacing.small} 0;
+`
+
+const Description = styled.p`
+  margin-bottom: ${Spacing.base};
+`
+
+const HighlightsContainer = styled.div`
+  width: 5.85em;
+`
+
+const Highlights = styled.h5`
+  width: 100%;
+  background-color: ${Colors.yellow};
+  color: ${Colors.gray4};
+  margin-bottom: ${Spacing.small};
+  padding: 0.3em;
   text-transform: uppercase;
   letter-spacing: 2px;
 `
 
-const Title = styled.h3`
+const List = styled.ul`
+  list-style-type: circle;
+  margin-left: ${Spacing.small};
+`
+
+const ListItem = styled.li`
   margin-bottom: ${Spacing.xxSmall};
-`
-
-const Company = styled.h4`
-  margin-bottom: ${Spacing.small};
-`
-
-const Description = styled.p`
-  color: ${Colors.darkGray};
 `
 
 export default BackgroundCard

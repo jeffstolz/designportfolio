@@ -38,27 +38,27 @@ const OuterContainer = styled.li`
   margin-bottom: ${Spacing.huge};
   border: 1px solid ${Colors.gray1};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-direction: column;
     margin-bottom: ${Spacing.medium};
   }
 `
 
 const ImageContainer = styled.div`
-  width: 42%;
+  width: 40%;
   background-color: ${Colors.black};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
     height: 11em;
   }
 `
 
 const TextContainer = styled.div`
-  width: 58%;
+  width: 60%;
   padding: ${Spacing.base} ${Spacing.medium};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
     padding: ${Spacing.base} ${Spacing.small};
   }

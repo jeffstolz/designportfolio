@@ -2,11 +2,11 @@ export const headingFontFamily = '"Inter", Sans-Serif;'
 export const primaryFontFamily = '"Roboto", Sans-Serif;'
 
 export const lightFontWeight = "400"
-export const mediumFontWeight = "700"
+export const mediumFontWeight = "800"
 export const heavyFontWeight = "1000"
 
 export const xSmallFontSize = "0.7em"
-export const smallFontSize = "0.85em"
+export const smallFontSize = "0.9em"
 export const baseFontSize = "1em"
 export const mediumFontSize = "1.5em"
 export const smallHeadingFontSize = "2em"
