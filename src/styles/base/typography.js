@@ -8,7 +8,7 @@ export const heavyFontWeight = "1000"
 export const xSmallFontSize = "0.7em"
 export const smallFontSize = "0.85em"
 export const baseFontSize = "1em"
-export const mediumFontSize = "1.3em"
+export const mediumFontSize = "1.5em"
 export const smallHeadingFontSize = "2em"
 export const headingFontSize = "3em"
 

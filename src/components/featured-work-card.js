@@ -1,8 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
-import { Colors, Spacing, Typography } from "../styles/variables"
 import Fade from "react-reveal/Fade"
+import Button from "./button"
+import { FaArrowRight } from "react-icons/fa"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const FeaturedWorkCard = ({
   imageSrc,
@@ -21,7 +22,11 @@ const FeaturedWorkCard = ({
         <PreviewLabels>{previewLabels}</PreviewLabels>
         <PreviewHeading>{previewHeading}</PreviewHeading>
         <PreviewText>{previewText}</PreviewText>
-        <CardLink to={projectLink}>View Case Study</CardLink>
+        <Button
+          to={projectLink}
+          label={"View Case Study"}
+          icon={<FaArrowRight />}
+        />
       </TextContainer>
     </OuterContainer>
   </Fade>
@@ -29,40 +34,29 @@ const FeaturedWorkCard = ({
 
 const OuterContainer = styled.li`
   display: flex;
-  background-color: ${Colors.white};
   min-height: ${Spacing.cardHeight};
-  box-shadow: ${Colors.darkShadow};
-  margin: 0 0 ${Spacing.medium} ${Spacing.base};
-  border-radius: ${Spacing.xSmall};
-
-  &:nth-child(5) {
-    margin: 0 0 0 ${Spacing.base};
-  }
+  margin-bottom: ${Spacing.huge};
+  border: 1px solid ${Colors.gray1};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     flex-direction: column;
-    margin: 0 0 ${Spacing.medium} 0;
-
-    &:nth-child(5) {
-      margin: 0;
-    }
+    margin-bottom: ${Spacing.medium};
   }
 `
 
 const ImageContainer = styled.div`
-  width: 40%;
-  background-color: black;
-  border-radius: ${Spacing.borderRadius} 0 0 ${Spacing.borderRadius};
+  width: 42%;
+  background-color: ${Colors.black};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;
-    height: 15em;
+    height: 11em;
   }
 `
 
 const TextContainer = styled.div`
-  width: 60%;
-  padding: ${Spacing.base};
+  width: 58%;
+  padding: ${Spacing.base} ${Spacing.medium};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 100%;
@@ -74,14 +68,14 @@ const PreviewImage = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: 1px solid ${Colors.lighterGray};
+  border: 1px solid ${Colors.gray1};
 `
 
 const PreviewLabels = styled.p`
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.lightFontWeight};
-  color: ${Colors.gray};
-  margin-bottom: ${Spacing.small};
+  color: ${Colors.gray3};
+  margin-bottom: ${Spacing.base};
   text-transform: uppercase;
   letter-spacing: 2px;
 `
@@ -91,26 +85,8 @@ const PreviewHeading = styled.h3`
 `
 
 const PreviewText = styled.p`
-  margin-bottom: ${Spacing.medium};
-  color: ${Colors.darkGray};
-`
-
-const CardLink = styled(Link)`
-  text-decoration: none;
-  padding: 0.75em 1.25em;
-  margin-top: ${Spacing.base};
-  border: 1px solid ${Colors.purple};
-  border-radius: ${Spacing.large};
-
-  &:hover {
-    color: ${Colors.darkPurple};
-    border: 1px solid ${Colors.darkPurple};
-    box-shadow: ${Colors.lightShadow};
-  }
-
-  @media (max-width: 320px) {
-    font-size: ${Typography.smallFontSize};
-  }
+  margin-bottom: ${Spacing.base};
+  color: ${Colors.gray4};
 `
 
 export default FeaturedWorkCard

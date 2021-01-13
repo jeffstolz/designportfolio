@@ -12,6 +12,6 @@ export const borderRadius = "0.2em"
 export const breakPoint = "950px"
 export const smallBreakPoint = "800px"
 
-export const containerWidth = "54em"
+export const containerWidth = "63em"
 export const largeContainerWidth = "81em"
 export const cardHeight = "17em"

@@ -34,7 +34,7 @@ const Container = styled.button`
 
 Container.defaultProps = {
   theme: {
-    bgButton: Colors.lightGray,
+    bgButton: Colors.gray0,
     primaryButton: Colors.black,
     secondaryButton: Colors.white,
   },

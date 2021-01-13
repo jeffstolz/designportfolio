@@ -66,10 +66,10 @@ const FeaturedWork = () => (
 const OuterContainer = styled.section`
   display: flex;
   justify-content: center;
-  padding: ${Spacing.huge} ${Spacing.base};
+  padding: ${Spacing.xxHuge} 12%;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.large} ${Spacing.small};
+    padding: ${Spacing.large} 8%;
   }
 `
 
@@ -80,7 +80,7 @@ const Container = styled.ul`
 `
 
 const Header = styled.h2`
-  margin-bottom: ${Spacing.small};
+  margin-bottom: 1.5em;
 `
 
 export default FeaturedWork
