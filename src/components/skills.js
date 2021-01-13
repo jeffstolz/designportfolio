@@ -1,8 +1,8 @@
 import React from "react"
 import styled, { css, ThemeProvider } from "styled-components"
 import Fade from "react-reveal/Fade"
-import { FaArrowRight } from "react-icons/fa"
 import Button from "./button"
+import { FaArrowRight } from "react-icons/fa"
 import { darkTheme } from "./themes"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -70,7 +70,7 @@ const OuterContainer = styled.section`
   background-color: ${Colors.black};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding-top: ${Spacing.xHuge};
+    padding: ${Spacing.xHuge} 8% 0 8%;
   }
 `
 
@@ -99,7 +99,6 @@ const Heading = styled.h2`
 `
 
 const subheading = css`
-  font-size: ${Typography.mediumFontSize};
   font-weight: ${Typography.lightFontWeight};
   margin-bottom: ${Spacing.xSmall};
 `
@@ -115,12 +114,12 @@ const DevelopHeading = styled.h3`
 `
 
 const Description = styled.p`
-  color: ${Colors.mediumGray};
+  color: ${Colors.gray2};
   margin-bottom: ${Spacing.base};
 `
 
 const Divider = styled.hr`
-  border: 1px solid ${Colors.darkGray};
+  border: 1px solid ${Colors.gray4};
   width: ${Spacing.base};
   margin-left: 0;
   margin-bottom: ${Spacing.base};
@@ -129,7 +128,7 @@ const Divider = styled.hr`
 const SmallDescription = styled.p`
   width: 75%;
   font-size: ${Typography.smallFontSize};
-  color: ${Colors.mediumGray};
+  color: ${Colors.gray2};
   margin-bottom: ${Spacing.small};
 
   @media (max-width: ${Spacing.breakPoint}) {

@@ -86,7 +86,7 @@ const Company = styled.h2`
 const Subheading = styled.p`
   font-size: 1.6em;
   font-weight: ${Typography.lightFontWeight};
-  color: ${Colors.darkGray};
+  color: ${Colors.gray4};
   margin-bottom: ${Spacing.base};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {

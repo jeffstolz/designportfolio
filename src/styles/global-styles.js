@@ -14,10 +14,10 @@ html {
   }
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: ${Typography.headingFontFamily};
   margin: 0;
 }
 h1, h2 {
-  font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.headingFontSize};
   font-weight: ${Typography.heavyFontWeight};
 
@@ -25,6 +25,17 @@ h1, h2 {
     font-size: ${Typography.smallHeadingFontSize};
   }
 }
+
+h3 {
+  font-size: ${Typography.mediumFontSize};
+  font-weight: ${Typography.mediumFontWeight};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    font-size: ${Typography.baseFontSize};
+  }
+}
+
+
 ul {
   margin: 0;
   padding: 0;
