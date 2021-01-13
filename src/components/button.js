@@ -10,13 +10,14 @@ const Button = ({ label, icon }) => (
   </Container>
 )
 
-const Container = styled.a`
+const Container = styled.button`
   position: relative;
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.mediumFontWeight};
   background-color: ${props => props.theme.bgButton};
   color: ${props => props.theme.primaryButton};
+  border: none;
   padding: 1.3em 2.8em 1.3em 1.6em;
   text-decoration: none;
   text-transform: uppercase;
@@ -27,6 +28,7 @@ const Container = styled.a`
   &:hover {
     background-color: ${props => props.theme.primaryButton};
     color: ${props => props.theme.secondaryButton};
+    cursor: pointer;
   }
 `
 

@@ -12,6 +12,7 @@ export const darkShadow = "0 9px 15px rgba(0, 0, 0, 0.2)"
 
 export const black = "#000"
 export const darkGray = "#272727"
+export const mediumGray = "#B8B8B8"
 export const lightGray = "#EEEEEE"
 export const white = "#fff"
 export const red = "#EB1414"
