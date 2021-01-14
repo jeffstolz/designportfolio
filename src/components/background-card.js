@@ -62,7 +62,7 @@ const Description = styled.p`
 `
 
 const HighlightsContainer = styled.div`
-  width: 5.85em;
+  width: 6em;
 `
 
 const Highlights = styled.h5`
@@ -70,7 +70,7 @@ const Highlights = styled.h5`
   background-color: ${Colors.yellow};
   color: ${Colors.gray4};
   margin-bottom: ${Spacing.small};
-  padding: 0.3em;
+  padding: 0.3em 0.3em 0.3em 0.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
 `
