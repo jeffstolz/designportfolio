@@ -35,6 +35,16 @@ h3 {
   }
 }
 
+h4 {
+  font-size: ${Typography.smallFontSize};
+  font-weight: ${Typography.lightFontWeight};
+}
+
+h5 {
+  font-size: ${Typography.xSmallFontSize};
+  font-weight: ${Typography.lightFontWeight};
+}
+
 
 ul {
   margin: 0;

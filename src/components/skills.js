@@ -22,11 +22,11 @@ const Skills = () => (
           <Description>
             Jobs-To-Be-Done, GV Design Sprints, Atomic Design Systems, Lean UX
             Canvas, HEART, personas, card sorting, frequent / informal user
-            testing, ship early & often, prioritize mobile.
+            testing.
           </Description>
           <Divider />
           <SmallDescription>
-            To learn more about how I tick, check out my geeky realizations
+            To get a sense of how I tick, check out this (geeky) article I wrote
             about facilitating design sprints.
           </SmallDescription>
           <ThemeProvider theme={darkTheme}>
@@ -44,13 +44,13 @@ const Skills = () => (
           </Description>
           <DevelopHeading>Methods</DevelopHeading>
           <Description>
-            Styled Components, A11y Project, BEM, ITCSS, squashed / single
-            commit pull requests.
+            Styled Components, BEM, ITCSS, A11y Project, squashed / focused pull
+            requests.
           </Description>
           <Divider />
           <SmallDescription>
-            Check out the Github repo to this site for a good example of how I
-            like to code.
+            For a good example of how I like to code, check out the repo to this
+            site.
           </SmallDescription>
           <ThemeProvider theme={darkTheme}>
             <Button label={"View Codebase"} icon={<FaArrowRight />} />
@@ -63,14 +63,13 @@ const Skills = () => (
 
 const OuterContainer = styled.section`
   display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0 12%;
+  padding: ${Spacing.xHuge} 12%;
   background-color: ${Colors.black};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.xHuge} 8% 0 8%;
+    padding: ${Spacing.xHuge} 8%;
   }
 `
 
@@ -78,16 +77,18 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 65em;
 
-  @media (max-width: ${Spacing.breakPoint}) {
+  @media (max-width: ${Spacing.largeBreakPoint}) {
     flex-direction: column;
+    max-width: 27em;
   }
 `
 
 const Column = styled.div`
-  width: 40%;
+  width: 45%;
 
-  @media (max-width: ${Spacing.breakPoint}) {
+  @media (max-width: ${Spacing.largeBreakPoint}) {
     width: 100%;
     margin-bottom: ${Spacing.xHuge};
   }
@@ -128,8 +129,8 @@ const Divider = styled.hr`
 const SmallDescription = styled.p`
   width: 75%;
   font-size: ${Typography.smallFontSize};
-  color: ${Colors.gray2};
-  margin-bottom: ${Spacing.small};
+  color: ${Colors.gray3};
+  margin-bottom: 1.5em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
