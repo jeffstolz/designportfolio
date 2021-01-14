@@ -56,13 +56,6 @@ p {
   padding: 0;
   line-height: ${Typography.hugeLineHeight};
 }
-a {
-  color: ${Colors.purple};
-
-  &:hover {
-    color: ${Colors.darkPurple};
-  }
-}
 img {
   max-width: 100%;
   margin: 0;
