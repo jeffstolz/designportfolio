@@ -6,20 +6,28 @@ const Footer = () => (
   <Container>
     <p>
       Designed & developed by Jeff Stolz using{" "}
-      <a href="https://www.gatsbyjs.org/">Gatsby</a> and{" "}
-      <a href="https://github.com/jeffstolz/gatsby-portfolio">GitHub</a>
+      <Link href="https://www.gatsbyjs.org/">Gatsby</Link> and{" "}
+      <Link href="https://github.com/jeffstolz/gatsby-portfolio">GitHub</Link>
     </p>
   </Container>
 )
 
 const Container = styled.footer`
-  display: flex;
-  justify-content: center;
-  padding: ${Spacing.base};
-  border-top: 1px solid ${Colors.lightGray};
+  color: ${Colors.gray2};
+  background-color: ${Colors.gray4};
+  font-size: ${Typography.smallFontSize};
+  padding: 1.5em 12%;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
-    font-size: ${Typography.smallFontSize};
+    padding: 1.5em 8%;
+  }
+`
+
+const Link = styled.a`
+  color: ${Colors.gray2};
+
+  &:hover {
+    color: ${Colors.gray1};
   }
 `
 
