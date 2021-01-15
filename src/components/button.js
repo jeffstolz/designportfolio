@@ -1,23 +1,33 @@
 import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled, { css } from "styled-components"
 import { Colors, Typography } from "../styles/variables"
 
-const Button = ({ path, label, icon }) => (
-  <Container to={path}>
+const LightButton = ({ label, icon }) => (
+  <LightButtonContainer>
     {label}
-    <IconContainer>{icon}</IconContainer>
-  </Container>
+    <Icon>{icon}</Icon>
+  </LightButtonContainer>
 )
 
-const Container = styled(Link)`
+const DarkButton = ({ label, icon }) => (
+  <DarkButtonContainer>
+    {label}
+    <Icon>{icon}</Icon>
+  </DarkButtonContainer>
+)
+
+const BorderButton = ({ label, icon }) => (
+  <BorderButtonContainer>
+    {label}
+    <Icon>{icon}</Icon>
+  </BorderButtonContainer>
+)
+
+const ButtonContainer = css`
   position: relative;
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.mediumFontWeight};
-  background-color: ${props => props.theme.bgButton};
-  color: ${props => props.theme.primaryButton};
-  border: 1px solid ${props => props.theme.borderButton};
   padding: 1.3em 2.8em 1.3em 1.6em;
   text-decoration: none;
   text-transform: uppercase;
@@ -26,25 +36,48 @@ const Container = styled(Link)`
   transition: all 0.25s linear;
 
   &:hover {
-    background-color: ${props => props.theme.primaryButton};
-    color: ${props => props.theme.secondaryButton};
     cursor: pointer;
   }
 `
 
-Container.defaultProps = {
-  theme: {
-    bgButton: Colors.gray0,
-    primaryButton: Colors.black,
-    secondaryButton: Colors.white,
-    borderButton: Colors.gray0,
-  },
-}
+const LightButtonContainer = styled.div`
+  ${ButtonContainer};
+  background-color: ${Colors.gray0};
+  color: ${Colors.black};
 
-const IconContainer = styled.span`
+  &:hover {
+    background-color: ${Colors.black};
+    color: ${Colors.white};
+  }
+`
+
+const DarkButtonContainer = styled.div`
+  ${ButtonContainer};
+  background-color: ${Colors.gray4};
+  color: ${Colors.white};
+
+  &:hover {
+    background-color: ${Colors.white};
+    color: ${Colors.black};
+  }
+`
+
+const BorderButtonContainer = styled.div`
+  ${ButtonContainer};
+  border: 1px solid ${Colors.gray3};
+  color: ${Colors.white};
+
+  &:hover {
+    border: 1px solid ${Colors.white};
+    background-color: ${Colors.white};
+    color: ${Colors.black};
+  }
+`
+
+const Icon = styled.span`
   position: absolute;
   top: 1.4em;
   right: 1.3em;
 `
 
-export default Button
+export { LightButton, DarkButton, BorderButton }

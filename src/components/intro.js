@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Link as ScrollLink } from "react-scroll"
-import Button from "./button"
+import { LightButton } from "./button"
 import { FaArrowDown } from "react-icons/fa"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
@@ -24,15 +24,17 @@ const Intro = () => (
       </Subheading>
     </Fade>
     <Fade delay={2000}>
-      <ScrollLink
-        activeClass="active"
-        to="skills"
-        spy={true}
-        smooth={true}
-        duration={1000}
-      >
-        <Button label={"Welcome!"} icon={<FaArrowDown />} />
-      </ScrollLink>
+      <ButtonContainer>
+        <ScrollLink
+          activeClass="active"
+          to={"skills"}
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >
+          <LightButton label={"Wecome!"} icon={<FaArrowDown />} />
+        </ScrollLink>
+      </ButtonContainer>
     </Fade>
   </Container>
 )
@@ -88,6 +90,10 @@ const DesignerText = styled.span`
 
 const DeveloperText = styled.span`
   color: ${Colors.blue};
+`
+
+const ButtonContainer = styled.div`
+  display: flex;
 `
 
 export default Intro

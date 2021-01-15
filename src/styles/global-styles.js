@@ -45,6 +45,9 @@ h5 {
   font-weight: ${Typography.lightFontWeight};
 }
 
+a {
+  text-decoration: none;
+}
 
 ul {
   margin: 0;

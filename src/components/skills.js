@@ -1,9 +1,8 @@
 import React from "react"
-import styled, { css, ThemeProvider } from "styled-components"
+import styled, { css } from "styled-components"
 import Fade from "react-reveal/Fade"
-import Button from "./button"
+import { DarkButton } from "./button"
 import { FaArrowRight } from "react-icons/fa"
-import { darkButton } from "./themes"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Skills = () => (
@@ -26,18 +25,12 @@ const Skills = () => (
           </Description>
           <Divider />
           <SmallDescription>
-            To get a sense of how I tick, check out this (geeky) article I wrote
-            about facilitating design sprints.
+            To get a sense of how I think, check out this (geeky) article I
+            wrote about facilitating design sprints.
           </SmallDescription>
-          <ThemeProvider theme={darkButton}>
-            <Button
-              path={
-                "https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints"
-              }
-              label={"View Article"}
-              icon={<FaArrowRight />}
-            />
-          </ThemeProvider>
+          <ButtonLink href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
+            <DarkButton label={"View Article"} icon={<FaArrowRight />} />
+          </ButtonLink>
         </Fade>
       </Column>
       <Column>
@@ -58,13 +51,9 @@ const Skills = () => (
             For a good example of how I like to code, check out the repo to this
             site.
           </SmallDescription>
-          <ThemeProvider theme={darkButton}>
-            <Button
-              path={"https://github.com/jeffstolz/gatsby-portfolio"}
-              label={"View Codebase"}
-              icon={<FaArrowRight />}
-            />
-          </ThemeProvider>
+          <ButtonLink href="https://github.com/jeffstolz/gatsby-portfolio">
+            <DarkButton label={"View Codebase"} icon={<FaArrowRight />} />
+          </ButtonLink>
         </Fade>
       </Column>
     </Container>
@@ -145,6 +134,10 @@ const SmallDescription = styled.p`
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
   }
+`
+
+const ButtonLink = styled.a`
+  display: flex;
 `
 
 export default Skills
