@@ -3,11 +3,11 @@ import styled, { css, ThemeProvider } from "styled-components"
 import Fade from "react-reveal/Fade"
 import Button from "./button"
 import { FaArrowRight } from "react-icons/fa"
-import { darkTheme } from "./themes"
+import { darkButton } from "./themes"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Skills = () => (
-  <OuterContainer>
+  <OuterContainer id="skills">
     <Container>
       <Column>
         <Fade>
@@ -29,8 +29,14 @@ const Skills = () => (
             To get a sense of how I tick, check out this (geeky) article I wrote
             about facilitating design sprints.
           </SmallDescription>
-          <ThemeProvider theme={darkTheme}>
-            <Button label={"View Article"} icon={<FaArrowRight />} />
+          <ThemeProvider theme={darkButton}>
+            <Button
+              path={
+                "https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints"
+              }
+              label={"View Article"}
+              icon={<FaArrowRight />}
+            />
           </ThemeProvider>
         </Fade>
       </Column>
@@ -52,8 +58,12 @@ const Skills = () => (
             For a good example of how I like to code, check out the repo to this
             site.
           </SmallDescription>
-          <ThemeProvider theme={darkTheme}>
-            <Button label={"View Codebase"} icon={<FaArrowRight />} />
+          <ThemeProvider theme={darkButton}>
+            <Button
+              path={"https://github.com/jeffstolz/gatsby-portfolio"}
+              label={"View Codebase"}
+              icon={<FaArrowRight />}
+            />
           </ThemeProvider>
         </Fade>
       </Column>

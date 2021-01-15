@@ -23,7 +23,7 @@ const FeaturedWorkCard = ({
         <PreviewHeading>{previewHeading}</PreviewHeading>
         <PreviewText>{previewText}</PreviewText>
         <Button
-          to={projectLink}
+          path={projectLink}
           label={"View Case Study"}
           icon={<FaArrowRight />}
         />

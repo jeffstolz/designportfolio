@@ -21,20 +21,13 @@ const Intro = ({ backgroundImage, company, heading, subheading }) => (
   </OuterContainer>
 )
 
-const OuterContainer = styled.section.attrs(props => ({
-  backgroundImage: props.backgroundImage || Images.DesignCaseOne,
-}))`
+const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: ${Spacing.base};
-  background-image: url(${props => props.backgroundImage});
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 28em;
+  padding: ${Spacing.base} 12%;
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.small};
+  @media (max-width: ${Spacing.breakPoint}) {
+    padding: ${Spacing.base} 8%;
   }
 `
 

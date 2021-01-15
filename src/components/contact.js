@@ -1,9 +1,7 @@
 import React from "react"
-import styled, { ThemeProvider } from "styled-components"
+import styled from "styled-components"
 import Fade from "react-reveal/Fade"
-import Button from "./button"
-import { FaArrowDown } from "react-icons/fa"
-import { darkTheme } from "./themes"
+import { Images } from "../images"
 import { Colors, Spacing } from "../styles/variables"
 
 const Contact = () => (
@@ -35,13 +33,14 @@ const Contact = () => (
           <LinkText href="https://www.linkedin.com/in/jeff-stolz-17666725/">
             LinkedIn
           </LinkText>
+          <Slash aria-hidden="true">/</Slash>
+        </LinkItem>
+        <LinkItem>
+          <LinkText href={Images.JeffStolzResume} download>
+            Resume
+          </LinkText>
         </LinkItem>
       </LinkList>
-    </Fade>
-    <Fade>
-      <ThemeProvider theme={darkTheme}>
-        <Button label={"Download Resume"} icon={<FaArrowDown />} />
-      </ThemeProvider>
     </Fade>
   </Container>
 )
