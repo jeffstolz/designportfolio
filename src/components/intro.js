@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
+import { Link as ScrollLink } from "react-scroll"
 import Button from "./button"
 import { FaArrowDown } from "react-icons/fa"
 import { Images } from "../images"
@@ -23,7 +24,15 @@ const Intro = () => (
       </Subheading>
     </Fade>
     <Fade delay={2000}>
-      <Button path={"#skills"} label={"Welcome!"} icon={<FaArrowDown />} />
+      <ScrollLink
+        activeClass="active"
+        to="skills"
+        spy={true}
+        smooth={true}
+        duration={1000}
+      >
+        <Button label={"Welcome!"} icon={<FaArrowDown />} />
+      </ScrollLink>
     </Fade>
   </Container>
 )
