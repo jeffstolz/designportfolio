@@ -1,23 +1,23 @@
 import React from "react"
 import styled from "styled-components"
-import { Images } from "../images"
+import { Link } from "gatsby"
 import { Colors, Typography } from "../styles/variables"
 
-const Button = ({ label, icon }) => (
-  <Container href={Images.JeffStolzResume} download>
+const Button = ({ path, label, icon }) => (
+  <Container to={path}>
     {label}
     <IconContainer>{icon}</IconContainer>
   </Container>
 )
 
-const Container = styled.button`
+const Container = styled(Link)`
   position: relative;
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.mediumFontWeight};
   background-color: ${props => props.theme.bgButton};
   color: ${props => props.theme.primaryButton};
-  border: none;
+  border: 1px solid ${props => props.theme.borderButton};
   padding: 1.3em 2.8em 1.3em 1.6em;
   text-decoration: none;
   text-transform: uppercase;
@@ -37,6 +37,7 @@ Container.defaultProps = {
     bgButton: Colors.gray0,
     primaryButton: Colors.black,
     secondaryButton: Colors.white,
+    borderButton: Colors.gray0,
   },
 }
 

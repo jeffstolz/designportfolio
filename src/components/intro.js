@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
+import Button from "./button"
+import { FaArrowDown } from "react-icons/fa"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Intro = () => (
-  <Container>
+  <Container id="intro">
     <HeadingContainer>
       <Fade>
         <Heading>Hi, I'm Jeff</Heading>
@@ -21,8 +23,7 @@ const Intro = () => (
       </Subheading>
     </Fade>
     <Fade delay={2000}>
-      <Divider />
-      <Welcome>Welcome!</Welcome>
+      <Button path={"#skills"} label={"Welcome!"} icon={<FaArrowDown />} />
     </Fade>
   </Container>
 )
@@ -64,6 +65,7 @@ const Subheading = styled.h2`
   font-size: ${Typography.mediumFontSize};
   font-weight: ${Typography.lightFontWeight};
   line-height: ${Typography.hugeLineHeight};
+  margin-bottom: ${Spacing.base};
 
   @media (max-width: ${Spacing.breakPoint}) {
     font-size: ${Typography.baseFontSize};
@@ -77,21 +79,6 @@ const DesignerText = styled.span`
 
 const DeveloperText = styled.span`
   color: ${Colors.blue};
-`
-
-const Divider = styled.hr`
-  border: 1px solid ${Colors.gray1};
-  width: ${Spacing.base};
-  margin-left: 0;
-  margin: ${Spacing.base} 0;
-`
-
-const Welcome = styled.p`
-  font-size: ${Typography.mediumFontSize};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.baseFontSize};
-  }
 `
 
 export default Intro
