@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { ThemeProvider } from "styled-components"
+import { Link as ScrollLink } from "react-scroll"
 import Button from "./button"
 import { FaArrowUp } from "react-icons/fa"
 import { footerButton } from "./themes"
@@ -8,7 +9,15 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 const Footer = () => (
   <Container>
     <ThemeProvider theme={footerButton}>
-      <Button path="#intro" label={"Return to top"} icon={<FaArrowUp />} />
+      <ScrollLink
+        activeClass="active"
+        to="intro"
+        spy={true}
+        smooth={true}
+        duration={800}
+      >
+        <Button label={"Return to top"} icon={<FaArrowUp />} />
+      </ScrollLink>
     </ThemeProvider>
     <Description>Designed & developed by Jeff Stolz</Description>
   </Container>
