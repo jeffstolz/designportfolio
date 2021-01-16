@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { Link as ScrollLink } from "react-scroll"
-import { BorderButton } from "./button"
+import Button from "./button"
+import { secondaryDark } from "./themes"
 import { FaArrowUp } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -14,7 +15,11 @@ const Footer = () => (
       smooth={true}
       duration={800}
     >
-      <BorderButton label={"Back to Top"} icon={<FaArrowUp />} />
+      <Button
+        style={secondaryDark}
+        label={"Back to Top"}
+        icon={<FaArrowUp />}
+      />
     </ScrollLink>
     <Description>Designed & developed by Jeff Stolz</Description>
   </Container>

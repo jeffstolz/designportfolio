@@ -71,10 +71,18 @@ const Text = styled.p`
 const LinkList = styled.ul`
   display: flex;
   margin: ${Spacing.medium} 0;
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    flex-direction: column;
+  }
 `
 
 const LinkItem = styled.li`
   margin-right: ${Spacing.small};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    margin-bottom: ${Spacing.small};
+  }
 `
 
 const LinkText = styled.a`
@@ -89,6 +97,10 @@ const LinkText = styled.a`
 const Slash = styled.span`
   margin-left: ${Spacing.small};
   color: ${Colors.gray3};
+
+  @media (max-width: ${Spacing.smallBreakPoint}) {
+    display: none;
+  }
 `
 
 export default Contact

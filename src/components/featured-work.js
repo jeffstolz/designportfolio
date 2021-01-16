@@ -55,7 +55,7 @@ const FeaturedWork = () => (
           "Redesigning a Deeply Embedded Clinical Communication Tool"
         }
         previewText={
-          "Lessons learned from establishing a design culture and redesigning a product with over 79k existing users."
+          "Lessons learned from establishing a design culture and redesigning an enterprise product with over 79k daily users."
         }
         projectLink={"/mobile-heartbeat"}
       />
