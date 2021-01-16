@@ -79,6 +79,7 @@ const LinkItem = styled.li`
 
 const LinkText = styled.a`
   color: ${Colors.white};
+  text-decoration: underline;
 
   &:hover {
     color: ${Colors.gray1};

@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
-import Button from "./button"
+import { Link } from "gatsby"
+import { LightButton } from "./button"
 import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -22,11 +23,9 @@ const FeaturedWorkCard = ({
         <PreviewLabels>{previewLabels}</PreviewLabels>
         <PreviewHeading>{previewHeading}</PreviewHeading>
         <PreviewText>{previewText}</PreviewText>
-        <Button
-          path={projectLink}
-          label={"View Case Study"}
-          icon={<FaArrowRight />}
-        />
+        <ButtonLink to={projectLink}>
+          <LightButton label={"View Case Study"} icon={<FaArrowRight />} />
+        </ButtonLink>
       </TextContainer>
     </OuterContainer>
   </Fade>
@@ -87,6 +86,10 @@ const PreviewHeading = styled.h3`
 const PreviewText = styled.p`
   margin-bottom: ${Spacing.base};
   color: ${Colors.gray4};
+`
+
+const ButtonLink = styled(Link)`
+  display: flex;
 `
 
 export default FeaturedWorkCard
