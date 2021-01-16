@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Link } from "gatsby"
-import { LightButton } from "./button"
+import Button from "./button"
+import { primaryLight } from "./themes"
 import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -24,7 +25,11 @@ const FeaturedWorkCard = ({
         <PreviewHeading>{previewHeading}</PreviewHeading>
         <PreviewText>{previewText}</PreviewText>
         <ButtonLink to={projectLink}>
-          <LightButton label={"View Case Study"} icon={<FaArrowRight />} />
+          <Button
+            style={primaryLight}
+            label={"View Case Study"}
+            icon={<FaArrowRight />}
+          />
         </ButtonLink>
       </TextContainer>
     </OuterContainer>

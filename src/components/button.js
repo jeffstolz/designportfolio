@@ -1,33 +1,24 @@
 import React from "react"
-import styled, { css } from "styled-components"
-import { Colors, Typography } from "../styles/variables"
+import styled, { ThemeProvider } from "styled-components"
+import { Typography } from "../styles/variables"
 
-const LightButton = ({ label, icon }) => (
-  <LightButtonContainer>
-    {label}
-    <Icon>{icon}</Icon>
-  </LightButtonContainer>
+const Button = ({ style, label, icon }) => (
+  <ThemeProvider theme={style}>
+    <Container>
+      {label}
+      <Icon>{icon}</Icon>
+    </Container>
+  </ThemeProvider>
 )
 
-const DarkButton = ({ label, icon }) => (
-  <DarkButtonContainer>
-    {label}
-    <Icon>{icon}</Icon>
-  </DarkButtonContainer>
-)
-
-const BorderButton = ({ label, icon }) => (
-  <BorderButtonContainer>
-    {label}
-    <Icon>{icon}</Icon>
-  </BorderButtonContainer>
-)
-
-const ButtonContainer = css`
+const Container = styled.div`
   position: relative;
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.mediumFontWeight};
+  background-color: ${props => props.theme.bgColor};
+  color: ${props => props.theme.color};
+  border: 1px solid ${props => props.theme.borderColor};
   padding: 1.3em 2.8em 1.3em 1.6em;
   text-decoration: none;
   text-transform: uppercase;
@@ -37,40 +28,9 @@ const ButtonContainer = css`
 
   &:hover {
     cursor: pointer;
-  }
-`
-
-const LightButtonContainer = styled.div`
-  ${ButtonContainer};
-  background-color: ${Colors.gray0};
-  color: ${Colors.black};
-
-  &:hover {
-    background-color: ${Colors.black};
-    color: ${Colors.white};
-  }
-`
-
-const DarkButtonContainer = styled.div`
-  ${ButtonContainer};
-  background-color: ${Colors.gray4};
-  color: ${Colors.white};
-
-  &:hover {
-    background-color: ${Colors.white};
-    color: ${Colors.black};
-  }
-`
-
-const BorderButtonContainer = styled.div`
-  ${ButtonContainer};
-  border: 1px solid ${Colors.gray3};
-  color: ${Colors.white};
-
-  &:hover {
-    border: 1px solid ${Colors.white};
-    background-color: ${Colors.white};
-    color: ${Colors.black};
+    background-color: ${props => props.theme.hoverBgColor};
+    color: ${props => props.theme.hoverColor};
+    border: 1px solid ${props => props.theme.hoverBorderColor};
   }
 `
 
@@ -80,4 +40,4 @@ const Icon = styled.span`
   right: 1.3em;
 `
 
-export { LightButton, DarkButton, BorderButton }
+export default Button

@@ -24,7 +24,7 @@ const Background = () => (
         title={"Design Lead"}
         details={"Mobile Heartbeat, Feb 2017 - Oct 2018"}
         description={
-          "As the first designer on, I built up a team of three, established a design culture, and led the redesign of a clinical product with over 79k users in over 92 hospitals."
+          "As the first designer on, I built up a team of three, established a design culture, and led the redesign of a clinical product with over 79k daily users in over 92 hospitals."
         }
         highlightOne={"Learned how to manage a team of designers."}
         highlightTwo={"Got accepted by the Apple Certified Partner Program."}

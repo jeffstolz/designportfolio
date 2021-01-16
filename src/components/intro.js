@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Link as ScrollLink } from "react-scroll"
-import { LightButton } from "./button"
+import Button from "./button"
+import { secondaryLight } from "./themes"
 import { FaArrowDown } from "react-icons/fa"
 import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
@@ -32,7 +33,11 @@ const Intro = () => (
           smooth={true}
           duration={1000}
         >
-          <LightButton label={"Wecome!"} icon={<FaArrowDown />} />
+          <Button
+            style={secondaryLight}
+            label={"Wecome!"}
+            icon={<FaArrowDown />}
+          />
         </ScrollLink>
       </ButtonContainer>
     </Fade>

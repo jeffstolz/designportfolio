@@ -1,7 +1,8 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import Fade from "react-reveal/Fade"
-import { DarkButton } from "./button"
+import Button from "./button"
+import { primaryDark } from "./themes"
 import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -29,7 +30,11 @@ const Skills = () => (
             wrote about facilitating design sprints.
           </SmallDescription>
           <ButtonLink href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
-            <DarkButton label={"View Article"} icon={<FaArrowRight />} />
+            <Button
+              style={primaryDark}
+              label={"View Article"}
+              icon={<FaArrowRight />}
+            />
           </ButtonLink>
         </Fade>
       </Column>
@@ -52,7 +57,11 @@ const Skills = () => (
             site.
           </SmallDescription>
           <ButtonLink href="https://github.com/jeffstolz/gatsby-portfolio">
-            <DarkButton label={"View Codebase"} icon={<FaArrowRight />} />
+            <Button
+              style={primaryDark}
+              label={"View Codebase"}
+              icon={<FaArrowRight />}
+            />
           </ButtonLink>
         </Fade>
       </Column>
@@ -68,7 +77,7 @@ const OuterContainer = styled.section`
   background-color: ${Colors.black};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.xHuge} 8%;
+    padding: ${Spacing.xHuge} 8% 0 8%;
   }
 `
 
