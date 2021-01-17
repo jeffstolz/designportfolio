@@ -13,7 +13,7 @@ const FeaturedWork = () => (
     <Container>
       <FeaturedWorkCard
         imageSrc={Images.SkillsThumbnail}
-        imageAlt={"The Skills case study thumbnail image"}
+        imageAlt={"The Skills case study"}
         previewLabels={"Product Management / SaaS Design / Ruby on Rails"}
         previewHeading={
           "Designing and Building an Online Education MVP in Six Weeks"
@@ -25,7 +25,7 @@ const FeaturedWork = () => (
       />
       <FeaturedWorkCard
         imageSrc={Images.DragonThumbnail}
-        imageAlt={"Dragon Innovation case study thumbnail image"}
+        imageAlt={"Dragon Innovation case study"}
         previewLabels={"Facilitation / Consulting / Interviewing"}
         previewHeading={
           "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
@@ -37,7 +37,7 @@ const FeaturedWork = () => (
       />
       <FeaturedWorkCard
         imageSrc={Images.NeocovaThumbnail}
-        imageAlt={"Neocova Design System case study thumbnail image"}
+        imageAlt={"Neocova Design System case study"}
         previewLabels={"Design Systems / Enterprise Design / React"}
         previewHeading={
           "Establishing a Design System for a Complex Enterprise Organization"
@@ -49,7 +49,7 @@ const FeaturedWork = () => (
       />
       <FeaturedWorkCard
         imageSrc={Images.MhThumbnail}
-        imageAlt={"Mobile Heartbeat case study thumbnail image"}
+        imageAlt={"Mobile Heartbeat case study"}
         previewLabels={"Design Leadership / Research / Mobile Design"}
         previewHeading={
           "Redesigning a Deeply Embedded Clinical Communication Tool"

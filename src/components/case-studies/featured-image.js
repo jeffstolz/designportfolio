@@ -1,36 +1,22 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors, Spacing } from "../../styles/variables"
+import { Spacing } from "../../styles/variables"
 import Fade from "react-reveal/Fade"
 
-const FeaturedImage = ({ imageSrc }) => (
-  <OuterContainer>
-    <Fade>
-      <Container>
-        <Image src={imageSrc} />
-      </Container>
-    </Fade>
-  </OuterContainer>
+const FeaturedImage = ({ imageSrc, imageAlt }) => (
+  <Fade>
+    <Container>
+      <Image src={imageSrc} alt={imageAlt} />
+    </Container>
+  </Fade>
 )
 
-const OuterContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: ${Spacing.base};
-
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.small};
-  }
-`
-
 const Container = styled.div`
-  width: 100%;
-  max-width: ${Spacing.containerWidth};
-  background-color: ${Colors.white};
-  padding: ${Spacing.base};
-  border-radius: ${Spacing.xSmall};
-  box-shadow: ${Colors.lightShadow};
+  padding: 0 ${Spacing.sectionPadding};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    padding: 0 ${Spacing.sectionPaddingMobile};
+  }
 `
 
 const Image = styled.img`
