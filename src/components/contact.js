@@ -50,11 +50,11 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 12%;
   background-color: ${Colors.black};
+  padding: 0 ${Spacing.sectionPadding};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: 0 8%;
+  @media (max-width: ${Spacing.breakPoint}) {
+    padding: 0 ${Spacing.sectionPaddingMobile};
   }
 `
 
@@ -65,7 +65,7 @@ const Heading = styled.h2`
 
 const Text = styled.p`
   color: ${Colors.gray2};
-  max-width: 47em;
+  max-width: 39em;
 `
 
 const LinkList = styled.ul`

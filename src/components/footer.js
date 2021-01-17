@@ -31,19 +31,19 @@ const Container = styled.footer`
   color: ${Colors.gray2};
   background-color: ${Colors.gray4};
   font-size: ${Typography.smallFontSize};
-  padding: 1.5em 12%;
+  padding: ${Spacing.xBase} ${Spacing.sectionPadding};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: ${Spacing.breakPoint}) {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.5em 8%;
+    padding: ${Spacing.xBase} ${Spacing.sectionPaddingMobile};
   }
 `
 
 const Description = styled.p`
   margin-left: ${Spacing.medium};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
+  @media (max-width: ${Spacing.breakPoint}) {
     margin-left: 0;
     margin-top: ${Spacing.base};
   }

@@ -73,10 +73,10 @@ const Background = () => (
 const OuterContainer = styled.section``
 
 const Header = styled.h2`
-  padding-left: 12%;
+  padding-left: ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding-left: 8%;
+    padding-left: ${Spacing.sectionPaddingMobile};
   }
 `
 
