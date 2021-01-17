@@ -8,6 +8,7 @@ export const large = "4em"
 export const huge = "5em"
 export const xHuge = "6em"
 export const xxHuge = "8em"
+export const xxxHuge = "12em"
 
 export const borderRadius = "0.2em"
 

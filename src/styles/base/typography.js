@@ -1,3 +1,6 @@
+import { css } from "styled-components"
+import { Spacing } from "../variables"
+
 export const headingFontFamily = '"Inter", Sans-Serif;'
 export const primaryFontFamily = '"Roboto", Sans-Serif;'
 
@@ -14,3 +17,14 @@ export const headingFontSize = "3em"
 
 export const largeLineHeight = "1.2em"
 export const hugeLineHeight = "1.4em"
+
+export const subheading = css`
+  font-family: ${primaryFontFamily};
+  font-size: ${mediumFontSize};
+  font-weight: ${lightFontWeight};
+  line-height: ${hugeLineHeight};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${baseFontSize};
+  }
+`
