@@ -15,10 +15,12 @@ const Intro = ({ heading, subheading }) => (
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  padding: ${Spacing.xxxHuge} ${Spacing.sectionPadding};
+  padding: ${Spacing.xxxHuge} ${Spacing.sectionPadding} ${Spacing.huge}
+    ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile};
+    padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile} ${Spacing.base}
+      ${Spacing.sectionPaddingMobile};
   }
 `
 

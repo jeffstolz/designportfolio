@@ -16,12 +16,14 @@ const TheSkillsPage = () => (
   <Layout>
     <SEO title="The Skills Case Study" />
     <Intro
-      backgroundImage={Images.DesignCaseOne}
-      company={"The Skills"}
       heading={"Designing and Building an Online Education MVP in Six Weeks"}
       subheading={
         "An example around prioritizing features, mitigating assumptions, and building scalable software in a pinch."
       }
+    />
+    <FeaturedImage
+      imageSrc={Images.MhOverview}
+      imageAlt={"Mobile Heartbeat design solutions on mobile and web"}
     />
     <Experience>
       <ExperienceItem
@@ -64,7 +66,6 @@ const TheSkillsPage = () => (
       heading="Determining the Problem"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
     />
-    <FeaturedImage imageSrc={Images.MhDiscovery} />
     <SectionHeader
       heading="Building a Team"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."

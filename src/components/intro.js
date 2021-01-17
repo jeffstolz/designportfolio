@@ -15,7 +15,7 @@ const Intro = () => (
         <Heading>Hi, I'm Jeff</Heading>
       </Fade>
       <Fade delay={250}>
-        <Wave src={Images.Wave} alt="Image of waving hand" />
+        <Wave src={Images.Wave} alt="" />
       </Fade>
     </HeadingContainer>
     <Fade delay={1000}>
