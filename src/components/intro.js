@@ -77,14 +77,10 @@ const Wave = styled.img`
 `
 
 const Subheading = styled.h2`
-  font-family: ${Typography.primaryFontFamily};
-  font-size: ${Typography.mediumFontSize};
-  font-weight: ${Typography.lightFontWeight};
-  line-height: ${Typography.hugeLineHeight};
+  ${Typography.subheading};
   margin-bottom: ${Spacing.base};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.baseFontSize};
     max-width: 14em;
   }
 `
