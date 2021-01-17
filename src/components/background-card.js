@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors, Spacing } from "../styles/variables"
 import Fade from "react-reveal/Fade"
+import { Colors, Spacing } from "../styles/variables"
 
 const BackgroundCard = ({
   title,
@@ -33,14 +33,14 @@ const BackgroundCard = ({
 const OuterContainer = styled.li`
   display: flex;
   flex-direction: column;
-  padding: ${Spacing.large} 12%;
+  padding: ${Spacing.large} ${Spacing.sectionPadding};
 
   &:nth-child(even) {
     background-color: ${Colors.offWhite};
   }
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.large} 8%;
+    padding: ${Spacing.large} ${Spacing.sectionPaddingMobile};
   }
 `
 
@@ -82,6 +82,10 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   margin-bottom: ${Spacing.xxSmall};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-bottom: ${Spacing.xSmall};
+  }
 `
 
 export default BackgroundCard

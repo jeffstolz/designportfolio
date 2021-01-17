@@ -66,15 +66,15 @@ const FeaturedWork = () => (
 const OuterContainer = styled.section`
   display: flex;
   flex-direction: column;
-  padding: ${Spacing.xxHuge} 12%;
+  padding: ${Spacing.xxHuge} ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.large} 8%;
+    padding: ${Spacing.large} ${Spacing.sectionPaddingMobile};
   }
 `
 
 const Header = styled.h2`
-  margin-bottom: 1.5em;
+  margin-bottom: ${Spacing.xBase};
 `
 
 const Container = styled.ul`

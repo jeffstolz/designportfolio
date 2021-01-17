@@ -49,10 +49,10 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 12%;
+  padding: 0 ${Spacing.sectionPadding};
 
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: 0 8%;
+  @media (max-width: ${Spacing.breakPoint}) {
+    padding: 0 ${Spacing.sectionPaddingMobile};
   }
 `
 
@@ -67,12 +67,12 @@ const Heading = styled.h1`
 const Wave = styled.img`
   width: 3.5em;
   margin-bottom: -2.2em;
-  margin-left: 1.5em;
+  margin-left: ${Spacing.xBase};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     width: 2.5em;
     margin-bottom: -1.2em;
-    margin-left: 1em;
+    margin-left: ${Spacing.small};
   }
 `
 

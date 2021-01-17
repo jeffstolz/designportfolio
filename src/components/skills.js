@@ -73,11 +73,11 @@ const OuterContainer = styled.section`
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding: ${Spacing.xHuge} 12%;
   background-color: ${Colors.black};
+  padding: 0 ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.xHuge} 8% 0 8%;
+    padding: 0 ${Spacing.sectionPaddingMobile};
   }
 `
 
@@ -89,6 +89,7 @@ const Container = styled.div`
 
   @media (max-width: ${Spacing.largeBreakPoint}) {
     flex-direction: column;
+    margin-top: ${Spacing.xHuge};
     max-width: 27em;
   }
 `
@@ -138,7 +139,7 @@ const SmallDescription = styled.p`
   width: 75%;
   font-size: ${Typography.smallFontSize};
   color: ${Colors.gray3};
-  margin-bottom: 1.5em;
+  margin-bottom: ${Spacing.xBase};
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
