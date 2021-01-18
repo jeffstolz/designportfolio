@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing } from "../../styles/variables"
 import Fade from "react-reveal/Fade"
+import { Spacing } from "../../styles/variables"
 
 const FeaturedImage = ({ imageSrc, imageAlt }) => (
   <Fade>

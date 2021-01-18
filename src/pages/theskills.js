@@ -20,33 +20,9 @@ const TheSkillsPage = () => (
       subheading={
         "An example around prioritizing features, mitigating assumptions, and building scalable software in a pinch."
       }
-    />
-    <FeaturedImage
       imageSrc={Images.MhOverview}
       imageAlt={"Mobile Heartbeat design solutions on mobile and web"}
     />
-    <Experience>
-      <ExperienceItem
-        imageSrc={Images.Team}
-        heading={"Product Management"}
-        body={
-          "Evangelizing the value of design in an organization & building a team."
-        }
-      />
-      <ExperienceItem
-        imageSrc={Images.Persona}
-        heading={"SaaS Design"}
-        body={
-          "Partnering with clinicians to understand & solve their problems."
-        }
-      />
-      <ExperienceItem
-        imageSrc={Images.Mobile}
-        heading={"Ruby on Rails"}
-        body={"Enterprise design solutions for Android and iOS."}
-      />
-    </Experience>
-    <FeaturedImage imageSrc={Images.MhOverview} />
     <Background
       overview={
         "When I was brought on to the team in 2017, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating. Physicians were rejecting the application because it didn't support their specific workflow and urgent communications were a burden."
