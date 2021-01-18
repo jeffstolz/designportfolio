@@ -1,54 +1,45 @@
 import React from "react"
 import styled from "styled-components"
-import { Spacing, Typography } from "../../styles/variables"
 import Fade from "react-reveal/Fade"
+import { Colors, Spacing, Typography } from "../../styles/variables"
 
 const Background = ({ overview, role, tools }) => (
-  <OuterContainer>
-    <Fade>
-      <Container>
-        <OverviewContainer>
-          <Heading>Background</Heading>
-          <p>{overview}</p>
-        </OverviewContainer>
-        <SideContainer>
-          <RoleContainer>
-            <SubHeading>My Role</SubHeading>
-            <p>{role}</p>
-          </RoleContainer>
-          <ToolsContainer>
-            <SubHeading>Tools</SubHeading>
-            <p>{tools}</p>
-          </ToolsContainer>
-        </SideContainer>
-      </Container>
-    </Fade>
-  </OuterContainer>
+  <Fade>
+    <Container>
+      <OverviewContainer>
+        <Heading>Background</Heading>
+        <Description>{overview}</Description>
+      </OverviewContainer>
+      <SideContainer>
+        <RoleContainer>
+          <SubHeading>My Role</SubHeading>
+          <Description>{role}</Description>
+        </RoleContainer>
+        <ToolsContainer>
+          <SubHeading>Tools</SubHeading>
+          <Description>{tools}</Description>
+        </ToolsContainer>
+      </SideContainer>
+    </Container>
+  </Fade>
 )
 
-const OuterContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: ${Spacing.xHuge} ${Spacing.base};
-
-  @media (max-width: ${Spacing.smallBreakPoint}) {
-    padding: ${Spacing.medium} ${Spacing.small};
-  }
-`
-
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   justify-content: space-between;
-  max-width: ${Spacing.containerWidth};
+  max-width: 85em;
+  padding: ${Spacing.xHuge} ${Spacing.sectionPadding} 0
+    ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
     flex-direction: column;
+    padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile} 0
+      ${Spacing.sectionPaddingMobile};
   }
 `
 
 const OverviewContainer = styled.div`
-  width: 64%;
+  width: 62%;
 
   @media (max-width: ${Spacing.breakPoint}) {
     width: 100%;
@@ -56,12 +47,12 @@ const OverviewContainer = styled.div`
 `
 
 const Heading = styled.h2`
-  margin-bottom: ${Spacing.xSmall};
+  margin-bottom: ${Spacing.small};
 `
 
 const SideContainer = styled.div`
-  width: 30%;
-  margin-top: ${Spacing.small};
+  width: 32%;
+  margin-top: 5.2em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     margin-top: ${Spacing.base};
@@ -76,13 +67,19 @@ const RoleContainer = styled.div`
 const ToolsContainer = styled.div``
 
 const SubHeading = styled.h5`
-  font-size: ${Typography.baseFontSize};
-  margin: ${Spacing.xSmall} 0;
+  font-size: ${Typography.xSmallFontSize};
+  color: ${Colors.red};
+  text-transform: uppercase;
+  font-weight: ${Typography.baseFontWeight};
+  margin-bottom: ${Spacing.xSmall};
 
   @media (max-width: ${Spacing.breakPoint}) {
     font-size: ${Typography.baseFontSize};
-    margin: 0;
   }
+`
+
+const Description = styled.p`
+  color: ${Colors.gray4};
 `
 
 export default Background

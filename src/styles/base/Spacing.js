@@ -20,5 +20,6 @@ export const containerWidth = "60em"
 export const largeContainerWidth = "81em"
 export const cardHeight = "17em"
 
+export const imageMaxWidth = "80em"
 export const sectionPadding = "12%"
 export const sectionPaddingMobile = "8%"

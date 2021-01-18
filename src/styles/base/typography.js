@@ -5,6 +5,7 @@ export const headingFontFamily = '"Inter", Sans-Serif;'
 export const primaryFontFamily = '"Roboto", Sans-Serif;'
 
 export const lightFontWeight = "400"
+export const baseFontWeight = "600"
 export const mediumFontWeight = "800"
 export const heavyFontWeight = "1000"
 
