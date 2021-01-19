@@ -26,7 +26,7 @@ const FeaturedWorkCard = ({
         <PreviewText>{previewText}</PreviewText>
         <ButtonLink to={projectLink}>
           <Button
-            style={primaryLight}
+            theme={primaryLight}
             label={"View Case Study"}
             icon={<FaArrowRight />}
           />
