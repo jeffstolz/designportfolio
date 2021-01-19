@@ -34,7 +34,7 @@ const TheSkillsPage = () => (
     />
     <Quote
       quote={
-        "When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
+        "When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase."
       }
       source={"Someone Special"}
     />

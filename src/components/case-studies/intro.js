@@ -41,7 +41,7 @@ const Image = styled.img`
   margin: ${Spacing.xHuge} 0;
 
   @media (max-width: ${Spacing.breakPoint}) {
-    margin: ${Spacing.base} 0;
+    margin: ${Spacing.large} 0;
   }
 `
 
