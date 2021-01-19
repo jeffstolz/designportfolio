@@ -14,8 +14,6 @@ const Intro = ({ heading, subheading, imageSrc, imageAlt }) => (
 )
 
 const Container = styled.section`
-  display: flex;
-  flex-direction: column;
   padding: ${Spacing.xxxHuge} ${Spacing.sectionPadding} 0
     ${Spacing.sectionPadding};
 

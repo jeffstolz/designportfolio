@@ -3,7 +3,6 @@ import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import Intro from "../components/case-studies/intro"
 import Experience from "../components/case-studies/experience"
-import ExperienceItem from "../components/case-studies/experience-item"
 import FeaturedImage from "../components/case-studies/featured-image"
 import Background from "../components/case-studies/background"
 import Quote from "../components/case-studies/quote"
@@ -42,31 +41,19 @@ const TheSkillsPage = () => (
       heading="Determining the Problem"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
     />
+    <FeaturedImage imageSrc={Images.MhDiscovery} />
     <SectionHeader
       heading="Building a Team"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
     />
-    <Experience>
-      <ExperienceItem
-        imageSrc={Images.Team}
-        heading={"Communicating Value"}
-        body={
-          "Evangelizing the value of design in an organization & building a team."
-        }
-      />
-      <ExperienceItem
-        imageSrc={Images.Persona}
-        heading={"Interviewing"}
-        body={
-          "Partnering with clinicians to understand & solve their problems."
-        }
-      />
-      <ExperienceItem
-        imageSrc={Images.Mobile}
-        heading={"Management"}
-        body={"Enterprise design solutions for Android and iOS."}
-      />
-    </Experience>
+    <Experience
+      headingOne="Communicating value"
+      descriptionOne="Evangelizing the value of design in an organization & building a team. Evangelizing the value of design in an organization & building a team."
+      headingTwo="Interviewing"
+      descriptionTwo="Evangelizing the value of design in an organization & building a team. Evangelizing the value of design in an organization & building a team."
+      headingThree="Management"
+      descriptionThree="Evangelizing the value of design in an organization & building a team. Evangelizing the value of design in an organization & building a team."
+    />
     <SectionHeader
       heading="Evangelizing User Empathy"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
@@ -82,27 +69,6 @@ const TheSkillsPage = () => (
       heading="Damming the Waterfall"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
     />
-    <Experience>
-      <ExperienceItem
-        imageSrc={Images.Team}
-        heading={"Design Leadership"}
-        body={
-          "Evangelizing the value of design in an organization & building a team."
-        }
-      />
-      <ExperienceItem
-        imageSrc={Images.Persona}
-        heading={"Research"}
-        body={
-          "Partnering with clinicians to understand & solve their problems."
-        }
-      />
-      <ExperienceItem
-        imageSrc={Images.Mobile}
-        heading={"Mobile Design"}
-        body={"Enterprise design solutions for Android and iOS."}
-      />
-    </Experience>
     <SectionHeader
       heading="Outcomes"
       content="When I was brought on to the team, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not focused on design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating."
