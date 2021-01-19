@@ -18,6 +18,7 @@ export const headingFontSize = "3em"
 
 export const largeLineHeight = "1.2em"
 export const hugeLineHeight = "1.4em"
+export const xHugeLineHeight = "1.6em"
 
 export const subheading = css`
   font-family: ${primaryFontFamily};

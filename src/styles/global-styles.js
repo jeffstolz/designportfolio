@@ -65,7 +65,7 @@ img {
   margin: 0;
   padding: 0;
 }
-blockquote {
+figure, blockquote {
   margin: 0;
 }
 `

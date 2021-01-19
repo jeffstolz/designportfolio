@@ -30,6 +30,7 @@ const Container = styled.section`
   max-width: 85em;
   padding: ${Spacing.xHuge} ${Spacing.sectionPadding} 0
     ${Spacing.sectionPadding};
+  margin-bottom: ${Spacing.xxHuge};
 
   @media (max-width: ${Spacing.breakPoint}) {
     flex-direction: column;
