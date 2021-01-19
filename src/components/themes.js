@@ -35,3 +35,11 @@ export const secondaryDark = {
   hoverBgColor: Colors.white,
   hoverColor: Colors.black,
 }
+
+export const redHeading = {
+  headingColor: Colors.red,
+}
+
+export const blueHeading = {
+  headingColor: Colors.blue,
+}

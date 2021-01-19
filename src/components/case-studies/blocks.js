@@ -1,9 +1,10 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Colors, Spacing, Typography } from "../../styles/variables"
 
-const Experience = ({
+const Blocks = ({
+  theme,
   headingOne,
   descriptionOne,
   headingTwo,
@@ -12,20 +13,22 @@ const Experience = ({
   descriptionThree,
 }) => (
   <Fade>
-    <Container>
-      <Block>
-        <Heading>{headingOne}</Heading>
-        <Description>{descriptionOne}</Description>
-      </Block>
-      <Block>
-        <Heading>{headingTwo}</Heading>
-        <Description>{descriptionTwo}</Description>
-      </Block>
-      <Block>
-        <Heading>{headingThree}</Heading>
-        <Description>{descriptionThree}</Description>
-      </Block>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Block>
+          <Heading>{headingOne}</Heading>
+          <Description>{descriptionOne}</Description>
+        </Block>
+        <Block>
+          <Heading>{headingTwo}</Heading>
+          <Description>{descriptionTwo}</Description>
+        </Block>
+        <Block>
+          <Heading>{headingThree}</Heading>
+          <Description>{descriptionThree}</Description>
+        </Block>
+      </Container>
+    </ThemeProvider>
   </Fade>
 )
 
@@ -55,7 +58,7 @@ const Block = styled.div`
 
 const Heading = styled.h3`
   font-size: ${Typography.smallFontSize};
-  color: ${Colors.red};
+  color: ${props => props.theme.headingColor};
   text-transform: uppercase;
   font-weight: ${Typography.baseFontWeight};
   margin-bottom: ${Spacing.small};
@@ -67,4 +70,4 @@ const Description = styled.p`
   line-height: ${Typography.largeLineHeight};
 `
 
-export default Experience
+export default Blocks

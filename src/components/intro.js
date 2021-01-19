@@ -34,7 +34,7 @@ const Intro = () => (
           duration={1000}
         >
           <Button
-            style={secondaryLight}
+            theme={secondaryLight}
             label={"Wecome!"}
             icon={<FaArrowDown />}
           />

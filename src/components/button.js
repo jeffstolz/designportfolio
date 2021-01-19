@@ -2,8 +2,8 @@ import React from "react"
 import styled, { ThemeProvider } from "styled-components"
 import { Typography } from "../styles/variables"
 
-const Button = ({ style, label, icon }) => (
-  <ThemeProvider theme={style}>
+const Button = ({ theme, label, icon }) => (
+  <ThemeProvider theme={theme}>
     <Container>
       {label}
       <Icon>{icon}</Icon>

@@ -31,7 +31,7 @@ const Skills = () => (
           </SmallDescription>
           <ButtonLink href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
             <Button
-              style={primaryDark}
+              theme={primaryDark}
               label={"View Article"}
               icon={<FaArrowRight />}
             />
@@ -58,7 +58,7 @@ const Skills = () => (
           </SmallDescription>
           <ButtonLink href="https://github.com/jeffstolz/gatsby-portfolio">
             <Button
-              style={primaryDark}
+              theme={primaryDark}
               label={"View Codebase"}
               icon={<FaArrowRight />}
             />

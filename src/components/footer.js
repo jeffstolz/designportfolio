@@ -16,7 +16,7 @@ const Footer = () => (
       duration={800}
     >
       <Button
-        style={secondaryDark}
+        theme={secondaryDark}
         label={"Back to Top"}
         icon={<FaArrowUp />}
       />
