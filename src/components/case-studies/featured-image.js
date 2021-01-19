@@ -12,15 +12,17 @@ const FeaturedImage = ({ imageSrc, imageAlt }) => (
 )
 
 const Container = styled.div`
-  padding: 0 ${Spacing.sectionPadding};
+  padding: ${Spacing.huge} ${Spacing.sectionPadding} 0 ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: 0 ${Spacing.sectionPaddingMobile};
+    padding: ${Spacing.large} ${Spacing.sectionPaddingMobile} 0
+      ${Spacing.sectionPaddingMobile};
   }
 `
 
 const Image = styled.img`
   width: 100%;
+  max-width: ${Spacing.imageMaxWidth};
 `
 
 export default FeaturedImage
