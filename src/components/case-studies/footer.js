@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import Button from "../button"
-import { primaryLight } from "../themes"
+import { secondaryLight } from "../themes"
 import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing } from "../../styles/variables"
 
@@ -12,7 +12,7 @@ const Footer = ({ pageLink }) => (
       <Divider />
       <ButtonLink href={pageLink}>
         <Button
-          theme={primaryLight}
+          theme={secondaryLight}
           label={"View More Case Studies"}
           icon={<FaArrowRight />}
         />

@@ -19,7 +19,7 @@ const MobileHeartbeatPage = () => (
       subheading={
         "Lessons learned from establishing a design culture and redesigning an enterprise product with over 79k daily users."
       }
-      imageSrc={Images.MhOverview}
+      imageSrc={Images.MhHeader}
       imageAlt={"Mobile Heartbeat design solutions on mobile and web"}
     />
     <Background

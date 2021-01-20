@@ -3,6 +3,7 @@ import Favicon from "./favicon.png"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
 import MhDesignProcessSketch from "./mh-design-process-sketch.jpg"
 import MhDiscovery from "./mh-discovery.jpg"
+import MhHeader from "./mh-header.png"
 import MhOverview from "./mh-overview.jpg"
 import MhPersona from "./mh-persona.jpg"
 import MhSolutionOne from "./mh-solution-1.jpg"
@@ -34,6 +35,7 @@ export const Images = {
   JeffStolzResume,
   MhDesignProcessSketch,
   MhDiscovery,
+  MhHeader,
   MhOverview,
   MhPersona,
   MhSolutionOne,
