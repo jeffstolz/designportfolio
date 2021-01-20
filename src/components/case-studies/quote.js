@@ -14,7 +14,7 @@ const Quote = ({ quote, source }) => (
 
 const Container = styled.figure`
   background-color: ${Colors.offWhite};
-  padding: ${Spacing.xxHuge} ${Spacing.sectionPadding};
+  padding: ${Spacing.xHuge} ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
     padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile};

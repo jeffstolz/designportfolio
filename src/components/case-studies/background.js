@@ -28,14 +28,12 @@ const Container = styled.section`
   display: flex;
   justify-content: space-between;
   max-width: 85em;
-  padding: ${Spacing.xHuge} ${Spacing.sectionPadding} 0
+  padding: ${Spacing.xxxHuge} ${Spacing.sectionPadding} ${Spacing.xxHuge}
     ${Spacing.sectionPadding};
-  margin-bottom: ${Spacing.xxHuge};
 
   @media (max-width: ${Spacing.breakPoint}) {
     flex-direction: column;
-    padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile} 0
-      ${Spacing.sectionPaddingMobile};
+    padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile};
   }
 `
 

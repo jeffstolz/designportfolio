@@ -4,43 +4,55 @@ import Fade from "react-reveal/Fade"
 import { Colors, Spacing, Typography } from "../../styles/variables"
 
 const Intro = ({ heading, subheading, imageSrc, imageAlt }) => (
-  <Fade>
-    <Container id="top">
-      <Heading>{heading}</Heading>
-      <Subheading>{subheading}</Subheading>
-      <Image src={imageSrc} alt={imageAlt}></Image>
-    </Container>
-  </Fade>
+  <Container id="top">
+    <TextContainer>
+      <Fade>
+        <Heading>{heading}</Heading>
+      </Fade>
+      <Fade delay={250}>
+        <Subheading>{subheading}</Subheading>
+      </Fade>
+    </TextContainer>
+    <Fade delay={800}>
+      <Image src={imageSrc} alt={imageAlt} />
+    </Fade>
+  </Container>
 )
 
 const Container = styled.section`
-  padding: ${Spacing.xxxHuge} ${Spacing.sectionPadding} 0
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: ${Colors.black};
+  padding: ${Spacing.xHuge} ${Spacing.sectionPadding} 0
     ${Spacing.sectionPadding};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    padding: ${Spacing.huge} ${Spacing.sectionPaddingMobile} 0
+    padding: ${Spacing.xxHuge} ${Spacing.sectionPaddingMobile} 0
       ${Spacing.sectionPaddingMobile};
   }
 `
 
+const TextContainer = styled.div``
+
 const Heading = styled.h1`
+  color: ${Colors.white};
   max-width: 20em;
   margin-bottom: ${Spacing.small};
 `
 
 const Subheading = styled.p`
   ${Typography.subheading};
-  color: ${Colors.gray4};
+  color: ${Colors.gray2};
   max-width: 30em;
+  margin-bottom: ${Spacing.small};
 `
 
 const Image = styled.img`
+  width: 100%;
   max-width: ${Spacing.imageMaxWidth};
-  margin: ${Spacing.xHuge} 0;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    margin: ${Spacing.large} 0;
-  }
+  margin-bottom: -4px;
 `
 
 export default Intro
