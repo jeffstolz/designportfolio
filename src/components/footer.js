@@ -10,7 +10,7 @@ const Footer = () => (
   <Container>
     <ScrollLink
       activeClass="active"
-      to={"intro"}
+      to={"top"}
       spy={true}
       smooth={true}
       duration={800}

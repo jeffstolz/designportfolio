@@ -7,6 +7,7 @@ import FeaturedImage from "../components/case-studies/featured-image"
 import Background from "../components/case-studies/background"
 import Quote from "../components/case-studies/quote"
 import SectionHeader from "../components/case-studies/section-header"
+import Footer from "../components/case-studies/footer"
 import { Images } from "../images"
 import { redHeading, blueHeading } from "../components/themes"
 
@@ -95,6 +96,7 @@ const MobileHeartbeatPage = () => (
       headingThree="Management"
       descriptionThree="Evangelizing the value of design in an organization & building a team. Evangelizing the value of design in an organization & building a team."
     />
+    <Footer pageLink={"/#case-studies"} />
   </Layout>
 )
 

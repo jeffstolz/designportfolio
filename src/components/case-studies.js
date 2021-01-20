@@ -2,16 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Images } from "../images"
-import FeaturedWorkCard from "./featured-work-card"
+import CaseStudyCard from "./case-study-card"
 import { Spacing } from "../styles/variables"
 
-const FeaturedWork = () => (
-  <OuterContainer>
+const CaseStudies = () => (
+  <OuterContainer id="case-studies">
     <Fade>
       <Header>Case Studies</Header>
     </Fade>
     <Container>
-      <FeaturedWorkCard
+      <CaseStudyCard
         imageSrc={Images.SkillsThumbnail}
         imageAlt={"The Skills case study"}
         previewLabels={"Product Management / SaaS Design / Ruby on Rails"}
@@ -23,7 +23,7 @@ const FeaturedWork = () => (
         }
         projectLink={"/theskills"}
       />
-      <FeaturedWorkCard
+      <CaseStudyCard
         imageSrc={Images.DragonThumbnail}
         imageAlt={"Dragon Innovation case study"}
         previewLabels={"Facilitation / Consulting / Interviewing"}
@@ -35,7 +35,7 @@ const FeaturedWork = () => (
         }
         projectLink={"/dragon"}
       />
-      <FeaturedWorkCard
+      <CaseStudyCard
         imageSrc={Images.NeocovaThumbnail}
         imageAlt={"Neocova Design System case study"}
         previewLabels={"Design Systems / Enterprise Design / React"}
@@ -47,7 +47,7 @@ const FeaturedWork = () => (
         }
         projectLink={"/neocova"}
       />
-      <FeaturedWorkCard
+      <CaseStudyCard
         imageSrc={Images.MhThumbnail}
         imageAlt={"Mobile Heartbeat case study"}
         previewLabels={"Design Leadership / Research / Mobile Design"}
@@ -85,4 +85,4 @@ const Container = styled.ul`
   }
 `
 
-export default FeaturedWork
+export default CaseStudies
