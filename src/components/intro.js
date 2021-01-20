@@ -9,7 +9,7 @@ import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Intro = () => (
-  <Container id="intro">
+  <Container id="top">
     <HeadingContainer>
       <Fade>
         <Heading>Hi, I'm Jeff</Heading>

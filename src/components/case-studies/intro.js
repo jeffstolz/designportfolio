@@ -5,7 +5,7 @@ import { Colors, Spacing, Typography } from "../../styles/variables"
 
 const Intro = ({ heading, subheading, imageSrc, imageAlt }) => (
   <Fade>
-    <Container>
+    <Container id="top">
       <Heading>{heading}</Heading>
       <Subheading>{subheading}</Subheading>
       <Image src={imageSrc} alt={imageAlt}></Image>
