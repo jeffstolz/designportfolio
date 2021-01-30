@@ -3,12 +3,12 @@ import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Colors, Spacing, Typography } from "../../styles/variables"
 
-const Background = ({ overview, role, tools }) => (
+const Background = ({ children, role, tools }) => (
   <Fade>
     <Container>
       <OverviewContainer>
         <Heading>Background</Heading>
-        <Description>{overview}</Description>
+        <Description>{children}</Description>
       </OverviewContainer>
       <SideContainer>
         <RoleContainer>
