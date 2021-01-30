@@ -39,7 +39,7 @@ const TextContainer = styled.div``
 const Heading = styled.h1`
   color: ${Colors.white};
   max-width: 20em;
-  margin-bottom: ${Spacing.small};
+  margin-bottom: ${Spacing.xSmall};
 `
 
 const Subheading = styled.p`
