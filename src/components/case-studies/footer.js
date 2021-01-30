@@ -13,7 +13,7 @@ const Footer = ({ pageLink }) => (
       <ButtonLink href={pageLink}>
         <Button
           theme={secondaryLight}
-          label={"View More Case Studies"}
+          label={"Back to Case Studies"}
           icon={<FaArrowRight />}
         />
       </ButtonLink>

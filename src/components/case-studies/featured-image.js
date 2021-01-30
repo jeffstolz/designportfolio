@@ -22,7 +22,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  max-width: ${Spacing.imageMaxWidth};
+  max-width: ${Spacing.largeImageMaxWidth};
 `
 
 export default FeaturedImage

@@ -15,6 +15,7 @@ export const breakPoint = "950px"
 export const largeBreakPoint = "1100px"
 
 export const cardHeight = "17em"
-export const imageMaxWidth = "62em"
+export const smallImageMaxWidth = "25em"
+export const largeImageMaxWidth = "62em"
 export const sectionPadding = "12%"
 export const sectionPaddingMobile = "8%"
