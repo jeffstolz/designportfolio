@@ -33,7 +33,7 @@ const TheSkillsPage = () => (
       athletes to gain insight into how their idols train and compete. With a
       limited budget,{" "}
       <Highlight>
-        a team of two had six week timeline to design and develop a Ruby on
+        a team of two had a six-week timeline to design and develop a Ruby on
         Rails MVP
       </Highlight>{" "}
       that would be iterated on by their internal team and eventually launched
@@ -44,7 +44,7 @@ const TheSkillsPage = () => (
     </Background>
     <Quote
       quote={
-        "We'd like to focus on a subscription service where members can join and watch professional-quality videos of athletes like Shawn White or Michael Phelps, with breakdowns in how they train, key takeaways of their mentality to competing, and more."
+        "By targeting high school and amateur athletes with highly personalized content, we feel we can compete with Masterclass in this space."
       }
       source={"Product Owner, The Skills"}
     />
@@ -88,13 +88,13 @@ const TheSkillsPage = () => (
       identity. We wanted to create a powerful visual aesthetic for the MVP
       without spinning our tires on fleshing out brand identity guidelines,
       which were out of scope. I created a series of quick mood boards for the
-      client to establish a mutual understanding of the overall look and feel.
+      client to establish a mutual understanding of the overall look and feel.{" "}
       <Highlight>
         We explored bright, bold colors, lighter UI patterns, and typography
-        treatments found in editorial design and in contrast to competitors like
+        treatments found in editorial design and contrast to competitors like
         Masterclass.
       </Highlight>{" "}
-      In the end, we decided a dark theme displayed best for a video hosting
+      In the end, we decided on a dark theme displayed best for a video hosting
       platform. However, we still chose a kinetic, high-energy approach that
       would translate well to our users.
     </SectionHeader>
@@ -135,7 +135,7 @@ const TheSkillsPage = () => (
       imageAlt={"The Skills video page"}
     />
     <SectionHeader heading="Takeaways">
-      In the end we were able to complete design and front-end development one
+      In the end, we were able to complete design and front-end development one
       week early, allowing for more budget to be allocated to full-stack
       development. We were able to hit our target without extending the
       engagement or cutting scope.{" "}
@@ -144,17 +144,17 @@ const TheSkillsPage = () => (
         clients, and I will most likely be carrying this technique along for
         future visual design engagements.
       </Highlight>{" "}
-      The ability to rapidly iterate on design, before getting into the weeds of
-      UI layouts, was invaluable.
+      The ability to rapidly iterate on the design, before getting into the
+      weeds of UI layouts, was invaluable.
     </SectionHeader>
     <Blocks
       theme={blueHeading}
       headingOne="Identify Assumptions Early"
-      descriptionOne="Because of the speed of this engagement, we weren't able to validate every assumption - by identifying these and the risks they carried early, we were able to plan ahead for unexpected changes."
+      descriptionOne="Because of the speed of this engagement, we weren't able to validate every assumption - by identifying these and the risks they carried early, we were able to plan for unexpected changes."
       headingTwo="Stay Communicative"
-      descriptionTwo="For short engagements, there is little room to course corect midway. Articulating decisions, and ensuring customer buy in along the way, helps ensure all parties remain on the same page throughout."
+      descriptionTwo="For short engagements, there is little room to course correct midway. Articulating decisions, and ensuring customer buy-in along the way, helps ensure all parties remain on the same page throughout."
       headingThree="Kanban rocks"
-      descriptionThree="We avoided time consuming story points and formal Scrum frameworks with a lightweight Kanban board. This limited project management time and ensured we were always working on the top priority."
+      descriptionThree="We avoided time-consuming story points and formal Scrum frameworks with a lightweight Kanban board. This limited project management time and ensured we were always working on the top priority."
     />
     <Footer />
   </Layout>

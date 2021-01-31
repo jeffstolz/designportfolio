@@ -15,7 +15,7 @@ import Blocks from "../components/case-studies/blocks"
 import Footer from "../components/case-studies/footer"
 import { Images } from "../images"
 import { blueHeading } from "../components/themes"
-import { Colors, Spacing, Typography } from "../styles/variables"
+import { Colors, Spacing } from "../styles/variables"
 
 const NeocovaPage = () => (
   <Layout>
@@ -38,8 +38,9 @@ const NeocovaPage = () => (
       not-so-unique problem: their suite of products, and team, were growing
       exponentially and in unruly directions. Products lacked visual unity and
       brand initiatives competed with each other. Developers didn't know which
-      assets to use, and velocity was slowing. We were hired for a brief three
-      week engagement to reel things in before they spun too far out of control.{" "}
+      assets to use, and velocity was slowing. We were hired for a brief
+      three-week engagement to reel things in before they spun too far out of
+      control.{" "}
       <Highlight>
         After some initial problem definition exercises, our team identified
         that the company would benefit from a foundational design system that
@@ -48,7 +49,7 @@ const NeocovaPage = () => (
     </Background>
     <Quote
       quote={
-        "My main concerns are, after the engagement ends and you all turn into pumpkins, who will own this design system moving forward? How do we ensure that it gets maintained and doesn't degrade over time?"
+        "My main concerns are after the engagement ends and you all turn into pumpkins, who will own this design system moving forward? How do we ensure that it gets maintained and doesn't degrade over time?"
       }
       source={"Head of Product, Neocova"}
     />
@@ -62,8 +63,8 @@ const NeocovaPage = () => (
       system,{" "}
       <Highlight>
         I lead an exercise with the stakeholders to identify the features that
-        would be valuable in the system, individually dot vote on priorities,
-        and then rank them as a group.
+        would be valuable in the system, individually dot vote on priorities and
+        then rank them as a group.
       </Highlight>{" "}
       This helped us align as a team before work began.
     </SectionHeader>
@@ -111,7 +112,7 @@ const NeocovaPage = () => (
       completed to answer outstanding questions and increase visibility and
       adoption. This also ended up being a great opportunity to teach the
       broader company about general product design and user experience
-      principals.
+      principles.
     </SectionHeader>
     <Blocks
       theme={blueHeading}
@@ -119,7 +120,7 @@ const NeocovaPage = () => (
       descriptionOne="We pushed the client to select an owner of the design system at
       the beginning of the engagement to partner with us and establish themself as a subject matter expert."
       headingTwo="Shared Purpose"
-      descriptionTwo="It was important that we articulate the value of the design system for both designers and developers, and the responsibility that all parties have to follow and strengthen it over time."
+      descriptionTwo="We needed to articulate the value of the design system for both designers and developers, and the responsibility that all parties have to follow and strengthen it over time."
       headingThree="Respond to Change"
       descriptionThree="A design system is both a tool to enforce consistency and respond to change. We taught the team how to identify when to follow, diverge, or expand on the system appropriately."
     />
@@ -130,11 +131,11 @@ const NeocovaPage = () => (
         conducted during our initial research
       </Highlight>
       , as it helped reel in the varied expectations from our customer team.
-      This, in addition to highly communicative and transparent progress updates
-      helped prevent any pivots and kept our velocity strong. Moving forward, I
-      would work to incorporate the development team more into the early
-      decisioning process - we could have done better to articulate the shared
-      purpose of the system as being much more than a design resource.
+      This, in addition to highly communicative and transparent progress
+      updates, helped prevent any pivots and kept our velocity strong. Moving
+      forward, I would work to incorporate the development team more into the
+      early decision process - we could have done better to articulate the
+      shared purpose of the system as being much more than a design resource.
     </SectionHeader>
     <Footer />
   </Layout>
