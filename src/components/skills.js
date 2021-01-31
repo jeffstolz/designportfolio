@@ -14,7 +14,7 @@ const Skills = () => (
           <Heading>How I Design</Heading>
           <DesignHeading>Tools</DesignHeading>
           <Description>
-            Figma, Photoshop, Miro, Trello, UserTesting, The Noun Project,
+            Figma, Photoshop, Mural, Trello, UserTesting, The Noun Project,
             Iconify, Unsplash, Figmotion, Coolors, pen & paper, lots of sticky
             notes.
           </Description>
@@ -148,6 +148,7 @@ const SmallDescription = styled.p`
 
 const ButtonLink = styled.a`
   display: flex;
+  text-decoration: none;
 `
 
 export default Skills

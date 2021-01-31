@@ -6,11 +6,11 @@ import { secondaryLight } from "../themes"
 import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing } from "../../styles/variables"
 
-const Footer = ({ pageLink }) => (
+const Footer = () => (
   <Fade>
     <Container>
       <Divider />
-      <ButtonLink href={pageLink}>
+      <ButtonLink href="/#case-studies">
         <Button
           theme={secondaryLight}
           label={"Back to Case Studies"}
@@ -38,6 +38,7 @@ const Divider = styled.hr`
 
 const ButtonLink = styled.a`
   display: flex;
+  text-decoration: none;
 `
 
 export default Footer

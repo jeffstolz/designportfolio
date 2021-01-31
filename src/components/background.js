@@ -16,7 +16,9 @@ const Background = () => (
         description={
           "My most diverse role yet - thoughtbot designers assume the role of PM, designer & front-end developer. Our clients range from early-stage startups to major corporations."
         }
-        highlightOne={"Ran a multi-day workshop on facilitating PDSs."}
+        highlightOne={
+          "Ran a multi-day workshop on facilitating design sprints."
+        }
         highlightTwo={"Learned how to code in React, React Native, and Elm."}
         highlightThree={"Helped train and mentor new designers."}
       />
@@ -52,7 +54,7 @@ const Background = () => (
         }
         highlightOne={"We got acquired!"}
         highlightTwo={
-          "Learned how to code in Rails & participated in my first PDS."
+          "Learned how to code in Rails & participated in my first design sprint."
         }
         highlightThree={"Completed the Firehose Coding Bootcamp."}
       />

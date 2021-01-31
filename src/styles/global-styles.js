@@ -46,7 +46,11 @@ h5 {
 }
 
 a {
-  text-decoration: none;
+  color: ${Colors.black};
+
+  &:hover {
+    color: ${Colors.gray4};
+  }
 }
 
 ul {

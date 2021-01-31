@@ -95,6 +95,7 @@ const PreviewText = styled.p`
 
 const ButtonLink = styled(Link)`
   display: flex;
+  text-decoration: none;
 `
 
 export default FeaturedWorkCard
