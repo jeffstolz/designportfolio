@@ -15,7 +15,7 @@ import Blocks from "../components/case-studies/blocks"
 import Footer from "../components/case-studies/footer"
 import { Images } from "../images"
 import { blueHeading } from "../components/themes"
-import { Colors, Spacing, Typography } from "../styles/variables"
+import { Colors, Spacing } from "../styles/variables"
 
 const NeocovaPage = () => (
   <Layout>
