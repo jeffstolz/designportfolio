@@ -17,7 +17,7 @@ const Background = () => (
           "My most diverse role yet - thoughtbot designers assume the role of project manager, designer & front-end developer. Our clients range from early-stage startups to major corporations."
         }
         highlightOne={
-          "Ran a multi-day workshop on facilitating design sprints."
+          "Organized and conducted a multi-day workshop on facilitating design sprints."
         }
         highlightTwo={"Learned how to code in React, React Native, and Elm."}
         highlightThree={"Helped train and mentor new designers."}
@@ -31,7 +31,7 @@ const Background = () => (
         highlightOne={"Learned how to manage a team of designers."}
         highlightTwo={"Got accepted by the Apple Certified Partner Program."}
         highlightThree={
-          "Shadowed a surgeon during (successful) open-heart surgery!"
+          "Regularly interviewed, shadowed, and ran focus groups with clinicians across the country."
         }
       />
       <BackgroundCard
@@ -41,10 +41,8 @@ const Background = () => (
           "My first experience with consulting where I embedded with teams across the country to lead their UX and front-end implementation efforts."
         }
         highlightOne={"Set up a design system used by over 50 developers."}
-        highlightTwo={
-          "Refined my consulting skills (and learned how to say no)."
-        }
-        highlightThree={"Racked up a lot of hotel and airline points."}
+        highlightTwo={"Lead design workshops with customer teams."}
+        highlightThree={"Received the Pega System Architect certification."}
       />
       <BackgroundCard
         title={"UX Designer"}
