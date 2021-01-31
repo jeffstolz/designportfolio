@@ -14,7 +14,7 @@ const Background = () => (
         title={"Senior Product Design Consultant"}
         details={"thoughtbot, Oct 2018 - Current"}
         description={
-          "My most diverse role yet - thoughtbot designers assume the role of PM, designer & front-end developer. Our clients range from early-stage startups to major corporations."
+          "My most diverse role yet - thoughtbot designers assume the role of project manager, designer & front-end developer. Our clients range from early-stage startups to major corporations."
         }
         highlightOne={
           "Ran a multi-day workshop on facilitating design sprints."
