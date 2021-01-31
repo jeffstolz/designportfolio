@@ -126,6 +126,10 @@ const DevelopHeading = styled.h3`
 const Description = styled.p`
   color: ${Colors.gray2};
   margin-bottom: ${Spacing.base};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 const Divider = styled.hr`

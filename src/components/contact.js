@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Images } from "../images"
-import { Colors, Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Contact = () => (
   <Container>
@@ -66,6 +66,10 @@ const Heading = styled.h2`
 const Text = styled.p`
   color: ${Colors.gray2};
   max-width: 39em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 const LinkList = styled.ul`

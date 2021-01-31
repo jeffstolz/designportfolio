@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
-import { Colors, Spacing } from "../styles/variables"
+import { Colors, Spacing, Typography } from "../styles/variables"
 
 const BackgroundCard = ({
   title,
@@ -59,6 +59,10 @@ const Details = styled.h4`
 
 const Description = styled.p`
   margin-bottom: ${Spacing.base};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 const HighlightsContainer = styled.div`
@@ -85,6 +89,7 @@ const ListItem = styled.li`
 
   @media (max-width: ${Spacing.breakPoint}) {
     margin-bottom: ${Spacing.xSmall};
+    font-size: ${Typography.smallFontSize};
   }
 `
 

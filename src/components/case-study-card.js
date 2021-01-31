@@ -91,6 +91,10 @@ const PreviewHeading = styled.h3`
 const PreviewText = styled.p`
   margin-bottom: ${Spacing.base};
   color: ${Colors.gray4};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 const ButtonLink = styled(Link)`

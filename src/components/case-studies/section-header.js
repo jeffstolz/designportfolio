@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { Colors, Spacing } from "../../styles/variables"
 import Fade from "react-reveal/Fade"
+import { Colors, Spacing, Typography } from "../../styles/variables"
 
 const SectionHeader = ({ heading, children }) => (
   <Fade>
@@ -29,6 +29,10 @@ const Heading = styled.h2`
 const Description = styled.p`
   color: ${Colors.gray4};
   max-width: 40em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 export default SectionHeader
