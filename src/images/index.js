@@ -14,6 +14,11 @@ import MhSolutionFive from "./mh-solution-5.jpg"
 import MhSolutionSix from "./mh-solution-6.jpg"
 import MhThumbnail from "./mh-thumbnail.jpg"
 import MhWireframe from "./mh-wireframe.jpg"
+import NeocovaExploration from "./neocova-exploration.jpg"
+import NeocovaIndex from "./neocova-index.png"
+import NeocovaSolutionOne from "./neocova-solution-1.jpg"
+import NeocovaSolutionTwo from "./neocova-solution-2.jpg"
+import NeocovaSolutionThree from "./neocova-solution-3.jpg"
 import NeocovaThumbnail from "./neocova-thumbnail.jpg"
 import SkillsAthleteLanding from "./skills-athlete-landing.jpg"
 import SkillsAthlete from "./skills-athlete.jpg"
@@ -47,6 +52,11 @@ export const Images = {
   MhThumbnail,
   MhWireframe,
   NeocovaThumbnail,
+  NeocovaExploration,
+  NeocovaIndex,
+  NeocovaSolutionOne,
+  NeocovaSolutionTwo,
+  NeocovaSolutionThree,
   SkillsAthleteLanding,
   SkillsAthlete,
   SkillsAthletes,

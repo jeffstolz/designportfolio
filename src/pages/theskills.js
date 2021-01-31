@@ -25,13 +25,13 @@ const TheSkillsPage = () => (
     />
     <Background
       role={
-        "Product design consultant at thoughtbot working with a developer consultant."
+        "Led all design efforts, paired with a thoughtbot developer for implementation."
       }
-      tools={"Ruby on Rails, Figma"}
+      tools={"Ruby on Rails, Figma, Trello"}
     >
-      The Skills hired thoughtbot to create a product for amateur athletes to
-      gain insight into how their idols train and compete. With a limited
-      budget,{" "}
+      The Skills hired thoughtbot in 2019 to create a product for amateur
+      athletes to gain insight into how their idols train and compete. With a
+      limited budget,{" "}
       <Highlight>
         a team of two had six week timeline to design and develop a Ruby on
         Rails MVP
@@ -154,9 +154,9 @@ const TheSkillsPage = () => (
       headingTwo="Stay Communicative"
       descriptionTwo="For short engagements, there is little room to course corect midway. Articulating decisions, and ensuring customer buy in along the way, helps ensure all parties remain on the same page throughout."
       headingThree="Kanban rocks"
-      descriptionThree="We avoided time consuming story points and formal sprints and focused on pulling off the top of the board. This limited project management time and ensured we were always working on the top priority."
+      descriptionThree="We avoided time consuming story points and formal Scrum frameworks with a lightweight Kanban board. This limited project management time and ensured we were always working on the top priority."
     />
-    <Footer pageLink={"/#case-studies"} />
+    <Footer />
   </Layout>
 )
 

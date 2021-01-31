@@ -35,6 +35,7 @@ const Excerpt = styled.blockquote`
 const Source = styled.figcaption`
   margin-top: ${Spacing.base};
   color: ${Colors.gray4};
+  font-style: italic;
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
     font-size: ${Typography.xSmallFontSize};

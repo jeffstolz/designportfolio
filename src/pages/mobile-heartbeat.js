@@ -26,7 +26,7 @@ const MobileHeartbeatPage = () => (
     />
     <Background
       role={"Led all design efforts and managed a team of two designers."}
-      tools={"Sketch, Zeplin, InVision, Usertesting.com"}
+      tools={"Sketch, Zeplin, InVision, Usertesting.com, Jira"}
     >
       When I was brought on to the team in 2017,{" "}
       <Highlight>
@@ -154,7 +154,7 @@ const MobileHeartbeatPage = () => (
       headingThree="Push Back on Customer Leadership"
       descriptionThree="We learned early that hospital leadership doesn't always represent the end user. Large orgs can have competing priorities, and we can't assume that a single loud voice speaks for the quiet majority."
     />
-    <Footer pageLink={"/#case-studies"} />
+    <Footer />
   </Layout>
 )
 
