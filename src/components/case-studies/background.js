@@ -79,6 +79,10 @@ const SubHeading = styled.h5`
 
 const Description = styled.p`
   color: ${Colors.gray4};
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallFontSize};
+  }
 `
 
 export default Background
