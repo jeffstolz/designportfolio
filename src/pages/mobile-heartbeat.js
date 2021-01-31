@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import Intro from "../components/case-studies/intro"
-import Blocks from "../components/case-studies/blocks"
-import FeaturedImage from "../components/case-studies/featured-image"
 import Background from "../components/case-studies/background"
+import Highlight from "../components/case-studies/highlight"
 import Quote from "../components/case-studies/quote"
 import SectionHeader from "../components/case-studies/section-header"
+import FeaturedImage from "../components/case-studies/featured-image"
+import Blocks from "../components/case-studies/blocks"
 import ImageRow from "../components/case-studies/image-row"
 import Footer from "../components/case-studies/footer"
 import { Images } from "../images"
@@ -24,27 +25,53 @@ const MobileHeartbeatPage = () => (
       imageAlt={"Mobile Heartbeat design solutions on mobile and web"}
     />
     <Background
-      overview={
-        "When I was brought on to the team in 2017, Mobile Heartbeat was a clinical communication tool used daily in 92 hospitals. Although the product had a deep userbase, the company had not prioritized design in it's past and end-users reported that the product had grown dated, unintuitive, and frustrating. Physicians were rejecting the application because it didn't support their specific workflow and urgent communications were a burden. I was hired to build a design team, establish a design culture, and lead a full redesign of their existing iOS and Android applications."
-      }
       role={"Led all design efforts and managed a team of two designers."}
       tools={"Sketch, Zeplin, InVision, Usertesting.com"}
-    />
+    >
+      When I was brought on to the team in 2017,{" "}
+      <Highlight>
+        Mobile Heartbeat was a clinical communication tool used daily in 92
+        hospitals.
+      </Highlight>{" "}
+      Although the product had a deep userbase, the company had not prioritized
+      design in it's past and end-users reported that the product had grown
+      dated, unintuitive, and frustrating. Physicians were rejecting the
+      application because it didn't support their specific workflow and urgent
+      communications were a burden. I was hired to build a design team,
+      establish a design culture, and lead a full redesign of their existing iOS
+      and Android applications.
+    </Background>
     <Quote
       quote={
         "Having worked in a hospital for over ten years, I see communication as the biggest challenge for clinicians. In many cases, care teams spread throughout the campus must collaborate, diagnose, and act within minutes."
       }
       source={"Charge Nurse, Mobile Heartbeat User"}
     />
-    <SectionHeader
-      heading="Determining the Problem"
-      content="To start, we needed to evaluate our processes. The product roadmap originally was a classic waterfall consisting of new features and customer requests, and lacked a clear direction forward. To resolve this, we created a cross functional team to establish our product priorities and identify the core user needs. We chose to follow the Lean UX Canvas for initial problem definition to help us maintain focus and establish measurable outcomes."
+    <SectionHeader heading="Determining the Problem">
+      To start, we needed to evaluate our processes. The product roadmap
+      originally was a classic waterfall consisting of new features and customer
+      requests, and lacked a clear direction forward. To resolve this, we
+      created a cross functional team to establish our product priorities and
+      identify the core user needs. We chose to follow the Lean UX Canvas for
+      initial problem definition to help us maintain focus and establish
+      measurable outcomes.
+    </SectionHeader>
+    <FeaturedImage
+      imageSrc={Images.MhDiscovery}
+      imageAlt={"Lean UX Canvas product exploration"}
     />
-    <FeaturedImage imageSrc={Images.MhDiscovery} />
-    <SectionHeader
-      heading="Building a Team"
-      content="I was the first designer hired at the company, and identified early that a larger team would be required to handle the various design responsibilities in the given timeline. This was my first experience leading a team, and I interviewed both personal contacts and company leaders to learn from their successes and failures before beginning my search. My goal was to build a team that would foster transparency, continuous improvement, and trust."
-    />
+    <SectionHeader heading="Building a Team">
+      I was the first designer hired at the company, and identified early that a
+      larger team would be required to handle the various design
+      responsibilities in the given timeline. This was my first experience
+      leading a team, and I interviewed both personal contacts and company
+      leaders to learn from their successes and failures before beginning my
+      search.{" "}
+      <Highlight>
+        My goal was to build a team that would foster transparency, continuous
+        improvement, and trust.
+      </Highlight>
+    </SectionHeader>
     <Blocks
       theme={blueHeading}
       headingOne="Practical Interviews"
@@ -54,37 +81,70 @@ const MobileHeartbeatPage = () => (
       headingThree="Diverse Backgrounds"
       descriptionThree="I wanted to ensure that our team represented various backgrounds and perspectives so we could share and learn from each other."
     />
-    <SectionHeader
-      heading="Evangelizing User Empathy"
-      content="Our users had highly specific and complex workflows, and we needed to make sure to thoroughly research and understand them before beginning our redesign. Our research included shadowing, interviewing, focus groups & surveys. We built a variety of user personas from this research, presented them to the company, and printed them on walls in the office to increase visibility and adoption."
+    <SectionHeader heading="Evangelizing User Empathy">
+      Our users had highly specific and complex workflows, and we needed to make
+      sure to thoroughly research and understand them before beginning our
+      redesign.{" "}
+      <Highlight>
+        Our research included shadowing, interviewing, focus groups & surveys.
+      </Highlight>{" "}
+      We built a variety of user personas from this research, presented them to
+      the company, and printed them on walls in the office to increase
+      visibility and adoption.
+    </SectionHeader>
+    <FeaturedImage
+      imageSrc={Images.MhPersona}
+      imageAlt={"User persona of Mobile Heartbeat charge nurse"}
     />
-    <FeaturedImage imageSrc={Images.MhPersona} />
-    <SectionHeader
-      heading="Establishing a Design Process"
-      content="The culture I worked to build was one of highly rapid, transparent, and collaborative design and prototyping. We began with brainstorming workshops, low-fidelity sketches, wireframes, and then increased in detail as our vision became more defined. Additionally, we maintained a regular feedback loop with our users throughout the design process."
+    <SectionHeader heading="Establishing a Design Process">
+      The culture I worked to build was one of highly rapid, transparent, and
+      collaborative design and prototyping. We began with brainstorming
+      workshops, low-fidelity sketches, wireframes, and then increased in detail
+      as our vision became more defined. Additionally, we maintained a regular
+      feedback loop with our users throughout the design process.
+    </SectionHeader>
+    <FeaturedImage
+      imageSrc={Images.MhDesignProcessSketch}
+      imageAlt={"Rough sketch design exploration"}
     />
-    <FeaturedImage imageSrc={Images.MhDesignProcessSketch} />
-    <FeaturedImage imageSrc={Images.MhWireframe} />
-    <SectionHeader
-      heading="Outcomes"
-      content="We conducted extensive end-user testing to validate our solutions before implementation. This included in-person user testing via InVision prototypes. We conducted these tests in hospitals throughout the country, and evolved our designs based on the feedback. As a result, we were able to begin development with confidence in our approach."
+    <FeaturedImage
+      imageSrc={Images.MhWireframe}
+      imageAlt={"Wireframe design exploration"}
     />
+    <SectionHeader heading="Outcomes">
+      We conducted extensive end-user testing to validate our solutions before
+      implementation. This included in-person user testing via InVision
+      prototypes. We conducted these tests in hospitals throughout the country,
+      and evolved our designs based on the feedback. As a result, we were able
+      to begin development with confidence in our approach.
+    </SectionHeader>
     <ImageRow
       imageSrcOne={Images.MhSolutionOne}
+      imageAlt={"My status"}
       imageSrcTwo={Images.MhSolutionTwo}
+      imageAltTwo={"Critical telemetry alert"}
     />
     <ImageRow
       imageSrcOne={Images.MhSolutionThree}
+      imageAlt={"Multi-unit selection"}
       imageSrcTwo={Images.MhSolutionFour}
+      imageAltTwo={"Favorite contacts"}
     />
     <ImageRow
       imageSrcOne={Images.MhSolutionFive}
+      imageAlt={"Urgent message"}
       imageSrcTwo={Images.MhSolutionSix}
+      imageAltTwo={"Urgent notification"}
     />
-    <SectionHeader
-      heading="Learnings"
-      content="My experience at Mobile Heartbeat consisted of a lot of firsts: building and managing a team, leading design on a company wide level, and working within healthcare to name a few. As can be expected, mistakes were made and lessons were learned. I value these excellerated periods of learning in my career when I learn to be comfortable with discomfort and know when to ask for help and admit I don't know an answer."
-    />
+    <SectionHeader heading="Learnings">
+      My experience at Mobile Heartbeat consisted of a lot of firsts: building
+      and managing a team, leading design on a company wide level, and working
+      within healthcare to name a few. As can be expected, mistakes were made
+      and lessons were learned. I value these excellerated periods of learning
+      in my career when I{" "}
+      <Highlight>learn to be comfortable with discomfort</Highlight> and know
+      when to ask for help and admit I don't know an answer.
+    </SectionHeader>
     <Blocks
       theme={redHeading}
       headingOne="Don't Expect Strong IT Infrastructure"

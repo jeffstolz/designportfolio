@@ -3,11 +3,11 @@ import styled from "styled-components"
 import { Colors, Spacing } from "../../styles/variables"
 import Fade from "react-reveal/Fade"
 
-const SectionHeader = ({ heading, content }) => (
+const SectionHeader = ({ heading, children }) => (
   <Fade>
     <Container>
       <Heading>{heading}</Heading>
-      <Description>{content}</Description>
+      <Description>{children}</Description>
     </Container>
   </Fade>
 )
