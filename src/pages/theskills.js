@@ -29,7 +29,7 @@ const TheSkillsPage = () => (
       }
       tools={"Ruby on Rails, Figma, Trello"}
     >
-      The Skills hired thoughtbot in 2019 to create a product for amateur
+      The Skills hired thoughtbot in 2020 to create a product for amateur
       athletes to gain insight into how their idols train and compete. With a
       limited budget,{" "}
       <Highlight>

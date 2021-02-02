@@ -89,7 +89,7 @@ const NeocovaPage = () => (
       <ButtonLink href="https://www.figma.com/file/wcm8Ra8pY6A2ZzBdPEhBi4/Neocova-Design-System?node-id=70%3A241">
         <Button
           theme={primaryLight}
-          label={"Figma Project"}
+          label={"View Figma Project"}
           icon={<FaArrowRight />}
         />
       </ButtonLink>

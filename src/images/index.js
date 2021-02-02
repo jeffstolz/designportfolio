@@ -1,3 +1,11 @@
+import DragonIndex from "./dragon-index.png"
+import DragonInterviewScript from "./dragon-interview-script.pdf"
+import DragonNotes from "./dragon-notes.jpg"
+import DragonPath from "./dragon-path.jpg"
+import DragonSolutionOne from "./dragon-solution-1.jpg"
+import DragonSolutionTwo from "./dragon-solution-2.jpg"
+import DragonSolutionThree from "./dragon-solution-3.jpg"
+import DragonStoryboard from "./dragon-storyboard.jpg"
 import DragonThumbnail from "./dragon-thumbnail.jpg"
 import Favicon from "./favicon.png"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
@@ -35,6 +43,14 @@ import SkillsWireframes from "./skills-wireframes.jpg"
 import Wave from "./wave.svg"
 
 export const Images = {
+  DragonIndex,
+  DragonInterviewScript,
+  DragonNotes,
+  DragonPath,
+  DragonSolutionOne,
+  DragonSolutionTwo,
+  DragonSolutionThree,
+  DragonStoryboard,
   DragonThumbnail,
   Favicon,
   JeffStolzResume,
