@@ -20,7 +20,7 @@ const Background = () => (
           "Organized and conducted a multi-day workshop on facilitating design sprints."
         }
         highlightTwo={"Learned how to code in React, React Native, and Elm."}
-        highlightThree={"Helped train and mentor new designers."}
+        highlightThree={"Co-facilitated an over 100 attendee design summit."}
       />
       <BackgroundCard
         title={"Design Lead"}
@@ -28,10 +28,12 @@ const Background = () => (
         description={
           "As the first designer on, I built up a team of three, established a design culture, and led the redesign of a clinical product with over 79k daily users in over 92 hospitals."
         }
-        highlightOne={"Learned how to manage a team of designers."}
-        highlightTwo={"Got accepted by the Apple Certified Partner Program."}
+        highlightOne={"Helped grow the active user base by 30% in 18 months."}
+        highlightTwo={
+          "Earned acceptance into the Apple Certified Partner Program."
+        }
         highlightThree={
-          "Regularly interviewed, shadowed, and ran focus groups with clinicians across the country."
+          "Regularly interviewed, shadowed, and conducted focus groups with clinicians across the country."
         }
       />
       <BackgroundCard
@@ -40,9 +42,9 @@ const Background = () => (
         description={
           "My first experience with consulting where I embedded with teams across the country to lead their UX and front-end implementation efforts."
         }
-        highlightOne={"Set up a design system used by over 50 developers."}
-        highlightTwo={"Lead design workshops with customer teams."}
-        highlightThree={"Received the Pega System Architect certification."}
+        highlightOne={"Established a design system used by over 50 developers."}
+        highlightTwo={"Led design workshops with customer teams."}
+        highlightThree={"Earned the Pega System Architect certification."}
       />
       <BackgroundCard
         title={"UX Designer"}
@@ -50,7 +52,7 @@ const Background = () => (
         description={
           "A freelancing gig transitioned into a full-time opportunity with a startup, which led to us being acquired by an international publisher. We became their R&D team."
         }
-        highlightOne={"We got acquired!"}
+        highlightOne={"Acquired by HMH."}
         highlightTwo={
           "Learned how to code in Rails & participated in my first design sprint."
         }
@@ -62,9 +64,11 @@ const Background = () => (
         description={
           "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
         }
-        highlightOne={"Learned how to make Wordpress and HTML/CSS sites."}
-        highlightTwo={"Designed my first native mobile apps."}
-        highlightThree={"Got my start in software and haven't looked back!"}
+        highlightOne={"Developed Wordpress and HTML/CSS sites."}
+        highlightTwo={"Created my first native mobile apps."}
+        highlightThree={
+          "Designed a premium beer series of Boston Beer Works that remains in circulation."
+        }
       />
     </Container>
   </OuterContainer>

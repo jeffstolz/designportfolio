@@ -136,11 +136,15 @@ const MobileHeartbeatPage = () => (
       imageAltTwo={"Urgent notification"}
     />
     <SectionHeader heading="Learnings">
-      My experience at Mobile Heartbeat consisted of a lot of firsts: building
-      and managing a team, leading design on a company-wide level, and working
-      within healthcare to name a few. As can be expected, mistakes were made
-      and lessons were learned. I value these accelerated periods of learning in
-      my career when I{" "}
+      <Highlight>
+        Our improvements to the user experience helped contribute to a 30% user
+        base growth in 18 months.
+      </Highlight>{" "}
+      Overall, my experience at Mobile Heartbeat consisted of a lot of firsts:
+      building and managing a team, leading design on a company-wide level, and
+      working within healthcare. As can be expected, mistakes were made and
+      lessons were learned. I value these accelerated periods of learning in my
+      career when I{" "}
       <Highlight>learn to be comfortable with discomfort</Highlight> and know
       when to ask for help and admit I don't know an answer.
     </SectionHeader>

@@ -24,6 +24,18 @@ const CaseStudies = () => (
         projectLink={"/theskills"}
       />
       <CaseStudyCard
+        imageSrc={Images.DragonThumbnail}
+        imageAlt={"Dragon Innovation case study"}
+        previewLabels={"Facilitation / Consulting / Interviewing"}
+        previewHeading={
+          "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
+        }
+        previewText={
+          "A love letter to product design sprints and the value they bring to proof of concepts."
+        }
+        projectLink={"/dragon"}
+      />
+      <CaseStudyCard
         imageSrc={Images.NeocovaThumbnail}
         imageAlt={"Neocova Design System case study"}
         previewLabels={"Design Systems / Enterprise Design / Consulting"}
