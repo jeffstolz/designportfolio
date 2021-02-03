@@ -25,11 +25,11 @@ const TheSkillsPage = () => (
     />
     <Background
       role={
-        "Led all design efforts, paired with a thoughtbot developer for implementation."
+        "Led all design efforts, paired with a Thoughtbot developer for implementation."
       }
       tools={"Ruby on Rails, Figma, Trello"}
     >
-      The Skills hired thoughtbot in 2020 to create a product for amateur
+      The Skills hired Thoughtbot in 2020 to create a product for amateur
       athletes to gain insight into how their idols train and compete. With a
       limited budget,{" "}
       <Highlight>

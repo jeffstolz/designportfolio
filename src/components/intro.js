@@ -21,7 +21,7 @@ const Intro = () => (
     <Fade delay={1000}>
       <Subheading>
         I'm a <DesignerText>product designer</DesignerText> and{" "}
-        <DeveloperText>front end developer</DeveloperText>.&nbsp;
+        <DeveloperText>front-end developer</DeveloperText>.&nbsp;
       </Subheading>
     </Fade>
     <Fade delay={2000}>
