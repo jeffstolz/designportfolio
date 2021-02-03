@@ -28,13 +28,13 @@ const NeocovaPage = () => (
         "An approach to providing structure for a rapidly growing company with products moving in multiple directions."
       }
       imageSrc={Images.NeocovaIndex}
-      imageAlt={"Mobile Heartbeat design solutions on mobile and web"}
+      imageAlt={"Neocova design system solutions"}
     />
     <Background
-      role={"Led all design efforts on a team of three designers"}
+      role={"Led all design efforts with a team of three Thoughtbot designers"}
       tools={"Figma, Mural, Trello"}
     >
-      In 2020, Neocova, a rising fintech company, came to thoughtbot with a
+      In 2020, Neocova, a rising fintech company, came to Thoughtbot with a
       not-so-unique problem: their suite of products, and team, were growing
       exponentially and in unruly directions. Products lacked visual unity and
       brand initiatives competed with each other. Developers didn't know which

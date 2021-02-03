@@ -30,18 +30,18 @@ const DragonPage = () => (
     />
     <Background
       role={
-        "Facilitated the design sprint with one other thoughtbot designer and the customer team"
+        "Facilitated the design sprint with one other Thoughtbot designer and the customer team"
       }
       tools={"Sketch, InVision"}
     >
-      While I've facilitated many design sprints at thoughtbot, I chose to
-      showcase this one for a specific reason:{" "}
+      While I've facilitated many design sprints, I chose to showcase this one
+      for a specific reason:{" "}
       <Highlight>
         by invalidating our customer's assumptions, we prevented them from
         spending surmountable time and money on an idea that probably would not
         succeed.
       </Highlight>{" "}
-      In 2019, Dragon Innovation, a manufacturing partner, hired thoughtbot to
+      In 2019, Dragon Innovation, a manufacturing partner, hired Thoughtbot to
       design and build a scheduling application for their clients launching
       initial product offerings. Because there was no customer validation of
       this concept going into the engagement, we convinced them to agree to a

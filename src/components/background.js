@@ -12,9 +12,9 @@ const Background = () => (
     <Container>
       <BackgroundCard
         title={"Senior Product Design Consultant"}
-        details={"thoughtbot, Oct 2018 - Current"}
+        details={"Thoughtbot, Oct 2018 - Current"}
         description={
-          "My most diverse role yet - thoughtbot designers assume the role of project manager, designer & front-end developer. Our clients range from early-stage startups to major corporations."
+          "My most diverse role yet - Thoughtbot designers assume the role of project manager, designer & front-end developer. Our clients range from early-stage startups to major corporations."
         }
         highlightOne={
           "Organized and conducted a multi-day workshop on facilitating design sprints."
