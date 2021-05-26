@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Link as ScrollLink } from "react-scroll"
 import Button from "./button"
@@ -11,20 +11,22 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 const Intro = () => (
   <Container id="top">
     <HeadingContainer>
-      <Fade>
+      <Fade delay={500}>
         <Heading>Hi, I'm Jeff</Heading>
       </Fade>
-      <Fade delay={250}>
-        <Wave src={Images.Wave} alt="" />
+      <Fade delay={750}>
+        <WaveAnimation>
+          <WaveIcon src={Images.Wave} alt="" />
+        </WaveAnimation>
       </Fade>
     </HeadingContainer>
-    <Fade delay={1000}>
+    <Fade delay={1500}>
       <Subheading>
         I'm a <DesignerText>product designer</DesignerText> and{" "}
         <DeveloperText>front-end developer</DeveloperText>.&nbsp;
       </Subheading>
     </Fade>
-    <Fade delay={2000}>
+    <Fade delay={2500}>
       <ButtonContainer>
         <ScrollLink
           activeClass="active"
@@ -63,8 +65,45 @@ const HeadingContainer = styled.div`
 const Heading = styled.h1`
   margin-bottom: 0.35em;
 `
+const wavekeyframes = css`
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(12deg);
+    }
+    20% {
+      transform: rotate(-6deg);
+    }
+    30% {
+      transform: rotate(12deg);
+    }
+    40% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(8deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+`
 
-const Wave = styled.img`
+const WaveAnimation = styled.span`
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50px 100px;
+  display: inline-block;
+  ${wavekeyframes};
+`
+
+const WaveIcon = styled.img`
   width: 3.5em;
   margin-bottom: -2.2em;
   margin-left: ${Spacing.xBase};
