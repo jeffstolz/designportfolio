@@ -1,16 +1,25 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
-import { Colors, Spacing } from "../../styles/variables"
+import { Colors, Spacing, Typography } from "../../styles/variables"
 
-const ImageRow = ({ imageSrcOne, imageAltOne, imageSrcTwo, imageAltTwo }) => (
+const ImageRow = ({
+  imageSrcOne,
+  imageAltOne,
+  imageDescriptionOne,
+  imageSrcTwo,
+  imageAltTwo,
+  imageDescriptionTwo,
+}) => (
   <Fade>
     <Container>
       <ImageContainerOne>
         <Image src={imageSrcOne} alt={imageAltOne} />
+        <Description>{imageDescriptionOne}</Description>
       </ImageContainerOne>
       <ImageContainerTwo>
         <Image src={imageSrcTwo} alt={imageAltTwo} />
+        <Description>{imageDescriptionTwo}</Description>
       </ImageContainerTwo>
     </Container>
   </Fade>
@@ -46,6 +55,13 @@ const Image = styled.img`
   max-width: ${Spacing.smallImageMaxWidth};
   outline: 2px solid ${Colors.gray1};
   outline-offset: -2px;
+  border: 1px solid red;
+`
+
+const Description = styled.p`
+  font-size: ${Typography.smallFontSize};
+  margin-top: ${Spacing.small};
+  max-width: ${Spacing.smallImageMaxWidth};
 `
 
 export default ImageRow

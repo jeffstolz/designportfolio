@@ -28,18 +28,15 @@ const MobileHeartbeatPage = () => (
       role={"Led all design efforts and managed a team of two designers."}
       tools={"Sketch, Zeplin, InVision, Usertesting.com, Jira"}
     >
-      When I was brought on to the team in 2017,{" "}
+      When I was brought on to the team in 2017, Mobile Heartbeat was a clinical
+      communication tool used daily in 92 hospitals. Although the product had a
+      deep userbase,{" "}
       <Highlight>
-        Mobile Heartbeat was a clinical communication tool used daily in 92
-        hospitals.
+        the company had not prioritized design in its past and end-users
+        reported that the product had grown dated, unintuitive, and frustrating.
       </Highlight>{" "}
-      Although the product had a deep userbase, the company had not prioritized
-      design in its past and end-users reported that the product had grown
-      dated, unintuitive, and frustrating. Physicians were rejecting the
-      application because it didn't support their specific workflow and urgent
-      communications were a burden. I was hired to build a design team,
-      establish a design culture, and lead a full redesign of their existing iOS
-      and Android applications.
+      I was hired to build a design team, establish a design culture, and lead a
+      full redesign of their existing iOS and Android applications.
     </Background>
     <Quote
       quote={
@@ -54,7 +51,12 @@ const MobileHeartbeatPage = () => (
       a cross-functional team to establish our product priorities and identify
       the core user needs. We chose to follow the Lean UX Canvas for the initial
       problem definition to help us maintain focus and establish measurable
-      outcomes.
+      outcomes. Our main findings:{" "}
+      <Highlight>
+        physicians were rejecting the application because it didn't support
+        their specific workflow and urgent communications were a burden.
+      </Highlight>{" "}
+      We validated these findings with extensive user testing.
     </SectionHeader>
     <FeaturedImage
       imageSrc={Images.MhDiscovery}
@@ -75,7 +77,7 @@ const MobileHeartbeatPage = () => (
     <Blocks
       theme={blueHeading}
       headingOne="Practical Interviews"
-      descriptionOne="The focus of my interviews was on practical skill assessments. This provides both an honest assessment and clear visibility into the role for both parties."
+      descriptionOne="The focus of my interviewing was on practical skill assessments. This provides both an honest assessment and clear visibility into the role for both parties."
       headingTwo="Filling in my Gaps"
       descriptionTwo="Every designer has weak spots. I had less confidence in my visual design skills at the time and wanted teammates that could bring that expertise to the role."
       headingThree="Diverse Backgrounds"
@@ -115,25 +117,51 @@ const MobileHeartbeatPage = () => (
       implementation. This included in-person user testing via InVision
       prototypes. We conducted these tests in hospitals throughout the country
       and evolved our designs based on the feedback. As a result, we were able
-      to begin development with confidence in our approach.
+      to begin development with confidence in our approach. After much testing,
+      our UI was inspired by native iOS patterns, as they were most familiar and
+      intuitive to our users.{" "}
+      <Highlight>
+        Often users would be interacting with our tool while running down a
+        hallway with their adrenaline racing. Hospitals are noisy, mobile, and
+        highly stressful environments - we needed to ensure our UI was as
+        intuitive and familiar as possible.
+      </Highlight>
     </SectionHeader>
     <ImageRow
       imageSrcOne={Images.MhSolutionOne}
-      imageAlt={"My status"}
+      imageAltOne={"My status"}
+      imageDescriptionOne={
+        "Giving users a dashboard view of their day helped them coordinate care faster with distributed teams."
+      }
       imageSrcTwo={Images.MhSolutionTwo}
       imageAltTwo={"Critical telemetry alert"}
+      imageDescriptionTwo={
+        "We added long-press and other power user functionality to help clinicians view and action on critical alerts faster."
+      }
     />
     <ImageRow
       imageSrcOne={Images.MhSolutionThree}
-      imageAlt={"Multi-unit selection"}
+      imageAltOne={"Multi-unit selection"}
+      imageDescriptionOne={
+        "Many physicians are moving between units and hospitals on a daily level - we made it easier for care teams to locate and communicate with them."
+      }
       imageSrcTwo={Images.MhSolutionFour}
       imageAltTwo={"Favorite contacts"}
+      imageDescriptionTwo={
+        "Not all care teams are unit based - we allowed users to favorite and build their own groups for easy access and collaboration."
+      }
     />
     <ImageRow
       imageSrcOne={Images.MhSolutionFive}
-      imageAlt={"Urgent message"}
+      imageAltOne={"Urgent message"}
+      imageDescriptionOne={
+        "We improved the visual design critical communications to cut through the clutter and ensure they're viewed and actioned on quickly."
+      }
       imageSrcTwo={Images.MhSolutionSix}
       imageAltTwo={"Urgent notification"}
+      imageDescriptionTwo={
+        "We experimented with sound and toast design to ensure critical alerts are never missed."
+      }
     />
     <SectionHeader heading="Learnings">
       <Highlight>
@@ -144,9 +172,8 @@ const MobileHeartbeatPage = () => (
       building and managing a team, leading design on a company-wide level, and
       working within healthcare. As can be expected, mistakes were made and
       lessons were learned. I value these accelerated periods of learning in my
-      career when I{" "}
-      <Highlight>learn to be comfortable with discomfort</Highlight> and know
-      when to ask for help and admit I don't know an answer.
+      career when I learn to be comfortable with discomfort and know when to ask
+      for help and admit I don't know an answer.
     </SectionHeader>
     <Blocks
       theme={redHeading}
