@@ -24,6 +24,7 @@ const Container = styled.section`
 
 const Heading = styled.h2`
   margin-bottom: ${Spacing.small};
+  max-width: 15em;
 `
 
 const Description = styled.p`

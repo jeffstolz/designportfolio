@@ -20,7 +20,7 @@ const DragonPage = () => (
     <SEO title="Dragon Innovation Case Study" />
     <Intro
       heading={
-        "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
+        "Breaking down a PDS that invalidated a concept & provided a path forward"
       }
       subheading={
         "A love letter to product design sprints and the value they bring to proof of concepts."
@@ -53,7 +53,7 @@ const DragonPage = () => (
       }
       source={"Problem Statement"}
     />
-    <SectionHeader heading="Understand">
+    <SectionHeader heading="Understanding the business & user problems">
       Because Dragon worked within a complex, niche industry, we spent a large
       portion of the Understand phase learning the business from their subject
       matter experts. I ran a "How Might We" exercise where we wrote down
@@ -70,7 +70,7 @@ const DragonPage = () => (
       imageSrc={Images.DragonNotes}
       imageAlt={"Product design exercise with MVP waterline"}
     />
-    <SectionHeader heading="Sketch">
+    <SectionHeader heading="Sketching & exploring solutions">
       With our initial research conducted, we began exploring solutions with
       broad strokes. I began with a "Crazy 8s" exercise to help get everyone in
       the creative spirit and explore concepts rapidly. We then did more
@@ -81,7 +81,7 @@ const DragonPage = () => (
       imageSrc={Images.DragonPath}
       imageAlt={"Product design exercise with MVP waterline"}
     />
-    <SectionHeader heading="Decide">
+    <SectionHeader heading="Coming together & forming a hypothesis">
       Wednesday was dedicated to our storyboard: our path forward inspired by
       the ideas of the week that we would prototype and test. This was a
       difficult exercise as the customer team was split on the direction
@@ -97,7 +97,7 @@ const DragonPage = () => (
       imageSrc={Images.DragonStoryboard}
       imageAlt={"Product design exercise with MVP waterline"}
     />
-    <SectionHeader heading="Prototype">
+    <SectionHeader heading="Prototyping the concept">
       We built the prototype in Sketch and the prototype in InVision (customer
       preference). We wrote an interview script we'd follow with each
       participant to ensure we consistently conducted the interviews and didn't
@@ -123,7 +123,7 @@ const DragonPage = () => (
       imageSrc={Images.DragonSolutionThree}
       imageAlt={"Dragon Innovation critical path"}
     />
-    <SectionHeader heading="Validate">
+    <SectionHeader heading="Evaluating the concept through interviewing">
       Thankfully, we had a solid group of eight interview participants, all
       desired end users for the new tool. Some of them had relationships with
       the customer, and we had to be careful about biases and failing the "Mom
@@ -143,7 +143,7 @@ const DragonPage = () => (
         />
       </ButtonLink>
     </SectionHeader>
-    <SectionHeader heading="Outcomes">
+    <SectionHeader heading="An invalidated approach & opportunity moving forward">
       The customer responded positively to the news that their idea was
       invalidated by the participants we interviewed the previous day.
       Additionally,{" "}

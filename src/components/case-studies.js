@@ -14,12 +14,12 @@ const CaseStudies = () => (
       <CaseStudyCard
         imageSrc={Images.SkillsThumbnail}
         imageAlt={"The Skills case study"}
-        previewLabels={"Product Management / SaaS Design / Ruby on Rails"}
+        previewLabels={"Product Management / Visual Design / Ruby on Rails"}
         previewHeading={
-          "Designing and Building an Online Education MVP in Six Weeks"
+          "Providing high school & amateur athletes with a place to learn from their idols"
         }
         previewText={
-          "An example around prioritizing features, mitigating assumptions, and building scalable software in a pinch."
+          "An example around prioritizing features, mitigating assumptions, and building an MVP within a six-week timeline."
         }
         projectLink={"/theskills"}
       />
@@ -28,7 +28,7 @@ const CaseStudies = () => (
         imageAlt={"Dragon Innovation case study"}
         previewLabels={"Facilitation / Consulting / Interviewing"}
         previewHeading={
-          "Breaking Down a PDS that Invalidated a Concept & Provided a Path Forward"
+          "Breaking down a PDS that invalidated a concept & provided a path forward"
         }
         previewText={
           "A love letter to product design sprints and the value they bring to proof of concepts."
@@ -40,7 +40,7 @@ const CaseStudies = () => (
         imageAlt={"Neocova Design System case study"}
         previewLabels={"Design Systems / Enterprise Design / Consulting"}
         previewHeading={
-          "Establishing a Design System for a Complex Enterprise Organization"
+          "Establishing a design system for a complex enterprise organization"
         }
         previewText={
           "An approach to providing structure for a rapidly growing company with products moving in multiple directions."
@@ -50,12 +50,12 @@ const CaseStudies = () => (
       <CaseStudyCard
         imageSrc={Images.MhThumbnail}
         imageAlt={"Mobile Heartbeat case study"}
-        previewLabels={"Design Leadership / Research / Mobile Design"}
+        previewLabels={"Design Leadership / Research / UX Design"}
         previewHeading={
-          "Redesigning a Deeply Embedded Clinical Communication Tool"
+          "Improving critical communications for clinicians in a hospital setting"
         }
         previewText={
-          "Lessons learned from establishing a design culture and redesigning an enterprise product with over 79k daily users."
+          "Lessons learned from establishing a design culture and redesigning a deeply embedded clinical tool with over 79k daily users."
         }
         projectLink={"/mobile-heartbeat"}
       />
