@@ -22,7 +22,7 @@ const NeocovaPage = () => (
     <SEO title="Neocova Case Study" />
     <Intro
       heading={
-        "Establishing a Design System for a Complex Enterprise Organization"
+        "Establishing a design system for a complex enterprise organization"
       }
       subheading={
         "An approach to providing structure for a rapidly growing company with products moving in multiple directions."
@@ -53,7 +53,7 @@ const NeocovaPage = () => (
       }
       source={"Head of Product, Neocova"}
     />
-    <SectionHeader heading="Research">
+    <SectionHeader heading="Determining scope & priorities as a group">
       We began the engagement with a comprehensive audit of their existing brand
       identity and UI components. We met with stakeholders and identified with
       the customer the elements that they wanted to keep, and which we could
@@ -72,7 +72,7 @@ const NeocovaPage = () => (
       imageSrc={Images.NeocovaExploration}
       imageAlt={"Design system dot map voting exercise"}
     />
-    <SectionHeader heading="Atomic Design System">
+    <SectionHeader heading="Atomic design methodology">
       I'm a big fan of atomic design systems for larger projects, especially
       with customers without prior design system experience. The chemistry
       analogy is understandable and elegant, and because this client worked in
@@ -106,7 +106,7 @@ const NeocovaPage = () => (
       imageSrc={Images.NeocovaSolutionThree}
       imageAlt={"Design system color use cases"}
     />
-    <SectionHeader heading="Evangelizing Adoption">
+    <SectionHeader heading="Evangelizing adoption">
       Although we worked alongside the customer throughout the engagement, we
       wanted to formally present the system to the broader company once it was
       completed to answer outstanding questions and increase visibility and

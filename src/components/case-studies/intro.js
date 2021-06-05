@@ -38,7 +38,7 @@ const TextContainer = styled.div``
 
 const Heading = styled.h1`
   color: ${Colors.white};
-  max-width: 20em;
+  max-width: 18em;
   margin-bottom: ${Spacing.xSmall};
 `
 

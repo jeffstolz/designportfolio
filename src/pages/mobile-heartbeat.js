@@ -17,16 +17,20 @@ const MobileHeartbeatPage = () => (
   <Layout>
     <SEO title="Mobile Heartbeat Case Study" />
     <Intro
-      heading={"Redesigning a Deeply Embedded Clinical Communication Tool"}
+      heading={
+        "Improving critical communications for clinicians in a hospital setting"
+      }
       subheading={
-        "Lessons learned from establishing a design culture and redesigning an enterprise product with over 79k daily users."
+        "Lessons learned from establishing a design culture and redesigning a deeply embedded clinical tool with over 79k daily users."
       }
       imageSrc={Images.MhHeader}
       imageAlt={"Mobile Heartbeat design solutions on mobile and web"}
     />
     <Background
-      role={"Led all design efforts and managed a team of two designers."}
-      tools={"Sketch, Zeplin, InVision, Usertesting.com, Jira"}
+      role={
+        "Led all iOS, Android, and web design efforts and managed a team of two designers."
+      }
+      tools={"Sketch, Zeplin, InVision, Usertesting.com, Appsee, Jira"}
     >
       When I was brought on to the team in 2017, Mobile Heartbeat was a clinical
       communication tool used daily in 92 hospitals. Although the product had a
@@ -40,18 +44,17 @@ const MobileHeartbeatPage = () => (
     </Background>
     <Quote
       quote={
-        "Having worked in a hospital for over ten years, I see communication as the biggest challenge for clinicians. In many cases, care teams spread throughout the campus must collaborate, diagnose, and act within minutes."
+        "Having worked in a hospital for over ten years, I see communication as the biggest challenge for clinicians. In many cases, care teams spread throughout the campus must collaborate, diagnose, and act within minutes. Shaving seconds off those processes can directly save lives."
       }
       source={"Charge Nurse, Mobile Heartbeat User"}
     />
-    <SectionHeader heading="Determining the Problem">
-      To start, we needed to evaluate our processes. The product roadmap
-      originally was a classic waterfall consisting of new features and customer
-      requests and lacked a clear direction forward. To resolve this, we created
-      a cross-functional team to establish our product priorities and identify
-      the core user needs. We chose to follow the Lean UX Canvas for the initial
-      problem definition to help us maintain focus and establish measurable
-      outcomes. Our main findings:{" "}
+    <SectionHeader heading="Reevaluating our processes & determining our core user needs">
+      The product roadmap was originally a classic waterfall consisting of new
+      features and customer requests that lacked a clear direction forward. To
+      resolve this, we created a cross-functional team to establish our product
+      priorities and identify the core user needs. We chose to follow the Lean
+      UX Canvas for the initial problem definition to help us maintain focus and
+      establish measurable outcomes. Our main findings:{" "}
       <Highlight>
         physicians were rejecting the application because it didn't support
         their specific workflow and urgent communications were a burden.
@@ -62,28 +65,19 @@ const MobileHeartbeatPage = () => (
       imageSrc={Images.MhDiscovery}
       imageAlt={"Lean UX Canvas product exploration"}
     />
-    <SectionHeader heading="Building a Team">
-      I was the first designer hired at the company and identified early that a
-      larger team would be required to handle the various design
-      responsibilities in the given timeline. This was my first experience
-      leading a team, and I interviewed both personal contacts and company
-      leaders to learn from their successes and failures before beginning my
-      search.{" "}
+    <SectionHeader heading="Using qualitative analytics to measure success">
+      We had very specfic KPIs for our redesign - to increase speed of critical
+      communications and increase user adoption, especially with the physicians
+      in our hospital systems.{" "}
       <Highlight>
-        My goal was to build a team that would foster transparency, continuous
-        improvement, and trust.
-      </Highlight>
+        We used Appsee to record sessions, track usage patterns, and capture
+        touch heatmaps.
+      </Highlight>{" "}
+      We experimented with the tool before conducting the product redesign to
+      test out the product and use the opportunity to learn more about our
+      existing user experiences.
     </SectionHeader>
-    <Blocks
-      theme={blueHeading}
-      headingOne="Practical Interviews"
-      descriptionOne="The focus of my interviewing was on practical skill assessments. This provides both an honest assessment and clear visibility into the role for both parties."
-      headingTwo="Filling in my Gaps"
-      descriptionTwo="Every designer has weak spots. I had less confidence in my visual design skills at the time and wanted teammates that could bring that expertise to the role."
-      headingThree="Diverse Backgrounds"
-      descriptionThree="I wanted to ensure that our team represented various backgrounds and perspectives so we could share and learn from each other."
-    />
-    <SectionHeader heading="Evangelizing User Empathy">
+    <SectionHeader heading="Evangelizing user empathy">
       Our users had highly specific and complex workflows, and we needed to
       thoroughly research and understand them before beginning our redesign.{" "}
       <Highlight>
@@ -97,7 +91,7 @@ const MobileHeartbeatPage = () => (
       imageSrc={Images.MhPersona}
       imageAlt={"User persona of Mobile Heartbeat charge nurse"}
     />
-    <SectionHeader heading="Establishing a Design Process">
+    <SectionHeader heading="Establishing a design process">
       I worked to build a culture of highly rapid, transparent, and
       collaborative design and prototyping. We began with brainstorming
       workshops, low-fidelity sketches, wireframes, and then increased in detail
@@ -112,7 +106,7 @@ const MobileHeartbeatPage = () => (
       imageSrc={Images.MhWireframe}
       imageAlt={"Wireframe design exploration"}
     />
-    <SectionHeader heading="Outcomes">
+    <SectionHeader heading="Solutions">
       We conducted extensive end-user testing to validate our solutions before
       implementation. This included in-person user testing via InVision
       prototypes. We conducted these tests in hospitals throughout the country
@@ -163,11 +157,14 @@ const MobileHeartbeatPage = () => (
         "We experimented with sound and toast design to ensure critical alerts are never missed."
       }
     />
-    <SectionHeader heading="Learnings">
+    <SectionHeader heading="Results & Learnings">
       <Highlight>
         Our improvements to the user experience helped contribute to a 30% user
         base growth in 18 months.
       </Highlight>{" "}
+      Although users reported an increase in speed of urgent communications, our
+      product team made the difficult decision to deprioritize the qualitative
+      analytics which affected our ability to track this KPI effectively.
       Overall, my experience at Mobile Heartbeat consisted of a lot of firsts:
       building and managing a team, leading design on a company-wide level, and
       working within healthcare. As can be expected, mistakes were made and
