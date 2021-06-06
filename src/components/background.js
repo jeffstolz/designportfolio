@@ -14,7 +14,7 @@ const Background = () => (
         title={"Senior Product Design Consultant"}
         details={"Thoughtbot, Oct 2018 - Current"}
         description={
-          "My most diverse role yet - Thoughtbot designers assume the role of project manager, designer & front-end developer. Our clients range from early-stage startups to major corporations."
+          "Led cross-functional client teams for design sprints/concept explorations, MVP design & development, foundational design systems, and agile process improvement efforts. Deeply embedded with developers to implement software in multiple languages."
         }
         highlightOne={
           "Organized and conducted a multi-day workshop on facilitating design sprints."
@@ -26,7 +26,7 @@ const Background = () => (
         title={"Design Lead"}
         details={"Mobile Heartbeat, Feb 2017 - Oct 2018"}
         description={
-          "As the first designer on, I built up a team of three, established a design culture, and led the redesign of a clinical product with over 79k daily users in over 92 hospitals."
+          "As the first designer hired, I built up a team of three, established a design culture, and led the redesign of all iOS, Android, and web applications. Products contained over 79k daily users in over 92 hospitals."
         }
         highlightOne={"Helped grow the active user base by 30% in 18 months."}
         highlightTwo={
@@ -40,7 +40,7 @@ const Background = () => (
         title={"Senior Design Consultant"}
         details={"Pegasystems, Sep 2016 - Feb 2017"}
         description={
-          "My first experience with consulting where I embedded with teams across the country to lead their UX and front-end implementation efforts."
+          "Embedded with Pega teams across the country to lead their UX and front-end implementation efforts."
         }
         highlightOne={"Established a design system used by over 50 developers."}
         highlightTwo={"Led design workshops with customer teams."}
@@ -50,11 +50,13 @@ const Background = () => (
         title={"UX Designer"}
         details={"HMH Labs, Jul 2013 - Sep 2016"}
         description={
-          "A freelancing gig transitioned into a full-time opportunity with a startup, which led to us being acquired by an international publisher. We became their R&D team."
+          "An original member of SchoolChapters before being acquired by Houghton Mifflin Harcourt. We became HMH Labs, a cross-functional/agile internal lab focused on R&D in the EdTech space."
         }
-        highlightOne={"Acquired by HMH."}
+        highlightOne={
+          "Coded in Ruby on Rails and participated in design sprints."
+        }
         highlightTwo={
-          "Learned how to code in Rails & participated in my first design sprint."
+          "Designed HMH Marketplace - users included Microsoft, Google, & Highlights Magazine."
         }
         highlightThree={"Completed the Firehose Coding Bootcamp."}
       />
@@ -64,8 +66,8 @@ const Background = () => (
         description={
           "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
         }
-        highlightOne={"Developed Wordpress and HTML/CSS sites."}
-        highlightTwo={"Created my first native mobile apps."}
+        highlightOne={"Designed web and native mobile apps."}
+        highlightTwo={" Developed Wordpress and HTML/CSS sites."}
         highlightThree={
           "Designed a premium beer series of Boston Beer Works that remains in circulation."
         }

@@ -11,7 +11,7 @@ import Blocks from "../components/case-studies/blocks"
 import ImageRow from "../components/case-studies/image-row"
 import Footer from "../components/case-studies/footer"
 import { Images } from "../images"
-import { redHeading, blueHeading } from "../components/themes"
+import { redHeading } from "../components/themes"
 
 const MobileHeartbeatPage = () => (
   <Layout>
