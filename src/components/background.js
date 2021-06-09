@@ -11,7 +11,7 @@ const Background = () => (
     </Fade>
     <Container>
       <BackgroundCard
-        title={"Senior Product Design Consultant"}
+        title={"Senior Product Designer"}
         details={"Thoughtbot, Oct 2018 - Current"}
         description={
           "Led cross-functional client teams for design sprints/concept explorations, MVP design & development, foundational design systems, and agile process improvement efforts. Deeply embedded with developers to implement software in multiple languages."
@@ -19,7 +19,7 @@ const Background = () => (
         highlightOne={
           "Organized and conducted a multi-day workshop on facilitating design sprints."
         }
-        highlightTwo={"Learned how to code in React, React Native, and Elm."}
+        highlightTwo={"Coded in React, React Native, and Elm."}
         highlightThree={"Co-facilitated an over 100 attendee design summit."}
       />
       <BackgroundCard
@@ -40,7 +40,7 @@ const Background = () => (
         title={"Senior Design Consultant"}
         details={"Pegasystems, Sep 2016 - Feb 2017"}
         description={
-          "Embedded with Pega teams across the country to lead their UX and front-end implementation efforts."
+          "Embedded with Pega teams across the country to lead their UX efforts and implement front-end code."
         }
         highlightOne={"Established a design system used by over 50 developers."}
         highlightTwo={"Led design workshops with customer teams."}
@@ -67,7 +67,7 @@ const Background = () => (
           "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
         }
         highlightOne={"Designed web and native mobile apps."}
-        highlightTwo={" Developed Wordpress and HTML/CSS sites."}
+        highlightTwo={"Developed Wordpress and HTML/CSS sites."}
         highlightThree={
           "Designed a premium beer series of Boston Beer Works that remains in circulation."
         }
