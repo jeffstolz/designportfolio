@@ -12,21 +12,21 @@ const CaseStudies = () => (
     </Fade>
     <Container>
       <CaseStudyCard
-        imageSrc={Images.SkillsThumbnail}
-        imageAlt={"The Skills case study"}
-        previewLabels={"Product Management / Visual Design / Ruby on Rails"}
+        imageSrc={Images.AdsThumbnail}
+        imageAlt={"ADS case study"}
+        previewLabels={"UX Design / Design Systems / Enterprise Design"}
         previewHeading={
-          "Providing high school & amateur athletes with a place to learn from their idols"
+          "Improving speed & accuracy of quoting for enterprise salespeople"
         }
         previewText={
-          "An example around prioritizing features, mitigating assumptions, and building an MVP within a six-week timeline."
+          "An approach to reducing cognitive load for a data-heavy process and providing structure to a rapidly growing organization."
         }
-        projectLink={"/theskills"}
+        projectLink={"/ads"}
       />
       <CaseStudyCard
         imageSrc={Images.DragonThumbnail}
         imageAlt={"Dragon Innovation case study"}
-        previewLabels={"Facilitation / Consulting / Interviewing"}
+        previewLabels={"Facilitation / Consulting / Research"}
         previewHeading={
           "Breaking down a PDS that invalidated a concept & provided a path forward"
         }
@@ -36,21 +36,21 @@ const CaseStudies = () => (
         projectLink={"/dragon"}
       />
       <CaseStudyCard
-        imageSrc={Images.NeocovaThumbnail}
-        imageAlt={"Neocova Design System case study"}
-        previewLabels={"Design Systems / Enterprise Design / Consulting"}
+        imageSrc={Images.SkillsThumbnail}
+        imageAlt={"The Skills case study"}
+        previewLabels={"Product Management / Visual Design / SaaS Design"}
         previewHeading={
-          "Establishing a design system for a complex enterprise organization"
+          "Providing high school & amateur athletes with a place to learn from their idols"
         }
         previewText={
-          "An approach to providing structure for a rapidly growing company with products moving in multiple directions."
+          "An example around prioritizing features, mitigating assumptions, and building an MVP within a six-week timeline."
         }
-        projectLink={"/neocova"}
+        projectLink={"/theskills"}
       />
       <CaseStudyCard
         imageSrc={Images.MhThumbnail}
         imageAlt={"Mobile Heartbeat case study"}
-        previewLabels={"Design Leadership / Research / UX Design"}
+        previewLabels={"UX Design / Research / Mobile Design"}
         previewHeading={
           "Improving critical communications for clinicians in a hospital setting"
         }
