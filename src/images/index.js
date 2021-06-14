@@ -1,3 +1,11 @@
+import AdsApply from "./ads-apply.jpg"
+import AdsDashboard from "./ads-dashboard.jpg"
+import AdsData from "./ads-data.jpg"
+import AdsDesignSystem from "./ads-design-system.jpg"
+import AdsHeader from "./ads-header.png"
+import AdsInline from "./ads-inline.jpg"
+import AdsSketches from "./ads-sketches.jpg"
+import AdsThumbnail from "./ads-thumbnail.jpg"
 import DragonIndex from "./dragon-index.png"
 import DragonInterviewScript from "./dragon-interview-script.pdf"
 import DragonNotes from "./dragon-notes.jpg"
@@ -43,6 +51,14 @@ import SkillsWireframes from "./skills-wireframes.jpg"
 import Wave from "./wave.svg"
 
 export const Images = {
+  AdsApply,
+  AdsDashboard,
+  AdsData,
+  AdsDesignSystem,
+  AdsHeader,
+  AdsInline,
+  AdsSketches,
+  AdsThumbnail,
   DragonIndex,
   DragonInterviewScript,
   DragonNotes,
