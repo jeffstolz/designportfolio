@@ -12,7 +12,7 @@ const Background = () => (
     <Container>
       <BackgroundCard
         title={"Senior Product Designer"}
-        details={"Thoughtbot, Oct 2018 - Current"}
+        details={"Thoughtbot, 2018 - 2021"}
         description={
           "Led cross-functional client teams for design sprints/concept explorations, MVP design & development, foundational design systems, and agile process improvement efforts. Deeply embedded with developers to implement software in multiple languages."
         }
@@ -24,7 +24,7 @@ const Background = () => (
       />
       <BackgroundCard
         title={"Design Lead"}
-        details={"Mobile Heartbeat, Feb 2017 - Oct 2018"}
+        details={"Mobile Heartbeat, 2017 - 2018"}
         description={
           "As the first designer hired, I built up a team of three, established a design culture, and led the redesign of all iOS, Android, and web applications. Products contained over 79k daily users in over 92 hospitals."
         }
@@ -38,7 +38,7 @@ const Background = () => (
       />
       <BackgroundCard
         title={"Senior Design Consultant"}
-        details={"Pegasystems, Sep 2016 - Feb 2017"}
+        details={"Pegasystems, 2016 - 2017"}
         description={
           "Embedded with Pega teams across the country to lead their UX efforts and implement front-end code."
         }
@@ -48,7 +48,7 @@ const Background = () => (
       />
       <BackgroundCard
         title={"UX Designer"}
-        details={"HMH Labs, Jul 2013 - Sep 2016"}
+        details={"HMH Labs, 2013 - 2016"}
         description={
           "An original member of SchoolChapters before being acquired by Houghton Mifflin Harcourt. We became HMH Labs, a cross-functional/agile internal lab focused on R&D in the EdTech space."
         }
@@ -62,7 +62,7 @@ const Background = () => (
       />
       <BackgroundCard
         title={"Freelance Designer"}
-        details={"Jeff Stolz Design, Nov 2011 - Jul 2013"}
+        details={"Jeff Stolz Design, 2011 - 2013"}
         description={
           "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
         }

@@ -15,6 +15,7 @@ export const baseFontSize = "1em"
 export const mediumFontSize = "1.5em"
 export const smallHeadingFontSize = "2em"
 export const headingFontSize = "3em"
+export const largeHeadingFontSize = "3.5em"
 
 export const largeLineHeight = "1.2em"
 export const hugeLineHeight = "1.4em"
