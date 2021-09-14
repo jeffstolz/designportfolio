@@ -22,8 +22,7 @@ const Intro = () => (
     </HeadingContainer>
     <Fade delay={1500}>
       <Subheading>
-        I'm a <DesignerText>product designer</DesignerText> and{" "}
-        <DeveloperText>UX developer</DeveloperText>.&nbsp;
+        I'm a <RedText>product designer{" "}</RedText>who creates simple & powerful experiences.
       </Subheading>
     </Fade>
     <Fade delay={2500}>
@@ -63,6 +62,7 @@ const HeadingContainer = styled.div`
 `
 
 const Heading = styled.h1`
+  font-size: ${Typography.largeHeadingFontSize};
   margin-bottom: 0.35em;
 `
 const wavekeyframes = css`
@@ -105,7 +105,7 @@ const WaveAnimation = styled.span`
 
 const WaveIcon = styled.img`
   width: 3.5em;
-  margin-bottom: -2.2em;
+  margin-bottom: -2.4em;
   margin-left: ${Spacing.xBase};
 
   @media (max-width: ${Spacing.smallBreakPoint}) {
@@ -117,6 +117,7 @@ const WaveIcon = styled.img`
 
 const Subheading = styled.h2`
   ${Typography.subheading};
+  color: ${Colors.gray4};
   margin-bottom: ${Spacing.base};
 
   @media (max-width: ${Spacing.breakPoint}) {
@@ -124,12 +125,8 @@ const Subheading = styled.h2`
   }
 `
 
-const DesignerText = styled.span`
+const RedText = styled.span`
   color: ${Colors.red};
-`
-
-const DeveloperText = styled.span`
-  color: ${Colors.blue};
 `
 
 const ButtonContainer = styled.div`

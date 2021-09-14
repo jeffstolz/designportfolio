@@ -1,9 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import Fade from "react-reveal/Fade"
-import Button from "./button"
-import { primaryDark } from "./themes"
-import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Skills = () => (
@@ -11,58 +8,37 @@ const Skills = () => (
     <Container>
       <Column>
         <Fade>
-          <Heading>How I Design</Heading>
+          <Heading>How I Work</Heading>
           <DesignHeading>Tools</DesignHeading>
           <Description>
-            Figma, Photoshop, Mural, Trello, UserTesting, The Noun Project,
-            Iconify, Unsplash, Figmotion, Coolors, pen & paper, lots of sticky
-            notes.
+            Figma, Sketch, Miro, Mural, UserZoom, UserTesting, InVision, Zeplin, pen & paper, lots of sticky notes.
+          </Description>
+          <DesignHeading>Technologies</DesignHeading>
+          <Description>
+            React, React Native, Ruby on Rails, HTML5, CSS3, SCSS, Git, <LinkText href="https://github.com/jeffstolz/gatsby-portfolio">Gatsby</LinkText>, Middleman.
           </Description>
           <DesignHeading>Methods</DesignHeading>
           <Description>
-            Jobs-To-Be-Done, GV Design Sprints, Atomic Design Systems, Lean UX
-            Canvas, HEART, personas, card sorting, frequent / informal user
-            testing.
+            Jobs-To-Be-Done, <LinkText href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">GV Design Sprints</LinkText>, Atomic Design Systems, Lean UX
+            Canvas, HEART, Agile, Styled Components, BEM, ITCSS.
           </Description>
-          <Divider />
-          <SmallDescription>
-            To get a sense of how I think, check out this (geeky) article I
-            wrote about facilitating design sprints.
-          </SmallDescription>
-          <ButtonLink href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
-            <Button
-              theme={primaryDark}
-              label={"View Article"}
-              icon={<FaArrowRight />}
-            />
-          </ButtonLink>
         </Fade>
       </Column>
       <Column>
         <Fade>
-          <Heading>How I Develop</Heading>
-          <DevelopHeading>Technologies</DevelopHeading>
+          <Heading>What I Value</Heading>
+          <DevelopHeading>End-to-End Collaboration</DevelopHeading>
           <Description>
-            React, React Native, Ruby on Rails, Elm (novice), HTML5, CSS3, SCSS,
-            Git, Gatsby, Middleman.
+            From early conception through implementation, it is important to harness the value of the full team through the entire process.
           </Description>
-          <DevelopHeading>Methods</DevelopHeading>
+          <DevelopHeading>Accessibility Always</DevelopHeading>
           <Description>
-            Styled Components, BEM, ITCSS, A11y Project, squashed / focused pull
-            requests.
+            It is our responsibility as designers to keep accessibility at the heart of our user experiences.
           </Description>
-          <Divider />
-          <SmallDescription>
-            For a good example of how I like to code, check out the repo to this
-            site.
-          </SmallDescription>
-          <ButtonLink href="https://github.com/jeffstolz/gatsby-portfolio">
-            <Button
-              theme={primaryDark}
-              label={"View Codebase"}
-              icon={<FaArrowRight />}
-            />
-          </ButtonLink>
+          <DevelopHeading>Shipping Fast & Often</DevelopHeading>
+          <Description>
+            Formal signoffs and deep documentation slow delivery. By reducing control & trusting our team, we can ship often, respond to user feedback, and mitigate risk.
+          </Description>
         </Fade>
       </Column>
     </Container>
@@ -132,27 +108,12 @@ const Description = styled.p`
   }
 `
 
-const Divider = styled.hr`
-  border: 1px solid ${Colors.gray4};
-  width: ${Spacing.base};
-  margin-left: 0;
-  margin-bottom: ${Spacing.base};
-`
+const LinkText = styled.a`
+  color: ${Colors.white};
 
-const SmallDescription = styled.p`
-  width: 75%;
-  font-size: ${Typography.smallFontSize};
-  color: ${Colors.gray3};
-  margin-bottom: ${Spacing.xBase};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    width: 100%;
+  &:hover {
+    color: ${Colors.gray1};
   }
-`
-
-const ButtonLink = styled.a`
-  display: flex;
-  text-decoration: none;
 `
 
 export default Skills
