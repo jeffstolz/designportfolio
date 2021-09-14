@@ -64,6 +64,10 @@ const HeadingContainer = styled.div`
 const Heading = styled.h1`
   font-size: ${Typography.largeHeadingFontSize};
   margin-bottom: 0.35em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    font-size: ${Typography.smallHeadingFontSize};
+  }
 `
 const wavekeyframes = css`
   @keyframes wave-animation {
