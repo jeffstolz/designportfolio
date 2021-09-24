@@ -27,17 +27,17 @@ const Skills = () => (
       <Column>
         <Fade>
           <Heading>What I Value</Heading>
+          <DevelopHeading>Cross-Functional Teams</DevelopHeading>
+          <Description>
+            I do my best work when embedded in multi-disciplinary teams, defining objectives alongside product managers and implementing them alongside developers.
+          </Description>
           <DevelopHeading>End-to-End Collaboration</DevelopHeading>
           <Description>
             From early conception through implementation, it is important to harness the value of the full team through the entire process.
           </Description>
-          <DevelopHeading>Accessibility Always</DevelopHeading>
-          <Description>
-            It is our responsibility as designers to keep accessibility at the heart of our user experiences.
-          </Description>
           <DevelopHeading>Shipping Fast & Often</DevelopHeading>
           <Description>
-            Formal signoffs and deep documentation slow delivery. By reducing control & trusting our team, we can ship often, respond to user feedback, and mitigate risk.
+            Formal signoffs and deep documentation slow delivery. By reducing control & trusting our teams, we can ship often, respond to user feedback, and mitigate risk.
           </Description>
         </Fade>
       </Column>
