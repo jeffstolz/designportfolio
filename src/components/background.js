@@ -11,19 +11,19 @@ const Background = () => (
     </Fade>
     <Container>
       <BackgroundCard
-        title={"Senior Product Designer"}
+        title={"Senior Product Designer / Developer"}
         details={"Thoughtbot, 2018 - 2021"}
         description={
-          "Led cross-functional client teams for design sprints/concept explorations, MVP design & development, foundational design systems, and agile process improvement efforts. Deeply embedded with developers to implement software in multiple languages."
+          "Led cross-functional client teams through design sprints, MVP design & development, and foundational design systems. Deeply embedded with developers to implement code in React, React Native, Ruby on Rails, and Elm."
         }
         highlightOne={
-          "Organized and conducted a multi-day workshop on facilitating design sprints."
+          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
         }
-        highlightTwo={"Coded in React, React Native, and Elm."}
-        highlightThree={"Co-facilitated an over 100 attendee design summit."}
+        highlightTwo={"Conducted code / pull request reviews, audits, and pair programming with customer teams."}
+        highlightThree={"Mentored designers on HTML & CSS best practices."}
       />
       <BackgroundCard
-        title={"Design Lead"}
+        title={"UX Lead"}
         details={"Mobile Heartbeat, 2017 - 2018"}
         description={
           "As the first designer hired, I built up a team of three, established a design culture, and led the redesign of all iOS, Android, and web applications. Products contained over 79k daily users in over 92 hospitals."
@@ -37,23 +37,23 @@ const Background = () => (
         }
       />
       <BackgroundCard
-        title={"Senior Design Consultant"}
+        title={"Senior UI Solutions Developer"}
         details={"Pegasystems, 2016 - 2017"}
         description={
-          "Embedded with Pega teams across the country to lead their UX efforts and implement front-end code."
+          "Embedded with Pega teams across the country to lead their UX efforts and implement front end code."
         }
         highlightOne={"Established a design system used by over 50 developers."}
-        highlightTwo={"Led design workshops with customer teams."}
+        highlightTwo={"Built custom interfaces within the Pega platform."}
         highlightThree={"Earned the Pega System Architect certification."}
       />
       <BackgroundCard
-        title={"UX Designer"}
+        title={"UX Designer / Developer"}
         details={"HMH Labs, 2013 - 2016"}
         description={
           "An original member of SchoolChapters before being acquired by Houghton Mifflin Harcourt. We became HMH Labs, a cross-functional/agile internal lab focused on R&D in the EdTech space."
         }
         highlightOne={
-          "Coded in Ruby on Rails and participated in design sprints."
+          "Worked alongside developers to implement markup & styling in Ruby on Rails."
         }
         highlightTwo={
           "Designed HMH Marketplace - users included Microsoft, Google, & Highlights Magazine."
@@ -61,7 +61,7 @@ const Background = () => (
         highlightThree={"Completed the Firehose Coding Bootcamp."}
       />
       <BackgroundCard
-        title={"Freelance Designer"}
+        title={"Freelance Designer / Developer"}
         details={"Jeff Stolz Design, 2011 - 2013"}
         description={
           "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
@@ -76,7 +76,9 @@ const Background = () => (
   </OuterContainer>
 )
 
-const OuterContainer = styled.section``
+const OuterContainer = styled.section`
+  padding-top: ${Spacing.xxHuge};
+`
 
 const Header = styled.h2`
   padding-left: ${Spacing.sectionPadding};
