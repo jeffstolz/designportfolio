@@ -123,6 +123,7 @@ const Subheading = styled.h2`
   ${Typography.subheading};
   color: ${Colors.gray4};
   margin-bottom: ${Spacing.base};
+  max-width: 28em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     max-width: 14em;
