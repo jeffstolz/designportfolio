@@ -11,16 +11,16 @@ const Background = () => (
     </Fade>
     <Container>
       <BackgroundCard
-        title={"Senior Product Designer / Developer"}
+        title={"Senior Product Designer"}
         details={"Thoughtbot, 2018 - 2021"}
         description={
           "Led cross-functional client teams through design sprints, MVP design & development, and foundational design systems. Deeply embedded with developers to implement code in React, React Native, Ruby on Rails, and Elm."
         }
         highlightOne={
-          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
+          "Organized and conducted a multi-day workshop on facilitating design sprints."
         }
-        highlightTwo={"Conducted code / pull request reviews, audits, and pair programming with customer teams."}
-        highlightThree={"Mentored designers on HTML & CSS best practices."}
+        highlightTwo={"Wrote responsive, accessible, scalable, and maintainable production markup and styling."}
+        highlightThree={"Conducted code / pull request reviews, audits, and pair programming with customer teams."}
       />
       <BackgroundCard
         title={"UX Lead"}
@@ -47,21 +47,21 @@ const Background = () => (
         highlightThree={"Earned the Pega System Architect certification."}
       />
       <BackgroundCard
-        title={"UX Designer / Developer"}
+        title={"UX Designer"}
         details={"HMH Labs, 2013 - 2016"}
         description={
           "An original member of SchoolChapters before being acquired by Houghton Mifflin Harcourt. We became HMH Labs, a cross-functional/agile internal lab focused on R&D in the EdTech space."
         }
         highlightOne={
-          "Worked alongside developers to implement markup & styling in Ruby on Rails."
+          "Designed HMH Marketplace - users included Microsoft, Google, & Highlights Magazine."
         }
         highlightTwo={
-          "Designed HMH Marketplace - users included Microsoft, Google, & Highlights Magazine."
+          "Worked alongside developers to implement markup & styling in Ruby on Rails."
         }
         highlightThree={"Completed the Firehose Coding Bootcamp."}
       />
       <BackgroundCard
-        title={"Freelance Designer / Developer"}
+        title={"Freelance Designer"}
         details={"Jeff Stolz Design, 2011 - 2013"}
         description={
           "After transitioning from a career in architecture, I got my feet wet in software design/development by freelancing and learning through experience."
@@ -77,7 +77,6 @@ const Background = () => (
 )
 
 const OuterContainer = styled.section`
-  padding-top: ${Spacing.xxHuge};
 `
 
 const Header = styled.h2`
