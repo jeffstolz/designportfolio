@@ -22,7 +22,8 @@ const Intro = () => (
     </HeadingContainer>
     <Fade delay={1500}>
       <Subheading>
-        I'm a <RedText>product designer{" "}</RedText>who creates simple & powerful experiences.
+        I'm a <RedText>product designer </RedText>who creates simple & powerful
+        experiences.
       </Subheading>
     </Fade>
     <Fade delay={2500}>
@@ -36,7 +37,7 @@ const Intro = () => (
         >
           <Button
             theme={secondaryLight}
-            label={"Wecome!"}
+            label={"Welcome!"}
             icon={<FaArrowDown />}
           />
         </ScrollLink>
