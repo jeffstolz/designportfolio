@@ -31,12 +31,6 @@ const Contact = () => (
         </LinkItem>
         <LinkItem>
           <LinkText href="https://www.linkedin.com/in/jeff-stolz-17666725/">
-            LinkedIn
-          </LinkText>
-          <Slash aria-hidden="true">/</Slash>
-        </LinkItem>
-        <LinkItem>
-          <LinkText href={Images.JeffStolzResume} download>
             Resume
           </LinkText>
         </LinkItem>
