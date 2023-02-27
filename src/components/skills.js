@@ -27,7 +27,7 @@ const Skills = () => (
             </LinkText>
             , Middleman.
           </Description>
-          <DesignHeading>Influences</DesignHeading>
+          <DesignHeading>Influences & Resources</DesignHeading>
           <Description>
             UX Planet, Smashing Magazine, UX Collective, UXmatters, NNGroup,
             Brad Frost, Alla Kholmatova, Erika Hall, Jared Spool, Chris Messina,
