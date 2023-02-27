@@ -1,48 +1,51 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import { Link as ScrollLink } from "react-scroll"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Navbar = () => (
   <Container id="top">
-    <div>
-      <Logo href="/">Jeff Stolz</Logo>
-    </div>
-    <NavList>
-      <NavItem>
-        <ScrollLink
-          activeClass="active"
-          to={"skills"}
-          spy={true}
-          smooth={true}
-          duration={1000}
-        >
-          <NavLink>About</NavLink>
-        </ScrollLink>
-      </NavItem>
-      <NavItem>
-        <ScrollLink
-          activeClass="active"
-          to={"case-studies"}
-          spy={true}
-          smooth={true}
-          duration={1000}
-        >
-          <NavLink>Work</NavLink>
-        </ScrollLink>
-      </NavItem>
-      <NavItem>
-        <ScrollLink
-          activeClass="active"
-          to={"footer"}
-          spy={true}
-          smooth={true}
-          duration={1000}
-        >
-          <NavLink>Contact</NavLink>
-        </ScrollLink>
-      </NavItem>
-    </NavList>
+    <Fade delay={500}>
+      <div>
+        <Logo href="/">Jeff Stolz</Logo>
+      </div>
+      <NavList>
+        <NavItem>
+          <ScrollLink
+            activeClass="active"
+            to={"skills"}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <NavLink>About</NavLink>
+          </ScrollLink>
+        </NavItem>
+        <NavItem>
+          <ScrollLink
+            activeClass="active"
+            to={"case-studies"}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <NavLink>Work</NavLink>
+          </ScrollLink>
+        </NavItem>
+        <NavItem>
+          <ScrollLink
+            activeClass="active"
+            to={"footer"}
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
+            <NavLink>Contact</NavLink>
+          </ScrollLink>
+        </NavItem>
+      </NavList>
+    </Fade>
   </Container>
 )
 
