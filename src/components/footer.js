@@ -7,7 +7,7 @@ import { FaArrowUp } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Footer = () => (
-  <Container>
+  <Container id="footer">
     <ScrollLink
       activeClass="active"
       to={"top"}

@@ -9,7 +9,7 @@ import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Intro = () => (
-  <Container id="top">
+  <Container id="intro">
     <HeadingContainer>
       <Fade delay={500}>
         <Heading>Hi, I'm Jeff</Heading>
