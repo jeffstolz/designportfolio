@@ -11,6 +11,22 @@ const Background = () => (
     </Fade>
     <Container>
       <BackgroundCard
+        title={"Senior Designer"}
+        details={"HPE, 2021 - Current"}
+        description={
+          "Led cross-functional client teams through design sprints, MVP design & development, and foundational design systems. Deeply embedded with developers to implement code in React, React Native, Ruby on Rails, and Elm."
+        }
+        highlightOne={
+          "Organized and conducted a multi-day workshop on facilitating design sprints."
+        }
+        highlightTwo={
+          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
+        }
+        highlightThree={
+          "Conducted code / pull request reviews, audits, and pair programming with customer teams."
+        }
+      />
+      <BackgroundCard
         title={"Senior Product Designer"}
         details={"Thoughtbot, 2018 - 2021"}
         description={
@@ -19,8 +35,12 @@ const Background = () => (
         highlightOne={
           "Organized and conducted a multi-day workshop on facilitating design sprints."
         }
-        highlightTwo={"Wrote responsive, accessible, scalable, and maintainable production markup and styling."}
-        highlightThree={"Conducted code / pull request reviews, audits, and pair programming with customer teams."}
+        highlightTwo={
+          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
+        }
+        highlightThree={
+          "Conducted code / pull request reviews, audits, and pair programming with customer teams."
+        }
       />
       <BackgroundCard
         title={"UX Lead"}
@@ -77,6 +97,7 @@ const Background = () => (
 )
 
 const OuterContainer = styled.section`
+  padding-top: ${Spacing.xxHuge};
 `
 
 const Header = styled.h2`

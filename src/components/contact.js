@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
-import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Contact = () => (
-  <Container>
+  <Container id="contact">
     <Fade>
       <Heading>Let's Chat!</Heading>
     </Fade>
@@ -31,7 +30,7 @@ const Contact = () => (
         </LinkItem>
         <LinkItem>
           <LinkText href="https://www.linkedin.com/in/jeff-stolz-17666725/">
-            Resume
+            LinkedIn
           </LinkText>
         </LinkItem>
       </LinkList>

@@ -9,18 +9,28 @@ const Skills = () => (
       <Column>
         <Fade>
           <Heading>How I Work</Heading>
-          <DesignHeading>Tools</DesignHeading>
-          <Description>
-            Figma, Sketch, Miro, Mural, UserZoom, UserTesting, InVision, Zeplin, pen & paper, lots of sticky notes.
-          </Description>
-          <DesignHeading>Technologies</DesignHeading>
-          <Description>
-            React, React Native, Ruby on Rails, HTML5, CSS3, SCSS, Git, <LinkText href="https://github.com/jeffstolz/gatsby-portfolio">Gatsby</LinkText>, Middleman.
-          </Description>
           <DesignHeading>Methods</DesignHeading>
           <Description>
-            Jobs-To-Be-Done, <LinkText href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">GV Design Sprints</LinkText>, Atomic Design Systems, Lean UX
-            Canvas, HEART, Agile, Styled Components, BEM, ITCSS.
+            Jobs-To-Be-Done,{" "}
+            <LinkText href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
+              GV Design Sprints
+            </LinkText>
+            , Atomic Design Systems, Lean UX Canvas, HEART, Agile, Styled
+            Components, BEM, ITCSS.
+          </Description>
+          <DesignHeading>Tools & Technologies</DesignHeading>
+          <Description>
+            Figma, Miro, UserZoom, React, React Native, Ruby on Rails, HTML5,
+            CSS3, SCSS, Git,{" "}
+            <LinkText href="https://github.com/jeffstolz/gatsby-portfolio">
+              Gatsby
+            </LinkText>
+            , Middleman.
+          </Description>
+          <DesignHeading>Influences</DesignHeading>
+          <Description>
+            Figma, Sketch, Miro, Mural, UserZoom, UserTesting, InVision, Zeplin,
+            pen & paper, lots of sticky notes.
           </Description>
         </Fade>
       </Column>
@@ -29,15 +39,20 @@ const Skills = () => (
           <Heading>What I Value</Heading>
           <DevelopHeading>Cross-Functional Teams</DevelopHeading>
           <Description>
-            I do my best work when embedded in multi-disciplinary teams, defining objectives alongside product managers and implementing them alongside developers.
+            I do my best work when embedded in multi-disciplinary teams,
+            defining objectives alongside product managers and implementing them
+            alongside developers.
           </Description>
           <DevelopHeading>End-to-End Collaboration</DevelopHeading>
           <Description>
-            From early conception through implementation, it is important to harness the value of the full team through the entire process.
+            From early conception through implementation, it is important to
+            harness the value of the full team through the entire process.
           </Description>
           <DevelopHeading>Shipping Fast & Often</DevelopHeading>
           <Description>
-            Formal signoffs and deep documentation slow delivery. By reducing control & trusting our teams, we can ship often, respond to user feedback, and mitigate risk.
+            Formal signoffs and deep documentation slow delivery. By reducing
+            control & trusting our teams, we can ship often, respond to user
+            feedback, and mitigate risk.
           </Description>
         </Fade>
       </Column>
