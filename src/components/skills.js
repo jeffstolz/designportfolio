@@ -29,8 +29,9 @@ const Skills = () => (
           </Description>
           <DesignHeading>Influences</DesignHeading>
           <Description>
-            Figma, Sketch, Miro, Mural, UserZoom, UserTesting, InVision, Zeplin,
-            pen & paper, lots of sticky notes.
+            UX Planet, Smashing Magazine, UX Collective, UXmatters, NNGroup,
+            Brad Frost, Alla Kholmatova, Erika Hall, Jared Spool, Chris Messina,
+            Sarah Doody.
           </Description>
         </Fade>
       </Column>
