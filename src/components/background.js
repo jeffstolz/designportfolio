@@ -14,16 +14,16 @@ const Background = () => (
         title={"Senior Designer"}
         details={"HPE, 2021 - Current"}
         description={
-          "Led cross-functional client teams through design sprints, MVP design & development, and foundational design systems. Deeply embedded with developers to implement code in React, React Native, Ruby on Rails, and Elm."
+          "Led the design of complex cloud computer computing services spanning multiple platforms and workstreams. Helped evolve the design culture towards design thinking, design systems, and cross functional collaboration."
         }
         highlightOne={
-          "Organized and conducted a multi-day workshop on facilitating design sprints."
+          "Created, evangelized, and rolled out process improvement efforts across teams."
         }
         highlightTwo={
-          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
+          "Trained designers on best practices through share outs, design critiques, and 1:1 mentorship."
         }
         highlightThree={
-          "Conducted code / pull request reviews, audits, and pair programming with customer teams."
+          "Contributed towards expanding, refining, and evangelizing the global design system."
         }
       />
       <BackgroundCard
@@ -33,20 +33,20 @@ const Background = () => (
           "Led cross-functional client teams through design sprints, MVP design & development, and foundational design systems. Deeply embedded with developers to implement code in React, React Native, Ruby on Rails, and Elm."
         }
         highlightOne={
-          "Organized and conducted a multi-day workshop on facilitating design sprints."
+          "Mentored client teams and in-house designers on usability, accessibility, design system, and research."
         }
         highlightTwo={
-          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
+          "Organized and conducted a multi-day workshop on facilitating design sprints."
         }
         highlightThree={
-          "Conducted code / pull request reviews, audits, and pair programming with customer teams."
+          "Wrote responsive, accessible, scalable, and maintainable production markup and styling."
         }
       />
       <BackgroundCard
         title={"UX Lead"}
         details={"Mobile Heartbeat, 2017 - 2018"}
         description={
-          "As the first designer hired, I built up a team of three, established a design culture, and led the redesign of all iOS, Android, and web applications. Products contained over 79k daily users in over 92 hospitals."
+          "Responsible for the design of all company-wide initiatives, including clinical communication applications for iOS, Android, and web with over 79k daily users in over 92 hospitals. Started as the sole designer before hiring, scaling, and managing a team of three designers."
         }
         highlightOne={"Helped grow the active user base by 30% in 18 months."}
         highlightTwo={
@@ -60,7 +60,7 @@ const Background = () => (
         title={"Senior Design Consultant"}
         details={"Pegasystems, 2016 - 2017"}
         description={
-          "Embedded with Pega teams across the country to lead their UX efforts and implement front end code."
+          "Embedded with Pega teams across the country to lead their UX efforts and implement front end code. Mentored client teams on usability, design system, accessibility, and design thinking best practices."
         }
         highlightOne={"Established a design system used by over 50 developers."}
         highlightTwo={"Built custom interfaces within the Pega platform."}
@@ -70,11 +70,9 @@ const Background = () => (
         title={"UX Designer"}
         details={"HMH Labs, 2013 - 2016"}
         description={
-          "An original member of SchoolChapters before being acquired by Houghton Mifflin Harcourt. We became HMH Labs, a cross-functional/agile internal lab focused on R&D in the EdTech space."
+          "An original member of SchoolChapters before being acquired by Houghton Mifflin Harcourt. We became HMH Labs, a cross-functional/agile internal lab focused on R&D."
         }
-        highlightOne={
-          "Designed HMH Marketplace - users included Microsoft, Google, & Highlights Magazine."
-        }
+        highlightOne={"Designed web and mobile edtech products."}
         highlightTwo={
           "Worked alongside developers to implement markup & styling in Ruby on Rails."
         }
