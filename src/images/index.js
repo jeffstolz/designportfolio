@@ -16,6 +16,7 @@ import DragonSolutionThree from "./dragon-solution-3.jpg"
 import DragonStoryboard from "./dragon-storyboard.jpg"
 import DragonThumbnail from "./dragon-thumbnail.jpg"
 import Favicon from "./favicon.png"
+import Headshot from "./jeff_stolz.png"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
 import MhDesignProcessSketch from "./mh-design-process-sketch.jpg"
 import MhDiscovery from "./mh-discovery.jpg"
@@ -69,6 +70,7 @@ export const Images = {
   DragonStoryboard,
   DragonThumbnail,
   Favicon,
+  Headshot,
   JeffStolzResume,
   MhDesignProcessSketch,
   MhDiscovery,

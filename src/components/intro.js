@@ -10,38 +10,39 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Intro = () => (
   <Container id="intro">
-    <HeadingContainer>
-      <Fade delay={500}>
-        <Heading>Hi, I'm Jeff</Heading>
-      </Fade>
-      <Fade delay={750}>
-        <WaveAnimation>
-          <WaveIcon src={Images.Wave} alt="" />
-        </WaveAnimation>
-      </Fade>
-    </HeadingContainer>
-    <Fade delay={1500}>
-      <Subheading>
-        I'm a <RedText>product designer </RedText>who creates simple & powerful
-        experiences.
-      </Subheading>
-    </Fade>
-    <Fade delay={2500}>
-      <ButtonContainer>
-        <ScrollLink
-          activeClass="active"
-          to={"skills"}
-          spy={true}
-          smooth={true}
-          duration={1000}
-        >
-          <Button
-            theme={secondaryLight}
-            label={"Welcome!"}
-            icon={<FaArrowDown />}
-          />
-        </ScrollLink>
-      </ButtonContainer>
+    <Fade delay={800}>
+      <HeadshotContainer>
+        <Headshot src={Images.Headshot} alt="Picture of Jeff Stolz" />
+      </HeadshotContainer>
+      <ContentContainer>
+        <HeadingContainer>
+          <Heading>Hi, I'm Jeff</Heading>
+          <WaveAnimation>
+            <WaveIcon src={Images.Wave} alt="Animated icon of waving hand" />
+          </WaveAnimation>
+        </HeadingContainer>
+        <Subheading>
+          I'm a <RedText>product designer </RedText>who creates simple &
+          powerful experiences.
+        </Subheading>
+        <Fade delay={1200}>
+          <ButtonContainer>
+            <ScrollLink
+              activeClass="active"
+              to={"skills"}
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <Button
+                theme={secondaryLight}
+                label={"Welcome!"}
+                icon={<FaArrowDown />}
+              />
+            </ScrollLink>
+          </ButtonContainer>
+        </Fade>
+      </ContentContainer>
     </Fade>
   </Container>
 )
@@ -58,18 +59,45 @@ const Container = styled.section`
   }
 `
 
+const ContentContainer = styled.div`
+  margin-left: 10em;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    margin-left: 0;
+  }
+`
+
+const HeadshotContainer = styled.div`
+  display: flex;
+  position: relative;
+
+  @media (max-width: ${Spacing.breakPoint}) {
+    display: none;
+  }
+`
+
+const Headshot = styled.img`
+  position: absolute;
+  width: 25em;
+  left: -18.5em;
+  top: -5.5em;
+  border-radius: 100%;
+`
+
 const HeadingContainer = styled.div`
   display: flex;
+  position: relative;
 `
 
 const Heading = styled.h1`
   font-size: ${Typography.largeHeadingFontSize};
-  margin-bottom: 0.35em;
+  margin-bottom: 0.15em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     font-size: ${Typography.smallHeadingFontSize};
   }
 `
+
 const wavekeyframes = css`
   @keyframes wave-animation {
     0% {
@@ -102,6 +130,7 @@ const wavekeyframes = css`
 const WaveAnimation = styled.span`
   animation-name: wave-animation;
   animation-duration: 2.5s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   transform-origin: 50px 100px;
   display: inline-block;
@@ -124,10 +153,6 @@ const Subheading = styled.h2`
   ${Typography.subheading};
   color: ${Colors.gray4};
   margin-bottom: ${Spacing.base};
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    max-width: 14em;
-  }
 `
 
 const RedText = styled.span`

@@ -57,7 +57,7 @@ const Background = () => (
         }
       />
       <BackgroundCard
-        title={"Senior UI Solutions Developer"}
+        title={"Senior Design Consultant"}
         details={"Pegasystems, 2016 - 2017"}
         description={
           "Embedded with Pega teams across the country to lead their UX efforts and implement front end code."

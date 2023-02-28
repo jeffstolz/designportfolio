@@ -6,7 +6,7 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Navbar = () => (
   <Container id="top">
-    <Fade delay={500}>
+    <Fade delay={300}>
       <div>
         <Logo href="/">Jeff Stolz</Logo>
       </div>

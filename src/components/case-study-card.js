@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Link } from "gatsby"
 import Button from "./button"
-import { primaryLight } from "./themes"
+import { secondaryLight } from "./themes"
 import { FaArrowRight } from "react-icons/fa"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
@@ -26,7 +26,7 @@ const FeaturedWorkCard = ({
         <PreviewText>{previewText}</PreviewText>
         <ButtonLink to={projectLink}>
           <Button
-            theme={primaryLight}
+            theme={secondaryLight}
             label={"View Case Study"}
             icon={<FaArrowRight />}
           />
