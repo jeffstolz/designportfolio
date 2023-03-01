@@ -16,9 +16,9 @@ const Container = styled.div`
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.mediumFontWeight};
-  background-color: ${props => props.theme.bgColor};
-  color: ${props => props.theme.color};
-  border: 1px solid ${props => props.theme.borderColor};
+  background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.color};
+  border: 1px solid ${(props) => props.theme.borderColor};
   padding: 1.3em 2.8em 1.3em 1.6em;
   text-decoration: none;
   text-transform: uppercase;
@@ -28,9 +28,9 @@ const Container = styled.div`
 
   &:hover {
     cursor: pointer;
-    background-color: ${props => props.theme.hoverBgColor};
-    color: ${props => props.theme.hoverColor};
-    border: 1px solid ${props => props.theme.hoverBorderColor};
+    background-color: ${(props) => props.theme.hoverBgColor};
+    color: ${(props) => props.theme.hoverColor};
+    border: 1px solid ${(props) => props.theme.hoverBorderColor};
   }
 `
 

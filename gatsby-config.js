@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -32,6 +33,14 @@ module.exports = {
       resolve: `gatsby-plugin-s3`,
       options: {
         bucketName: "jeffstolz.com.s3-website.us-east-2.amazonaws.com",
+      },
+    },
+    {
+      resolve: "@mkitio/gatsby-theme-password-protect",
+      options: {
+        password: "jeffstolzdesign",
+        partialMatching: true,
+        pagePaths: ["/ads", "/dragon", "/theskills", "/mobile-heartbeat"],
       },
     },
     {
