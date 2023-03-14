@@ -74,7 +74,7 @@ const Subheading = styled.h2`
   color: ${Colors.gray4};
 
   @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.baseFontSize};
+    font-size: ${Typography.smallFontSize};
   }
 `
 
@@ -89,7 +89,7 @@ const Input = styled.input`
   border: solid 1px ${Colors.gray4};
   border-radius: ${Spacing.xSmall};
   margin: ${Spacing.medium} 0 ${Spacing.small} 0;
-  font-size: ${Spacing.mediumFontSize};
+  font-size: ${Typography.baseFontSize};
 `
 
 const Button = styled.button`

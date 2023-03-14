@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 import { Link as ScrollLink } from "react-scroll"
-import { Colors, Spacing, Typography } from "../styles/variables"
+import { Colors, Spacing } from "../styles/variables"
 
 const Navbar = () => (
   <Container id="top">

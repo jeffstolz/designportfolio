@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Intro from "../components/case-studies/intro"
 import Background from "../components/case-studies/background"
 import Highlight from "../components/case-studies/highlight"
@@ -15,7 +15,7 @@ import { redHeading } from "../components/themes"
 
 const MobileHeartbeatPage = () => (
   <Layout>
-    <SEO title="Mobile Heartbeat Case Study" />
+    <Seo title="Mobile Heartbeat Case Study" />
     <Intro
       heading={
         "Improving critical communications for clinicians in a hospital setting"

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Intro from "../components/case-studies/intro"
 import Background from "../components/case-studies/background"
 import Highlight from "../components/case-studies/highlight"
@@ -14,7 +14,7 @@ import { blueHeading, redHeading } from "../components/themes"
 
 const TheSkillsPage = () => (
   <Layout>
-    <SEO title="The Skills Case Study" />
+    <Seo title="The Skills Case Study" />
     <Intro
       heading={
         "Providing high school & amateur athletes with a place to learn from their idols"
