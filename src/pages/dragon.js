@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Intro from "../components/case-studies/intro"
 import Background from "../components/case-studies/background"
 import Highlight from "../components/case-studies/highlight"
@@ -17,7 +17,7 @@ import { Spacing } from "../styles/variables"
 
 const DragonPage = () => (
   <Layout>
-    <SEO title="Dragon Innovation Case Study" />
+    <Seo title="Dragon Innovation Case Study" />
     <Intro
       heading={
         "Breaking down a PDS that invalidated a concept & provided a path forward"

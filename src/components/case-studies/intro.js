@@ -51,7 +51,7 @@ const Subheading = styled.p`
 
 const Image = styled.img`
   width: 100%;
-  max-width: ${Spacing.imageMaxWidth};
+  max-width: ${Spacing.largeImageMaxWidth};
   margin-bottom: -4px;
 `
 

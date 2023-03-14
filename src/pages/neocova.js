@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Intro from "../components/case-studies/intro"
 import Background from "../components/case-studies/background"
 import Highlight from "../components/case-studies/highlight"
@@ -19,7 +19,7 @@ import { Colors, Spacing } from "../styles/variables"
 
 const NeocovaPage = () => (
   <Layout>
-    <SEO title="Neocova Case Study" />
+    <Seo title="Neocova Case Study" />
     <Intro
       heading={
         "Establishing a design system for a complex enterprise organization"
