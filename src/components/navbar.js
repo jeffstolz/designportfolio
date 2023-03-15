@@ -86,7 +86,7 @@ const Logo = styled.a`
   }
 `
 
-const NavLink = styled.a`
+const NavLink = styled.div`
   color: ${Colors.black};
   text-decoration: none;
 
