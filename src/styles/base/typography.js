@@ -7,7 +7,7 @@ export const primaryFontFamily = '"Roboto", Sans-Serif;'
 export const lightFontWeight = "400"
 export const baseFontWeight = "600"
 export const mediumFontWeight = "800"
-export const heavyFontWeight = "1000"
+export const heavyFontWeight = "900"
 
 export const xSmallFontSize = "0.7em"
 export const smallFontSize = "0.9em"

@@ -61,6 +61,7 @@ const Container = styled.ul`
 `
 
 const Heading = styled.h1`
+  font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.headingFontSize};
   margin-bottom: 0;
 
@@ -69,7 +70,8 @@ const Heading = styled.h1`
   }
 `
 
-const Subheading = styled.h2`
+const Subheading = styled.p`
+  font-family: ${Typography.primaryFontFamily};
   font-size: ${Typography.baseFontSize};
   color: ${Colors.gray4};
 
