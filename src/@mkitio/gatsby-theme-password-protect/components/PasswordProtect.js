@@ -52,7 +52,7 @@ const OuterContainer = styled.section`
   }
 `
 
-const Container = styled.ul`
+const Container = styled.div`
   max-width: 62em;
 
   @media (max-width: ${Spacing.breakPoint}) {
@@ -66,7 +66,7 @@ const Heading = styled.h1`
   margin-bottom: 0;
 
   @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.smallHeadingFontSize};
+    font-size: ${Typography.mediumFontSize};
   }
 `
 
@@ -86,7 +86,7 @@ const Form = styled.form`
 `
 
 const Input = styled.input`
-  width: 20em;
+  max-width: 20em;
   padding: ${Spacing.small};
   border: solid 1px ${Colors.gray4};
   border-radius: ${Spacing.xSmall};
