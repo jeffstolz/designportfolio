@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: "/designportfolio",
   siteMetadata: {
-    title: `Jeff Stolz`,
-    description: `Portfolio`,
+    title: `Jeff Stolz - Product Designer`,
+    description: `Learn about my background, how I work, and my case studies`,
     author: `Jeff Stolz`,
   },
   plugins: [
