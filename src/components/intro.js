@@ -11,38 +11,38 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 const Intro = () => (
   <Container id="intro">
     <Fade delay={800}>
-      <HeadshotContainer>
+      <InnerContainer>
         <Headshot src={Images.Headshot} alt="Picture of Jeff Stolz" />
-      </HeadshotContainer>
-      <ContentContainer>
-        <HeadingContainer>
-          <Heading>Hi, I'm Jeff</Heading>
-          <WaveAnimation>
-            <WaveIcon src={Images.Wave} alt="Animated icon of waving hand" />
-          </WaveAnimation>
-        </HeadingContainer>
-        <Subheading>
-          I'm a <RedText>product designer </RedText>who creates simple &
-          powerful experiences.
-        </Subheading>
-        <Fade delay={1200}>
-          <ButtonContainer>
-            <ScrollLink
-              activeClass="active"
-              to={"skills"}
-              spy={true}
-              smooth={true}
-              duration={1000}
-            >
-              <Button
-                theme={secondaryLight}
-                label={"Welcome!"}
-                icon={<FaArrowDown />}
-              />
-            </ScrollLink>
-          </ButtonContainer>
-        </Fade>
-      </ContentContainer>
+        <ContentContainer>
+          <HeadingContainer>
+            <Heading>Hi, I'm Jeff</Heading>
+            <WaveAnimation>
+              <WaveIcon src={Images.Wave} alt="Animated icon of waving hand" />
+            </WaveAnimation>
+          </HeadingContainer>
+          <Subheading>
+            I'm a <RedText>product designer </RedText>who creates simple &
+            powerful experiences.
+          </Subheading>
+          <Fade delay={1200}>
+            <ButtonContainer>
+              <ScrollLink
+                activeClass="active"
+                to={"skills"}
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                <Button
+                  theme={secondaryLight}
+                  label={"Welcome!"}
+                  icon={<FaArrowDown />}
+                />
+              </ScrollLink>
+            </ButtonContainer>
+          </Fade>
+        </ContentContainer>
+      </InnerContainer>
     </Fade>
   </Container>
 )
@@ -59,34 +59,30 @@ const Container = styled.section`
   }
 `
 
+const InnerContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+const Headshot = styled.img`
+  width: 18em;
+  border-radius: 100%;
+
+  @media (max-width: 70em) {
+    display: none;
+  }
+`
+
 const ContentContainer = styled.div`
-  margin-left: 10em;
+  margin-left: 3em;
 
   @media (max-width: ${Spacing.breakPoint}) {
     margin-left: 0;
   }
 `
 
-const HeadshotContainer = styled.div`
-  display: flex;
-  position: relative;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    display: none;
-  }
-`
-
-const Headshot = styled.img`
-  position: absolute;
-  width: 25em;
-  left: -18.5em;
-  top: -5.5em;
-  border-radius: 100%;
-`
-
 const HeadingContainer = styled.div`
   display: flex;
-  position: relative;
 `
 
 const Heading = styled.h1`
