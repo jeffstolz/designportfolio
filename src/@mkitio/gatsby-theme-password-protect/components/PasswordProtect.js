@@ -16,6 +16,7 @@ const PasswordProtect = () => {
   return (
     <OuterContainer>
       <Container>
+        <Seo title="Enter Password" />
         <Heading>Please Enter Password</Heading>
         <Subheading>
           Don't have one?{" "}
