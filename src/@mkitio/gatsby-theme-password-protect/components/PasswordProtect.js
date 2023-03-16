@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { setSessionPassword } from "../utils/utils"
+import Seo from "../../../components/seo"
 import styled from "styled-components"
 import { Colors, Spacing, Typography } from "../../../styles/variables"
 import { FaArrowRight } from "react-icons/fa"
