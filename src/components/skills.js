@@ -11,21 +11,17 @@ const Skills = () => (
           <Heading>How I Work</Heading>
           <DesignHeading>Methods</DesignHeading>
           <Description>
-            Jobs-To-Be-Done,{" "}
+            Jobs-To-Be-Done, GV Design Sprints (read about my geeky{" "}
             <LinkText href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
-              GV Design Sprints
+              thoughts on facilitation
             </LinkText>
-            , Atomic Design Systems, Lean UX Canvas, HEART, Agile, Styled
+            ), Atomic Design Systems, Lean UX Canvas, HEART, Agile, Styled
             Components, BEM, ITCSS.
           </Description>
           <DesignHeading>Tools & Technologies</DesignHeading>
           <Description>
             Figma, Miro, UserZoom, React, React Native, Ruby on Rails, HTML5,
-            CSS3, SCSS, Git,{" "}
-            <LinkText href="https://github.com/jeffstolz/gatsby-portfolio">
-              Gatsby
-            </LinkText>
-            , Middleman.
+            CSS3, SCSS, Git, Gatsby, Middleman.
           </Description>
           <DesignHeading>Influences & Resources</DesignHeading>
           <Description>
@@ -51,9 +47,9 @@ const Skills = () => (
           </Description>
           <DevelopHeading>Shipping Fast & Often</DevelopHeading>
           <Description>
-            Formal signoffs and deep documentation slow delivery. By reducing
-            control & trusting our teams, we can ship often, respond to user
-            feedback, and mitigate risk.
+            Overly formal signoffs and cumbersome documentation can slow
+            delivery. By reducing control & trusting our teams, we can ship
+            often, respond to user feedback, and mitigate risk.
           </Description>
         </Fade>
       </Column>
