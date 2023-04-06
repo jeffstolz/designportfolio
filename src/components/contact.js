@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Fade from "react-reveal/Fade"
+import { Images } from "../images"
 import { Colors, Spacing, Typography } from "../styles/variables"
 
 const Contact = () => (
@@ -12,8 +13,7 @@ const Contact = () => (
       <Text>
         Thanks for taking the time to review my site. I am always looking for
         new opportunities to create, share, and grow as a designer. Please reach
-        out if you'd like to chat over a (remote?) coffee. I look forward to
-        hearing from you!
+        out if you'd like to chat. I look forward to hearing from you!
       </Text>
     </Fade>
     <Fade>
@@ -31,6 +31,12 @@ const Contact = () => (
         <LinkItem>
           <LinkText href="https://www.linkedin.com/in/jeff-stolz-17666725/">
             LinkedIn
+          </LinkText>
+          <Slash aria-hidden="true">/</Slash>
+        </LinkItem>
+        <LinkItem>
+          <LinkText href={Images.JeffStolzResume} download>
+            Resume
           </LinkText>
         </LinkItem>
       </LinkList>

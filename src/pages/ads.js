@@ -66,17 +66,6 @@ const NeocovaPage = () => (
         each exercise is a tool that can be leveraged differently each time to
         complete the job at hand.
       </Highlight>
-      <Divider />
-      View the sprint synthesis to find more details about the design sprint
-      including assumptions document, interview script, multiple InVision
-      prototypes, and findings.
-      <ButtonLink href="https://docs.google.com/document/d/1cfIE22DxKBuOI9T9gpW4P4_WJvkH-MDCzlXPPNUzoC8">
-        <Button
-          theme={primaryLight}
-          label={"View Sprint Synthesis"}
-          icon={<FaArrowRight />}
-        />
-      </ButtonLink>
     </SectionHeader>
     <FeaturedImage
       imageSrc={Images.AdsSketches}

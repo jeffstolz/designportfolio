@@ -14,7 +14,7 @@ const Background = () => (
         title={"Senior Designer"}
         details={"HPE, 2021 - Current"}
         description={
-          "Led the design of complex cloud computer computing services spanning multiple platforms and workstreams. Helped evolve the design culture towards design thinking, design systems, and cross functional collaboration."
+          "Led the design of B2B cloud computing SaaS products spanning multiple platforms and workstreams. Helped evolve the design culture towards design thinking, design systems, and cross functional collaboration."
         }
         highlightOne={
           "Created, evangelized, and rolled out process improvement efforts across teams."
