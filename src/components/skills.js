@@ -36,20 +36,20 @@ const Skills = () => (
           <Heading>What I Value</Heading>
           <DevelopHeading>Cross-Functional Teams</DevelopHeading>
           <Description>
-            I do my best work when embedded in multi-disciplinary teams,
-            defining objectives alongside product managers and implementing them
-            alongside developers.
+            I do my best work when embedded in multi-disciplinary teams. I rely
+            on the expertise of my teammates through an inclusive and
+            collaborative design process.
           </Description>
-          <DevelopHeading>End-to-End Collaboration</DevelopHeading>
+          <DevelopHeading>Validating Assumptions</DevelopHeading>
           <Description>
-            From early conception through implementation, it is important to
-            harness the value of the full team through the entire process.
+            It's important to track assumptions early & often. I embrace being
+            wrong when it's proven by measurable user research.
           </Description>
-          <DevelopHeading>Shipping Fast & Often</DevelopHeading>
+          <DevelopHeading>Rapid Delivery & Iteration</DevelopHeading>
           <Description>
-            Overly formal signoffs and cumbersome documentation can slow
-            delivery. By reducing control & trusting our teams, we can ship
-            often, respond to user feedback, and mitigate risk.
+            Value now is more important than perfect later. I am deeply focused
+            on getting functional software into the hands of users so we can
+            respond to their feedback and refine.
           </Description>
         </Fade>
       </Column>
