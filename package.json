@@ -48,7 +48,7 @@
     "gh-pages": "^5.0.0",
     "highlight.js": ">=11.7.0",
     "immer": ">=9.0.19",
-    "is-svg": ">=4.3.2",
+    "is-svg": ">=5.0.0",
     "jpeg-js": ">=0.4.4",
     "netmask": ">=2.0.2",
     "node-fetch": ">=3.3.0",
