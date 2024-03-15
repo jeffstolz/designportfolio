@@ -3,6 +3,7 @@ import { Colors, Spacing, Typography } from "../styles/variables"
 
 const GlobalStyles = createGlobalStyle`
 html {
+  background-color: #E9EDEF;
   font-family: ${Typography.primaryFontFamily};
   color: ${Colors.black};
   font-size: 110%;

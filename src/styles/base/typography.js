@@ -3,6 +3,7 @@ import { Spacing } from "../variables"
 
 export const headingFontFamily = '"Inter", Sans-Serif;'
 export const primaryFontFamily = '"Roboto", Sans-Serif;'
+export const headingFontFamilyAlt = '"Bebas Neue", Sans-Serif;'
 
 export const lightFontWeight = "400"
 export const baseFontWeight = "600"
