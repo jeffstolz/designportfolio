@@ -40,7 +40,7 @@ const Hometest = () => (
               gained executive buy-in, and introduced it into the product
               roadmap.
             </CaseDescription>
-            <CaseLink>View case study</CaseLink>
+            <CaseLink to="/">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
@@ -53,7 +53,7 @@ const Hometest = () => (
               features like global search/navigation & drove the
               organization-wide shift towards a service-centric architecture.
             </CaseDescription>
-            <CaseLink>View case study</CaseLink>
+            <CaseLink to="/">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
@@ -65,7 +65,7 @@ const Hometest = () => (
               GreenLake Platform. Helped expand the HPE Technology Partner
               Program by 23%.
             </CaseDescription>
-            <CaseLink>View case study</CaseLink>
+            <CaseLink to="/">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
@@ -77,7 +77,7 @@ const Hometest = () => (
               generative AI, asset management, carbon footprint tracking, &
               hardware anomaly detection.
             </CaseDescription>
-            <CaseLink>View case study</CaseLink>
+            <CaseLink to="/">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
       </Cases>
@@ -87,10 +87,20 @@ const Hometest = () => (
 
 const Container = styled.div`
   display: flex;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 
 const Main = styled.section`
   width: 1200px;
+  margin-right: 50px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin-right: 0;
+  }
 `
 
 const Header = styled.section`
@@ -100,7 +110,7 @@ const Header = styled.section`
   justify-content: center;
   background-color: #1a1e23;
   height: 580px;
-  padding: 0 20px;
+  padding: 0 40px;
   margin-bottom: 50px;
 `
 
@@ -148,14 +158,22 @@ const Cases = styled.section`
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    padding: 0 20px;
+  }
 `
 
 const CaseCard = styled.div`
   display: flex;
-  height: 460px;
   background-color: #ffffff;
   padding: 80px;
   margin-bottom: 25px;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    padding: 50px;
+  }
 `
 
 const CaseThumbnail = styled.img`
@@ -163,6 +181,16 @@ const CaseThumbnail = styled.img`
   width: 300px;
   background-color: blue;
   margin-right: 80px;
+
+  @media (max-width: 1400px) {
+    height: 150px;
+    width: 150px;
+    margin-right: 40px;
+  }
+
+  @media (max-width: 750px) {
+    margin-bottom: 40px;
+  }
 `
 
 const CaseCopy = styled.div`
