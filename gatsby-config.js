@@ -60,6 +60,10 @@ module.exports = {
             name: `Roboto`,
             file: `https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap`,
           },
+          {
+            name: `Bebas Neue`,
+            file: `https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;500;700;900&display=swap`,
+          },
         ],
       },
     },

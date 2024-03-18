@@ -15,7 +15,7 @@ const Intro = () => (
         <Headshot src={Images.Headshot} alt="Picture of Jeff Stolz" />
         <ContentContainer>
           <HeadingContainer>
-            <Heading>Hi, I'm Jeff</Heading>
+            <Heading>Hi, I'm Jeffrey</Heading>
             <WaveAnimation>
               <WaveIcon src={Images.Wave} alt="Animated icon of waving hand" />
             </WaveAnimation>
