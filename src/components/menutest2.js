@@ -29,12 +29,24 @@ const Menu = styled.section`
   align-items: center;
   width: 448px;
   margin-top: 150px;
+
+  @media (max-width: 1000px) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 0;
+  }
 `
 
 const Headshot = styled.img`
   width: 150px;
   border-radius: 100%;
   margin-bottom: 20px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 
 const MenuHeader = styled.h1`
@@ -42,16 +54,30 @@ const MenuHeader = styled.h1`
   font-family: ${Typography.headingFontFamilyAlt};
   color: #252b33;
   margin-bottom: 15px;
+  font-weight: 300;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 0;
+    font-size: 25px;
+  }
 `
 
 const MenuList = styled.ul`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1000px) {
+    flex-direction: row;
+  }
 `
 
 const MenuItem = styled.li`
   text-align: center;
   padding-bottom: 15px;
+
+  @media (max-width: 1000px) {
+    padding-bottom: 0;
+  }
 `
 
 const MenuLink = styled(Link)`
@@ -80,16 +106,28 @@ const MenuLinkActive = styled(Link)`
     color: #d21714;
     text-decoration: underline;
   }
+
+  @media (max-width: 1000px) {
+    padding: 0 25px;
+  }
 `
 
 const ActiveWrapper = styled.div`
   display: flex;
   width: 200px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `
 
 const ActiveLine = styled.hr`
   width: 100%;
   color: #cecece;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 
 export default Menutest2

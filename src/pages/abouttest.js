@@ -120,10 +120,20 @@ const Abouttest = () => (
 const Container = styled.div`
   display: flex;
   margin-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 
 const Main = styled.section`
   width: 1200px;
+  margin-right: 50px;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin-right: 0;
+  }
 `
 
 const Header = styled.section`
@@ -134,6 +144,10 @@ const Header = styled.section`
 const Aboutimage = styled.img`
   width: 300px;
   height: 580px;
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
 `
 
 const Quote = styled.div`
@@ -168,6 +182,14 @@ const QuoteAuthor = styled.h3`
 const AboutMe = styled.div`
   background-color: #ffffff;
   padding: 200px;
+
+  @media (max-width: 1400px) {
+    padding: 200px 100px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 150px 50px;
+  }
 `
 
 const Title = styled.h2`
@@ -189,10 +211,19 @@ const Description = styled.p`
 const Collage = styled.div`
   display: flex;
   max-height: 500px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    max-height: 100%;
+  }
 `
 
 const CollageColumn = styled.div`
   width: 50%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 `
 
 const CollageRow = styled.div`
@@ -210,6 +241,14 @@ const SmallImage = styled.img`
 const Testimonial = styled.div`
   background-color: #1a1e23;
   padding: 200px;
+
+  @media (max-width: 1400px) {
+    padding: 200px 100px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 150px 50px;
+  }
 `
 
 const TestimonialWrapper = styled.div`
