@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-import Menutest from "../components/menutest"
+import Menutest1 from "./menutest1"
 import { Link } from "gatsby"
+import { Link as ScrollLink } from "react-scroll"
 import { Images } from "../images"
 import { Typography } from "../styles/variables"
 
 const Hometest = () => (
   <Container>
-    <Menutest />
+    <Menutest1 />
     <Main>
       <Header>
         <WelcomeHeading>Hi, I'm Jeff!</WelcomeHeading>
@@ -15,14 +16,22 @@ const Hometest = () => (
           I'm a product designer who creates simple & powerful experiences
         </WelcomeSubheading>
         <LinkRow>
-          <HeaderLink>View my work</HeaderLink>
+          <ScrollLink
+            activeClass="active"
+            to={"case-studies"}
+            spy={true}
+            smooth={true}
+            duration={700}
+          >
+            <HeaderLink to={"/"}>View my work</HeaderLink>
+          </ScrollLink>
           <Divider>|</Divider>
-          <HeaderLink>Learn about me</HeaderLink>
+          <HeaderLink to={"abouttest"}>Learn about me</HeaderLink>
         </LinkRow>
       </Header>
-      <Cases>
+      <Cases id="case-studies">
         <CaseCard>
-          <CaseThumbnail src={Images.Headshot} alt="Picture of Jeff Stolz" />
+          <CaseThumbnail src={Images.AdsThumbnail} alt="" />
           <CaseCopy>
             <CaseHeading>User Personalization</CaseHeading>
             <CaseDescription>
@@ -35,7 +44,7 @@ const Hometest = () => (
           </CaseCopy>
         </CaseCard>
         <CaseCard>
-          <CaseThumbnail src={Images.Headshot} alt="Picture of Jeff Stolz" />
+          <CaseThumbnail src={Images.DragonThumbnail} alt="" />
           <CaseCopy>
             <CaseHeading>Unified Platform Strategy</CaseHeading>
             <CaseDescription>
@@ -48,7 +57,7 @@ const Hometest = () => (
           </CaseCopy>
         </CaseCard>
         <CaseCard>
-          <CaseThumbnail src={Images.Headshot} alt="Picture of Jeff Stolz" />
+          <CaseThumbnail src={Images.MhThumbnail} alt="" />
           <CaseCopy>
             <CaseHeading>Cloud Marketplace</CaseHeading>
             <CaseDescription>
@@ -60,7 +69,7 @@ const Hometest = () => (
           </CaseCopy>
         </CaseCard>
         <CaseCard>
-          <CaseThumbnail src={Images.Headshot} alt="Picture of Jeff Stolz" />
+          <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
           <CaseCopy>
             <CaseHeading>Research & Innovation</CaseHeading>
             <CaseDescription>
