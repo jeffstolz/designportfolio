@@ -1,97 +1,125 @@
 import React from "react"
 import styled from "styled-components"
-import Menutest from "../components/menutest"
+import Layout from "../layouts/layout"
+import Seo from "../components/seo"
+import Menutest2 from "../components/menutest2"
 import { Link } from "gatsby"
 import { Images } from "../images"
 import { Typography } from "../styles/variables"
 
 const Abouttest = () => (
-  <Container>
-    <Menutest />
-    <Main>
-      <Header>
-        <Quote>
-          <QuoteHeading>
-            “Ever tried. ever failed. no matter. try again. fail again. fail
-            better.”
-          </QuoteHeading>
-          <QuoteAuthor>- Samuel Beckett</QuoteAuthor>
-        </Quote>
-        <Aboutimage src={Images.Headshot} alt="Picture of Jeff Stolz" />
-      </Header>
-      <AboutMe>
-        <Title>About Me</Title>
-        <Description>
-          Hello! I am a product designer based in Boston with 12+ years
-          experience. I thrive in small, collaborative, cross-functional teams
-          that focus on rapid delivery & iteration. I am a big fan of Lean UX,
-          Jobs to Be Done, Design Sprints, and Atomic Design Systems.
-        </Description>
-        <Description>
-          My current role is principal product designer at HPE. I am
-          functionally leading a team of 12 globally distributed designers and
-          responsible for driving the product design strategy for the HPE
-          GreenLake Platform. This has included spearheading initiatives to
-          introduce user personalization, commerce, global search & navigation,
-          onboarding, contextual help, service management, and a third-party
-          marketplace.
-        </Description>
-        <Description>
-          Additionally, my team leads the HPE Innovation Lab which has explored
-          solutions for generative AI, asset management, carbon footprint
-          tracking, & hardware anomaly detection.
-        </Description>
-        <Description>
-          I am interested in solving complex user problems alongside wonderful
-          people. I value humility, curiosity, decisiveness, and humor.
-        </Description>
-      </AboutMe>
-      <Collage>
-        <CollageLeft>
-          <LargeImage src={Images.Headshot} alt="Picture of Jeff Stolz" />
-        </CollageLeft>
-        <CollageRight>
-          <CollageRightTop>
-            <SmallImage src={Images.Headshot} alt="Picture of Jeff Stolz" />
-            <SmallImage src={Images.Headshot} alt="Picture of Jeff Stolz" />
-          </CollageRightTop>
-          <CollageRightBottom>
-            <SmallImage src={Images.Headshot} alt="Picture of Jeff Stolz" />
-            <SmallImage src={Images.Headshot} alt="Picture of Jeff Stolz" />
-          </CollageRightBottom>
-        </CollageRight>
-      </Collage>
-      <Testimonial>
-        <TestimonialWrapper>
-          <TestimonialQuote>
-            “Jeff is a designer who can cut through the BS and self direct to
-            successful outcomes despite the ambiguity & inertia of our larger
-            company. He pushes for better, embraces courage over comfort, and is
-            driving an action-biased, lean mindset across our org.”
-          </TestimonialQuote>
-          <TestimonialAuthor>
-            - Justin Barton, Head of Product Design @ HPE
-          </TestimonialAuthor>
-        </TestimonialWrapper>
-      </Testimonial>
-      <AboutMe>
-        <Title>Get in touch</Title>
-        <Description>
-          Thanks for visiting. I'm always looking for new opportunities to
-          create, share, and grow as a designer. Please reach out!
-        </Description>
-        <ContactLinks>
-          <ContactLink>Email</ContactLink>
-          <ContactLink>LinkedIn</ContactLink>
-          <ContactLink>Github</ContactLink>
-        </ContactLinks>
-      </AboutMe>
-    </Main>
-  </Container>
+  <Layout>
+    <Seo title="About Jeff Stolz" />
+    <Container>
+      <Menutest2 />
+      <Main>
+        <Header>
+          <Quote>
+            <QuoteHeading>
+              “Ever tried. ever failed. no matter. try again. fail again. fail
+              better.”
+            </QuoteHeading>
+            <QuoteAuthor>- Samuel Beckett</QuoteAuthor>
+          </Quote>
+          <Aboutimage src={Images.AboutJeff} alt="Jeff at the Grand Canyon" />
+        </Header>
+        <AboutMe>
+          <Title>About Me</Title>
+          <Description>
+            Hello! I am a product designer based in Boston with 12+ years
+            experience. I thrive in small, collaborative, cross-functional teams
+            that focus on rapid delivery & iteration. I am a big fan of Lean UX,
+            Jobs to Be Done,{" "}
+            <AboutLink href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
+              Design Sprints
+            </AboutLink>
+            , and Atomic Design Systems.
+          </Description>
+          <Description>
+            My current role is principal product designer at HPE. I am
+            functionally leading a team of 12 globally distributed designers and
+            responsible for driving the product design strategy for the HPE
+            GreenLake Platform. This has included spearheading initiatives to
+            introduce <AboutLink to="/">user personalization</AboutLink>,
+            commerce, <AboutLink to="/">global search & navigation</AboutLink>,
+            onboarding, contextual help, service management, and a third-party{" "}
+            <AboutLink to="/">marketplace</AboutLink>.
+          </Description>
+          <Description>
+            Additionally, my team leads the HPE{" "}
+            <AboutLink to="/">Innovation Lab</AboutLink> which has explored
+            solutions for generative AI, asset management, carbon footprint
+            tracking, & hardware anomaly detection.
+          </Description>
+          <Description>
+            I am interested in solving complex user problems alongside wonderful
+            people. I value humility, curiosity, decisiveness, and humor.
+          </Description>
+        </AboutMe>
+        <Collage>
+          <CollageColumn>
+            <LargeImage
+              src={Images.JeffGalina}
+              alt="Jeff and partner on a hill overlooking Prague"
+            />
+          </CollageColumn>
+          <CollageColumn>
+            <CollageRow>
+              <SmallImage src={Images.Piano} alt="Piano" />
+              <SmallImage src={Images.Sushi} alt="Sushi" />
+            </CollageRow>
+            <CollageRow>
+              <SmallImage src={Images.Boys} alt="Jeff's two sons playing" />
+              <SmallImage
+                src={Images.Dice}
+                alt="Dice sitting on a dungeons and dragons game board"
+              />
+            </CollageRow>
+          </CollageColumn>
+        </Collage>
+        <Testimonial>
+          <TestimonialWrapper>
+            <TestimonialQuote>
+              “Jeff is a designer who can cut through the BS and self direct to
+              successful outcomes despite the ambiguity & inertia of our larger
+              company. He pushes for better, embraces courage over comfort, and
+              is driving an action-biased, lean mindset across our org.”
+            </TestimonialQuote>
+            <TestimonialAuthor>
+              - Justin Barton, Head of Product Design @ HPE
+            </TestimonialAuthor>
+          </TestimonialWrapper>
+        </Testimonial>
+        <AboutMe>
+          <Title>Get in touch</Title>
+          <Description>
+            Thanks for visiting. I'm always looking for new opportunities to
+            create, share, and grow as a designer. Please reach out!
+          </Description>
+          <ContactList>
+            <ContactListItem>
+              <AboutLink href="mailto:j%73%74o%6Cz12%33@%67ma%69%6C.co%6D">
+                Email
+              </AboutLink>
+            </ContactListItem>
+            <ContactListItem>
+              <AboutLink href="https://www.linkedin.com/in/jeff-stolz-17666725/">
+                LinkedIn
+              </AboutLink>
+            </ContactListItem>
+            <ContactListItem>
+              <AboutLink href="https://github.com/jeffstolz">Github</AboutLink>
+            </ContactListItem>
+          </ContactList>
+        </AboutMe>
+      </Main>
+    </Container>
+  </Layout>
 )
 
 const Container = styled.div`
   display: flex;
+  margin-bottom: 80px;
 `
 
 const Main = styled.section`
@@ -147,6 +175,7 @@ const Title = styled.h2`
   font-size: 40px;
   color: #252b33;
   padding-bottom: 25px;
+  font-weight: 300;
 `
 
 const Description = styled.p`
@@ -159,33 +188,23 @@ const Description = styled.p`
 
 const Collage = styled.div`
   display: flex;
-  width: 100%;
+  max-height: 500px;
 `
 
-const CollageLeft = styled.div`
+const CollageColumn = styled.div`
   width: 50%;
 `
 
-const CollageRight = styled.div`
-  width: 50%;
-`
-
-const CollageRightTop = styled.div`
-  display: flex;
-`
-
-const CollageRightBottom = styled.div`
+const CollageRow = styled.div`
   display: flex;
 `
 
 const LargeImage = styled.img`
   width: 100%;
-  max-width: 600px;
 `
 
 const SmallImage = styled.img`
-  width: 100%;
-  max-width: 300px;
+  width: 50%;
 `
 
 const Testimonial = styled.div`
@@ -216,17 +235,17 @@ const TestimonialAuthor = styled.h3`
   font-family: Georgia, serif;
 `
 
-const ContactLinks = styled.div`
-  display: flex;
-  flex-direction: column;
+const ContactList = styled.ul``
+
+const ContactListItem = styled.li`
+  margin-bottom: 20px;
 `
 
-const ContactLink = styled(Link)`
+const AboutLink = styled(Link)`
   color: #d21714;
   text-decoration: none;
   font-size: 20px;
   font-family: Georgia, serif;
-  margin-bottom: 20px;
 
   &:hover {
     cursor: pointer;
