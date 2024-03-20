@@ -17,7 +17,7 @@ const Menutest1 = () => (
         </ActiveWrapper>
       </MenuItem>
       <MenuItem>
-        <MenuLink to={"abouttest"}>About</MenuLink>
+        <MenuLink to={"about"}>About</MenuLink>
       </MenuItem>
     </MenuList>
   </Menu>
@@ -124,6 +124,7 @@ const ActiveWrapper = styled.div`
 const ActiveLine = styled.hr`
   width: 100%;
   color: #cecece;
+  opacity: 0.5;
 
   @media (max-width: 1000px) {
     display: none;

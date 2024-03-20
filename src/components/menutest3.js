@@ -4,20 +4,20 @@ import { Link } from "gatsby"
 import { Images } from "../images"
 import { Typography } from "../styles/variables"
 
-const Menutest2 = () => (
+const Menutest3 = () => (
   <Menu>
     <Headshot src={Images.Headshot} alt="Headshot of Jeff Stolz" />
     <MenuHeader>Jeff Stolz</MenuHeader>
     <MenuList>
       <MenuItem>
-        <MenuLink to={"/"}>Portfolio</MenuLink>
-      </MenuItem>
-      <MenuItem>
         <ActiveWrapper>
           <ActiveLine />
-          <MenuLinkActive to={"about"}>About</MenuLinkActive>
+          <MenuLinkActive to={"/"}>Portfolio</MenuLinkActive>
           <ActiveLine />
         </ActiveWrapper>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink to={"../about"}>About</MenuLink>
       </MenuItem>
     </MenuList>
   </Menu>
@@ -131,4 +131,4 @@ const ActiveLine = styled.hr`
   }
 `
 
-export default Menutest2
+export default Menutest3

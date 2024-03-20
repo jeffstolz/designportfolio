@@ -4,20 +4,40 @@ import { Link } from "gatsby"
 import { Images } from "../images"
 import { Typography } from "../styles/variables"
 
-const Menutest2 = () => (
+const Menutest3 = () => (
   <Menu>
     <Headshot src={Images.Headshot} alt="Headshot of Jeff Stolz" />
     <MenuHeader>Jeff Stolz</MenuHeader>
     <MenuList>
       <MenuItem>
-        <MenuLink to={"/"}>Portfolio</MenuLink>
-      </MenuItem>
-      <MenuItem>
         <ActiveWrapper>
           <ActiveLine />
-          <MenuLinkActive to={"about"}>About</MenuLinkActive>
+          <MenuLinkActive to={"/"}>Portfolio</MenuLinkActive>
           <ActiveLine />
         </ActiveWrapper>
+      </MenuItem>
+      <MenuItem>
+        <MenuLinkSub to={"../personalization"}>
+          User personalization
+        </MenuLinkSub>
+      </MenuItem>
+      <MenuItem>
+        <MenuLinkSub to={"../platform"}>Unified platform strategy</MenuLinkSub>
+      </MenuItem>
+      <MenuItem>
+        <MenuLinkSub to={"../marketplace"}>Cloud marketplace</MenuLinkSub>
+      </MenuItem>
+      <MenuItem>
+        <MenuLinkActiveSub to={"../salesquoting"}>
+          Sales quoting tool
+        </MenuLinkActiveSub>
+      </MenuItem>
+      <MenuItem>
+        <MenuLinkSub to={"../startup"}>Startup MVP</MenuLinkSub>
+      </MenuItem>
+      <ActiveLineBottom />
+      <MenuItem>
+        <MenuLink to={"../about"}>About</MenuLink>
       </MenuItem>
     </MenuList>
   </Menu>
@@ -93,6 +113,23 @@ const MenuLink = styled(Link)`
   }
 `
 
+const MenuLinkSub = styled(Link)`
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  color: #474d55;
+
+  &:hover {
+    cursor: pointer;
+    color: #d21714;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
+
 const MenuLinkActive = styled(Link)`
   text-decoration: none;
   font-family: Georgia, serif;
@@ -109,6 +146,28 @@ const MenuLinkActive = styled(Link)`
 
   @media (max-width: 1000px) {
     padding: 0 25px;
+  }
+`
+
+const MenuLinkActiveSub = styled(Link)`
+  text-decoration: none;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  color: #252b33;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    color: #d21714;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 `
 
@@ -131,4 +190,15 @@ const ActiveLine = styled.hr`
   }
 `
 
-export default Menutest2
+const ActiveLineBottom = styled.hr`
+  width: 100%;
+  color: #cecece;
+  opacity: 0.5;
+  margin-bottom: 20px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
+
+export default Menutest3

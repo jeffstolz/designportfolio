@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 import { Images } from "../images"
 import { Typography } from "../styles/variables"
 
-const Abouttest = () => (
+const About = () => (
   <Layout>
     <Seo title="About Jeff Stolz" />
     <Container>
@@ -40,16 +40,17 @@ const Abouttest = () => (
             functionally leading a team of 12 globally distributed designers and
             responsible for driving the product design strategy for the HPE
             GreenLake Platform. This has included spearheading initiatives to
-            introduce <AboutLink to="/">user personalization</AboutLink>,
-            commerce, <AboutLink to="/">global search & navigation</AboutLink>,
+            introduce{" "}
+            <AboutLink to="../personalization">user personalization</AboutLink>,
+            commerce,{" "}
+            <AboutLink to="../platform">global search & navigation</AboutLink>,
             onboarding, contextual help, service management, and a third-party{" "}
-            <AboutLink to="/">marketplace</AboutLink>.
+            <AboutLink to="../marketplace">marketplace</AboutLink>.
           </Description>
           <Description>
-            Additionally, my team leads the HPE{" "}
-            <AboutLink to="/">Innovation Lab</AboutLink> which has explored
-            solutions for generative AI, asset management, carbon footprint
-            tracking, & hardware anomaly detection.
+            Additionally, my team leads the HPE Innovation Lab which has
+            explored solutions for generative AI, asset management, carbon
+            footprint tracking, & hardware anomaly detection.
           </Description>
           <Description>
             I am interested in solving complex user problems alongside wonderful
@@ -293,4 +294,4 @@ const AboutLink = styled(Link)`
   }
 `
 
-export default Abouttest
+export default About
