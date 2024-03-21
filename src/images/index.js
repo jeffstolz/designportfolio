@@ -1,5 +1,6 @@
 import AboutJeff from "./about-jeff.jpg"
 import AdsApply from "./ads-apply.jpg"
+import AdsBackground from "./ads-background.jpg"
 import AdsDashboard from "./ads-dashboard.jpg"
 import AdsData from "./ads-data.jpg"
 import AdsDesignSystem from "./ads-design-system.jpg"
@@ -60,6 +61,7 @@ import Wave from "./wave.svg"
 export const Images = {
   AboutJeff,
   AdsApply,
+  AdsBackground,
   AdsDashboard,
   AdsData,
   AdsDesignSystem,

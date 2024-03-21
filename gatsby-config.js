@@ -40,7 +40,7 @@ module.exports = {
       options: {
         password: "jeffstolzdesign",
         partialMatching: true,
-        pagePaths: ["/ads", "/dragon", "/theskills", "/mobile-heartbeat"],
+        pagePaths: ["/dragon", "/theskills", "/mobile-heartbeat"],
       },
     },
     {

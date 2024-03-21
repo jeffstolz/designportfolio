@@ -23,10 +23,10 @@ const Hometest = () => (
             smooth={true}
             duration={700}
           >
-            <HeaderLink to={"/"}>View my work</HeaderLink>
+            <HeaderLink>View my work</HeaderLink>
           </ScrollLink>
           <Divider>|</Divider>
-          <HeaderLink to={"abouttest"}>Learn about me</HeaderLink>
+          <HeaderLink to={"about"}>Learn about me</HeaderLink>
         </LinkRow>
       </Header>
       <Cases id="case-studies">
@@ -40,7 +40,7 @@ const Hometest = () => (
               gained executive buy-in, and introduced it into the product
               roadmap.
             </CaseDescription>
-            <CaseLink to="/">View case study</CaseLink>
+            <CaseLink to="personalization">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
@@ -53,7 +53,7 @@ const Hometest = () => (
               features like global search/navigation & drove the
               organization-wide shift towards a service-centric architecture.
             </CaseDescription>
-            <CaseLink to="/">View case study</CaseLink>
+            <CaseLink to="platform">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
@@ -65,19 +65,33 @@ const Hometest = () => (
               GreenLake Platform. Helped expand the HPE Technology Partner
               Program by 23%.
             </CaseDescription>
-            <CaseLink to="/">View case study</CaseLink>
+            <CaseLink to="marketplace">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
           <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>Research & Innovation</CaseHeading>
+            <CaseHeading>Sales Quoting Tool</CaseHeading>
             <CaseDescription>
-              Co-led research projects at the HPE Innovation Lab including
-              generative AI, asset management, carbon footprint tracking, &
-              hardware anomaly detection.
+              A collection of case studies from my time as a product design
+              consultant at Thoughtbot. Led clients through early product
+              strategy, initial product launch, rapid validation, and roadmap
+              planning.
             </CaseDescription>
-            <CaseLink to="/">View case study</CaseLink>
+            <CaseLink to="salesquoting">View case study</CaseLink>
+          </CaseCopy>
+        </CaseCard>
+        <CaseCard>
+          <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
+          <CaseCopy>
+            <CaseHeading>Startup MVP</CaseHeading>
+            <CaseDescription>
+              A collection of case studies from my time as a product design
+              consultant at Thoughtbot. Led clients through early product
+              strategy, initial product launch, rapid validation, and roadmap
+              planning.
+            </CaseDescription>
+            <CaseLink to="startup">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
       </Cases>
