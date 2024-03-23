@@ -23,7 +23,10 @@ const Personalization = () => (
             providing structure to a rapidly growing organization.
           </HeaderDescription>
         </Header>
-        <IntroImage src={Images.AdsBackground} alt="Ads" />
+        <IntroImage
+          src={Images.PersonalizationBg}
+          alt="Personalized HPE GreenLake dashboard over a textured background"
+        />
         <LightSection>
           <Title>My Role</Title>
           <Description>
@@ -52,7 +55,7 @@ const Personalization = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Early Explorations</Title>
+          <Title>Focus Areas</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -61,7 +64,7 @@ const Personalization = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Designing with Users</Title>
+          <Title>Onboarding</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -70,7 +73,7 @@ const Personalization = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>One size does not fit all</Title>
+          <Title>Dashboarding</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -79,7 +82,7 @@ const Personalization = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Measuring success</Title>
+          <Title>Recommendations</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -88,7 +91,25 @@ const Personalization = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Learnings</Title>
+          <Title>Applying Analytics</Title>
+          <Description>
+            Hello! I am a product designer based in Boston with 12+ years
+            experience. I thrive in small, collaborative, cross-functional teams
+            that focus on rapid delivery & iteration. I am a big fan of Lean UX,
+            Jobs to Be Done, Design Sprints, and Atomic Design Systems.
+          </Description>
+        </DarkSection>
+        <LightSection>
+          <Title>Leveraging AI</Title>
+          <Description>
+            Hello! I am a product designer based in Boston with 12+ years
+            experience. I thrive in small, collaborative, cross-functional teams
+            that focus on rapid delivery & iteration. I am a big fan of Lean UX,
+            Jobs to Be Done, Design Sprints, and Atomic Design Systems.
+          </Description>
+        </LightSection>
+        <DarkSection>
+          <Title>Next Steps</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
