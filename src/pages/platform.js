@@ -23,7 +23,10 @@ const Platform = () => (
             providing structure to a rapidly growing organization.
           </HeaderDescription>
         </Header>
-        <IntroImage src={Images.AdsBackground} alt="Ads" />
+        <IntroImage
+          src={Images.PlatformBg}
+          alt="HPE GreenLake services over a textured background"
+        />
         <LightSection>
           <Title>My Role</Title>
           <Description>
@@ -52,7 +55,7 @@ const Platform = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Early Explorations</Title>
+          <Title>Aligning the Org</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -61,7 +64,7 @@ const Platform = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Designing with Users</Title>
+          <Title>Service-Centric Architecture</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -70,7 +73,7 @@ const Platform = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>One size does not fit all</Title>
+          <Title>Global Search</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -79,7 +82,7 @@ const Platform = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Measuring success</Title>
+          <Title>Unified Navigation</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -88,7 +91,25 @@ const Platform = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Learnings</Title>
+          <Title>Value through usage</Title>
+          <Description>
+            Hello! I am a product designer based in Boston with 12+ years
+            experience. I thrive in small, collaborative, cross-functional teams
+            that focus on rapid delivery & iteration. I am a big fan of Lean UX,
+            Jobs to Be Done, Design Sprints, and Atomic Design Systems.
+          </Description>
+        </DarkSection>
+        <LightSection>
+          <Title>MVP & Beta</Title>
+          <Description>
+            Hello! I am a product designer based in Boston with 12+ years
+            experience. I thrive in small, collaborative, cross-functional teams
+            that focus on rapid delivery & iteration. I am a big fan of Lean UX,
+            Jobs to Be Done, Design Sprints, and Atomic Design Systems.
+          </Description>
+        </LightSection>
+        <DarkSection>
+          <Title>Next Steps</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams

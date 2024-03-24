@@ -23,7 +23,10 @@ const SalesQuoting = () => (
             providing structure to a rapidly growing organization.
           </HeaderDescription>
         </Header>
-        <IntroImage src={Images.AdsBackground} alt="Ads" />
+        <IntroImage
+          src={Images.SalesquotingBg}
+          alt="ADS Sales Quoting Tool over a textured background"
+        />
         <LightSection>
           <Title>My Role</Title>
           <Description>
@@ -70,7 +73,7 @@ const SalesQuoting = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>One size does not fit all</Title>
+          <Title>Iterating on learnings</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams

@@ -23,6 +23,7 @@ import Favicon from "./favicon.png"
 import Headshot from "./jeff_stolz.png"
 import JeffGalina from "./jeff-galina.jpg"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
+import MarketplaceBg from "./marketplace-bg.jpg"
 import MhDesignProcessSketch from "./mh-design-process-sketch.jpg"
 import MhDiscovery from "./mh-discovery.jpg"
 import MhHeader from "./mh-header.png"
@@ -42,7 +43,10 @@ import NeocovaSolutionOne from "./neocova-solution-1.jpg"
 import NeocovaSolutionTwo from "./neocova-solution-2.jpg"
 import NeocovaSolutionThree from "./neocova-solution-3.jpg"
 import NeocovaThumbnail from "./neocova-thumbnail.jpg"
+import PersonalizationBg from "./personalization-bg.jpg"
 import Piano from "./piano.jpg"
+import PlatformBg from "./platform-bg.jpg"
+import SalesquotingBg from "./salesquoting-bg.jpg"
 import SkillsAthleteLanding from "./skills-athlete-landing.jpg"
 import SkillsAthlete from "./skills-athlete.jpg"
 import SkillsAthletes from "./skills-athletes.jpg"
@@ -55,6 +59,7 @@ import SkillsNotes from "./skills-notes.png"
 import SkillsThumbnail from "./skills-thumbnail.jpg"
 import SkillsVideo from "./skills-video.jpg"
 import SkillsWireframes from "./skills-wireframes.jpg"
+import StartupBg from "./startup-bg.jpg"
 import Sushi from "./sushi.jpg"
 import Wave from "./wave.svg"
 
@@ -84,6 +89,7 @@ export const Images = {
   Headshot,
   JeffGalina,
   JeffStolzResume,
+  MarketplaceBg,
   MhDesignProcessSketch,
   MhDiscovery,
   MhHeader,
@@ -103,7 +109,10 @@ export const Images = {
   NeocovaSolutionOne,
   NeocovaSolutionTwo,
   NeocovaSolutionThree,
+  PersonalizationBg,
   Piano,
+  PlatformBg,
+  SalesquotingBg,
   SkillsAthleteLanding,
   SkillsAthlete,
   SkillsAthletes,
@@ -116,6 +125,7 @@ export const Images = {
   SkillsThumbnail,
   SkillsVideo,
   SkillsWireframes,
+  StartupBg,
   Sushi,
   Wave,
 }

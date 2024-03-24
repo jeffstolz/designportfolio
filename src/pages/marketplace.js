@@ -23,7 +23,10 @@ const Marketplace = () => (
             providing structure to a rapidly growing organization.
           </HeaderDescription>
         </Header>
-        <IntroImage src={Images.AdsBackground} alt="Ads" />
+        <IntroImage
+          src={Images.MarketplaceBg}
+          alt="HPE GreenLake Marketplace over a textured background"
+        />
         <LightSection>
           <Title>My Role</Title>
           <Description>
@@ -34,7 +37,7 @@ const Marketplace = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>The Problem</Title>
+          <Title>The Challenge</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -52,7 +55,7 @@ const Marketplace = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Early Explorations</Title>
+          <Title>Buyer Experience</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -61,7 +64,7 @@ const Marketplace = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Designing with Users</Title>
+          <Title>Seller Experience</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -70,7 +73,7 @@ const Marketplace = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>One size does not fit all</Title>
+          <Title>Internal Auditor Experience</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -79,7 +82,7 @@ const Marketplace = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Measuring success</Title>
+          <Title>Responding to Constraints</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -88,7 +91,7 @@ const Marketplace = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Learnings</Title>
+          <Title>Next Steps</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams

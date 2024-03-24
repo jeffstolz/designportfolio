@@ -23,7 +23,10 @@ const Startup = () => (
             providing structure to a rapidly growing organization.
           </HeaderDescription>
         </Header>
-        <IntroImage src={Images.AdsBackground} alt="Ads" />
+        <IntroImage
+          src={Images.StartupBg}
+          alt="The Skills MVP over a textured background"
+        />
         <LightSection>
           <Title>My Role</Title>
           <Description>
@@ -34,7 +37,7 @@ const Startup = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>The Problem</Title>
+          <Title>The Challenge</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -43,7 +46,7 @@ const Startup = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Discovery</Title>
+          <Title>Product-Market Fit</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -52,7 +55,7 @@ const Startup = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>Early Explorations</Title>
+          <Title>Focusing & Prioritizing</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -61,7 +64,7 @@ const Startup = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Designing with Users</Title>
+          <Title>Low-Fi Explorations</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -70,7 +73,7 @@ const Startup = () => (
           </Description>
         </LightSection>
         <DarkSection>
-          <Title>One size does not fit all</Title>
+          <Title>Visual Design</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -79,7 +82,7 @@ const Startup = () => (
           </Description>
         </DarkSection>
         <LightSection>
-          <Title>Measuring success</Title>
+          <Title>Building the MVP</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
@@ -88,6 +91,15 @@ const Startup = () => (
           </Description>
         </LightSection>
         <DarkSection>
+          <Title>Testing Viability</Title>
+          <Description>
+            Hello! I am a product designer based in Boston with 12+ years
+            experience. I thrive in small, collaborative, cross-functional teams
+            that focus on rapid delivery & iteration. I am a big fan of Lean UX,
+            Jobs to Be Done, Design Sprints, and Atomic Design Systems.
+          </Description>
+        </DarkSection>
+        <LightSection>
           <Title>Learnings</Title>
           <Description>
             Hello! I am a product designer based in Boston with 12+ years
@@ -95,7 +107,7 @@ const Startup = () => (
             that focus on rapid delivery & iteration. I am a big fan of Lean UX,
             Jobs to Be Done, Design Sprints, and Atomic Design Systems.
           </Description>
-        </DarkSection>
+        </LightSection>
         <Footer>
           <LinkWrapper>
             <FaArrowUp style={{ color: "#ef5350" }} />
