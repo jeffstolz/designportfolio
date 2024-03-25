@@ -118,11 +118,11 @@ const Startup = () => (
               smooth={true}
               duration={1000}
             >
-              <BackTop>Back to Top</BackTop>
+              <BackTop>Back to top</BackTop>
             </ScrollLink>
           </LinkWrapper>
           <LinkWrapper>
-            <PreUpNext>Up Next:</PreUpNext>
+            <PreUpNext>Up next:</PreUpNext>
             <UpNext to={"../personalization"}>User personalization</UpNext>
             <FaArrowRight style={{ color: "#ef5350" }} />
           </LinkWrapper>

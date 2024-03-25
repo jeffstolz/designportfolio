@@ -21,8 +21,10 @@ const PasswordProtect = () => {
         <Heading>Please Enter Password</Heading>
         <Subheading>
           Don't have one?{" "}
-          <a href="mailto:j%73%74o%6Cz12%33@%67ma%69%6C.co%6D">Email me</a> to
-          request access to my case studies.
+          <EmailLink href="mailto:j%73%74o%6Cz12%33@%67ma%69%6C.co%6D">
+            Email me
+          </EmailLink>{" "}
+          to request access to my case studies.
         </Subheading>
 
         <Form onSubmit={onSubmit}>
@@ -63,22 +65,29 @@ const Container = styled.div`
 `
 
 const Heading = styled.h1`
-  font-family: ${Typography.headingFontFamily};
-  font-size: ${Typography.headingFontSize};
-  margin-bottom: 0;
-
-  @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.mediumFontSize};
-  }
+  color: #252b33;
+  font-size: 40px;
+  font-family: ${Typography.headingFontFamilyAlt};
+  font-weight: 400;
+  margin: 0;
 `
 
 const Subheading = styled.p`
-  font-family: ${Typography.primaryFontFamily};
-  font-size: ${Typography.baseFontSize};
-  color: ${Colors.gray4};
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #474d55;
+`
 
-  @media (max-width: ${Spacing.breakPoint}) {
-    font-size: ${Typography.smallFontSize};
+const EmailLink = styled.a`
+  color: #ef5350;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Georgia, serif;
+
+  &:hover {
+    cursor: pointer;
+    color: #d21714;
+    text-decoration: underline;
   }
 `
 
@@ -102,9 +111,9 @@ const Button = styled.button`
   font-family: ${Typography.headingFontFamily};
   font-size: ${Typography.xSmallFontSize};
   font-weight: ${Typography.mediumFontWeight};
-  background-color: ${Colors.blue};
+  background-color: #ef5350;
   color: ${Colors.white};
-  border: 1px solid ${Colors.blue};
+  border: 1px solid #ef5350;
   padding: 1.3em 2.8em 1.3em 1.6em;
   text-decoration: none;
   text-transform: uppercase;
