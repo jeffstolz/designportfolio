@@ -81,10 +81,11 @@ const About = () => (
         <Testimonial>
           <TestimonialWrapper>
             <TestimonialQuote>
-              “Jeff is a designer who can cut through the BS and self direct to
-              successful outcomes despite the ambiguity & inertia of our larger
-              company. He pushes for better, embraces courage over comfort, and
-              is driving an action-biased, lean mindset across our org.”
+              “Jeff is a design leader who can cut through the BS and self
+              direct to successful outcomes despite the ambiguity & inertia of
+              our larger company. He pushes for better, embraces courage over
+              comfort, and is driving an action-biased, lean mindset across our
+              organization.”
             </TestimonialQuote>
             <TestimonialAuthor>
               - Justin Barton, Head of Product Design @ HPE
