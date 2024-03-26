@@ -13,7 +13,7 @@ const Hometest = () => (
       <Header>
         <WelcomeHeading>Hi, I'm Jeff!</WelcomeHeading>
         <WelcomeSubheading>
-          I'm a product designer who creates simple & powerful experiences
+          I'm a design leader who creates simple & powerful experiences
         </WelcomeSubheading>
         <LinkRow>
           <ScrollLink
@@ -33,7 +33,7 @@ const Hometest = () => (
         <CaseCard>
           <CaseThumbnail src={Images.AdsThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>User Personalization</CaseHeading>
+            <CaseHeading>HPE GreenLake Platform</CaseHeading>
             <CaseDescription>
               Led the HPE GreenLake Platform towards a personalized user
               experience leveraging AI/ML. Formed the overall product strategy,
@@ -46,7 +46,7 @@ const Hometest = () => (
         <CaseCard>
           <CaseThumbnail src={Images.DragonThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>Unified Platform Strategy</CaseHeading>
+            <CaseHeading>AI powered social stories</CaseHeading>
             <CaseDescription>
               Co-led the effort to consolidate over ten products across the
               company into a unified platform experience. Introduced key
@@ -59,7 +59,7 @@ const Hometest = () => (
         <CaseCard>
           <CaseThumbnail src={Images.MhThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>Cloud Marketplace</CaseHeading>
+            <CaseHeading>HPE Marketplace</CaseHeading>
             <CaseDescription>
               Led the design of a third-party software marketplace on the HPE
               GreenLake Platform. Helped expand the HPE Technology Partner
@@ -71,7 +71,7 @@ const Hometest = () => (
         <CaseCard>
           <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>Sales Quoting Tool</CaseHeading>
+            <CaseHeading>Shaping a Lean UX Culture</CaseHeading>
             <CaseDescription>
               A collection of case studies from my time as a product design
               consultant at Thoughtbot. Led clients through early product
@@ -79,19 +79,6 @@ const Hometest = () => (
               planning.
             </CaseDescription>
             <CaseLink to="salesquoting">View case study</CaseLink>
-          </CaseCopy>
-        </CaseCard>
-        <CaseCard>
-          <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
-          <CaseCopy>
-            <CaseHeading>Startup MVP</CaseHeading>
-            <CaseDescription>
-              A collection of case studies from my time as a product design
-              consultant at Thoughtbot. Led clients through early product
-              strategy, initial product launch, rapid validation, and roadmap
-              planning.
-            </CaseDescription>
-            <CaseLink to="startup">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
       </Cases>
