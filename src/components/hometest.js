@@ -13,7 +13,7 @@ const Hometest = () => (
       <Header>
         <WelcomeHeading>Hi, I'm Jeff!</WelcomeHeading>
         <WelcomeSubheading>
-          I'm a design leader who creates simple & powerful experiences
+          I'm a product designer who creates simple & powerful experiences
         </WelcomeSubheading>
         <LinkRow>
           <ScrollLink
@@ -31,35 +31,64 @@ const Hometest = () => (
       </Header>
       <Cases id="case-studies">
         <CaseCard>
-          <CaseThumbnail src={Images.AdsThumbnail} alt="" />
+          <CaseThumbnail src={Images.PersonalizationThumb} alt="" />
           <CaseCopy>
-            <CaseHeading>HPE GreenLake Platform</CaseHeading>
+            <CaseSubheading>HPE GreenLake</CaseSubheading>
+            <CaseHeading>Platform Personalization</CaseHeading>
             <CaseDescription>
               Led the HPE GreenLake Platform towards a personalized user
-              experience leveraging AI/ML. Formed the overall product strategy,
-              gained executive buy-in, and introduced it into the product
-              roadmap.
+              experience strategy. Formed the overall product direction, gained
+              executive buy-in, introduced it into the product roadmap, and
+              expanded & iterated on the experience.
             </CaseDescription>
             <CaseLink to="personalization">View case study</CaseLink>
           </CaseCopy>
         </CaseCard>
         <CaseCard>
+          <CaseThumbnail src={Images.AdsThumbnail} alt="" />
+          <CaseCopy>
+            <CaseSubheading>Thoughtbot</CaseSubheading>
+            <CaseHeading>Sales Quoting Tool</CaseHeading>
+            <CaseDescription>
+              Designed & developed a product dedicated to improving speed &
+              accuracy of quoting for enterprise salespeople. An approach to
+              reducing cognitive load for a data-heavy process and providing
+              structure to a rapidly growing organization.
+            </CaseDescription>
+            <CaseLink to="ads">View case study</CaseLink>
+          </CaseCopy>
+        </CaseCard>
+        <CaseCard>
+          <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
+          <CaseCopy>
+            <CaseSubheading>Thoughtbot</CaseSubheading>
+            <CaseHeading>Early Startup MVP</CaseHeading>
+            <CaseDescription>
+              Designed & developed a product dedicated to providing high school
+              & amateur athletes with a place to learn from their idols. An
+              example around prioritizing features, mitigating assumptions, and
+              building an MVP within a six-week timeline.
+            </CaseDescription>
+            <CaseLink to="theskills">View case study</CaseLink>
+          </CaseCopy>
+        </CaseCard>
+        {/* <CaseCard>
           <CaseThumbnail src={Images.DragonThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>AI powered social stories</CaseHeading>
+            <CaseHeading>Unified Platform Strategy</CaseHeading>
             <CaseDescription>
               Co-led the effort to consolidate over ten products across the
-              company into a unified platform experience. Introduced key
-              features like global search/navigation & drove the
+              company into a unified GreenLake Platform experience. Introduced
+              key features like global search/navigation & drove the
               organization-wide shift towards a service-centric architecture.
             </CaseDescription>
             <CaseLink to="platform">View case study</CaseLink>
           </CaseCopy>
-        </CaseCard>
-        <CaseCard>
+        </CaseCard> */}
+        {/* <CaseCard>
           <CaseThumbnail src={Images.MhThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>HPE Marketplace</CaseHeading>
+            <CaseHeading>Cloud Marketplace</CaseHeading>
             <CaseDescription>
               Led the design of a third-party software marketplace on the HPE
               GreenLake Platform. Helped expand the HPE Technology Partner
@@ -67,20 +96,20 @@ const Hometest = () => (
             </CaseDescription>
             <CaseLink to="marketplace">View case study</CaseLink>
           </CaseCopy>
-        </CaseCard>
-        <CaseCard>
+        </CaseCard> */}
+        {/* <CaseCard>
           <CaseThumbnail src={Images.SkillsThumbnail} alt="" />
           <CaseCopy>
-            <CaseHeading>Shaping a Lean UX Culture</CaseHeading>
+            <CaseHeading>Building a Lean UX Culture</CaseHeading>
             <CaseDescription>
               A collection of case studies from my time as a product design
               consultant at Thoughtbot. Led clients through early product
               strategy, initial product launch, rapid validation, and roadmap
               planning.
             </CaseDescription>
-            <CaseLink to="salesquoting">View case study</CaseLink>
+            <CaseLink to="leanux">View case study</CaseLink>
           </CaseCopy>
-        </CaseCard>
+        </CaseCard> */}
       </Cases>
     </Main>
   </Container>
@@ -205,6 +234,14 @@ const CaseHeading = styled.h4`
   font-size: 40px;
   color: #252b33;
   margin-bottom: 20px;
+`
+
+const CaseSubheading = styled.h5`
+  font-family: ${Typography.headingFontFamilyAlt};
+  font-size: 20px;
+  color: #6e7581;
+  font-weight: 300;
+  padding-bottom: 10px;
 `
 
 const CaseDescription = styled.p`

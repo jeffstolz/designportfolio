@@ -17,7 +17,7 @@ const Menutest1 = () => (
         </ActiveWrapper>
       </MenuItem>
       <MenuItem>
-        <MenuLink to={"about"}>About</MenuLink>
+        <MenuLink to={"../about"}>About</MenuLink>
       </MenuItem>
     </MenuList>
   </Menu>
