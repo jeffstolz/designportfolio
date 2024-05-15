@@ -18,9 +18,12 @@ const Marketplace = () => (
         <Header>
           <HeaderTitle>Cloud Marketplace</HeaderTitle>
           <HeaderDescription>
-            Improving speed & accuracy of quoting for enterprise salespeople. An
-            approach to reducing cognitive load for a data-heavy process and
-            providing structure to a rapidly growing organization.
+            In 2021, there was a clear HPE customer demand for an online store
+            that would allow them to buy, sell, and easily provision
+            applications to enhance their HPE GreenLake services. I spearheaded
+            the comprehensive design and MVP launch of the HPE GreenLake
+            Marketplace, addressing this need and expanding our partnership
+            program.
           </HeaderDescription>
         </Header>
         <IntroImage
@@ -114,7 +117,7 @@ const Marketplace = () => (
           </LinkWrapper>
           <LinkWrapper>
             <PreUpNext>Up next:</PreUpNext>
-            <UpNext to={"../salesquoting"}>Sales quoting tool</UpNext>
+            <UpNext to={"../personalization"}>User personalization</UpNext>
             <FaArrowRight style={{ color: "#ef5350" }} />
           </LinkWrapper>
         </Footer>

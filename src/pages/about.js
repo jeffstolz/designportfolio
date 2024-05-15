@@ -29,23 +29,16 @@ const About = () => (
             Hello! I am a product designer based in Boston with 12+ years
             experience. I thrive in small, collaborative, cross-functional teams
             that focus on rapid delivery & iteration. I am a big fan of Lean UX,
-            Jobs to Be Done,{" "}
-            <AboutLink href="https://thoughtbot.com/blog/how-dnd-made-me-better-at-facilitating-design-sprints">
-              Design Sprints
-            </AboutLink>
-            , and Atomic Design Systems.
+            Jobs to Be Done, Design Sprints , and Atomic Design Systems.
           </Description>
           <Description>
             My current role is principal product designer at HPE. I am
             functionally leading a team of 12 globally distributed designers and
             responsible for driving the product design strategy for the HPE
             GreenLake Platform. This has included spearheading initiatives to
-            introduce{" "}
-            <AboutLink to="../personalization">user personalization</AboutLink>,
-            commerce,{" "}
-            <AboutLink to="../platform">global search & navigation</AboutLink>,
-            onboarding, contextual help, service management, and a third-party{" "}
-            <AboutLink to="../marketplace">marketplace</AboutLink>.
+            introduce user personalization, commerce, global search &
+            navigation, onboarding, contextual help, service management, and a
+            third-party marketplace.
           </Description>
           <Description>
             Additionally, my team leads the HPE Innovation Lab which has
@@ -81,10 +74,10 @@ const About = () => (
         <Testimonial>
           <TestimonialWrapper>
             <TestimonialQuote>
-              “Jeff is a design leader who can cut through the BS and self
-              direct to successful outcomes despite the ambiguity & inertia of
-              our larger company. He pushes for better, embraces courage over
-              comfort, and is driving an action-biased, lean mindset across our
+              “Jeff is a designer who can cut through the BS and self direct to
+              successful outcomes despite the ambiguity & inertia of our larger
+              company. He pushes for better, embraces courage over comfort, and
+              is driving an action-biased, lean mindset across our
               organization.”
             </TestimonialQuote>
             <TestimonialAuthor>

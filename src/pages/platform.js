@@ -18,9 +18,12 @@ const Platform = () => (
         <Header>
           <HeaderTitle>Unified Platform Strategy</HeaderTitle>
           <HeaderDescription>
-            Improving speed & accuracy of quoting for enterprise salespeople. An
-            approach to reducing cognitive load for a data-heavy process and
-            providing structure to a rapidly growing organization.
+            In 2022, the HPE GreenLake experience was a fragmented collection of
+            disconnected applications. I co-led an effort with a fellow designer
+            and product manager to consolidate these into a unified
+            service-centric architecture. This redesign allowed us to introduce
+            unified navigation, global search, consistent page structures, and
+            standardized adoption of our design system.
           </HeaderDescription>
         </Header>
         <IntroImage
@@ -207,6 +210,13 @@ const Title = styled.h2`
   font-size: 40px;
   color: #252b33;
   padding-bottom: 25px;
+  font-weight: 300;
+`
+
+const SubTitle = styled.h3`
+  font-family: ${Typography.headingFontFamilyAlt};
+  font-size: 20px;
+  color: #252b33;
   font-weight: 300;
 `
 
