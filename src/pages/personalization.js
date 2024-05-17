@@ -485,9 +485,9 @@ const Personalization = () => (
           <CaseImageFull src={Images.PersonalizationSearch} alt="" />
           <SubTitlePaddedMore>Contextual Recommendations</SubTitlePaddedMore>
           <Description>
-            Providing recommendations through push notifications could help
-            surface opportunities to optimize the user's IT estate and show the
-            value of extending into other GreenLake services.
+            Providing recommendations through inline widget notifications could
+            help surface opportunities to optimize the user's IT estate and show
+            the value of extending into other GreenLake services.
           </Description>
           <CaseImageFull src={Images.PersonalizationSmartwidgets} alt="" />
         </DarkSection>

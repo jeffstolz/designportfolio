@@ -28,6 +28,7 @@ import Headshot from "./jeff_stolz.png"
 import JeffGalina from "./jeff-galina.jpg"
 import JeffStolzResume from "./jeff_stolz_resume.pdf"
 import MarketplaceBg from "./marketplace-bg.jpg"
+import MarketplaceThumbnail from "./marketplace-thumbnail.svg"
 import MhDesignProcessSketch from "./mh-design-process-sketch.jpg"
 import MhDiscovery from "./mh-discovery.jpg"
 import MhHeader from "./mh-header.png"
@@ -137,6 +138,7 @@ export const Images = {
   JeffGalina,
   JeffStolzResume,
   MarketplaceBg,
+  MarketplaceThumbnail,
   MhDesignProcessSketch,
   MhDiscovery,
   MhHeader,
