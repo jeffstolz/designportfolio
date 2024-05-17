@@ -45,6 +45,20 @@ const Hometest = () => (
           </CaseCopy>
         </CaseCard>
         <CaseCard>
+          <CaseThumbnail src={Images.MarketplaceThumbnail} alt="" />
+          <CaseCopy>
+            <CaseSubheading>HPE GreenLake</CaseSubheading>
+            <CaseHeading>Private Cloud Marketplace</CaseHeading>
+            <CaseDescription>
+              Led the end-to-end design of the HPE GreenLake Marketplace,
+              enabling customers to acquire curated and validated third-party
+              software for their private cloud environments. Contributed to
+              expanding the HPE Technology Partner Program by 23%.
+            </CaseDescription>
+            <CaseLinkDisabled>Coming soon...</CaseLinkDisabled>
+          </CaseCopy>
+        </CaseCard>
+        <CaseCard>
           <CaseThumbnail src={Images.AdsThumbnail} alt="" />
           <CaseCopy>
             <CaseSubheading>Thoughtbot</CaseSubheading>
@@ -262,6 +276,18 @@ const CaseLink = styled(Link)`
     cursor: pointer;
     color: #d21714;
     text-decoration: underline;
+  }
+`
+
+const CaseLinkDisabled = styled.p`
+  color: #d21714;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  color: #6e7581;
+
+  &:hover {
+    cursor: pointer;
   }
 `
 
